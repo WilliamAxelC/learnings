@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="165 360 870.0000000000001 479.9999999999998" overflow="visible" width="870.0000000000001px" height="479.9999999999998px">
+  <g id="Master/Sticker/Small Building 2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group-17" transform="translate(176.000000, 370.000000)">
+      <rect id="Rectangle" fill="#E8E7FF" x="14.5" y="149" width="561" height="311"/>
+      <rect id="Rectangle" fill="#CECCFF" x="574.5" y="149" width="253" height="311"/>
+      <polygon id="Rectangle-Copy" fill="#5628D2" points="574.5 356 827.384211 356 847.5 460 574.5 460"/>
+      <polygon id="Rectangle" fill="#7364FF" points="14.8658537 356 575.134146 356 589.5 460 0.5 460"/>
+      <rect id="Rectangle" fill="#FFE38E" x="238.5" y="218" width="112" height="242"/>
+      <rect id="Rectangle-Copy-2" fill="#FFE38E" x="34.5" y="170" width="155" height="175"/>
+      <rect id="Rectangle" fill="#5628D2" x="238.5" y="218" width="17" height="242"/>
+      <rect id="Rectangle-Copy-3" fill="#FFE38E" x="399.5" y="170" width="155" height="175"/>
+      <rect id="Rectangle-Copy-5" fill="#FFC30D" x="606.5" y="170" width="190" height="175"/>
+      <g id="Group-2" transform="translate(178.500000, 149.000000)">
+        <g id="Group">
+          <path d="M83.6857143,0 L201,0 L201,0 L201,83.6857143 L0,83.6857143 C-5.66011468e-15,37.4673705 37.4673705,2.27010267e-14 83.6857143,0 Z" id="Rectangle" fill="#7364FF"/>
+          <path d="M201,0 L201,0 L201,0 L201,83.6857143 L129.214286,83.6857143 L129.214286,71.7857143 C129.214286,32.139559 161.353845,7.28288057e-15 201,0 Z" id="Rectangle-Copy-4" fill="#5628D2"/>
+        </g>
+        <ellipse id="Oval" fill="#7364FF" cx="15.793" cy="83.686" rx="15.793" ry="17.314"/>
+        <ellipse id="Oval-Copy" fill="#7364FF" cx="48.814" cy="83.686" rx="17.229" ry="17.314"/>
+        <ellipse id="Oval-Copy-4" fill="#5628D2" cx="147.879" cy="83.686" rx="18.664" ry="17.314"/>
+        <ellipse id="Oval-Copy-2" fill="#7364FF" cx="83.271" cy="83.686" rx="17.229" ry="17.314"/>
+        <ellipse id="Oval-Copy-5" fill="#5628D2" cx="183.771" cy="83.686" rx="17.229" ry="17.314"/>
+        <ellipse id="Oval-Copy-3" fill="#7364FF" cx="113.421" cy="83.686" rx="15.793" ry="17.314"/>
+      </g>
+      <ellipse id="Oval-Copy-6" fill="#7364FF" cx="708.5" cy="232.5" rx="33" ry="31.5"/>
+      <rect id="Rectangle" fill="#7364FF" x="664.5" y="236" width="89" height="29" rx="5"/>
+      <polygon id="Rectangle" fill="#A39FFF" points="675.5 264 741.5 264 732.891304 296 684.108696 296"/>
+      <polygon id="Rectangle" fill="#7364FF" points="72.0384615 0 517.961538 0 575.5 150 14.5 150"/>
+      <polygon id="Rectangle-Copy-6" fill="#5628D2" points="517.5 0 770.092593 0 827.5 150 574.907407 150"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="345 120.00000000000011 509.9999999999998 960.0000000000002" overflow="visible" width="509.9999999999998px" height="960.0000000000002px">
+  <g id="Master/Sticker/Tall Building 3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group-6" transform="translate(347.000000, 133.000000)">
+      <rect id="Rectangle" fill="#A39FFF" x="50" y="77" width="30" height="90" rx="10"/>
+      <rect id="Rectangle" fill="#A39FFF" x="92" y="41" width="30" height="90" rx="10"/>
+      <polygon id="Rectangle" fill="#7364FF" points="0 168.722581 313 0 313 934 0 934"/>
+      <rect id="Rectangle" fill="#5628D2" x="313" y="0" width="193" height="934"/>
+      <path d="M151,813 L163,813 C179.568542,813 193,826.431458 193,843 L193,934 L193,934 L121,934 L121,843 C121,826.431458 134.431458,813 151,813 Z" id="Rectangle" fill="#5628D2"/>
+      <rect id="Rectangle" fill="#370EA3" x="24" y="235" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#FFC30D" x="24" y="524" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="24" y="380" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="121" y="235" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="121" y="524" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="121" y="380" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#FFC30D" x="217" y="235" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="217" y="524" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="217" y="380" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#370EA3" x="350" y="235" width="120" height="84" rx="28"/>
+      <rect id="Rectangle" fill="#370EA3" x="350" y="524" width="120" height="84" rx="28"/>
+      <rect id="Rectangle" fill="#370EA3" x="350" y="61" width="120" height="114" rx="28"/>
+      <rect id="Rectangle" fill="#370EA3" x="350" y="380" width="120" height="84" rx="28"/>
+      <rect id="Rectangle" fill="#5628D2" x="24" y="669" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="24" y="814" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="121" y="669" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#370EA3" x="217" y="669" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#5628D2" x="217" y="814" width="72" height="84" rx="24"/>
+      <rect id="Rectangle" fill="#370EA3" x="350" y="669" width="120" height="84" rx="28"/>
+      <rect id="Rectangle" fill="#370EA3" x="350" y="814" width="120" height="84" rx="28"/>
+    </g>
+  </g>
+</svg>

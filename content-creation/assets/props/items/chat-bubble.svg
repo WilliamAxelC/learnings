@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="200 375 600 337.5" fill="none" overflow="visible" width="600px" height="337.5px">
+  <g id="Master/Stickers/Chat">
+    <g id="Group 29">
+      <g id="Row" clip-path="url(#clip0_410_10373e738bc67-e51a-4b15-aa1f-62c992aa78e5)">
+        <rect id="Background" x="368" y="380" width="422.763" height="133.955" rx="14.2105" fill="#F2F2F2"/>
+      </g>
+      <path id="Vector 5" d="M719.588 556L689 509H754L719.588 556Z" fill="#F2F2F2"/>
+    </g>
+    <g id="Group 30">
+      <g id="Row_2" clip-path="url(#clip1_410_10373e738bc67-e51a-4b15-aa1f-62c992aa78e5)">
+        <rect id="Background_2" width="422.763" height="133.955" rx="14.2105" transform="matrix(-1 0 0 1 631.763 533)" fill="#E0E0E0"/>
+      </g>
+      <path id="Vector 5_2" d="M280.175 709L310.763 662H245.763L280.175 709Z" fill="#E0E0E0"/>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_410_10373e738bc67-e51a-4b15-aa1f-62c992aa78e5">
+      <rect width="422.763" height="135" fill="white" transform="translate(368 380)"/>
+    </clipPath>
+    <clipPath id="clip1_410_10373e738bc67-e51a-4b15-aa1f-62c992aa78e5">
+      <rect width="422.763" height="135" fill="white" transform="matrix(-1 0 0 1 631.763 533)"/>
+    </clipPath>
+  </defs>
+</svg>

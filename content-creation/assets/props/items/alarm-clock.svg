@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="287.5 337.5 399.9999999999998 437.5000000000001" fill="none" overflow="visible" width="399.9999999999998px" height="437.5000000000001px">
+  <g id="Master/Stickers/Alarm Clock">
+    <g id="Group 31">
+      <rect id="Rectangle 3" x="479" y="353" width="16" height="25" fill="#C4C4C4"/>
+      <rect id="Rectangle 4" x="499.5" y="340.5" width="16" height="25" transform="rotate(90 499.5 340.5)" fill="#C4C4C4"/>
+      <path id="Vector 3" d="M369 765C369.644 742.839 370.545 697.214 369 692L425 718.723L369 765Z" fill="#C4C4C4"/>
+      <path id="Vector 4" d="M608.462 761.489C590.793 748.099 554.168 720.876 549.025 719.107L603.296 689.026L608.462 761.489Z" fill="#C4C4C4"/>
+      <path id="Vector 1" d="M341.339 369.664C301.44 397.812 317.083 441.03 323.7 460.097C387.394 444.796 424.364 398.17 431.468 374.663C419.258 365.69 385.591 338.445 341.339 369.664Z" fill="#DADADA"/>
+      <path id="Vector 2" d="M640.814 374.999C605.457 341.323 566.097 365.058 548.678 375.251C576.052 434.762 628.968 461.978 653.407 464.383C659.839 450.664 680.03 412.348 640.814 374.999Z" fill="#DADADA"/>
+      <g id="Clock">
+        <circle id="Clock Frame" cx="487.5" cy="553.5" r="188.5" fill="#F2F2F2"/>
+        <circle id="Time" cx="487.5" cy="404.122" r="10.6698" fill="black" fill-opacity="0.1"/>
+        <circle id="Time_2" cx="338.122" cy="553.5" r="10.6698" fill="black" fill-opacity="0.1"/>
+        <circle id="Time_3" cx="636.877" cy="553.5" r="10.6698" fill="black" fill-opacity="0.1"/>
+        <circle id="Time_4" cx="487.5" cy="702.877" r="10.6698" fill="black" fill-opacity="0.1"/>
+        <path id="Hand" fill-rule="evenodd" clip-rule="evenodd" d="M487.5 425.462L494.613 549.944H480.387L487.5 425.462Z" fill="#AFB9C5"/>
+        <path id="Hand_2" fill-rule="evenodd" clip-rule="evenodd" d="M550.447 616.446L485.059 561.119L495.119 551.059L550.447 616.446Z" fill="#AFB9C5"/>
+        <circle id="Time_5" cx="487.5" cy="553.5" r="14.2264" fill="#C5CFD6"/>
+      </g>
+    </g>
+  </g>
+</svg>

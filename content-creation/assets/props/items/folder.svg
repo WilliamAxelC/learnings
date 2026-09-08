@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="325 250 362.50000000000006 437.49999999999983" fill="none" overflow="visible" width="362.50000000000006px" height="437.49999999999983px">
+  <g id="Master/Stickers/Folder">
+    <path id="Rectangle" fill-rule="evenodd" clip-rule="evenodd" d="M406.093 443.637C406.093 438.867 409.96 435 414.729 435H672.986C678.072 435 682.057 439.373 681.586 444.437L661.1 664.495C660.68 669.008 656.842 672.429 652.31 672.329L414.538 667.065C409.844 666.961 406.093 663.126 406.093 658.43V443.637Z" fill="#FFEBA9"/>
+    <g id="Group 3">
+      <g id="Group 6">
+        <g id="Group 5">
+          <path id="Path 16" fill-rule="evenodd" clip-rule="evenodd" d="M368.804 256.662L367.021 592.582L644.477 594.054L645.993 308.383L602.942 257.905L368.804 256.662Z" fill="#F2F2F2"/>
+          <path id="Path 17 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M602.906 257.903L605.345 257.916L605.085 306.946L647.219 307.169L647.206 309.608L602.633 309.371L602.906 257.903Z" fill="#C5CFD6"/>
+        </g>
+        <path id="Path 18 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M610.838 369.909L409.311 368.84L409.324 366.401L610.851 367.471L610.838 369.909Z" fill="#C5CFD6"/>
+        <path id="Path 18 (Stroke)_2" fill-rule="evenodd" clip-rule="evenodd" d="M612.473 416.577L410.946 415.508L410.959 413.069L612.486 414.139L612.473 416.577Z" fill="#C5CFD6"/>
+        <path id="Path 18 (Stroke)_3" fill-rule="evenodd" clip-rule="evenodd" d="M608.848 467.025L407.321 465.956L407.334 463.518L608.861 464.587L608.848 467.025Z" fill="#C5CFD6"/>
+        <path id="Path 18 (Stroke)_4" fill-rule="evenodd" clip-rule="evenodd" d="M610.483 513.69L408.956 512.621L408.969 510.183L610.496 511.252L610.483 513.69Z" fill="#C5CFD6"/>
+      </g>
+    </g>
+    <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M343.477 436.003C339.9 436.003 337 438.903 337 442.48V461.913V492.141V682.146C337 684.531 338.933 686.465 341.318 686.465H656.554C658.939 686.465 660.873 684.531 660.873 682.146V461.913C660.873 459.528 658.939 457.595 656.554 457.595H451.435V442.48C451.435 438.903 448.535 436.003 444.958 436.003H343.477Z" fill="#F7D36A"/>
+  </g>
+</svg>

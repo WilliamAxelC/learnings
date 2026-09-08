@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -21.834862385321003 2499.9999999999995 1403.669724770642" overflow="visible" width="2499.9999999999995px" height="1403.669724770642px">
+  <g id="Master/Composition/Downtown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="bg">
+      <g id="Sky" transform="scale(1 1)">
+        <defs>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-1">
+            <stop stop-color="#D5ECFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-2">
+            <stop stop-color="#D5ECFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-3">
+            <stop stop-color="#98D1FF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-4">
+            <stop stop-color="#98D1FF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-5">
+            <stop stop-color="#70BFFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-6">
+            <stop stop-color="#70BFFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-7">
+            <stop stop-color="#D5ECFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="skyfoggy-linearGradient-8">
+            <stop stop-color="#70BFFF" stop-opacity=".5" offset="0%"/>
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+          </linearGradient>
+        </defs>
+        <g id="Sky/Foggy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <path d="M488.855729,0 C565.364726,0 633.683361,35.2788279 678.615772,90.5488767 C702.584743,73.0839841 732.0596,62.7874596 763.924907,62.7874596 C827.960213,62.7874596 882.342072,104.368315 901.848638,162.155902 C915.297468,158.026032 929.578593,155.805918 944.375141,155.805918 C1024.80153,155.805918 1090,221.398026 1090,302.309991 C1090,304.889165 1089.93375,307.452773 1089.80287,309.999187 L66,309.99858 C69.2467121,242.270746 124.85715,188.362379 192.983,188.362379 C212.699414,188.362379 231.367549,192.877695 248.021447,200.936538 C269.258548,86.5654315 369.008587,0 488.855729,0 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-1)" transform="translate(578.000000, 155.000000) scale(-1, 1) translate(-578.000000, -155.000000)"/>
+          <path d="M1914.79299,95.998452 C1982.401,95.998452 2042.77151,127.198613 2082.47647,176.078745 C2103.65628,160.633002 2129.70223,151.526754 2157.86055,151.526754 C2214.44582,151.526754 2262.50077,188.300038 2279.73806,239.406298 C2291.62212,235.754384 2304.24191,233.790905 2317.31717,233.790905 C2388.38673,233.790905 2446,291.799596 2446,363.356943 C2446,365.584486 2445.94417,367.798901 2445.83384,369.998845 L1541.14009,369.997977 C1544.08816,310.174963 1593.19524,262.583358 1653.34215,262.583358 C1670.7646,262.583358 1687.26075,266.576567 1701.97703,273.703571 C1720.74454,172.554989 1808.88934,95.998452 1914.79299,95.998452 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-2)" transform="translate(1993.500000, 233.000000) scale(-1, 1) translate(-1993.500000, -233.000000)"/>
+          <path d="M823.792985,154.998452 C891.401003,154.998452 951.771506,186.198613 991.476468,235.078745 C1012.65628,219.633002 1038.70223,210.526754 1066.86055,210.526754 C1123.44582,210.526754 1171.50077,247.300038 1188.73806,298.406298 C1200.62212,294.754384 1213.24191,292.790905 1226.31717,292.790905 C1297.38673,292.790905 1355,350.799596 1355,422.356943 C1355,424.584486 1354.94417,426.798901 1354.83384,428.998845 L450.140092,428.997977 C453.088164,369.174963 502.195237,321.583358 562.342154,321.583358 C579.764604,321.583358 596.260747,325.576567 610.977029,332.703571 C629.744539,231.554989 717.889337,154.998452 823.792985,154.998452 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-3)" transform="translate(902.500000, 292.000000) scale(-1, 1) translate(-902.500000, -292.000000)"/>
+          <path d="M1333.42295,119 C1475.37122,119 1602.27573,183.875591 1686.50441,285.794922 L1689.039,288.89 L1690.37955,287.918946 C1735.06706,255.741476 1789.79693,236.806514 1848.91755,236.806514 C1967.72281,236.806514 2068.79709,313.270652 2106.27755,420.004516 L2107.391,423.241 L2108.73516,422.832691 C2133.55373,415.352843 2159.85654,411.334683 2187.0911,411.334683 C2337.81452,411.334683 2460,534.403487 2460,686.216549 C2460,690.838549 2459.88674,695.433905 2459.66287,699.999955 L541.000007,699.99855 C547.405079,573.224932 651.48554,472.419542 778.941372,472.419542 C815.480839,472.419542 850.099146,480.70447 881.045654,495.511032 L882.072,496.005 L883.31028,489.586589 C925.629746,278.187196 1111.0697,119 1333.42295,119 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-4)" transform="translate(1500.500000, 409.500000) scale(-1, 1) translate(-1500.500000, -409.500000)"/>
+          <path d="M1149.79299,425.998452 C1217.401,425.998452 1277.77151,457.198613 1317.47647,506.078745 C1338.65628,490.633002 1364.70223,481.526754 1392.86055,481.526754 C1449.44582,481.526754 1497.50077,518.300038 1514.73806,569.406298 C1526.62212,565.754384 1539.24191,563.790905 1552.31717,563.790905 C1623.38673,563.790905 1681,621.799596 1681,693.356943 C1681,695.584486 1680.94417,697.798901 1680.83384,699.998845 L776.140092,699.997977 C779.088164,640.174963 828.195237,592.583358 888.342154,592.583358 C905.764604,592.583358 922.260747,596.576567 936.977029,603.703571 C955.744539,502.554989 1043.88934,425.998452 1149.79299,425.998452 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-3)" transform="translate(1228.500000, 563.000000) scale(-1, 1) translate(-1228.500000, -563.000000)"/>
+          <path d="M1788.5,803.998452 C1853.7431,803.998452 1908.35803,845.749872 1922.33844,901.721229 C1940.48987,893.594175 1960.8872,889.035835 1982.4449,889.035835 C2036.6357,889.035835 2083.4942,917.839865 2105.82603,959.671718 C2112.96629,957.769891 2120.51976,956.750788 2128.33265,956.750788 C2168.13884,956.750788 2201.21089,983.205037 2207.80431,1017.99755 L1369.19569,1017.99755 C1375.78911,983.205037 1408.86116,956.750788 1448.66735,956.750788 C1460.96611,956.750788 1472.62203,959.276113 1483.05277,963.79245 C1503.63996,918.064121 1552.72544,885.886302 1610.00204,885.886302 C1626.52924,885.886302 1642.37443,888.565474 1657.04986,893.476285 C1674.10184,841.699388 1726.50238,803.998452 1788.5,803.998452 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-5)"/>
+          <path d="M432.106361,448 C510.110816,448 579.76481,483.994555 625.575423,540.385889 C650.012167,522.566709 680.063359,512.061126 712.551767,512.061126 C777.838315,512.061126 833.282839,554.485038 853.170918,613.444404 C866.882694,609.231682 881.443045,606.966499 896.528902,606.966499 C978.527225,606.966499 1045,673.889167 1045,756.442461 C1045,758.976867 1044.93735,761.496542 1044.81352,764 L1,763.999465 C4.45343994,695.032775 61.0897979,640.183379 130.450797,640.183379 C150.552671,640.183379 169.585766,644.790337 186.565229,653.012735 C208.217864,536.320824 309.917234,448 432.106361,448 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-6)" transform="translate(523.000000, 606.000000) scale(-1, 1) translate(-523.000000, -606.000000)"/>
+          <path d="M1551.76857,684.998452 C1635.28867,684.998452 1709.86785,723.497656 1758.91774,783.812944 C1785.08279,764.753848 1817.25879,753.51732 1852.04431,753.51732 C1921.94751,753.51732 1981.31268,798.893628 2002.60687,861.956046 C2017.28817,857.449534 2032.878,855.026754 2049.03049,855.026754 C2136.82693,855.026754 2208,926.606285 2208,1014.90411 C2208,1017.95668 2207.91494,1020.98926 2207.74706,1023.99959 L1090.13158,1023.99741 C1093.32329,949.757642 1154.1786,890.555056 1228.7829,890.555056 C1250.30605,890.555056 1270.68485,895.48253 1288.86485,904.276986 C1312.04878,779.465238 1420.93937,684.998452 1551.76857,684.998452 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-7)" transform="translate(1649.000000, 854.500000) scale(-1, 1) translate(-1649.000000, -854.500000)"/>
+          <path d="M751.768572,684.998452 C835.288668,684.998452 909.867854,723.497656 958.917743,783.812944 C985.082793,764.753848 1017.25879,753.51732 1052.04431,753.51732 C1121.94751,753.51732 1181.31268,798.893628 1202.60687,861.956046 C1217.28817,857.449534 1232.878,855.026754 1249.03049,855.026754 C1336.82693,855.026754 1408,926.606285 1408,1014.90411 C1408,1017.95668 1407.91494,1020.98926 1407.74706,1023.99959 L290.13158,1023.99741 C293.323288,949.757642 354.178603,890.555056 428.782904,890.555056 C450.306048,890.555056 470.684854,895.48253 488.864851,904.276986 C512.048784,779.465238 620.939372,684.998452 751.768572,684.998452 Z" id="Karl-the-Fog" fill="url(#skyfoggy-linearGradient-8)"/>
+        </g>
+      </g>
+      <g id="Horizon" transform="translate(0.000000, 593.000000) scale(1 1)">
+        <g id="Horizon/Lake" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Mountain-Group" transform="translate(0.000000, 53.000000)">
+            <g id="Mountain" transform="translate(109.000000, 0.000000)">
+              <polygon id="Mountain-Body" fill="#CECCFF" points="359.5 0 719 418 -1.67888752e-12 418"/>
+              <polygon id="Mountain-Top" fill="#E8E7FF" points="360.453756 0 396.860396 9.10914648 467.948828 124.705452 467.949936 125.558935 432.473866 165.292776 396.997797 125.558935 359.832391 165.292776 322.666985 125.558935 287.190915 165.292776 251.973042 125.848198"/>
+            </g>
+            <g id="Mountain" transform="translate(417.000000, 117.000000)">
+              <polygon id="Mountain-Body" fill="#A39FFF" points="254.5 5.55936675 386.272761 158.530007 457.846069 179.661215 509 301 0 301"/>
+              <polygon id="Mountain-Top" fill="#E8E7FF" points="253.07566 5.55936675 276.080702 0.340907801 345.490881 112.213787 345.491833 112.943728 314.992493 146.926121 284.493152 112.943728 252.541462 146.926121 220.589772 112.943728 190.090432 146.926121 159.813067 113.19112"/>
+            </g>
+            <g id="Mountain" transform="translate(0.000000, 141.000000)">
+              <polygon id="Mountain-Body" fill="#A39FFF" points="237.5 0 475 277 -1.67770867e-12 277 50.7171267 177.056697 110.278985 148.379878"/>
+              <polygon id="Mountain-Top" fill="#CECCFF" points="236.974991 0 323.73697 100.287907 323.737864 100.974276 295.104235 132.928161 266.470606 100.974276 236.473471 132.928161 206.476336 100.974276 177.842708 132.928161 149.417476 101.2069"/>
+            </g>
+          </g>
+          <g id="Mountain-Group" transform="translate(1509.000000, -25.000000)">
+            <g id="Mountain" transform="translate(0.000000, 90.000000)">
+              <polygon id="Mountain-Body" fill="#CECCFF" points="296.627827 0 607 406 -1.7694336e-12 406 109.864414 195.767728 185.315325 152.355482"/>
+              <polygon id="Mountain-Top" fill="#E8E7FF" points="296.452652 0 318.400665 4.59076578 360.892628 83.5985167 360.892628 83.9961695 339.634581 110.577236 318.376535 83.9961695 296.1062 110.577236 273.835865 83.9961695 252.577819 110.577236 231.516026 84.2417785"/>
+            </g>
+            <g id="Mountain" transform="translate(117.000000, 0.000000)">
+              <polygon id="Mountain-Body" fill="#A39FFF" points="417.438339 0 796 496 -2.222203e-12 496 69.3771739 361.566119 170.08547 301.266676 211.230286 219.24133 286.003885 172.208378"/>
+              <polygon id="Mountain-Top" fill="#E8E7FF" points="416.95285 0 496.649573 104.109514 470.523035 136.998336 444.360851 104.066044 416.95285 136.998336 389.544849 104.066044 363.382665 136.998336 337.255189 104.109514 383.881802 6.63461674"/>
+            </g>
+            <g id="Mountain" transform="translate(420.000000, 209.000000)">
+              <polygon id="Mountain-Body" fill="#7364FF" points="297.172913 0 444.438542 168.736118 536.125727 211.375237 571 287 -2.12996064e-12 287 55.2319238 223.715577 122.45357 200.192427"/>
+              <polygon id="Mountain-Top" fill="#CECCFF" points="296.619208 0 388.123418 103.583857 388.124361 104.292784 357.925677 137.29683 327.726993 104.292784 296.090277 137.29683 264.45356 104.292784 234.254876 137.29683 204.27598 104.533054"/>
+            </g>
+          </g>
+          <rect id="Green" fill="#02A837" x="0" y="471" width="2500" height="189"/>
+          <rect id="Lake" fill="#5628D2" x="0" y="494" width="2500" height="166"/>
+          <path d="M1011.16867,471 L1531.54485,471 C1541.25636,487.274619 1589.4996,491.976276 1640,496 L861,496 C948.857999,493.982294 1003.11263,486.350398 1011.16867,471 Z" id="Rectangle" fill="#5628D2"/>
+          <g id="Trees" transform="translate(300.500000, 420.500000) scale(-1, 1) translate(-300.500000, -420.500000) translate(181.000000, 370.000000)">
+            <path d="M169,0 L193,41 L185.897,41 L204,71 L192.214,71 L210,101 L127,101 L144.786,71 L134,71 L152.103,41 L145,41 L169,0 Z" id="Combined-Shape" fill="#00D745"/>
+            <path d="M122,31 L139,60 L135,60 L147,80 L138.571,80 L151,101 L93,101 L105.429,80 L99,80 L111,60 L105,60 L122,31 Z" id="Combined-Shape" fill="#02A837"/>
+            <path d="M210,31 L227,60 L223,60 L235,80 L226.571,80 L239,101 L181,101 L193.429,80 L187,80 L199,60 L193,60 L210,31 Z" id="Combined-Shape" fill="#02A837"/>
+            <path d="M88,30 L105,59 L100.451,59 L113,80 L104.571,80 L117,101 L59,101 L71.429,80 L64,80 L76.549,59 L71,59 L88,30 Z" id="Combined-Shape" fill="#00D745"/>
+            <path d="M41.5,1 L66,42 L59.447,42 L77,71 L65.214,71 L83,101 L0,101 L17.786,71 L8,71 L25.553,42 L17,42 L41.5,1 Z" id="Combined-Shape" fill="#02A837"/>
+          </g>
+          <g id="Trees" transform="translate(834.500000, 420.500000) scale(-1, 1) translate(-834.500000, -420.500000) translate(715.000000, 370.000000)">
+            <path d="M169,0 L193,41 L185.897,41 L204,71 L192.214,71 L210,101 L127,101 L144.786,71 L134,71 L152.103,41 L145,41 L169,0 Z" id="Combined-Shape" fill="#0CC647"/>
+            <path d="M122,31 L139,60 L135,60 L147,80 L138.571,80 L151,101 L93,101 L105.429,80 L99,80 L111,60 L105,60 L122,31 Z" id="Combined-Shape" fill="#02A837"/>
+            <path d="M210,31 L227,60 L223,60 L235,80 L226.571,80 L239,101 L181,101 L193.429,80 L187,80 L199,60 L193,60 L210,31 Z" id="Combined-Shape" fill="#02A837"/>
+            <path d="M88,30 L105,59 L100.451,59 L113,80 L104.571,80 L117,101 L59,101 L71.429,80 L64,80 L76.549,59 L71,59 L88,30 Z" id="Combined-Shape" fill="#0CC647"/>
+            <path d="M41.5,1 L66,42 L59.447,42 L77,71 L65.214,71 L83,101 L0,101 L17.786,71 L8,71 L25.553,42 L17,42 L41.5,1 Z" id="Combined-Shape" fill="#02A837"/>
+          </g>
+          <g id="Trees" transform="translate(11.000000, 370.000000)">
+            <path d="M89,0 L113,41 L105.897,41 L124,71 L112.214,71 L130,101 L47,101 L64.786,71 L54,71 L72.103,41 L65,41 L89,0 Z" id="Tree" fill="#0CC647" transform="translate(88.500000, 50.500000) scale(-1, 1) translate(-88.500000, -50.500000)"/>
+            <path d="M110,31 L127,60 L123,60 L135,80 L126.571,80 L139,101 L81,101 L93.429,80 L87,80 L99,60 L93,60 L110,31 Z" id="Tree" fill="#02A837" transform="translate(110.000000, 66.000000) scale(-1, 1) translate(-110.000000, -66.000000)"/>
+            <polygon id="Triangle" fill="#02A837" points="166.5 31 190 101 143 101"/>
+            <polygon id="Triangle" fill="#02A837" points="141 47 159 101 123 101"/>
+            <polygon id="Triangle" fill="#02A837" points="41 59 55 101 27 101"/>
+            <polygon id="Triangle" fill="#02A837" points="17 50 34 101 0 101"/>
+          </g>
+          <g id="Trees" transform="translate(2259.000000, 370.000000)">
+            <g id="Group-3-Copy-3" transform="translate(81.000000, 50.500000) scale(-1, 1) translate(-81.000000, -50.500000) translate(35.000000, 0.000000)">
+              <path d="M51,0 L75,41 L67.897,41 L86,71 L74.214,71 L92,101 L9,101 L26.786,71 L16,71 L34.103,41 L27,41 L51,0 Z" id="Tree" fill="#00D745"/>
+              <path d="M29,31 L46,60 L42,60 L54,80 L45.571,80 L58,101 L0,101 L12.429,80 L6,80 L18,60 L12,60 L29,31 Z" id="Tree" fill="#02A837"/>
+            </g>
+            <polygon id="Tree" fill="#02A837" points="154.5 31 178 101 131 101"/>
+            <polygon id="Tree" fill="#02A837" points="17 50 34 101 0 101"/>
+            <polygon id="Tree" fill="#02A837" points="193 23 219 101 167 101"/>
+          </g>
+          <g id="Trees" transform="translate(2036.000000, 354.000000)">
+            <g id="Group-3-Copy-3" transform="translate(93.500000, 58.500000) scale(-1, 1) translate(-93.500000, -58.500000) translate(40.000000, 0.000000)">
+              <path d="M59.3152174,0 L87.2282609,47.4950495 L78.9663913,47.495 L100.021739,82.2475248 L86.3143913,82.247 L107,117 L10.4673913,117 L31.1523913,82.247 L18.6086957,82.2475248 L39.6633913,47.495 L31.4021739,47.4950495 L59.3152174,0 Z" id="Tree" fill="#00D745"/>
+              <path d="M33.7282609,35.9108911 L53.5,69.5049505 L48.848,69.5048911 L62.8043478,92.6732673 L53.001,92.6728911 L67.4565217,117 L0,117 L14.455,92.6728911 L6.97826087,92.6732673 L20.934,69.5048911 L13.9565217,69.5049505 L33.7282609,35.9108911 Z" id="Tree" fill="#02A837"/>
+            </g>
+            <polygon id="Tree" fill="#02A837" points="179.5 36 207 117 152 117"/>
+            <polygon id="Tree" fill="#02A837" points="19.5 58 39 117 0 117"/>
+            <polygon id="Tree" fill="#02A837" points="224 27 254 117 194 117"/>
+          </g>
+          <g id="Trees" transform="translate(2002.500000, 420.500000) scale(-1, 1) translate(-2002.500000, -420.500000) translate(1878.000000, 370.000000)">
+            <path d="M206.421687,15 L226.662651,49.9108911 L220.671,49.91 L235.939759,75.4554455 L226,75.455 L241,101 L171,101 L186,75.455 L176.903614,75.4554455 L192.171,49.91 L186.180723,49.9108911 L206.421687,15 Z" id="Tree" fill="#00D745" transform="translate(206.000000, 58.000000) scale(-1, 1) translate(-206.000000, -58.000000)"/>
+            <path d="M224.5,41 L238.862069,65.8571429 L235.482,65.857 L245.62069,83 L238.499,82.999 L249,101 L200,101 L210.501,82.999 L205.068966,83 L215.206,65.857 L210.137931,65.8571429 L224.5,41 Z" id="Tree" fill="#02A837" transform="translate(224.500000, 71.000000) scale(-1, 1) translate(-224.500000, -71.000000)"/>
+            <path d="M169,0 L193,41 L185.897,41 L204,71 L192.214,71 L210,101 L127,101 L144.786,71 L134,71 L152.103,41 L145,41 L169,0 Z" id="Tree" fill="#0CC647"/>
+            <path d="M122,31 L139,60 L135,60 L147,80 L138.571,80 L151,101 L93,101 L105.429,80 L99,80 L111,60 L105,60 L122,31 Z" id="Tree" fill="#02A837"/>
+            <path d="M88,30 L105,59 L100.451,59 L113,80 L104.571,80 L117,101 L59,101 L71.429,80 L64,80 L76.549,59 L71,59 L88,30 Z" id="Tree" fill="#00D745"/>
+            <path d="M41.5,1 L66,42 L59.447,42 L77,71 L65.214,71 L83,101 L0,101 L17.786,71 L8,71 L25.553,42 L17,42 L41.5,1 Z" id="Tree" fill="#02A837"/>
+          </g>
+          <g id="Trees" transform="translate(1693.500000, 420.500000) scale(-1, 1) translate(-1693.500000, -420.500000) translate(1569.000000, 370.000000)">
+            <path d="M206.421687,15 L226.662651,49.9108911 L220.671,49.91 L235.939759,75.4554455 L226,75.455 L241,101 L171,101 L186,75.455 L176.903614,75.4554455 L192.171,49.91 L186.180723,49.9108911 L206.421687,15 Z" id="Tree" fill="#0CC647" transform="translate(206.000000, 58.000000) scale(-1, 1) translate(-206.000000, -58.000000)"/>
+            <path d="M224.5,41 L238.862069,65.8571429 L235.482,65.857 L245.62069,83 L238.499,82.999 L249,101 L200,101 L210.501,82.999 L205.068966,83 L215.206,65.857 L210.137931,65.8571429 L224.5,41 Z" id="Tree" fill="#02A837" transform="translate(224.500000, 71.000000) scale(-1, 1) translate(-224.500000, -71.000000)"/>
+            <path d="M169,0 L193,41 L185.897,41 L204,71 L192.214,71 L210,101 L127,101 L144.786,71 L134,71 L152.103,41 L145,41 L169,0 Z" id="Tree" fill="#0CC647"/>
+            <path d="M122,31 L139,60 L135,60 L147,80 L138.571,80 L151,101 L93,101 L105.429,80 L99,80 L111,60 L105,60 L122,31 Z" id="Tree" fill="#02A837"/>
+            <path d="M88,30 L105,59 L100.451,59 L113,80 L104.571,80 L117,101 L59,101 L71.429,80 L64,80 L76.549,59 L71,59 L88,30 Z" id="Tree" fill="#00D745"/>
+            <path d="M41.5,1 L66,42 L59.447,42 L77,71 L65.214,71 L83,101 L0,101 L17.786,71 L8,71 L25.553,42 L17,42 L41.5,1 Z" id="Tree" fill="#02A837"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Street" transform="translate(0.000000, 1250.000000)">
+      <rect id="Rectangle" fill="#E8E7FF" x="0" y="0" width="2500" height="110"/>
+      <rect id="Rectangle" fill="#A39FFF" x="0" y="0" width="2500" height="16"/>
+    </g>
+    <g id="Building-Back" transform="translate(790.000000, 161.000000)">
+      <g id="Building/Skyscraper" transform="translate(-0.000000, 140.000000) scale(0.8602941176470589 0.860125260960334)">
+        <g id="Building/Skyscraper/3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="Rectangle-Copy" fill="#A39FFF" x="48" y="655" width="208" height="303"/>
+          <rect id="Rectangle-Copy-3" fill="#A39FFF" x="69" y="425" width="180" height="230"/>
+          <rect id="Rectangle-Copy-5" fill="#A39FFF" x="87" y="202" width="156" height="224"/>
+          <rect id="Rectangle-Copy-20" fill="#A39FFF" x="102" y="6" width="136" height="194"/>
+          <rect id="Rectangle-Copy-2" fill="#5628D2" x="256" y="655" width="104" height="303"/>
+          <rect id="Rectangle-Copy-4" fill="#5628D2" x="249" y="425" width="90" height="230"/>
+          <rect id="Rectangle-Copy-6" fill="#5628D2" x="243" y="202" width="78" height="224"/>
+          <rect id="Rectangle-Copy-21" fill="#5628D2" x="238" y="6" width="68" height="194"/>
+          <rect id="Rectangle-Copy-46" fill="#7364FF" x="64" y="885" width="176" height="73"/>
+          <rect id="Rectangle-Copy-23" fill="#FFC30D" x="268" y="442" width="66" height="40"/>
+          <rect id="Rectangle-Copy-24" fill="#FFC30D" x="259" y="231" width="58" height="34"/>
+          <rect id="Rectangle-Copy-26" fill="#370EA3" x="268" y="518" width="66" height="40"/>
+          <rect id="Rectangle-Copy-34" fill="#370EA3" x="259" y="297" width="58" height="34"/>
+          <rect id="Rectangle-Copy-36" fill="#370EA3" x="252" y="89" width="50" height="30"/>
+          <rect id="Rectangle-Copy-27" fill="#370EA3" x="268" y="594" width="66" height="40"/>
+          <rect id="Rectangle-Copy-35" fill="#370EA3" x="259" y="363" width="58" height="34"/>
+          <rect id="Rectangle-Copy-37" fill="#370EA3" x="252" y="146" width="50" height="30"/>
+          <rect id="Rectangle-Copy-28" fill="#370EA3" x="278" y="673" width="75" height="46"/>
+          <rect id="Rectangle-Copy-31" fill="#370EA3" x="278" y="742" width="75" height="46"/>
+          <rect id="Rectangle-Copy-32" fill="#370EA3" x="278" y="810" width="75" height="46"/>
+          <rect id="Rectangle-Copy-33" fill="#370EA3" x="278" y="885" width="75" height="73"/>
+          <rect id="Rectangle-Copy-7" fill="#5628D2" x="83" y="442" width="152" height="40"/>
+          <rect id="Rectangle-Copy-10" fill="#FFC30D" x="99" y="231" width="132" height="34"/>
+          <rect id="Rectangle-Copy-8" fill="#5628D2" x="83" y="518" width="152" height="40"/>
+          <rect id="Rectangle-Copy-11" fill="#5628D2" x="99" y="297" width="132" height="34"/>
+          <rect id="Rectangle-Copy-38" fill="#5628D2" x="113" y="89" width="114" height="30"/>
+          <rect id="Rectangle-Copy-9" fill="#5628D2" x="83" y="594" width="152" height="40"/>
+          <rect id="Rectangle-Copy-13" fill="#5628D2" x="99" y="363" width="132" height="34"/>
+          <rect id="Rectangle-Copy-39" fill="#5628D2" x="113" y="146" width="114" height="30"/>
+          <rect id="Rectangle-Copy-16" fill="#5628D2" x="64" y="673" width="176" height="46"/>
+          <rect id="Rectangle-Copy-17" fill="#5628D2" x="64" y="742" width="176" height="46"/>
+          <rect id="Rectangle-Copy-18" fill="#5628D2" x="64" y="810" width="176" height="46"/>
+          <rect id="Rectangle-Copy-48" fill="#FFC30D" x="192" y="885" width="48" height="73"/>
+          <rect id="Rectangle-Copy-12" fill="#7364FF" x="62" y="419" width="194" height="14"/>
+          <rect id="Rectangle-Copy-14" fill="#7364FF" x="81" y="196" width="168" height="12"/>
+          <rect id="Rectangle-Copy-29" fill="#7364FF" x="40" y="647" width="224" height="16"/>
+          <rect id="Rectangle-Copy-15" fill="#370EA3" x="256" y="419" width="90" height="14"/>
+          <rect id="Rectangle-Copy-19" fill="#370EA3" x="249" y="196" width="78" height="12"/>
+          <rect id="Rectangle-Copy-30" fill="#370EA3" x="264" y="647" width="104" height="16"/>
+          <rect id="Rectangle-Copy-25" fill="#FFC30D" x="252" y="31" width="50" height="30"/>
+          <rect id="Rectangle-Copy-22" fill="#FFC30D" x="113" y="31" width="114" height="30"/>
+          <rect id="Rectangle-Copy-40" fill="#7364FF" x="97" y="0" width="146" height="10"/>
+          <rect id="Rectangle-Copy-41" fill="#370EA3" x="243" y="0" width="68" height="10"/>
+        </g>
+      </g>
+      <g id="Building/Skyscraper" transform="translate(269.000000, 0.000000) scale(0.9313725490196079 0.9311064718162839)">
+        <g id="Building/Skyscraper/2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="Rectangle-Copy" fill="#CECCFF" x="48" y="0" width="208" height="958"/>
+          <rect id="Rectangle-Copy-2" fill="#7364FF" x="256" y="0" width="104" height="958"/>
+          <rect id="Rectangle-Copy-46" fill="#7364FF" x="64" y="885" width="48" height="73"/>
+          <rect id="Rectangle-Copy-5" fill="#5628D2" x="64" y="136" width="176" height="46"/>
+          <rect id="Rectangle-Copy-36" fill="#5628D2" x="64" y="37" width="176" height="46"/>
+          <rect id="Rectangle-Copy-21" fill="#370EA3" x="278" y="136" width="75" height="46"/>
+          <rect id="Rectangle-Copy-37" fill="#370EA3" x="278" y="37" width="75" height="46"/>
+          <rect id="Rectangle-Copy-22" fill="#370EA3" x="278" y="224" width="75" height="46"/>
+          <rect id="Rectangle-Copy-23" fill="#FFC30D" x="278" y="312" width="75" height="46"/>
+          <rect id="Rectangle-Copy-26" fill="#370EA3" x="278" y="400" width="75" height="46"/>
+          <rect id="Rectangle-Copy-27" fill="#370EA3" x="278" y="488" width="75" height="46"/>
+          <rect id="Rectangle-Copy-28" fill="#370EA3" x="278" y="576" width="75" height="46"/>
+          <rect id="Rectangle-Copy-31" fill="#370EA3" x="278" y="664" width="75" height="46"/>
+          <rect id="Rectangle-Copy-32" fill="#370EA3" x="278" y="752" width="75" height="46"/>
+          <rect id="Rectangle-Copy-33" fill="#370EA3" x="278" y="885" width="75" height="73"/>
+          <rect id="Rectangle-Copy-6" fill="#5628D2" x="64" y="224" width="176" height="46"/>
+          <rect id="Rectangle-Copy-7" fill="#FFC30D" x="64" y="312" width="176" height="46"/>
+          <rect id="Rectangle-Copy-8" fill="#5628D2" x="64" y="400" width="176" height="46"/>
+          <rect id="Rectangle-Copy-9" fill="#5628D2" x="64" y="488" width="176" height="46"/>
+          <rect id="Rectangle-Copy-16" fill="#5628D2" x="64" y="576" width="176" height="46"/>
+          <rect id="Rectangle-Copy-17" fill="#5628D2" x="64" y="664" width="176" height="46"/>
+          <rect id="Rectangle-Copy-18" fill="#5628D2" x="64" y="752" width="176" height="46"/>
+          <rect id="Rectangle-Copy-48" fill="#5628D2" x="192" y="885" width="48" height="73"/>
+          <rect id="Rectangle-Copy-10" fill="#E8E7FF" x="40" y="99" width="224" height="16"/>
+          <rect id="Rectangle-Copy-38" fill="#E8E7FF" x="40" y="0" width="224" height="16"/>
+          <rect id="Rectangle-Copy-11" fill="#E8E7FF" x="40" y="198" width="224" height="16"/>
+          <rect id="Rectangle-Copy-12" fill="#E8E7FF" x="40" y="286" width="224" height="16"/>
+          <rect id="Rectangle-Copy-19" fill="#E8E7FF" x="40" y="374" width="224" height="16"/>
+          <rect id="Rectangle-Copy-24" fill="#E8E7FF" x="40" y="462" width="224" height="16"/>
+          <rect id="Rectangle-Copy-29" fill="#E8E7FF" x="40" y="550" width="224" height="16"/>
+          <rect id="Rectangle-Copy-34" fill="#E8E7FF" x="40" y="638" width="224" height="16"/>
+          <rect id="Rectangle-Copy-39" fill="#E8E7FF" x="40" y="726" width="224" height="16"/>
+          <rect id="Rectangle-Copy-44" fill="#E8E7FF" x="40" y="814" width="224" height="16"/>
+          <rect id="Rectangle-Copy-13" fill="#A39FFF" x="264" y="99" width="104" height="16"/>
+          <rect id="Rectangle-Copy-41" fill="#A39FFF" x="264" y="0" width="104" height="16"/>
+          <rect id="Rectangle-Copy-14" fill="#A39FFF" x="264" y="198" width="104" height="16"/>
+          <rect id="Rectangle-Copy-15" fill="#A39FFF" x="264" y="286" width="104" height="16"/>
+          <rect id="Rectangle-Copy-20" fill="#A39FFF" x="264" y="374" width="104" height="16"/>
+          <rect id="Rectangle-Copy-25" fill="#A39FFF" x="264" y="462" width="104" height="16"/>
+          <rect id="Rectangle-Copy-30" fill="#A39FFF" x="264" y="550" width="104" height="16"/>
+          <rect id="Rectangle-Copy-35" fill="#A39FFF" x="264" y="638" width="104" height="16"/>
+          <rect id="Rectangle-Copy-40" fill="#A39FFF" x="264" y="726" width="104" height="16"/>
+          <rect id="Rectangle-Copy-45" fill="#A39FFF" x="264" y="814" width="104" height="16"/>
+        </g>
+      </g>
+      <g id="Building/Large" transform="translate(590.000000, 302.000000) scale(0.8602941176470589 0.8612903225806452)">
+        <g id="Building/Large/6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="Rectangle-Copy" fill="#A39FFF" x="240" y="-54" width="20" height="84" rx="10"/>
+          <rect id="Rectangle-Copy-2" fill="#A39FFF" x="268" y="-54" width="20" height="84" rx="10"/>
+          <rect id="Rectangle" fill="#CECCFF" x="8" y="0" width="288" height="620"/>
+          <rect id="Rectangle" fill="#A39FFF" x="296" y="0" width="104" height="620"/>
+          <rect id="Rectangle" fill="#5628D2" x="120" y="548" width="48" height="72"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="156" width="240" height="56"/>
+          <rect id="Rectangle-Copy-3" fill="#7364FF" x="24" y="60" width="240" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="348" width="240" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="252" width="240" height="56"/>
+          <rect id="Rectangle" fill="#FFC30D" x="323" y="156" width="48" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="348" width="48" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="56" width="48" height="60"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="252" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="444" width="240" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="444" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="200" y="548" width="64" height="56"/>
+          <rect id="Rectangle-Copy" fill="#7364FF" x="24" y="548" width="64" height="56"/>
+          <rect id="Rectangle" fill="#E8E7FF" x="0" y="-16" width="304" height="32"/>
+          <rect id="Rectangle" fill="#CECCFF" x="304" y="-16" width="104" height="32"/>
+        </g>
+      </g>
+    </g>
+    <g id="Building-Front" transform="translate(400.000000, 716.000000)">
+      <g id="Building/Medium" transform="translate(0.000000, 226.000000) scale(1 1)">
+        <g id="Building/Medium/6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group">
+            <polygon id="Rectangle-Copy" fill="#5628D2" points="142 0 314 0 344 115 112 115"/>
+            <rect id="Rectangle" fill="#CECCFF" x="0" y="115" width="232" height="193"/>
+            <rect id="Rectangle" fill="#A39FFF" x="232" y="115" width="112" height="193"/>
+            <rect id="Rectangle" fill="#7364FF" x="21" y="211" width="143" height="97"/>
+            <rect id="Rectangle" fill="#CECCFF" x="92" y="65" width="48" height="48" rx="24"/>
+            <polygon id="Rectangle" fill="#7364FF" points="30 0 202 0 232 115 0 115"/>
+            <rect id="Rectangle-Copy-3" fill="#5628D2" x="122" y="41" width="48" height="48"/>
+            <polygon id="Rectangle-Copy-10" fill="#370EA3" points="253 41 301 41 313.30986 89 265.30986 89"/>
+            <rect id="Rectangle-Copy-4" fill="#FFC30D" x="54" y="41" width="48" height="48"/>
+            <rect id="Rectangle-Copy-5" fill="#7364FF" x="21" y="139" width="143" height="48"/>
+            <rect id="Rectangle-Copy-8" fill="#7364FF" x="175" y="139" width="46" height="48"/>
+            <rect id="Rectangle-Copy-6" fill="#FFC30D" x="253" y="139" width="75" height="48"/>
+            <rect id="Rectangle-Copy-9" fill="#5628D2" x="253" y="231" width="75" height="48"/>
+            <rect id="Rectangle-Copy-7" fill="#5628D2" x="175" y="231" width="48" height="77"/>
+          </g>
+        </g>
+      </g>
+      <g id="Building/Large" transform="translate(270.000000, 0.000000) scale(0.8602941176470589 0.8612903225806452)">
+        <g id="Building/Large/2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group" transform="translate(16.000000, 0.000000)">
+            <path d="M136,0 C147.045695,0 156,8.954305 156,20 L156,30 L116,30 L116,20 C116,16.222207 110.179718,3.01395126 112,0 L136,0 Z" id="Rectangle" fill="#7364FF"/>
+            <rect id="Rectangle" fill="#A39FFF" x="0" y="28" width="224" height="8"/>
+            <rect id="Rectangle" fill="#7364FF" x="224" y="28" width="152" height="8"/>
+            <path d="M112,0 C123.045695,-2.02906125e-15 132,8.954305 132,20 L132,30 L132,30 L92,30 L92,20 C92,8.954305 100.954305,2.02906125e-15 112,0 Z" id="Rectangle" fill="#A39FFF"/>
+            <circle id="Oval" fill="#7364FF" cx="112" cy="16" r="8"/>
+          </g>
+          <rect id="Rectangle" fill="#E8E7FF" x="24" y="36" width="208" height="584"/>
+          <circle id="Oval" fill="#A39FFF" cx="56" cy="78" r="12"/>
+          <circle id="Oval" fill="#A39FFF" cx="104" cy="78" r="12"/>
+          <circle id="Oval" fill="#A39FFF" cx="152" cy="78" r="12"/>
+          <circle id="Oval" fill="#A39FFF" cx="200" cy="78" r="12"/>
+          <rect id="Rectangle" fill="#CECCFF" x="232" y="36" width="152" height="584"/>
+          <g id="Group-2" transform="translate(16.000000, 342.000000)">
+            <path d="M40,0 C48.836556,-1.623249e-15 56,7.163444 56,16 L56,48 L56,48 L24,48 L24,16 C24,7.163444 31.163444,1.623249e-15 40,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M136,0 C144.836556,-1.623249e-15 152,7.163444 152,16 L152,48 L152,48 L120,48 L120,16 C120,7.163444 127.163444,1.623249e-15 136,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M244,0 C252.836556,-1.623249e-15 260,7.163444 260,16 L260,48 L260,48 L228,48 L228,16 C228,7.163444 235.163444,1.623249e-15 244,0 Z" id="Rectangle" fill="#5628D2"/>
+            <path d="M88,0 C96.836556,-1.623249e-15 104,7.163444 104,16 L104,48 L104,48 L72,48 L72,16 C72,7.163444 79.163444,1.623249e-15 88,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M184,0 C192.836556,-1.623249e-15 200,7.163444 200,16 L200,48 L200,48 L168,48 L168,16 C168,7.163444 175.163444,1.623249e-15 184,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M292,0 C300.836556,-1.623249e-15 308,7.163444 308,16 L308,48 L308,48 L276,48 L276,16 C276,7.163444 283.163444,1.623249e-15 292,0 Z" id="Rectangle" fill="#5628D2"/>
+            <path d="M340,0 C348.836556,-1.623249e-15 356,7.163444 356,16 L356,48 L356,48 L324,48 L324,16 C324,7.163444 331.163444,1.623249e-15 340,0 Z" id="Rectangle" fill="#5628D2"/>
+            <rect id="Rectangle" fill="#A39FFF" x="0" y="46" width="224" height="8"/>
+            <rect id="Rectangle" fill="#7364FF" x="224" y="46" width="152" height="8"/>
+          </g>
+          <g id="Group-2" transform="translate(16.000000, 240.000000)">
+            <path d="M40,0 C48.836556,-1.623249e-15 56,7.163444 56,16 L56,48 L56,48 L24,48 L24,16 C24,7.163444 31.163444,1.623249e-15 40,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M136,0 C144.836556,-1.623249e-15 152,7.163444 152,16 L152,48 L152,48 L120,48 L120,16 C120,7.163444 127.163444,1.623249e-15 136,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M244,0 C252.836556,-1.623249e-15 260,7.163444 260,16 L260,48 L260,48 L228,48 L228,16 C228,7.163444 235.163444,1.623249e-15 244,0 Z" id="Rectangle" fill="#5628D2"/>
+            <path d="M88,0 C96.836556,-1.623249e-15 104,7.163444 104,16 L104,48 L104,48 L72,48 L72,16 C72,7.163444 79.163444,1.623249e-15 88,0 Z" id="Rectangle" fill="#FFC30D"/>
+            <path d="M184,0 C192.836556,-1.623249e-15 200,7.163444 200,16 L200,48 L200,48 L168,48 L168,16 C168,7.163444 175.163444,1.623249e-15 184,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M292,0 C300.836556,-1.623249e-15 308,7.163444 308,16 L308,48 L308,48 L276,48 L276,16 C276,7.163444 283.163444,1.623249e-15 292,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M340,0 C348.836556,-1.623249e-15 356,7.163444 356,16 L356,48 L356,48 L324,48 L324,16 C324,7.163444 331.163444,1.623249e-15 340,0 Z" id="Rectangle" fill="#7364FF"/>
+            <rect id="Rectangle" fill="#A39FFF" x="0" y="46" width="224" height="8"/>
+            <rect id="Rectangle" fill="#7364FF" x="224" y="46" width="152" height="8"/>
+          </g>
+          <g id="Group-2" transform="translate(16.000000, 138.000000)">
+            <path d="M40,0 C48.836556,-1.623249e-15 56,7.163444 56,16 L56,48 L56,48 L24,48 L24,16 C24,7.163444 31.163444,1.623249e-15 40,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M136,0 C144.836556,-1.623249e-15 152,7.163444 152,16 L152,48 L152,48 L120,48 L120,16 C120,7.163444 127.163444,1.623249e-15 136,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M244,0 C252.836556,-1.623249e-15 260,7.163444 260,16 L260,48 L260,48 L228,48 L228,16 C228,7.163444 235.163444,1.623249e-15 244,0 Z" id="Rectangle" fill="#5628D2"/>
+            <path d="M88,0 C96.836556,-1.623249e-15 104,7.163444 104,16 L104,48 L104,48 L72,48 L72,16 C72,7.163444 79.163444,1.623249e-15 88,0 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M184,0 C192.836556,-1.623249e-15 200,7.163444 200,16 L200,48 L200,48 L168,48 L168,16 C168,7.163444 175.163444,1.623249e-15 184,0 Z" id="Rectangle" fill="#5628D2"/>
+            <path d="M292,0 C300.836556,-1.623249e-15 308,7.163444 308,16 L308,48 L308,48 L276,48 L276,16 C276,7.163444 283.163444,1.623249e-15 292,0 Z" id="Rectangle" fill="#5628D2"/>
+            <path d="M340,0 C348.836556,-1.623249e-15 356,7.163444 356,16 L356,48 L356,48 L324,48 L324,16 C324,7.163444 331.163444,1.623249e-15 340,0 Z" id="Rectangle" fill="#5628D2"/>
+            <rect id="Rectangle" fill="#A39FFF" x="0" y="46" width="224" height="8"/>
+            <rect id="Rectangle" fill="#7364FF" x="224" y="46" width="152" height="8"/>
+          </g>
+          <path d="M56,444 C64.836556,444 72,451.163444 72,460 L72,492 L72,492 L40,492 L40,460 C40,451.163444 47.163444,444 56,444 Z" id="Rectangle" fill="#5628D2"/>
+          <path d="M260,444 C268.836556,444 276,451.163444 276,460 L276,492 L276,492 L244,492 L244,460 C244,451.163444 251.163444,444 260,444 Z" id="Rectangle" fill="#7364FF"/>
+          <path d="M152,444 C160.836556,444 168,451.163444 168,460 L168,492 L168,492 L136,492 L136,460 C136,451.163444 143.163444,444 152,444 Z" id="Rectangle" fill="#7364FF"/>
+          <path d="M104,444 C112.836556,444 120,451.163444 120,460 L120,492 L120,492 L88,492 L88,460 C88,451.163444 95.163444,444 104,444 Z" id="Rectangle" fill="#7364FF"/>
+          <path d="M308,444 C316.836556,444 324,451.163444 324,460 L324,492 L324,492 L292,492 L292,460 C292,451.163444 299.163444,444 308,444 Z" id="Rectangle" fill="#5628D2"/>
+          <path d="M200,444 C208.836556,444 216,451.163444 216,460 L216,492 L216,492 L184,492 L184,460 C184,451.163444 191.163444,444 200,444 Z" id="Rectangle" fill="#7364FF"/>
+          <rect id="Rectangle" fill="#7364FF" x="240" y="492" width="152" height="8"/>
+          <rect id="Rectangle" fill="#A39FFF" x="16" y="492" width="224" height="8"/>
+          <path d="M127.5,548 C138.269553,548 147,556.730447 147,567.5 L147,620 L147,620 L108,620 L108,567.5 C108,556.730447 116.730447,548 127.5,548 Z" id="Rectangle" fill="#7364FF"/>
+          <rect id="Rectangle" fill="#7364FF" x="40" y="548" width="54" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="162" y="548" width="54" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="256" y="548" width="104" height="56"/>
+          <circle id="Oval" fill="#7364FF" cx="260" cy="78" r="12"/>
+          <circle id="Oval" fill="#7364FF" cx="308" cy="78" r="12"/>
+          <path d="M356,444 C364.836556,444 372,451.163444 372,460 L372,492 L372,492 L340,492 L340,460 C340,451.163444 347.163444,444 356,444 Z" id="Rectangle" fill="#5628D2"/>
+          <circle id="Oval" fill="#7364FF" cx="356" cy="78" r="12"/>
+        </g>
+      </g>
+      <g id="Building/Large" transform="translate(539.000000, 0.000000) scale(0.8602941176470589 0.8612903225806452)">
+        <g id="Building/Large/6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="Rectangle-Copy" fill="#A39FFF" x="240" y="-54" width="20" height="84" rx="10"/>
+          <rect id="Rectangle-Copy-2" fill="#A39FFF" x="268" y="-54" width="20" height="84" rx="10"/>
+          <rect id="Rectangle" fill="#CECCFF" x="8" y="0" width="288" height="620"/>
+          <rect id="Rectangle" fill="#A39FFF" x="296" y="0" width="104" height="620"/>
+          <rect id="Rectangle" fill="#5628D2" x="120" y="548" width="48" height="72"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="156" width="240" height="56"/>
+          <rect id="Rectangle-Copy-3" fill="#7364FF" x="24" y="60" width="240" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="348" width="240" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="252" width="240" height="56"/>
+          <rect id="Rectangle" fill="#FFC30D" x="323" y="156" width="48" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="348" width="48" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="56" width="48" height="60"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="252" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="444" width="240" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="323" y="444" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="200" y="548" width="64" height="56"/>
+          <rect id="Rectangle-Copy" fill="#7364FF" x="24" y="548" width="64" height="56"/>
+          <rect id="Rectangle" fill="#E8E7FF" x="0" y="-16" width="304" height="32"/>
+          <rect id="Rectangle" fill="#CECCFF" x="304" y="-16" width="104" height="32"/>
+        </g>
+      </g>
+      <g id="Building/Large" transform="translate(810.000000, 0.000000) scale(0.8602941176470589 0.8612903225806452)">
+        <g id="Building/Large/3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="Rectangle" fill="#A39FFF" x="81" y="51" width="20" height="60" rx="10"/>
+          <rect id="Rectangle" fill="#A39FFF" x="109" y="27" width="20" height="60" rx="10"/>
+          <polygon id="Rectangle" fill="#7364FF" points="48 112 256 0 256 620 48 620"/>
+          <rect id="Rectangle" fill="#5628D2" x="256" y="0" width="128" height="620"/>
+          <path d="M152,540 C165.254834,540 176,550.745166 176,564 L176,620 L176,620 L128,620 L128,564 C128,550.745166 138.745166,540 152,540 Z" id="Rectangle" fill="#5628D2"/>
+          <rect id="Rectangle" fill="#370EA3" x="64" y="156" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#FFC30D" x="64" y="348" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="64" y="252" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="128" y="156" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="128" y="348" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="128" y="252" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#FFC30D" x="192" y="156" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="192" y="348" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="192" y="252" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#370EA3" x="280" y="156" width="80" height="56" rx="28"/>
+          <rect id="Rectangle" fill="#370EA3" x="280" y="348" width="80" height="56" rx="28"/>
+          <rect id="Rectangle" fill="#370EA3" x="280" y="40" width="80" height="76" rx="28"/>
+          <rect id="Rectangle" fill="#370EA3" x="280" y="252" width="80" height="56" rx="28"/>
+          <rect id="Rectangle" fill="#5628D2" x="64" y="444" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="64" y="540" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="128" y="444" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#370EA3" x="192" y="444" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#5628D2" x="192" y="540" width="48" height="56" rx="24"/>
+          <rect id="Rectangle" fill="#370EA3" x="280" y="444" width="80" height="56" rx="28"/>
+          <rect id="Rectangle" fill="#370EA3" x="280" y="540" width="80" height="56" rx="28"/>
+        </g>
+      </g>
+      <g id="Building/Large" transform="translate(1079.000000, 0.000000) scale(0.8602941176470589 0.8612903225806452)">
+        <g id="Building/Large/1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="Rectangle" fill="#A39FFF" x="250" y="-30" width="36" height="47"/>
+          <rect id="Rectangle" fill="#A39FFF" x="222" y="-22" width="28" height="39"/>
+          <rect id="Rectangle" fill="#7364FF" x="286" y="-30" width="20" height="47"/>
+          <rect id="Rectangle" fill="#7364FF" x="250" y="-22" width="20" height="39"/>
+          <g id="Group" transform="translate(24.000000, 0.000000)">
+            <rect id="Rectangle" fill="#A39FFF" x="8" y="0" width="208" height="620"/>
+            <rect id="Rectangle" fill="#7364FF" x="216" y="0" width="136" height="620"/>
+            <rect id="Rectangle" fill="#5628D2" x="24" y="548" width="48" height="72"/>
+            <rect id="Rectangle" fill="#5628D2" x="24" y="156" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="24" y="348" width="48" height="56"/>
+            <rect id="Rectangle" fill="#370EA3" x="24" y="40" width="48" height="76"/>
+            <rect id="Rectangle" fill="#5628D2" x="24" y="252" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="88" y="156" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="88" y="348" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="88" y="40" width="48" height="76"/>
+            <rect id="Rectangle" fill="#5628D2" x="88" y="252" width="48" height="56"/>
+            <rect id="Rectangle" fill="#CECCFF" x="152" y="156" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="152" y="348" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="152" y="40" width="48" height="76"/>
+            <rect id="Rectangle" fill="#5628D2" x="152" y="252" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="243" y="156" width="88" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="243" y="348" width="88" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="243" y="40" width="88" height="76"/>
+            <rect id="Rectangle" fill="#5628D2" x="243" y="252" width="88" height="56"/>
+            <rect id="Rectangle" fill="#CECCFF" x="24" y="444" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="88" y="444" width="48" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="152" y="444" width="48" height="56"/>
+            <rect id="Rectangle" fill="#FFC30D" x="243" y="444" width="88" height="56"/>
+            <rect id="Rectangle" fill="#370EA3" x="88" y="548" width="112" height="56"/>
+            <rect id="Rectangle" fill="#5628D2" x="244" y="548" width="88" height="56"/>
+            <rect id="Rectangle" fill="#E8E7FF" x="0" y="0" width="224" height="16"/>
+            <rect id="Rectangle" fill="#A39FFF" x="224" y="0" width="136" height="16"/>
+          </g>
+        </g>
+      </g>
+      <g id="Building/Medium" transform="translate(1332.000000, 226.000000) scale(1 1)">
+        <g id="Building/Medium/2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <rect id="Rectangle" fill="#CECCFF" x="8" y="0" width="208" height="308"/>
+          <rect id="Rectangle" fill="#7364FF" x="216" y="0" width="104" height="308"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="236" width="48" height="72"/>
+          <rect id="Rectangle" fill="#5628D2" x="24" y="131" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="24" y="43" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="88" y="131" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="88" y="43" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="152" y="131" width="48" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="152" y="43" width="48" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="244" y="131" width="48" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="244" y="43" width="48" height="56"/>
+          <rect id="Rectangle" fill="#7364FF" x="88" y="236" width="112" height="56"/>
+          <rect id="Rectangle" fill="#5628D2" x="244" y="236" width="48" height="56"/>
+          <rect id="Rectangle" fill="#E8E7FF" x="0" y="-8" width="224" height="16"/>
+          <rect id="Rectangle" fill="#A39FFF" x="224" y="-8" width="104" height="16"/>
+        </g>
+      </g>
+    </g>
+    <g id="Cars" transform="translate(76.000000, 1159.000000)">
+      <g id="Transport" transform="translate(235.000000, 0.000000) scale(1 1)">
+        <g id="Transport/Pickup Truck" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group" transform="translate(48.000000, 40.000000)">
+            <path d="M10.5070742,29 L212,29 C216.418278,29 220,32.581722 220,37 L220,50 C220,61.5979797 210.59798,71 199,71 L4.63272881,71 C2.42358981,71 0.632728812,69.209139 0.632728812,67 C0.632728812,66.8048106 0.64701587,66.6098831 0.675475475,66.4167796 L5.56050751,33.2709745 C5.92208142,30.8176317 8.02723007,29 10.5070742,29 Z" id="Rectangle" fill="#7364FF" transform="translate(110.000000, 50.000000) scale(1, -1) translate(-110.000000, -50.000000)"/>
+            <path d="M99.8421053,0 L130.497088,0 L160.157895,0 L153.938385,25.1981621 C153.38725,27.4310669 151.383982,29 149.084066,29 L106.641772,29 C104.024286,29 101.849788,26.9812953 101.655557,24.3710251 L99.8421053,0 L99.8421053,0 Z" id="Rectangle" fill="#5628D2" transform="translate(130.000000, 14.500000) scale(1, -1) translate(-130.000000, -14.500000)"/>
+            <path d="M28.5039262,41 L60,41 C70.4934102,41 79,49.5065898 79,60 L79,74 C79,76.7614237 76.7614237,79 74,79 L14.3323642,79 C12.6755099,79 11.3323642,77.6568542 11.3323642,76 C11.3323642,75.895099 11.3378663,75.7902702 11.3488478,75.6859456 L13.5863444,54.4297282 C14.3899445,46.7955275 20.8275472,41 28.5039262,41 Z" id="Rectangle" fill="#A39FFF"/>
+            <path d="M168.708886,41 L206,41 C216.49341,41 225,49.5065898 225,60 L225,76 C225,77.6568542 223.656854,79 222,79 L154.891613,79 C153.234759,79 151.891613,77.6568542 151.891613,76 C151.891613,75.7423207 151.924812,75.4857152 151.990389,75.2365201 L159.03814,48.455067 C160.194227,44.0619364 164.166185,41 168.708886,41 Z" id="Rectangle-Copy" fill="#A39FFF"/>
+            <path d="M38.307614,54 L52,54 C60.2842712,54 67,60.7157288 67,69 L67,79 L67,79 L22,79 L23.4144614,67.2128217 C24.319133,59.6738917 30.7145977,54 38.307614,54 Z" id="Rectangle" fill="#370EA3"/>
+            <path d="M188,54 L200,54 C208.284271,54 215,60.7157288 215,69 L215,79 L215,79 L173,79 L173,69 C173,60.7157288 179.715729,54 188,54 Z" id="Rectangle-Copy-2" fill="#370EA3"/>
+            <path d="M145.441448,6 L151.125026,29 L160.157895,29 L159.599343,7.38022444 C159.487932,6.97397249 159.237536,6.62891638 158.903527,6.38542325 C158.569518,6.14193013 158.151897,6 157.706037,6 L145.441448,6 Z" id="Combined-Shape" fill="#A39FFF" transform="translate(152.799672, 17.500000) scale(-1, -1) translate(-152.799672, -17.500000)"/>
+            <circle id="Oval" fill="#5628D2" cx="45" cy="78" r="16"/>
+            <circle id="Oval" fill="#E8E7FF" cx="45" cy="78" r="8"/>
+            <circle id="Oval" fill="#5628D2" cx="195" cy="78" r="16"/>
+            <circle id="Oval" fill="#E8E7FF" cx="195" cy="78" r="8"/>
+            <path d="M109.833634,6 L141,6 C142.104569,6 143,6.8954305 143,8 L143,27 C143,28.1045695 142.104569,29 141,29 L108.18146,29 C107.076891,29 106.18146,28.1045695 106.18146,27 C106.18146,26.9421654 106.183969,26.884358 106.188979,26.8267408 L107.841153,7.82674077 C107.931024,6.79322554 108.796219,6 109.833634,6 Z" id="Rectangle" fill="#A39FFF"/>
+          </g>
+        </g>
+      </g>
+      <g id="Transport" transform="translate(2003.000000, 0.000000) scale(1 1)">
+        <g id="Transport/Pickup Truck" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group" transform="translate(48.000000, 40.000000)">
+            <path d="M10.5070742,29 L212,29 C216.418278,29 220,32.581722 220,37 L220,50 C220,61.5979797 210.59798,71 199,71 L4.63272881,71 C2.42358981,71 0.632728812,69.209139 0.632728812,67 C0.632728812,66.8048106 0.64701587,66.6098831 0.675475475,66.4167796 L5.56050751,33.2709745 C5.92208142,30.8176317 8.02723007,29 10.5070742,29 Z" id="Rectangle" fill="#7364FF" transform="translate(110.000000, 50.000000) scale(1, -1) translate(-110.000000, -50.000000)"/>
+            <path d="M99.8421053,0 L130.497088,0 L160.157895,0 L153.938385,25.1981621 C153.38725,27.4310669 151.383982,29 149.084066,29 L106.641772,29 C104.024286,29 101.849788,26.9812953 101.655557,24.3710251 L99.8421053,0 L99.8421053,0 Z" id="Rectangle" fill="#5628D2" transform="translate(130.000000, 14.500000) scale(1, -1) translate(-130.000000, -14.500000)"/>
+            <path d="M28.5039262,41 L60,41 C70.4934102,41 79,49.5065898 79,60 L79,74 C79,76.7614237 76.7614237,79 74,79 L14.3323642,79 C12.6755099,79 11.3323642,77.6568542 11.3323642,76 C11.3323642,75.895099 11.3378663,75.7902702 11.3488478,75.6859456 L13.5863444,54.4297282 C14.3899445,46.7955275 20.8275472,41 28.5039262,41 Z" id="Rectangle" fill="#A39FFF"/>
+            <path d="M168.708886,41 L206,41 C216.49341,41 225,49.5065898 225,60 L225,76 C225,77.6568542 223.656854,79 222,79 L154.891613,79 C153.234759,79 151.891613,77.6568542 151.891613,76 C151.891613,75.7423207 151.924812,75.4857152 151.990389,75.2365201 L159.03814,48.455067 C160.194227,44.0619364 164.166185,41 168.708886,41 Z" id="Rectangle-Copy" fill="#A39FFF"/>
+            <path d="M38.307614,54 L52,54 C60.2842712,54 67,60.7157288 67,69 L67,79 L67,79 L22,79 L23.4144614,67.2128217 C24.319133,59.6738917 30.7145977,54 38.307614,54 Z" id="Rectangle" fill="#370EA3"/>
+            <path d="M188,54 L200,54 C208.284271,54 215,60.7157288 215,69 L215,79 L215,79 L173,79 L173,69 C173,60.7157288 179.715729,54 188,54 Z" id="Rectangle-Copy-2" fill="#370EA3"/>
+            <path d="M145.441448,6 L151.125026,29 L160.157895,29 L159.599343,7.38022444 C159.487932,6.97397249 159.237536,6.62891638 158.903527,6.38542325 C158.569518,6.14193013 158.151897,6 157.706037,6 L145.441448,6 Z" id="Combined-Shape" fill="#A39FFF" transform="translate(152.799672, 17.500000) scale(-1, -1) translate(-152.799672, -17.500000)"/>
+            <circle id="Oval" fill="#5628D2" cx="45" cy="78" r="16"/>
+            <circle id="Oval" fill="#E8E7FF" cx="45" cy="78" r="8"/>
+            <circle id="Oval" fill="#5628D2" cx="195" cy="78" r="16"/>
+            <circle id="Oval" fill="#E8E7FF" cx="195" cy="78" r="8"/>
+            <path d="M109.833634,6 L141,6 C142.104569,6 143,6.8954305 143,8 L143,27 C143,28.1045695 142.104569,29 141,29 L108.18146,29 C107.076891,29 106.18146,28.1045695 106.18146,27 C106.18146,26.9421654 106.183969,26.884358 106.188979,26.8267408 L107.841153,7.82674077 C107.931024,6.79322554 108.796219,6 109.833634,6 Z" id="Rectangle" fill="#A39FFF"/>
+          </g>
+        </g>
+      </g>
+      <g id="Transport" transform="scale(1 1)">
+        <g id="Transport/School Bus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group" transform="translate(5.000000, 0.000000)">
+            <path d="M10,0 L253,0 C258.522847,-1.01453063e-15 263,4.4771525 263,10 L263,113 C263,114.656854 261.656854,116 260,116 L3,116 C1.34314575,116 2.02906125e-16,114.656854 0,113 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="Rectangle" fill="#CECCFF"/>
+            <path d="M71,78 L91,78 C101.49341,78 110,86.5065898 110,97 L110,113 C110,114.656854 108.656854,116 107,116 L55,116 C53.3431458,116 52,114.656854 52,113 L52,97 C52,86.5065898 60.5065898,78 71,78 Z" id="Rectangle-Copy-8" fill="#A39FFF"/>
+            <path d="M75,91 L87,91 C95.2842712,91 102,97.7157288 102,106 L102,116 L102,116 L60,116 L60,106 C60,97.7157288 66.7157288,91 75,91 Z" id="Rectangle-Copy-9" fill="#370EA3"/>
+            <circle id="Oval" fill="#5628D2" cx="81.5" cy="115.5" r="18.5"/>
+            <path d="M255,47.7498051 L304.484856,73.1796949 C308.485091,75.2353851 311,79.3553292 311,83.8528555 L311,116 L311,116 L255,116 L255,47.7498051 Z" id="Rectangle" fill="#CECCFF"/>
+            <path d="M263,78 L292,78 C302.49341,78 311,86.5065898 311,97 L311,113 C311,114.656854 309.656854,116 308,116 L256,116 C254.343146,116 253,114.656854 253,113 L253,88 C253,82.4771525 257.477153,78 263,78 Z" id="Rectangle-Copy-3" fill="#A39FFF"/>
+            <path d="M276,91 L288,91 C296.284271,91 303,97.7157288 303,106 L303,116 L303,116 L261,116 L261,106 C261,97.7157288 267.715729,91 276,91 Z" id="Rectangle-Copy-4" fill="#370EA3"/>
+            <circle id="Oval" fill="#E8E7FF" cx="81.5" cy="115.5" r="9.5"/>
+            <circle id="Oval" fill="#5628D2" cx="282.5" cy="115.5" r="18.5"/>
+            <circle id="Oval" fill="#E8E7FF" cx="282.5" cy="115.5" r="9.5"/>
+            <rect id="Rectangle" fill="#5628D2" x="213" y="22" width="35" height="88"/>
+            <rect id="Rectangle-Copy" fill="#5628D2" x="171" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-6" fill="#5628D2" x="255" y="22" width="8" height="30"/>
+            <rect id="Rectangle-Copy-2" fill="#5628D2" x="135" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-3" fill="#5628D2" x="99" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-4" fill="#5628D2" x="63" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-5" fill="#5628D2" x="27" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-7" fill="#5628D2" x="0" y="22" width="24" height="26"/>
+            <rect id="Rectangle" fill="#5628D2" x="0" y="63" width="213" height="9"/>
+          </g>
+        </g>
+      </g>
+      <g id="Transport" transform="translate(1768.000000, 0.000000) scale(1 1)">
+        <g id="Transport/School Bus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group" transform="translate(5.000000, 0.000000)">
+            <path d="M10,0 L253,0 C258.522847,-1.01453063e-15 263,4.4771525 263,10 L263,113 C263,114.656854 261.656854,116 260,116 L3,116 C1.34314575,116 2.02906125e-16,114.656854 0,113 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="Rectangle" fill="#CECCFF"/>
+            <path d="M71,78 L91,78 C101.49341,78 110,86.5065898 110,97 L110,113 C110,114.656854 108.656854,116 107,116 L55,116 C53.3431458,116 52,114.656854 52,113 L52,97 C52,86.5065898 60.5065898,78 71,78 Z" id="Rectangle-Copy-8" fill="#A39FFF"/>
+            <path d="M75,91 L87,91 C95.2842712,91 102,97.7157288 102,106 L102,116 L102,116 L60,116 L60,106 C60,97.7157288 66.7157288,91 75,91 Z" id="Rectangle-Copy-9" fill="#370EA3"/>
+            <circle id="Oval" fill="#5628D2" cx="81.5" cy="115.5" r="18.5"/>
+            <path d="M255,47.7498051 L304.484856,73.1796949 C308.485091,75.2353851 311,79.3553292 311,83.8528555 L311,116 L311,116 L255,116 L255,47.7498051 Z" id="Rectangle" fill="#CECCFF"/>
+            <path d="M263,78 L292,78 C302.49341,78 311,86.5065898 311,97 L311,113 C311,114.656854 309.656854,116 308,116 L256,116 C254.343146,116 253,114.656854 253,113 L253,88 C253,82.4771525 257.477153,78 263,78 Z" id="Rectangle-Copy-3" fill="#A39FFF"/>
+            <path d="M276,91 L288,91 C296.284271,91 303,97.7157288 303,106 L303,116 L303,116 L261,116 L261,106 C261,97.7157288 267.715729,91 276,91 Z" id="Rectangle-Copy-4" fill="#370EA3"/>
+            <circle id="Oval" fill="#E8E7FF" cx="81.5" cy="115.5" r="9.5"/>
+            <circle id="Oval" fill="#5628D2" cx="282.5" cy="115.5" r="18.5"/>
+            <circle id="Oval" fill="#E8E7FF" cx="282.5" cy="115.5" r="9.5"/>
+            <rect id="Rectangle" fill="#5628D2" x="213" y="22" width="35" height="88"/>
+            <rect id="Rectangle-Copy" fill="#5628D2" x="171" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-6" fill="#5628D2" x="255" y="22" width="8" height="30"/>
+            <rect id="Rectangle-Copy-2" fill="#5628D2" x="135" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-3" fill="#5628D2" x="99" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-4" fill="#5628D2" x="63" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-5" fill="#5628D2" x="27" y="22" width="33" height="26"/>
+            <rect id="Rectangle-Copy-7" fill="#5628D2" x="0" y="22" width="24" height="26"/>
+            <rect id="Rectangle" fill="#5628D2" x="0" y="63" width="213" height="9"/>
+          </g>
+        </g>
+      </g>
+      <g id="Transport" transform="translate(494.000000, 0.000000) scale(1 1)">
+        <g id="Transport/Sedan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Group" transform="translate(37.000000, 54.000000)">
+            <path d="M0,28 L181,28 L230.630362,32.6564276 C237.755695,33.3249418 243.416362,38.9339796 244.150132,46.052889 L245.545434,59.5898795 C245.771937,61.7873761 244.174132,63.7524163 241.976635,63.9789196 C241.840379,63.9929639 241.703492,64 241.566515,64 L4.18282744,64 C1.98260471,64 0.195458644,62.2230317 0.182892676,60.0228449 L0,28 L0,28 Z" id="Rectangle" fill="#7364FF"/>
+            <path d="M9.05087575,0 L157.088115,0 C157.687135,-4.32888575e-15 158.254617,0.268498049 158.634499,0.731655718 L181,28 L181,28 L0,28 L5.13385422,3.1894802 C5.51818937,1.33209308 7.15414161,1.23660283e-15 9.05087575,0 Z" id="Rectangle" fill="#A39FFF"/>
+            <path d="M155.702026,4 C156.27278,4 156.807384,4.14810101 157.234954,4.40218079 C157.520001,4.57156731 164.10835,12.437507 177,28 L177,28 L129,28 L129,4 Z M124,28 L86.0553508,28 C85.7578425,28 85.461989,27.9557457 85.1775027,27.86869 C83.5931689,27.3838679 82.7018386,25.7064856 83.1866608,24.1221518 L83.1866608,24.1221518 L88.9035167,5.4402342 C89.0461355,5.01631912 89.3666722,4.65626057 89.7942426,4.40218079 C90.2218131,4.14810101 90.7564172,4 91.327171,4 L91.327171,4 L124,4 L124,28 Z" id="Combined-Shape" fill="#5628D2"/>
+            <path d="M8.01103666,4 C7.53745148,4 7.09386157,4.14810101 6.73908334,4.40218079 C6.3843051,4.65626057 6.11833853,5.01631912 6,5.4402342 L10.0991462,25.5978289 C10.3833955,26.9956282 11.6125679,28 13.0389762,28 L82.6487843,28 C83.2010691,28 83.6487843,27.5522847 83.6487843,27 C83.6487843,26.9009653 83.6340729,26.8024799 83.6051318,26.7077682 L77.1063967,5.4402342 L77.1063967,5.4402342 C76.9880582,5.01631912 76.7220916,4.65626057 76.3673133,4.40218079 C76.0125351,4.14810101 75.5689452,4 75.09536,4 L8.01103666,4 Z" id="Combined-Shape-Copy" fill="#5628D2" transform="translate(44.824392, 16.000000) scale(1, -1) translate(-44.824392, -16.000000)"/>
+            <circle id="Oval" fill="#370EA3" cx="55" cy="64" r="16"/>
+            <circle id="Oval" fill="#E8E7FF" cx="55" cy="64" r="8"/>
+            <circle id="Oval" fill="#370EA3" cx="198" cy="64" r="16"/>
+            <circle id="Oval" fill="#E8E7FF" cx="198" cy="64" r="8"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

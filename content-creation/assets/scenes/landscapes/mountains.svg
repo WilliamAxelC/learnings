@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="105.00000000000011 345 1004.9999999999999 509.9999999999998" overflow="visible" width="1004.9999999999999px" height="509.9999999999998px">
+  <g id="Master/Sticker/Mountains" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Mountain-Group" transform="translate(105.000000, 352.000000)">
+      <g id="Mountain" transform="translate(0.000000, 90.000000)" fill="#CECCFF">
+        <polygon id="Mountain-Body" points="296.627827 0 607 406 -1.7694336e-12 406 109.864414 195.767728 185.315325 152.355482"/>
+      </g>
+      <g id="Mountain" transform="translate(117.000000, 0.000000)" fill="#A39FFF">
+        <polygon id="Mountain-Body" points="417.438339 0 468.352978 5.74594476 668 496 -2.21644231e-12 496 69.3771739 361.566119 170.08547 301.266676 211.230286 219.24133 286.003885 172.208378"/>
+      </g>
+      <g id="Mountain" transform="translate(420.000000, 209.000000)" fill="#7364FF">
+        <polygon id="Mountain-Body" points="297.172913 0 444.438542 168.736118 536.125727 211.375237 571 287 -2.17954127e-12 287 55.2319238 223.715577 122.45357 200.192427"/>
+      </g>
+    </g>
+  </g>
+</svg>

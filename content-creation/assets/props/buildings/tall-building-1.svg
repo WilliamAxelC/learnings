@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="285 120.00000000000011 629.9999999999999 960.0000000000002" overflow="visible" width="629.9999999999999px" height="960.0000000000002px">
+  <g id="Master/Sticker/Tall Building 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group-7" transform="translate(293.000000, 121.000000)">
+      <rect id="Rectangle" fill="#7364FF" x="12" y="24" width="433" height="934"/>
+      <rect id="Rectangle" fill="#A39FFF" x="36" y="791" width="361" height="167"/>
+      <path d="M107,720 L326,720 C365.212217,720 397,751.787783 397,791 L397,791 L397,791 L36,791 C36,751.787783 67.7877828,720 107,720 Z" id="Rectangle" fill="#5628D2"/>
+      <rect id="Rectangle" fill="#5628D2" x="445" y="24" width="157" height="934"/>
+      <path d="M217,813 C236.882251,813 253,829.117749 253,849 L253,958 L253,958 L181,958 L181,849 C181,829.117749 197.117749,813 217,813 Z" id="Rectangle" fill="#5628D2"/>
+      <path d="M120,813 C139.882251,813 156,829.117749 156,849 L156,958 L156,958 L84,958 L84,849 C84,829.117749 100.117749,813 120,813 Z" id="Rectangle-Copy" fill="#5628D2"/>
+      <path d="M313,813 C332.882251,813 349,829.117749 349,849 L349,958 L349,958 L277,958 L277,849 C277,829.117749 293.117749,813 313,813 Z" id="Rectangle-Copy-2" fill="#5628D2"/>
+      <path d="M522,813 C541.882251,813 558,829.117749 558,849 L558,958 L558,958 L486,958 L486,849 C486,829.117749 502.117749,813 522,813 Z" id="Rectangle-Copy-3" fill="#370EA3"/>
+      <path d="M72,84 C91.882251,84 108,100.117749 108,120 L108,693 L108,693 L36,693 L36,120 C36,100.117749 52.117749,84 72,84 Z" id="Rectangle" fill="#CECCFF"/>
+      <path d="M169,84 C188.882251,84 205,100.117749 205,120 L205,693 L205,693 L133,693 L133,120 C133,100.117749 149.117749,84 169,84 Z" id="Rectangle" fill="#CECCFF"/>
+      <path d="M265,84 C284.882251,84 301,100.117749 301,120 L301,693 L301,693 L229,693 L229,120 C229,100.117749 245.117749,84 265,84 Z" id="Rectangle" fill="#CECCFF"/>
+      <path d="M361,84 C380.882251,84 397,100.117749 397,120 L397,693 L397,693 L325,693 L325,120 C325,100.117749 341.117749,84 361,84 Z" id="Rectangle" fill="#FFC30D"/>
+      <path d="M522,84 C541.882251,84 558,100.117749 558,120 L558,693 L558,693 L486,693 L486,120 C486,100.117749 502.117749,84 522,84 Z" id="Rectangle" fill="#A39FFF"/>
+      <rect id="Rectangle" fill="#5628D2" x="0" y="0" width="457" height="48"/>
+      <rect id="Rectangle" fill="#370EA3" x="457" y="0" width="157" height="48"/>
+    </g>
+  </g>
+</svg>

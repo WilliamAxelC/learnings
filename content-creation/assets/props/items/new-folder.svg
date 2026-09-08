@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="325 337.5 412.5000000000001 324.9999999999997" fill="none" overflow="visible" width="412.5000000000001px" height="324.9999999999997px">
+  <g id="Master/Stickers/New Folder">
+    <path id="Rectangle" fill-rule="evenodd" clip-rule="evenodd" d="M406.093 413.637C406.093 408.867 409.96 405 414.729 405H672.986C678.072 405 682.057 409.373 681.586 414.437L661.1 634.495C660.68 639.008 656.842 642.429 652.31 642.329L414.538 637.065C409.844 636.961 406.093 633.126 406.093 628.43V413.637Z" fill="#FFEBA9"/>
+    <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M343.477 406.003C339.9 406.003 337 408.903 337 412.48V431.913V462.141V652.146C337 654.531 338.933 656.465 341.318 656.465H656.554C658.939 656.465 660.873 654.531 660.873 652.146V431.913C660.873 429.528 658.939 427.595 656.554 427.595H451.435V412.48C451.435 408.903 448.535 406.003 444.958 406.003H343.477Z" fill="#F7D36A"/>
+    <circle id="Ellipse 1" cx="660.5" cy="424.5" r="75.5" fill="#58DA63"/>
+    <g id="Group 28">
+      <rect id="Rectangle 5" x="669.651" y="385.605" width="81.2197" height="17.1591" transform="rotate(90 669.651 385.605)" fill="white"/>
+      <rect id="Rectangle 6" x="620.441" y="417.73" width="81.2197" height="17.1591" transform="rotate(-0.134294 620.441 417.73)" fill="white"/>
+    </g>
+  </g>
+</svg>

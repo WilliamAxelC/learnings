@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:blush="http://design.blush" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="300 362.5 399.9999999999998 387.50000000000006" fill="none" overflow="visible" width="399.9999999999998px" height="387.50000000000006px">
+  <g id="Master/Stickers/Clock">
+    <g id="Clock">
+      <circle id="Clock Frame" cx="499.5" cy="553.5" r="188.5" fill="#F2F2F2"/>
+      <circle id="Time" cx="499.5" cy="404.122" r="10.6698" fill="black" fill-opacity="0.1"/>
+      <circle id="Time_2" cx="350.122" cy="553.5" r="10.6698" fill="black" fill-opacity="0.1"/>
+      <circle id="Time_3" cx="648.877" cy="553.5" r="10.6698" fill="black" fill-opacity="0.1"/>
+      <circle id="Time_4" cx="499.5" cy="702.877" r="10.6698" fill="black" fill-opacity="0.1"/>
+      <path id="Hand" fill-rule="evenodd" clip-rule="evenodd" d="M499.5 425.462L506.613 549.944H492.387L499.5 425.462Z" fill="#AFB9C5"/>
+      <path id="Hand_2" fill-rule="evenodd" clip-rule="evenodd" d="M562.447 616.446L497.059 561.119L507.119 551.059L562.447 616.446Z" fill="#AFB9C5"/>
+      <circle id="Time_5" cx="499.5" cy="553.5" r="14.2264" fill="#C5CFD6"/>
+    </g>
+  </g>
+</svg>
