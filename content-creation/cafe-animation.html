@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>POV: Buka Cafe Kekinian - Konglo Style Animation</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0b0f19;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1920px;
+      height: 1080px;
+      color: #fff;
+    }
+
+    #stage {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #111827;
+    }
+
+    /* Scene Containers */
+    .scene {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      transform-origin: center center;
+    }
+    .scene.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Top Video Watermark / Channel Header */
+    .top-bar {
+      position: absolute;
+      top: 40px;
+      left: 60px;
+      right: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 50;
+    }
+    .series-badge {
+      background: #f59e0b;
+      color: #000;
+      font-weight: 900;
+      font-size: 20px;
+      padding: 8px 20px;
+      border-radius: 9999px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    }
+    .topic-pill {
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      padding: 8px 24px;
+      border-radius: 9999px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+
+    /* Big Punchy Subtitle Bar (Konglo / Viral Reel style) */
+    .subtitle-box {
+      position: absolute;
+      bottom: 60px;
+      left: 100px;
+      right: 100px;
+      text-align: center;
+      z-index: 60;
+      pointer-events: none;
+    }
+    .subtitle-text {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.85);
+      border: 3px solid #f59e0b;
+      border-radius: 20px;
+      padding: 18px 40px;
+      font-size: 34px;
+      font-weight: 900;
+      line-height: 1.3;
+      color: #ffffff;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+      max-width: 1500px;
+    }
+    .hl-yellow { color: #fbbf24; }
+    .hl-red { color: #ef4444; }
+    .hl-green { color: #10b981; }
+
+    /* Floating Cartoon Badges with bounce */
+    .sticker {
+      position: absolute;
+      padding: 14px 28px;
+      border-radius: 16px;
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+      z-index: 20;
+      border: 3px solid #fff;
+    }
+
+    /* -------------------------------------------------------------
+       SCENE 1: EKSPEKTASI MODAL 200 JUTA
+       ------------------------------------------------------------- */
+    #scene1 {
+      background: radial-gradient(circle at 50% 40%, #1e293b 0%, #0f172a 100%);
+    }
+
+    /* -------------------------------------------------------------
+       SCENE 2: REALITA ES TEH & COLOKAN
+       ------------------------------------------------------------- */
+    #scene2 {
+      background: radial-gradient(circle at 50% 40%, #1e1b4b 0%, #0f172a 100%);
+    }
+
+    /* -------------------------------------------------------------
+       SCENE 3: BONCOS & PEMBUKUAN JEBOL
+       ------------------------------------------------------------- */
+    #scene3 {
+      background: radial-gradient(circle at 50% 40%, #450a0a 0%, #180505 100%);
+    }
+
+    /* -------------------------------------------------------------
+       SCENE 4: KESIMPULAN & SEWA COLOKAN
+       ------------------------------------------------------------- */
+    #scene4 {
+      background: radial-gradient(circle at 50% 40%, #064e3b 0%, #022c22 100%);
+    }
+
+    /* Comic Speed Lines for high tension */
+    .speed-lines {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-conic-gradient(from 0deg, rgba(255,255,255,0.03) 0deg 10deg, transparent 10deg 20deg);
+      pointer-events: none;
+      animation: spinLines 20s linear infinite;
+    }
+    @keyframes spinLines {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="stage">
+    <!-- Header -->
+    <div class="top-bar">
+      <div class="series-badge">POV BISNIS #01</div>
+      <div class="topic-pill">☕ Buka Cafe Kekinian: Ekspektasi vs Realita</div>
+    </div>
+
+    <!-- ==============================================================
+         SCENE 1: Modal 200 Juta, Cafe Estetik (00:00 - 09.62s)
+         ============================================================== -->
+    <div class="scene" id="scene1">
+      <svg width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;top:0;left:0;">
+        <!-- Warm Cafe Interior Vector Art -->
+        <rect x="0" y="700" width="1920" height="380" fill="#334155"/>
+        <rect x="0" y="690" width="1920" height="20" fill="#cbd5e1"/>
+        
+        <!-- Big Cafe Counter -->
+        <rect x="250" y="520" width="1420" height="260" rx="16" fill="#1e293b" stroke="#475569" stroke-width="4"/>
+        <rect x="280" y="550" width="1360" height="30" fill="#0f172a" rx="6"/>
+
+        <!-- Espresso Machine -->
+        <rect x="360" y="360" width="280" height="180" rx="12" fill="#e2e8f0" stroke="#94a3b8" stroke-width="4"/>
+        <rect x="390" y="420" width="220" height="60" rx="6" fill="#475569"/>
+        <circle cx="440" cy="450" r="16" fill="#ef4444"/>
+        <circle cx="500" cy="450" r="16" fill="#10b981"/>
+        <circle cx="560" cy="450" r="16" fill="#3b82f6"/>
+        <!-- Steam rising -->
+        <path d="M 440 330 Q 430 300 450 270" stroke="#94a3b8" stroke-width="4" fill="none" opacity="0.6"/>
+        <path d="M 500 340 Q 520 310 490 280" stroke="#94a3b8" stroke-width="4" fill="none" opacity="0.6"/>
+
+        <!-- Aesthetic Plant -->
+        <rect x="1380" y="420" width="120" height="120" rx="12" fill="#b45309"/>
+        <ellipse cx="1440" cy="350" rx="80" ry="110" fill="#10b981"/>
+        <ellipse cx="1490" cy="370" rx="60" ry="90" fill="#059669"/>
+        <ellipse cx="1390" cy="380" rx="60" ry="90" fill="#34d399"/>
+
+        <!-- Cartoon Character: The Confident Hipster Owner -->
+        <g id="s1Char" transform="translate(860, 240)">
+          <!-- Body / Trendy Jacket -->
+          <path d="M 50 240 L 170 240 L 190 420 L 30 420 Z" fill="#f59e0b"/>
+          <path d="M 85 240 L 135 240 L 125 360 L 95 360 Z" fill="#ffffff"/>
+          <!-- Head -->
+          <circle cx="110" cy="150" r="80" fill="#fed7aa"/>
+          <!-- Hipster Hair & Beanie -->
+          <path d="M 30 140 Q 110 30 190 140 Q 170 80 110 70 Q 50 80 30 140 Z" fill="#0f172a"/>
+          <ellipse cx="110" cy="85" rx="70" ry="30" fill="#0284c7"/>
+          <!-- Sunglasses (The Cool Guy) -->
+          <rect x="65" y="135" width="40" height="26" rx="6" fill="#000"/>
+          <rect x="115" y="135" width="40" height="26" rx="6" fill="#000"/>
+          <line x1="105" y1="145" x2="115" y2="145" stroke="#000" stroke-width="4"/>
+          <!-- Smug Smile -->
+          <path d="M 85 185 Q 110 215 140 185" stroke="#b45309" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <!-- Coffee Cup in Hand -->
+          <rect x="170" y="270" width="55" height="75" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="3"/>
+          <ellipse cx="197" cy="270" rx="27" ry="8" fill="#78350f"/>
+        </g>
+      </svg>
+
+      <!-- Floating Badges -->
+      <div class="sticker" style="top: 220px; left: 260px; background: #10b981; color: #fff; transform: rotate(-6deg);">
+        💵 MODAL 200 JUTA
+      </div>
+      <div class="sticker" style="top: 260px; right: 280px; background: #3b82f6; color: #fff; transform: rotate(8deg);">
+        ✨ MESIN KOPI ITALIA
+      </div>
+      <div class="sticker" style="top: 360px; right: 220px; background: #f59e0b; color: #000; transform: rotate(-3deg);">
+        🚀 EKSPEKTASI: AUTO SULTAN!
+      </div>
+    </div>
+
+    <!-- ==============================================================
+         SCENE 2: Realita: 1 Es Teh Manis & 8 Jam Colokan (09.62s - 18.43s)
+         ============================================================== -->
+    <div class="scene" id="scene2">
+      <svg width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;top:0;left:0;">
+        <!-- Cafe Table Close-up -->
+        <ellipse cx="960" cy="850" rx="900" ry="320" fill="#1e293b" stroke="#475569" stroke-width="6"/>
+
+        <!-- Laptop Nomad #1 (Left) -->
+        <rect x="280" y="520" width="220" height="150" rx="10" fill="#94a3b8" stroke="#cbd5e1" stroke-width="4"/>
+        <path d="M 240 670 L 540 670 L 510 700 L 270 700 Z" fill="#64748b"/>
+        <circle cx="390" cy="595" r="16" fill="#38bdf8"/>
+
+        <!-- Laptop Nomad #2 (Right) -->
+        <rect x="1420" y="520" width="220" height="150" rx="10" fill="#94a3b8" stroke="#cbd5e1" stroke-width="4"/>
+        <path d="M 1380 670 L 1680 670 L 1650 700 L 1410 700 Z" fill="#64748b"/>
+        <circle cx="1530" cy="595" r="16" fill="#38bdf8"/>
+
+        <!-- THE ICONIC 1 ES TEH MANIS (Center of Table) -->
+        <g id="s2Tea" transform="translate(880, 500)">
+          <!-- Plastic Cup -->
+          <path d="M 40 40 L 140 40 L 125 240 L 55 240 Z" fill="rgba(245, 158, 11, 0.45)" stroke="#fbbf24" stroke-width="4"/>
+          <!-- Tea liquid -->
+          <path d="M 45 90 L 135 90 L 122 235 L 58 235 Z" fill="#b45309"/>
+          <!-- Ice Cubes floating -->
+          <rect x="65" y="105" width="28" height="28" rx="4" fill="rgba(255,255,255,0.7)"/>
+          <rect x="95" y="130" width="26" height="26" rx="4" fill="rgba(255,255,255,0.7)"/>
+          <!-- Straw -->
+          <line x1="90" y1="10" x2="110" y2="230" stroke="#ef4444" stroke-width="8" stroke-linecap="round"/>
+        </g>
+
+        <!-- THE MONSTER TANGLED EXTENSION CORD (COLOKAN) -->
+        <g id="s2Cord" transform="translate(740, 720)">
+          <rect x="80" y="40" width="280" height="70" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="4"/>
+          <!-- 5 Sockets with plugs -->
+          <circle cx="120" cy="75" r="14" fill="#000"/>
+          <circle cx="180" cy="75" r="14" fill="#000"/>
+          <circle cx="240" cy="75" r="14" fill="#000"/>
+          <circle cx="300" cy="75" r="14" fill="#000"/>
+          <!-- Tangled cords going in all directions -->
+          <path d="M 120 75 Q 50 120 -200 40" stroke="#000" stroke-width="6" fill="none"/>
+          <path d="M 180 75 Q 160 160 40 200" stroke="#0284c7" stroke-width="6" fill="none"/>
+          <path d="M 240 75 Q 300 150 500 120" stroke="#ef4444" stroke-width="6" fill="none"/>
+          <path d="M 300 75 Q 420 80 600 -50" stroke="#eab308" stroke-width="6" fill="none"/>
+        </g>
+
+        <!-- Owner Staring with Eye Twitching in Disbelief -->
+        <g id="s2Owner" transform="translate(860, 80)">
+          <circle cx="100" cy="120" r="75" fill="#fed7aa"/>
+          <!-- Disbelief Expression -->
+          <circle cx="75" cy="110" r="12" fill="#000"/>
+          <circle cx="125" cy="110" r="18" fill="#000"/> <!-- One eye wide open -->
+          <path d="M 70 80 L 90 95" stroke="#000" stroke-width="4"/>
+          <path d="M 140 85 L 115 90" stroke="#000" stroke-width="4"/>
+          <!-- Flat wavy mouth -->
+          <path d="M 75 160 Q 90 145 105 160 T 135 155" stroke="#000" stroke-width="5" fill="none"/>
+          <!-- Sweat drops -->
+          <path d="M 160 90 Q 180 110 160 130 Q 145 110 160 90 Z" fill="#38bdf8"/>
+        </g>
+      </svg>
+
+      <div class="sticker" style="top: 480px; left: 450px; background: #ef4444; color: #fff; transform: rotate(-8deg);">
+        🥤 CUMA PESEN ES TEH (RP 5.000)
+      </div>
+      <div class="sticker" style="top: 680px; right: 350px; background: #eab308; color: #000; transform: rotate(5deg);">
+        ⚡ NUMPANG COLOKAN 8 JAM
+      </div>
+      <div class="sticker" style="top: 220px; left: 420px; background: #8b5cf6; color: #fff; transform: rotate(3deg);">
+        📶 AC + WI-FI KENCENG SAMPE MALEM
+      </div>
+    </div>
+
+    <!-- ==============================================================
+         SCENE 3: Boncos & Pembukuan Jebol (18.43s - 29.97s)
+         ============================================================== -->
+    <div class="scene" id="scene3">
+      <div class="speed-lines"></div>
+
+      <svg width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;top:0;left:0;">
+        <!-- Big Financial Disaster Card in Center -->
+        <rect x="560" y="240" width="800" height="520" rx="24" fill="#1e1b4b" stroke="#ef4444" stroke-width="6"/>
+
+        <!-- Header -->
+        <rect x="560" y="240" width="800" height="90" rx="24" fill="#dc2626"/>
+        <text x="960" y="300" font-size="38" font-weight="900" fill="#fff" text-anchor="middle">PEMBUKUAN BULAN KE-1 📉</text>
+
+        <!-- Metrics -->
+        <text x="620" y="400" font-size="32" font-weight="700" fill="#94a3b8">OMSET PENJUALAN:</text>
+        <text x="1300" y="400" font-size="34" font-weight="900" fill="#10b981" text-anchor="end">+ Rp 30.000.000</text>
+
+        <line x1="620" y1="440" x2="1300" y2="440" stroke="#334155" stroke-width="2"/>
+
+        <text x="620" y="490" font-size="28" font-weight="600" fill="#ef4444">• Sewa Ruko:</text>
+        <text x="1300" y="490" font-size="28" font-weight="700" fill="#f87171" text-anchor="end">- Rp 15.000.000</text>
+
+        <text x="620" y="535" font-size="28" font-weight="600" fill="#ef4444">• Listrik AC 24 Jam:</text>
+        <text x="1300" y="535" font-size="28" font-weight="700" fill="#f87171" text-anchor="end">- Rp 8.000.000</text>
+
+        <text x="620" y="580" font-size="28" font-weight="600" fill="#ef4444">• Gaji Barista & Bahan:</text>
+        <text x="1300" y="580" font-size="28" font-weight="700" fill="#f87171" text-anchor="end">- Rp 12.000.000</text>
+
+        <line x1="620" y1="620" x2="1300" y2="620" stroke="#ef4444" stroke-width="4"/>
+
+        <!-- Total Profit / Loss -->
+        <text x="620" y="690" font-size="36" font-weight="900" fill="#fff">LABA BERSIH:</text>
+        <text x="1300" y="690" font-size="46" font-weight="900" fill="#ef4444" text-anchor="end">- Rp 5.000.000</text>
+
+        <!-- Red "BONCOS" Stamp Overlay -->
+        <g id="s3Stamp" transform="translate(860, 480) rotate(-15)">
+          <rect x="-160" y="-55" width="320" height="110" rx="16" fill="none" stroke="#ef4444" stroke-width="8" stroke-dasharray="10 6"/>
+          <text x="0" y="20" font-size="58" font-weight="900" fill="#ef4444" text-anchor="middle" letter-spacing="4px">BONCOS!!</text>
+        </g>
+
+        <!-- Crying Owner on Left -->
+        <g id="s3Crying" transform="translate(180, 420)">
+          <circle cx="100" cy="120" r="85" fill="#fed7aa"/>
+          <!-- Eyes closed in agony -->
+          <path d="M 60 110 Q 75 90 90 110" stroke="#000" stroke-width="6" fill="none"/>
+          <path d="M 110 110 Q 125 90 140 110" stroke="#000" stroke-width="6" fill="none"/>
+          <!-- Huge Waterfall Tears -->
+          <path d="M 75 120 C 75 220, 20 280, 20 380" stroke="#38bdf8" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <path d="M 125 120 C 125 220, 180 280, 180 380" stroke="#38bdf8" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <!-- Open screaming mouth -->
+          <ellipse cx="100" cy="155" rx="30" ry="25" fill="#881337"/>
+        </g>
+      </svg>
+
+      <div class="sticker" style="top: 160px; right: 280px; background: #ef4444; color: #fff; transform: rotate(10deg); font-size: 32px;">
+        🏛️ BUKAN JURAGAN, TAPI YAYASAN SOSIAL!
+      </div>
+      <div class="sticker" style="bottom: 180px; right: 240px; background: #f59e0b; color: #000; transform: rotate(-6deg);">
+        💸 CUAN GHOIB
+      </div>
+    </div>
+
+    <!-- ==============================================================
+         SCENE 4: Kesimpulan: Jualan Sewa Colokan & CTA (29.97s - 40.55s)
+         ============================================================== -->
+    <div class="scene" id="scene4">
+      <svg width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;top:0;left:0;">
+        <!-- Big Electric Meter (Meteran Listrik PLN) Spinning in Background -->
+        <g id="s4Meter" transform="translate(1320, 360)">
+          <circle cx="120" cy="120" r="120" fill="#0f172a" stroke="#cbd5e1" stroke-width="10"/>
+          <circle cx="120" cy="120" r="95" fill="#1e293b"/>
+          <!-- Dial -->
+          <circle cx="120" cy="120" r="15" fill="#ef4444"/>
+          <line id="meterHand" x1="120" y1="120" x2="190" y2="120" stroke="#ef4444" stroke-width="6" stroke-linecap="round"/>
+          <text x="120" y="80" font-size="22" font-weight="900" fill="#fbbf24" text-anchor="middle">METERAN PLN</text>
+          <text x="120" y="170" font-size="20" font-weight="700" fill="#ef4444" text-anchor="middle">⚡ NGEBUT!</text>
+        </g>
+
+        <!-- Barista Character sitting in Apron, smiling with acceptance (Tired Wisdom) -->
+        <g id="s4OwnerTired" transform="translate(380, 280)">
+          <!-- Body in Apron -->
+          <path d="M 50 250 L 210 250 L 230 460 L 30 460 Z" fill="#065f46"/>
+          <!-- Apron straps -->
+          <line x1="70" y1="250" x2="110" y2="180" stroke="#34d399" stroke-width="8"/>
+          <line x1="190" y1="250" x2="150" y2="180" stroke="#34d399" stroke-width="8"/>
+          <!-- Head -->
+          <circle cx="130" cy="140" r="85" fill="#fed7aa"/>
+          <!-- Peaceful / Resigned Eyes (Dead inside smile) -->
+          <path d="M 90 130 Q 105 115 120 130" stroke="#000" stroke-width="5" fill="none"/>
+          <path d="M 140 130 Q 155 115 170 130" stroke="#000" stroke-width="5" fill="none"/>
+          <!-- Soft wry smile -->
+          <path d="M 110 170 Q 130 185 150 170" stroke="#000" stroke-width="5" fill="none"/>
+          <!-- Thumbs Up Hand -->
+          <g transform="translate(230, 280)">
+            <rect x="0" y="20" width="40" height="50" rx="8" fill="#fed7aa"/>
+            <path d="M 15 25 L 15 -10 Q 25 -20 35 -10 L 35 25 Z" fill="#fed7aa"/>
+          </g>
+        </g>
+
+        <!-- Big Conclusion Box -->
+        <g transform="translate(740, 220)">
+          <rect x="0" y="0" width="520" height="240" rx="20" fill="#064e3b" stroke="#34d399" stroke-width="5"/>
+          <text x="260" y="60" font-size="28" font-weight="900" fill="#fbbf24" text-anchor="middle">KESIMPULAN REALISTIS:</text>
+          <text x="260" y="120" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle">Bisnis Cafe =</text>
+          <text x="260" y="175" font-size="34" font-weight="900" fill="#34d399" text-anchor="middle">Jualan Sewa Colokan 🔌</text>
+        </g>
+      </svg>
+
+      <!-- Animated Follow CTA Card -->
+      <div class="sticker" style="bottom: 220px; right: 380px; background: #ef4444; color: #fff; font-size: 32px; border: 4px solid #fff; box-shadow: 0 10px 40px rgba(239, 68, 68, 0.6); animation: bounceCTA 1s ease-in-out infinite alternate;">
+        🔔 FOLLOW BUAT TIPS BISNIS REALISTIS!
+      </div>
+    </div>
+
+    <!-- Live Subtitle Box -->
+    <div class="subtitle-box">
+      <div class="subtitle-text" id="subText">
+        POV: Lu Buka Cafe Kekinian...
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes bounceCTA {
+      0% { transform: scale(1) translateY(0); }
+      100% { transform: scale(1.06) translateY(-8px); }
+    }
+  </style>
+
+  <script>
+    // Exact Beat Timings from Edge-TTS Audio Engine
+    const beats = [
+      {
+        id: 1,
+        start: 0.0,
+        end: 9.62,
+        sceneId: 'scene1',
+        subtitle: 'Lu punya modal <span class="hl-yellow">200 juta</span>, terus mikir: <span class="hl-yellow">"Buka cafe estetik aja deh! Pasti auto rame!"</span>'
+      },
+      {
+        id: 2,
+        start: 9.62,
+        end: 18.43,
+        sceneId: 'scene2',
+        subtitle: 'Bulan pertama rame banget! Tapi pas dicek... <span class="hl-red">pesennya cuma 1 es teh, numpang colokan 8 jam!</span>'
+      },
+      {
+        id: 3,
+        start: 18.43,
+        end: 29.97,
+        sceneId: 'scene3',
+        subtitle: 'Akhir bulan hitung pembukuan: omset 30 juta, biaya 35 juta! <span class="hl-red">Lu bukan juragan, lu YAYASAN SOSIAL!</span>'
+      },
+      {
+        id: 4,
+        start: 29.97,
+        end: 40.55,
+        sceneId: 'scene4',
+        subtitle: 'Kesimpulannya: bisnis cafe itu bukan jualan kopi, tapi <span class="hl-green">jualan sewa colokan!</span> Jangan lupa <span class="hl-yellow">Follow ya!</span>'
+      }
+    ];
+
+    const scenes = {
+      scene1: document.getElementById('scene1'),
+      scene2: document.getElementById('scene2'),
+      scene3: document.getElementById('scene3'),
+      scene4: document.getElementById('scene4')
+    };
+    const subTextEl = document.getElementById('subText');
+    const meterHand = document.getElementById('meterHand');
+
+    window.renderFrame = function(timeSeconds) {
+      // Find active beat
+      let activeBeat = beats.find(b => timeSeconds >= b.start && timeSeconds < b.end);
+      if (!activeBeat && timeSeconds >= 40.55) {
+        activeBeat = beats[beats.length - 1];
+      }
+      if (!activeBeat) return;
+
+      // Switch active scene
+      for (const [id, el] of Object.entries(scenes)) {
+        if (id === activeBeat.sceneId) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      }
+
+      // Update subtitle
+      subTextEl.innerHTML = activeBeat.subtitle;
+
+      // Ken Burns smooth camera zoom inside active scene
+      const beatProgress = (timeSeconds - activeBeat.start) / (activeBeat.end - activeBeat.start);
+      const activeEl = scenes[activeBeat.sceneId];
+      
+      // Dynamic camera zoom from 1.0 to 1.10
+      const zoom = 1.0 + Math.sin(beatProgress * Math.PI) * 0.08;
+      activeEl.style.transform = `scale(${zoom})`;
+
+      // Scene 4 specific animation: Electric meter spinning rapidly
+      if (activeBeat.id === 4 && meterHand) {
+        const rot = (timeSeconds * 720) % 360;
+        meterHand.setAttribute('transform', `rotate(${rot} 120 120)`);
+      }
+    };
+
+    // Auto-loop for live browser preview
+    let startTime = null;
+    function animLoop(now) {
+      if (!startTime) startTime = now;
+      const elapsed = (now - startTime) / 1000;
+      window.renderFrame(elapsed % 40.55);
+      requestAnimationFrame(animLoop);
+    }
+    requestAnimationFrame(animLoop);
+  </script>
+</body>
+</html>
