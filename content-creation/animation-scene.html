@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tool Calling Handshake Animation - High Polish</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #05070f;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1920px;
+      height: 1080px;
+      color: #fff;
+    }
+
+    .canvas-container {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      background: radial-gradient(circle at 50% 45%, #0d1527 0%, #04060d 100%);
+      overflow: hidden;
+    }
+
+    /* Ambient moving light spots */
+    .ambient-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      opacity: 0.25;
+      animation: ambientShift 8s ease-in-out infinite alternate;
+    }
+    .glow-cyan {
+      top: 300px;
+      left: 100px;
+      background: #06b6d4;
+    }
+    .glow-purple {
+      top: 300px;
+      right: 100px;
+      background: #9333ea;
+      animation-delay: -4s;
+    }
+    .glow-emerald {
+      bottom: 50px;
+      left: 660px;
+      background: #059669;
+      animation-delay: -2s;
+    }
+
+    @keyframes ambientShift {
+      0% { transform: scale(0.9) translate(-20px, -20px); opacity: 0.18; }
+      100% { transform: scale(1.15) translate(20px, 20px); opacity: 0.32; }
+    }
+
+    /* Subtly moving background grid */
+    .grid-bg {
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      top: -50%;
+      left: -50%;
+      background-size: 60px 60px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      animation: gridDrift 40s linear infinite;
+    }
+    @keyframes gridDrift {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(60px, 60px); }
+    }
+
+    /* Header */
+    .header {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #38bdf8;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    }
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background: #38bdf8;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #38bdf8;
+      animation: pulseDot 1.6s ease-in-out infinite;
+    }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+
+    .title {
+      font-size: 52px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 60%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #94a3b8;
+      letter-spacing: 0.2px;
+    }
+
+    /* Node Wrappers with continuous idle floating */
+    .node-wrap {
+      position: absolute;
+      z-index: 5;
+    }
+    .wrap-client {
+      top: 420px;
+      left: 240px;
+      animation: floatA 4.2s ease-in-out infinite alternate;
+    }
+    .wrap-llm {
+      top: 420px;
+      right: 240px;
+      animation: floatB 4.8s ease-in-out infinite alternate;
+    }
+    .wrap-db {
+      top: 750px;
+      left: 790px;
+      animation: floatC 5.1s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatA {
+      0% { transform: translateY(-5px); }
+      100% { transform: translateY(5px); }
+    }
+    @keyframes floatB {
+      0% { transform: translateY(6px); }
+      100% { transform: translateY(-6px); }
+    }
+    @keyframes floatC {
+      0% { transform: translateY(-4px); }
+      100% { transform: translateY(4px); }
+    }
+
+    /* Rotating Conic Border Card (Vercel/Linear style) */
+    .glow-card {
+      position: relative;
+      width: 350px;
+      height: 200px;
+      border-radius: 24px;
+      background: #090e1b;
+      padding: 3px; /* Space for the moving gradient border */
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Spinning gradient border */
+    .glow-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(transparent, var(--glow-color), transparent 30%);
+      animation: rotateGlow 5s linear infinite;
+    }
+
+    @keyframes rotateGlow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .wrap-client .glow-card { --glow-color: #06b6d4; }
+    .wrap-llm .glow-card { --glow-color: #c084fc; }
+    .wrap-db .glow-card { --glow-color: #10b981; }
+
+    /* Card Inner Body */
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 17, 33, 0.92);
+      backdrop-filter: blur(16px);
+      border-radius: 21px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .node-tag {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .client-tag { color: #22d3ee; }
+    .llm-tag { color: #c084fc; }
+    .db-tag { color: #34d399; }
+
+    .status-ring {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      position: relative;
+    }
+    .status-ring::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: inherit;
+      animation: ringPing 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+    @keyframes ringPing {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(2.6); opacity: 0; }
+    }
+
+    .wrap-client .status-ring { background: #06b6d4; }
+    .wrap-llm .status-ring { background: #a855f7; }
+    .wrap-db .status-ring { background: #10b981; }
+
+    .node-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #f8fafc;
+      letter-spacing: -0.5px;
+    }
+    .node-desc {
+      font-size: 14px;
+      color: #94a3b8;
+      line-height: 1.5;
+      font-family: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Shockwave ring on packet impact */
+    .shockwave {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 350px;
+      height: 200px;
+      transform: translate(-50%, -50%) scale(1);
+      border-radius: 24px;
+      border: 2px solid transparent;
+      pointer-events: none;
+      opacity: 0;
+      z-index: 4;
+    }
+
+    /* Vector SVG Canvas */
+    svg.connector-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* Continuous animated stream dashes */
+    .stream-line {
+      fill: none;
+      stroke-width: 3;
+      stroke-dasharray: 10 14;
+      animation: dashFlow 1.6s linear infinite;
+    }
+    .stream-req {
+      stroke: rgba(129, 140, 248, 0.4);
+    }
+    .stream-resp {
+      stroke: rgba(192, 132, 252, 0.4);
+      animation-direction: reverse;
+    }
+    .stream-exec {
+      stroke: rgba(52, 211, 153, 0.4);
+    }
+
+    @keyframes dashFlow {
+      to { stroke-dashoffset: -48; }
+    }
+
+    /* Flying Packets with trail and glow */
+    .packet {
+      position: absolute;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: "JetBrains Mono", monospace;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 8;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      transform: translate(-50%, -50%);
+      transition: transform 0.1s ease;
+    }
+
+    .packet-req {
+      background: #181c38;
+      border: 1.5px solid #818cf8;
+      color: #e0e7ff;
+      box-shadow: 0 0 35px rgba(99, 102, 241, 0.6), inset 0 0 15px rgba(99, 102, 241, 0.3);
+    }
+    .packet-resp {
+      background: #2a1145;
+      border: 1.5px solid #c084fc;
+      color: #fae8ff;
+      box-shadow: 0 0 35px rgba(192, 132, 252, 0.6), inset 0 0 15px rgba(192, 132, 252, 0.3);
+    }
+    .packet-exec {
+      background: #052e23;
+      border: 1.5px solid #34d399;
+      color: #d1fae5;
+      box-shadow: 0 0 35px rgba(52, 211, 153, 0.6), inset 0 0 15px rgba(52, 211, 153, 0.3);
+    }
+
+    .pulse-glow-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: relative;
+    }
+    .dot-blue { background: #38bdf8; box-shadow: 0 0 10px #38bdf8; }
+    .dot-purple { background: #c084fc; box-shadow: 0 0 10px #c084fc; }
+    .dot-green { background: #34d399; box-shadow: 0 0 10px #34d399; }
+
+    /* Bottom footer pill */
+    .footer-pill {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px 24px;
+      border-radius: 9999px;
+      font-size: 15px;
+      color: #64748b;
+      letter-spacing: 0.6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      backdrop-filter: blur(8px);
+    }
+    .footer-tag {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="canvas-container">
+    <div class="grid-bg"></div>
+
+    <!-- Ambient moving blooms -->
+    <div class="ambient-glow glow-cyan"></div>
+    <div class="ambient-glow glow-purple"></div>
+    <div class="ambient-glow glow-emerald"></div>
+
+    <div class="header">
+      <div class="badge">
+        <span class="live-dot"></span>
+        <span>Interactive Architecture Teardown</span>
+      </div>
+      <h1 class="title">How AI Tool Calling Actually Works</h1>
+      <p class="subtitle">The Model Never Runs Your Code — It Only Predicts the Call Signature</p>
+    </div>
+
+    <!-- Nodes with floating idle motion & moving conic glow -->
+    <div class="node-wrap wrap-client">
+      <div class="glow-card" id="clientCard">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="node-tag client-tag">01 · Application Layer</span>
+            <div class="status-ring"></div>
+          </div>
+          <div class="node-title">Client Runtime</div>
+          <div class="node-desc">&gt; python app.py<br>&gt; tools = [fetch_user]</div>
+        </div>
+      </div>
+      <div class="shockwave" id="shockClient"></div>
+    </div>
+
+    <div class="node-wrap wrap-llm">
+      <div class="glow-card" id="llmCard">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="node-tag llm-tag">02 · Inference Engine</span>
+            <div class="status-ring"></div>
+          </div>
+          <div class="node-title">LLM Model</div>
+          <div class="node-desc">&gt; token prediction<br>&gt; emit tool_calls: []</div>
+        </div>
+      </div>
+      <div class="shockwave" id="shockLlm"></div>
+    </div>
+
+    <div class="node-wrap wrap-db">
+      <div class="glow-card" id="dbCard">
+        <div class="card-inner">
+          <div class="card-top">
+            <span class="node-tag db-tag">03 · Execution Target</span>
+            <div class="status-ring"></div>
+          </div>
+          <div class="node-title">Local Tools / DB</div>
+          <div class="node-desc">&gt; SQL query executed<br>&gt; return records (JSON)</div>
+        </div>
+      </div>
+      <div class="shockwave" id="shockDb"></div>
+    </div>
+
+    <!-- SVG Vector lines with continuously flowing dash streams -->
+    <svg class="connector-canvas" viewBox="0 0 1920 1080">
+      <!-- Path 1: Client to LLM (Top curve) -->
+      <path id="pathReq" class="stream-line stream-req" d="M 590 510 C 850 420, 1070 420, 1330 510"/>
+      
+      <!-- Path 2: LLM back to Client (Bottom curve) -->
+      <path id="pathResp" class="stream-line stream-resp" d="M 1330 570 C 1070 660, 850 660, 590 570"/>
+
+      <!-- Path 3: Client to Local Tool -->
+      <path id="pathExec" class="stream-line stream-exec" d="M 415 620 C 415 820, 650 850, 790 850"/>
+    </svg>
+
+    <!-- Animated High-Glow Packets -->
+    <div class="packet packet-req" id="packetReq" style="display: none;">
+      <span class="pulse-glow-dot dot-blue"></span>
+      <span>1. Prompt + Tool JSON Schemas</span>
+    </div>
+
+    <div class="packet packet-resp" id="packetResp" style="display: none;">
+      <span class="pulse-glow-dot dot-purple"></span>
+      <span>2. Structured Call: fetch_user(id=42)</span>
+    </div>
+
+    <div class="packet packet-exec" id="packetExec" style="display: none;">
+      <span class="pulse-glow-dot dot-green"></span>
+      <span>3. Execute Local Function</span>
+    </div>
+
+    <div class="footer-pill">
+      <span class="footer-tag">60 FPS Fluid Vector Engine</span>
+      <span>·</span>
+      <span>Living Idle States & Dynamic Conic Shaders</span>
+    </div>
+  </div>
+
+  <script>
+    const DURATION = 9.0;
+    const pathReq = document.getElementById('pathReq');
+    const pathResp = document.getElementById('pathResp');
+    const pathExec = document.getElementById('pathExec');
+
+    const lenReq = pathReq.getTotalLength();
+    const lenResp = pathResp.getTotalLength();
+    const lenExec = pathExec.getTotalLength();
+
+    const pReqEl = document.getElementById('packetReq');
+    const pRespEl = document.getElementById('packetResp');
+    const pExecEl = document.getElementById('packetExec');
+
+    const clientCard = document.getElementById('clientCard');
+    const llmCard = document.getElementById('llmCard');
+    const dbCard = document.getElementById('dbCard');
+
+    const shockClient = document.getElementById('shockClient');
+    const shockLlm = document.getElementById('shockLlm');
+    const shockDb = document.getElementById('shockDb');
+
+    // Smooth cubic bezier easing
+    function easeInOutCubic(x) {
+      return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+    }
+
+    function triggerRipple(shockEl, color) {
+      shockEl.style.borderColor = color;
+      shockEl.style.transition = 'none';
+      shockEl.style.transform = 'translate(-50%, -50%) scale(1)';
+      shockEl.style.opacity = '0.9';
+      requestAnimationFrame(() => {
+        shockEl.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+        shockEl.style.transform = 'translate(-50%, -50%) scale(1.35)';
+        shockEl.style.opacity = '0';
+      });
+    }
+
+    let shockedLlm = false;
+    let shockedClient = false;
+    let shockedDb = false;
+
+    window.renderFrame = function(timeSeconds) {
+      const t = timeSeconds % DURATION;
+
+      // Phase 1: 0.5s - 3.2s -> Packet 1 travels Client to LLM
+      if (t >= 0.5 && t <= 3.2) {
+        pReqEl.style.display = 'flex';
+        const progress = easeInOutCubic((t - 0.5) / 2.7);
+        const pt = pathReq.getPointAtLength(progress * lenReq);
+        pReqEl.style.left = pt.x + 'px';
+        pReqEl.style.top = pt.y + 'px';
+        pReqEl.style.transform = `translate(-50%, -50%) scale(${1 + Math.sin(progress * Math.PI) * 0.12})`;
+      } else {
+        pReqEl.style.display = 'none';
+      }
+
+      // LLM Impact & Active Reaction
+      if (t >= 3.0 && t <= 5.8) {
+        llmCard.style.boxShadow = '0 0 60px rgba(192, 132, 252, 0.7), 0 25px 50px rgba(0,0,0,0.8)';
+        llmCard.style.transform = 'scale(1.04)';
+        if (!shockedLlm) {
+          triggerRipple(shockLlm, '#c084fc');
+          shockedLlm = true;
+        }
+      } else {
+        llmCard.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.7)';
+        llmCard.style.transform = 'scale(1)';
+        if (t < 3.0) shockedLlm = false;
+      }
+
+      // Phase 2: 3.6s - 6.2s -> Packet 2 travels LLM to Client
+      if (t >= 3.6 && t <= 6.2) {
+        pRespEl.style.display = 'flex';
+        const progress = easeInOutCubic((t - 3.6) / 2.6);
+        const pt = pathResp.getPointAtLength(progress * lenResp);
+        pRespEl.style.left = pt.x + 'px';
+        pRespEl.style.top = pt.y + 'px';
+        pRespEl.style.transform = `translate(-50%, -50%) scale(${1 + Math.sin(progress * Math.PI) * 0.12})`;
+      } else {
+        pRespEl.style.display = 'none';
+      }
+
+      // Client Impact & Active Reaction
+      if (t >= 6.0 && t <= 8.5) {
+        clientCard.style.boxShadow = '0 0 60px rgba(34, 211, 238, 0.7), 0 25px 50px rgba(0,0,0,0.8)';
+        clientCard.style.transform = 'scale(1.04)';
+        if (!shockedClient) {
+          triggerRipple(shockClient, '#22d3ee');
+          shockedClient = true;
+        }
+      } else {
+        clientCard.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.7)';
+        clientCard.style.transform = 'scale(1)';
+        if (t < 6.0) shockedClient = false;
+      }
+
+      // Phase 3: 6.4s - 8.6s -> Packet 3 travels Client to DB
+      if (t >= 6.4 && t <= 8.6) {
+        pExecEl.style.display = 'flex';
+        const progress = easeInOutCubic((t - 6.4) / 2.2);
+        const pt = pathExec.getPointAtLength(progress * lenExec);
+        pExecEl.style.left = pt.x + 'px';
+        pExecEl.style.top = pt.y + 'px';
+        pExecEl.style.transform = `translate(-50%, -50%) scale(${1 + Math.sin(progress * Math.PI) * 0.12})`;
+      } else {
+        pExecEl.style.display = 'none';
+      }
+
+      // DB Impact & Active Reaction
+      if (t >= 8.4 && t <= 9.0) {
+        dbCard.style.boxShadow = '0 0 60px rgba(52, 211, 153, 0.7), 0 25px 50px rgba(0,0,0,0.8)';
+        dbCard.style.transform = 'scale(1.04)';
+        if (!shockedDb) {
+          triggerRipple(shockDb, '#34d399');
+          shockedDb = true;
+        }
+      } else {
+        dbCard.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.7)';
+        dbCard.style.transform = 'scale(1)';
+        if (t < 8.4) shockedDb = false;
+      }
+    };
+
+    let startTime = null;
+    function loop(now) {
+      if (!startTime) startTime = now;
+      const elapsed = (now - startTime) / 1000;
+      window.renderFrame(elapsed);
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

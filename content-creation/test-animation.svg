@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap');
+text { font-family: 'Inter', -apple-system, system-ui, sans-serif; }
+</style></defs>
+<rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+<text x="40" y="70" font-size="28" fill="#10b981" font-weight="500">f(x) → JSON Result</text>
+<rect x="0" y="639" width="1200" height="36" fill="#f8f9fa"/>
+<line x1="0" y1="639" x2="1200" y2="639" stroke="#e0e0e0"/>
+<text x="40" y="663" font-size="13" fill="#666">5 steps · 7s</text>
+<text x="1160" y="663" font-size="13" fill="#999" text-anchor="end">MotionShark Canvas</text>
+</svg>
