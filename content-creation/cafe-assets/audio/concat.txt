@@ -1,4 +1,0 @@
-file '/home/agent/orca/learnings/content-creation/cafe-assets/audio/beat_1.mp3'
-file '/home/agent/orca/learnings/content-creation/cafe-assets/audio/beat_2.mp3'
-file '/home/agent/orca/learnings/content-creation/cafe-assets/audio/beat_3.mp3'
-file '/home/agent/orca/learnings/content-creation/cafe-assets/audio/beat_4.mp3'

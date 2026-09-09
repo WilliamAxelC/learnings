@@ -38,3 +38,12 @@ Track your progress by marking completed modules and practical drills:
 2. **Execute the Drills**: Work through `exercises.md`. Fill out your answers and save your scripts directly in your notes or dedicated folders.
 3. **Ship Real Assets**: This curriculum is not just theory. Every module ends with assets you can publish immediately.
 4. **Iterate with Data**: After publishing, log metrics in Module 06 to refine your scripting and packaging.
+
+---
+
+## Automated Animation Workflow
+
+For the fully automated AI vector animation pipeline and Pablo Stanley asset library, see the dedicated repository:
+👉 [AI-nimate (github.com/Cuang-dev/AI-nimate)](file:///home/agent/orca/AI-nimate)
+
+
