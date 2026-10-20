@@ -1,0 +1,23 @@
+services:
+  reefblast-bot:
+    build: .
+    image: reefblast-docker-reefblast-bot:latest
+    container_name: reefblast-bot
+    restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
+      - ./bot_runner.js:/app/bot_runner.js:ro
+      - ./reefblast_auto_progression.js:/app/reefblast_auto_progression.js:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '0.20'
+          memory: 192M
+        reservations:
+          cpus: '0.05'
+          memory: 48M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

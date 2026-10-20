@@ -1,0 +1,4 @@
+[2026-10-05T22:55:18.293Z] [SYSTEM] === Reefblast Autonomous Go Naval Daemon Starting (test-dummy) ===
+[2026-10-05T22:55:18.293Z] [SYSTEM] Policy: Buying=true | Salvaging=false | MarketSelling=false
+[2026-10-05T22:55:18.293Z] [SYSTEM] Authenticating via API as test-dummy...
+[2026-10-05T22:55:18.563Z] [FATAL] Authentication failed: login failed: Wrong name, email or password.

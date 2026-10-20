@@ -1,0 +1,121 @@
+- generic [active] [ref=f3e1]:
+  - link "Skip to content" [ref=f3e2] [cursor=pointer]:
+    - /url: "#content"
+  - button "Switch to dark theme" [ref=f3e3] [cursor=pointer]
+  - main [ref=f3e6]:
+    - generic [ref=f3e7]:
+      - navigation "Main Navigation" [ref=f3e8]:
+        - link "win .ai.id" [ref=f3e9] [cursor=pointer]:
+          - /url: /
+          - text: win
+          - generic [ref=f3e10]: .ai.id
+        - generic [ref=f3e11]:
+          - link "Dev Log" [ref=f3e12] [cursor=pointer]:
+            - /url: /log
+          - link "Sign in" [ref=f3e13] [cursor=pointer]:
+            - /url: /login
+      - generic [ref=f3e14]:
+        - generic [ref=f3e15]: A calm, friction-free daily companion
+        - heading "win.ai.id" [level=1] [ref=f3e28]
+        - paragraph [ref=f3e29]: Small daily wins, gentle AI coach.
+        - paragraph [ref=f3e30]: Build momentum with tiny, attainable steps. A minimalist space to capture what matters today, celebrate quiet consistency, and receive thoughtful coaching without pressure or burnout.
+        - generic [ref=f3e31]:
+          - link "Try it" [ref=f3e32] [cursor=pointer]:
+            - /url: /login
+          - link "Read the dev log" [ref=f3e33] [cursor=pointer]:
+            - /url: /log
+      - region [ref=f3e34]:
+        - generic [ref=f3e35]:
+          - heading "Sample Day Preview" [level=2] [ref=f3e36]
+          - paragraph [ref=f3e37]: A peek at how daily wins feel in practice. Simple, clean, and unhurried.
+        - generic [ref=f3e39]:
+          - generic [ref=f3e40]: Example Preview · Non-interactive
+          - generic [ref=f3e41]:
+            - generic [ref=f3e42]: Tuesday, 14 April
+            - generic [ref=f3e43]: 5 day streak · 1 skip available
+          - list [ref=f3e46]:
+            - listitem [ref=f3e47]:
+              - generic [aria-hidden] [ref=f3e48]: ✓
+              - generic [ref=f3e49]:
+                - generic [ref=f3e50]: Drink a tall glass of cold water
+                - generic [ref=f3e51]: morning habit
+            - listitem [ref=f3e52]:
+              - generic [aria-hidden] [ref=f3e53]: ✓
+              - generic [ref=f3e54]:
+                - generic [ref=f3e55]: 15-minute brisk walk outside
+                - generic [ref=f3e56]: weekdays habit
+            - listitem [ref=f3e57]:
+              - generic [aria-hidden] [ref=f3e58]: ○
+              - generic [ref=f3e59]:
+                - generic [ref=f3e60]: Draft outline for project proposal
+                - generic [ref=f3e61]: coach suggestion
+          - paragraph [ref=f3e62]: Suggestions from your AI coach are always presented as proposals for you to accept, customize, or dismiss.
+      - region [ref=f3e63]:
+        - generic [ref=f3e64]:
+          - heading "How It Works" [level=2] [ref=f3e65]
+          - paragraph [ref=f3e66]: Three straightforward steps to cultivate steady, pressure-free progress.
+        - generic [ref=f3e67]:
+          - article [ref=f3e68]:
+            - generic [aria-hidden] [ref=f3e69]: "1"
+            - heading "Pick tiny wins" [level=3] [ref=f3e70]
+            - paragraph [ref=f3e71]: Choose one to three small, realistic wins each morning. Recurring habits automatically appear on your daily checklist right when scheduled.
+          - article [ref=f3e72]:
+            - generic [aria-hidden] [ref=f3e73]: "2"
+            - heading "Check them off" [level=3] [ref=f3e74]
+            - paragraph [ref=f3e75]: Single-tap checks provide clear, satisfying feedback as you finish each task. Late night? The 4:00 AM rollover ensures your evening efforts count properly.
+          - article [ref=f3e76]:
+            - generic [aria-hidden] [ref=f3e77]: "3"
+            - heading "Let the coach nudge you" [level=3] [ref=f3e78]
+            - paragraph [ref=f3e79]: When you need ideas or gentle encouragement, the AI coach offers supportive suggestions based on your history. You stay in control of what gets added.
+      - region [ref=f3e80]:
+        - generic [ref=f3e81]:
+          - heading "Thoughtful Features, Zero Gimmicks" [level=2] [ref=f3e82]
+          - paragraph [ref=f3e83]: Only authentic, implemented capabilities designed for real-world daily rhythm.
+        - generic [ref=f3e84]:
+          - article [ref=f3e85]:
+            - heading "Streak with a Free Weekly Skip" [level=3] [ref=f3e90]
+            - paragraph [ref=f3e91]: Life happens and missing a day shouldn't reset weeks of dedication. One free skip per ISO week preserves your streak automatically when rest is needed.
+          - article [ref=f3e92]:
+            - heading "4:00 AM Day Rollover" [level=3] [ref=f3e97]
+            - paragraph [ref=f3e98]: Your calendar doesn't abruptly reset at midnight. All wins count until 4:00 AM local time, accommodating night owls and evening routines.
+          - article [ref=f3e99]:
+            - heading "Flexible Habit Cadences" [level=3] [ref=f3e103]
+            - paragraph [ref=f3e104]: Schedule habits for every day, weekdays only, or N days per week. Habit-specific streaks keep track of your consistency over time.
+          - article [ref=f3e105]:
+            - heading "Guardrailed AI Coach" [level=3] [ref=f3e109]
+            - paragraph [ref=f3e110]: The coach only proposes wins for you to accept or edit—it never writes to your data directly. Enforces a strict monthly budget cap with instant rule-based fallback.
+          - article [ref=f3e111]:
+            - heading "Passkey + Magic-Link Sign-in" [level=3] [ref=f3e115]
+            - paragraph [ref=f3e116]: Passwordless biometric sign-in via WebAuthn (Touch ID, Face ID, security keys) or a fast email magic link fallback with 15-minute expiration.
+          - article [ref=f3e117]:
+            - heading "Installable Progressive Web App" [level=3] [ref=f3e121]
+            - paragraph [ref=f3e122]: Service-worker powered PWA that installs on your phone or desktop home screen. Loads instantly with offline resilience and zero bundle bloat.
+          - article [ref=f3e123]:
+            - heading "Building in Public" [level=3] [ref=f3e127]
+            - paragraph [ref=f3e128]: Open development log chronicling architecture, philosophy, and weekly milestones as the application matures.
+      - region [ref=f3e129]:
+        - generic [ref=f3e130]:
+          - generic [ref=f3e131]: Coming Soon
+          - heading "Mandarin Micro-Drills HSK 3–5" [level=3] [ref=f3e133]
+          - paragraph [ref=f3e134]:
+            - text: Coming soon to
+            - strong [ref=f3e135]: zh.win.ai.id
+            - text: ": a focused 3-minute daily Mandarin micro-round for intermediate learners (HSK 3–5). Combines modern FSRS spaced repetition, high-fidelity neural audio, sentence cloze drills, and AI-generated micro-stories woven from today's vocabulary."
+          - paragraph [ref=f3e136]: Designed to launch after several weeks of core app testing. Single sign-in seamlessly covers both domains.
+      - generic [ref=f3e137]:
+        - heading "Ready to celebrate small wins?" [level=2] [ref=f3e138]
+        - paragraph [ref=f3e139]: Sign in with a biometric passkey or email magic link to begin your journey.
+        - generic [ref=f3e140]:
+          - link "Try it" [ref=f3e141] [cursor=pointer]:
+            - /url: /login
+          - link "Read the dev log" [ref=f3e142] [cursor=pointer]:
+            - /url: /log
+      - generic [ref=f3e143]:
+        - link "win.ai.id" [ref=f3e144] [cursor=pointer]:
+          - /url: /
+        - navigation "Footer Navigation" [ref=f3e145]:
+          - link "Dev Log" [ref=f3e146] [cursor=pointer]:
+            - /url: /log
+          - link "Sign in" [ref=f3e147] [cursor=pointer]:
+            - /url: /login
+        - paragraph [ref=f3e148]: Built with Go, SQLite, and htmx.

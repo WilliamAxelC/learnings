@@ -1,0 +1,1313 @@
+[2026-10-04T10:52:38.412Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T10:52:55.478Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T10:53:01.083Z] Logging in as cuang-bot...
+[2026-10-04T10:53:04.661Z] Waiting for harbor and captain session to load...
+[2026-10-04T10:56:01.087Z] WARN: Timed out waiting for automatic login, attempting direct API startSession...
+[2026-10-04T10:56:12.101Z] FATAL ERROR: page.evaluate: Target page, context or browser has been closed
+    at run (/app/bot_runner.js:98:16)
+[2026-10-04T10:56:58.877Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T10:57:25.587Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T10:57:33.619Z] Waiting for harbor and captain session to load...
+[2026-10-04T10:57:38.365Z] [.WebGL-0x3294009de000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T10:59:13.014Z] [.WebGL-0x3294009de000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T10:59:13.015Z] [.WebGL-0x3294009de000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T10:59:13.015Z] [.WebGL-0x3294009de000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T10:59:30.861Z] Session loaded: {"name":"cuang-bot","level":21,"coins":6436}
+[2026-10-04T10:59:33.056Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T10:59:36.629Z] [10:59:36] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T10:59:48.283Z] [10:59:48] [SYSTEM] Bot started for Captain cuang-bot (Lv 21).
+[2026-10-04T10:59:48.284Z] Auto-Progression Bot injected and active!
+[2026-10-04T11:00:04.260Z] [11:00:04] [SKILL] Allocated skill point to: ATK (20/30)
+[2026-10-04T11:00:20.756Z] [MILESTONE] Captain cuang-bot is now Level 21! Coins: 6,436 | Zone: Harbor | Vessel: boat-fishing-small
+[2026-10-04T11:00:20.798Z] [11:00:16] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF)
+[2026-10-04T11:00:20.798Z] [11:00:16] [MARKET] Market Deal: Rift Seeker (Q: 45%) for 28,000 coins (90% off fair val of 270,000) by Kent
+[2026-10-04T11:00:20.799Z] [11:00:16] [SKILL] Allocated skill point to: ATK (20/30)
+[2026-10-04T11:00:32.463Z] [11:00:32] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF)
+[2026-10-04T11:00:32.463Z] [11:00:32] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:00:57.462Z] [11:00:57] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF)
+[2026-10-04T11:00:57.463Z] [11:00:57] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:01:33.053Z] [11:01:32] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:03:41.310Z] [11:03:41] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF)
+[2026-10-04T11:03:47.702Z] [11:03:47] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF)
+[2026-10-04T11:03:47.702Z] [11:03:47] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:03:53.475Z] [11:03:53] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF)
+[2026-10-04T11:03:53.476Z] [11:03:53] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:03:59.352Z] [11:03:59] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF)
+[2026-10-04T11:03:59.353Z] [11:03:59] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:04:07.277Z] [11:04:07] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:06:20.338Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T11:06:47.951Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T11:06:49.629Z] Waiting for harbor and captain session to load...
+[2026-10-04T11:06:52.546Z] [.WebGL-0x11e400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T11:07:08.357Z] [.WebGL-0x11e400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T11:07:10.639Z] [.WebGL-0x11e400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T11:07:12.930Z] [.WebGL-0x11e400192000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T11:07:38.272Z] Session loaded: {"name":"cuang-bot","level":21,"coins":7546}
+[2026-10-04T11:07:40.641Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T11:07:42.732Z] [11:07:42] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T11:07:43.674Z] [11:07:43] [SYSTEM] Bot started for Captain cuang-bot (Lv 21).
+[2026-10-04T11:07:43.675Z] Auto-Progression Bot injected and active!
+[2026-10-04T11:07:48.740Z] [11:07:48] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:07:55.630Z] [11:07:55] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+)
+[2026-10-04T11:08:02.028Z] [MILESTONE] Captain cuang-bot is now Level 21! Coins: 7,546 | Zone: 4 | Vessel: boat-fishing-small
+[2026-10-04T11:08:02.030Z] [11:08:00] [MARKET] Market Deal: Rift Seeker (Q: 45%) for 28,000 coins (90% off fair val of 270,000) by Kent
+[2026-10-04T11:08:35.048Z] [MILESTONE] Captain cuang-bot is now Level 22! Coins: 7,762 | Zone: 4 | Vessel: boat-fishing-small
+[2026-10-04T11:08:35.129Z] [11:08:35] [SKILL] Allocated skill point to: ATK (21/30)
+[2026-10-04T11:08:35.129Z] [11:08:35] [ZONE_CHANGE] Advancing from Zone 4 to Zone 5 (Stormbreak Sound)!
+[2026-10-04T11:08:39.173Z] [11:08:39] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:09:45.130Z] [11:09:44] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:09:49.897Z] [11:09:49] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:10:47.635Z] [11:10:47] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:10:51.751Z] [11:10:51] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:11:29.248Z] [11:11:29] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:11:31.636Z] [11:11:31] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:13:00.845Z] [11:13:00] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:13:05.143Z] [11:13:05] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:14:55.545Z] [11:14:55] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:15:00.061Z] [11:15:00] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:15:20.066Z] [11:15:20] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:15:26.950Z] [11:15:26] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:16:58.949Z] [11:16:58] [SKILL] Allocated skill point to: ATK (22/30)
+[2026-10-04T11:17:04.655Z] [MILESTONE] Captain cuang-bot is now Level 23! Coins: 9,664 | Zone: 5 | Vessel: boat-fishing-small
+[2026-10-04T11:17:16.438Z] [11:17:16] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:17:21.346Z] [11:17:21] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:18:47.935Z] [11:18:47] [UPGRADE] Purchased new vessel: Skiff for 10,000 coins!
+[2026-10-04T11:18:52.542Z] [11:18:52] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T11:18:52.543Z] [11:18:52] [UPGRADE] Purchased new vessel: Skiff for 10,000 coins!
+[2026-10-04T11:18:52.544Z] [11:18:52] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:18:57.230Z] [11:18:57] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T11:18:57.232Z] [11:18:57] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:18:57.232Z] [11:18:57] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:19:00.065Z] [11:19:00] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:19:53.351Z] [11:19:53] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:19:57.445Z] [11:19:57] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:23:19.548Z] [11:23:19] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:23:25.138Z] [11:23:25] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:24:40.582Z] [11:24:40] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:24:59.134Z] [11:24:59] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:25:03.337Z] [11:25:03] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:25:29.236Z] [11:25:29] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:25:34.045Z] [11:25:34] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:25:55.950Z] [MILESTONE] Captain cuang-bot is now Level 24! Coins: 1,442 | Zone: 5 | Vessel: boat-sail-a
+[2026-10-04T11:25:57.448Z] [11:25:57] [SKILL] Allocated skill point to: ATK (23/30)
+[2026-10-04T11:26:36.328Z] [11:26:36] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:27:34.127Z] [11:27:34] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:27:38.634Z] [11:27:38] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:27:54.042Z] [11:27:54] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:27:58.249Z] [11:27:58] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:29:42.129Z] [11:29:42] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:29:46.346Z] [11:29:46] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:30:34.348Z] [11:30:34] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:32:13.648Z] [11:32:13] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:32:20.953Z] [11:32:20] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:34:34.551Z] [11:34:34] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:34:39.332Z] [11:34:39] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:35:16.729Z] [MILESTONE] Captain cuang-bot is now Level 25! Coins: 3,517 | Zone: 5 | Vessel: boat-sail-a
+[2026-10-04T11:35:18.235Z] [11:35:18] [SKILL] Allocated skill point to: ATK (24/30)
+[2026-10-04T11:35:21.939Z] [11:35:21] [SKILL] Allocated skill point to: ATK (24/30)
+[2026-10-04T11:36:29.151Z] [11:36:29] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:36:35.941Z] [11:36:35] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:37:23.835Z] [11:37:23] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:37:29.458Z] [11:37:29] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:38:20.042Z] [11:38:20] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:38:25.351Z] [11:38:25] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:41:20.849Z] [11:41:20] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:41:26.949Z] [11:41:26] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:43:48.734Z] [11:43:48] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:43:50.959Z] [11:43:50] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:45:24.036Z] [11:45:24] [SKILL] Allocated skill point to: ATK (25/30)
+[2026-10-04T11:45:26.316Z] [MILESTONE] Captain cuang-bot is now Level 26! Coins: 5,727 | Zone: 5 | Vessel: boat-sail-a
+[2026-10-04T11:45:26.317Z] [11:45:26] [SKILL] Allocated skill point to: ATK (25/30)
+[2026-10-04T11:46:40.080Z] [11:46:40] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:46:44.307Z] [11:46:44] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:48:06.545Z] [11:48:06] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:48:11.188Z] [11:48:11] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:50:15.800Z] [11:50:15] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:50:21.730Z] [11:50:21] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:52:33.342Z] [11:52:33] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:52:38.030Z] [11:52:38] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:54:00.251Z] [11:54:00] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:54:05.777Z] [11:54:05] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:54:47.201Z] [11:54:47] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:54:51.666Z] [11:54:51] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:55:56.846Z] [11:55:56] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:56:02.712Z] [11:56:02] [ZONE_CHANGE] Setting sail into Zone 5: Stormbreak Sound (Lv 22+)
+[2026-10-04T11:56:23.741Z] [11:56:23] [SKILL] Allocated skill point to: ATK (26/30)
+[2026-10-04T11:56:23.742Z] [11:56:23] [ZONE_CHANGE] Advancing from Zone 5 to Zone 6 (Frostbite Fjord)!
+[2026-10-04T11:56:28.957Z] [11:56:28] [SKILL] Allocated skill point to: ATK (26/30)
+[2026-10-04T11:56:28.957Z] [11:56:28] [ZONE_CHANGE] Advancing from Zone 5 to Zone 6 (Frostbite Fjord)!
+[2026-10-04T11:56:28.970Z] [MILESTONE] Captain cuang-bot is now Level 27! Coins: 8,240 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T11:56:35.528Z] [11:56:35] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:56:40.429Z] [11:56:40] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:57:23.747Z] [11:57:23] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:57:29.899Z] [11:57:29] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:58:19.575Z] [11:58:19] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:58:47.827Z] [11:58:47] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:58:52.415Z] [11:58:52] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:59:05.467Z] [11:59:05] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:59:11.203Z] [11:59:11] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T11:59:56.115Z] [11:59:56] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:00:02.118Z] [12:00:02] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:00:57.444Z] [12:00:57] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:01:06.570Z] [12:01:06] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:01:18.435Z] [12:01:18] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:01:24.288Z] [12:01:24] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:02:21.843Z] [12:02:21] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:02:29.137Z] [12:02:29] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:03:15.449Z] [12:03:15] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:03:22.831Z] [12:03:22] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:03:37.208Z] [12:03:37] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:03:43.415Z] [12:03:43] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:05:01.203Z] [12:05:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:05:04.949Z] [12:05:04] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:05:33.291Z] [12:05:33] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:05:38.964Z] [12:05:38] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:06:11.703Z] [12:06:11] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:06:17.531Z] [12:06:17] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:07:01.394Z] [12:07:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:07:07.981Z] [12:07:07] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:07:57.620Z] [12:07:57] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:08:09.319Z] [12:08:09] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:08:53.764Z] [12:08:53] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:09:32.786Z] [12:09:32] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T12:09:39.154Z] [12:09:39] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T12:09:39.154Z] [12:09:39] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:09:41.967Z] [12:09:41] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T12:09:44.346Z] [12:09:44] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:09:44.351Z] [12:09:44] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T12:09:46.886Z] [12:09:46] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:09:46.886Z] [12:09:46] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T12:10:23.479Z] [12:10:23] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:11:10.756Z] [12:11:10] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:11:15.427Z] [12:11:15] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:12:52.563Z] [12:12:52] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:14:12.648Z] [12:14:12] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:14:22.334Z] [12:14:22] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:14:32.840Z] [12:14:32] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:14:40.804Z] [12:14:40] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:15:50.249Z] [12:15:50] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:15:57.099Z] [12:15:57] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:16:30.664Z] [12:16:30] [SKILL] Allocated skill point to: ATK (27/30)
+[2026-10-04T12:16:30.684Z] [MILESTONE] Captain cuang-bot is now Level 28! Coins: 1,433 | Zone: 6 | Vessel: boat-sail-a
+[2026-10-04T12:16:36.640Z] [12:16:36] [SKILL] Allocated skill point to: ATK (27/30)
+[2026-10-04T12:17:44.474Z] [12:17:44] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:17:51.411Z] [12:17:51] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:18:07.619Z] [12:18:07] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:18:14.277Z] [12:18:14] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:18:29.832Z] [12:18:29] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:18:35.477Z] [12:18:35] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:18:51.442Z] [12:18:51] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:19:02.283Z] [12:19:02] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:19:33.309Z] [12:19:33] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:19:39.518Z] [12:19:39] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:21:30.373Z] [12:21:30] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:21:37.544Z] [12:21:37] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:21:55.653Z] [12:21:55] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:22:04.625Z] [12:22:04] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:22:29.611Z] [12:22:29] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:22:38.254Z] [12:22:38] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:23:31.886Z] [12:23:31] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:24:28.344Z] [12:24:28] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:24:39.086Z] [12:24:39] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:25:01.159Z] [12:25:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:25:54.239Z] [12:25:54] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:26:02.321Z] [12:26:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:26:58.635Z] [12:26:58] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:27:05.401Z] [12:27:05] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:27:56.992Z] [12:27:56] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:28:03.640Z] [12:28:03] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:28:15.403Z] [12:28:15] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:28:22.931Z] [12:28:22] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:29:03.051Z] [12:29:03] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:29:11.218Z] [12:29:11] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:29:56.901Z] [12:29:56] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:30:41.906Z] [12:30:41] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:30:47.352Z] [12:30:47] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:31:27.529Z] [12:31:26] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:31:33.142Z] [12:31:33] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:32:03.032Z] [12:32:03] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:32:09.753Z] [12:32:09] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:32:33.247Z] [12:32:33] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:32:36.972Z] [12:32:36] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:32:49.373Z] [12:32:49] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:32:55.535Z] [12:32:55] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:33:12.408Z] [12:33:12] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:34:25.899Z] [12:34:25] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:34:35.014Z] [12:34:35] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:34:57.805Z] [12:34:57] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:35:07.018Z] [12:35:07] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:35:26.866Z] [12:35:26] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:35:35.467Z] [12:35:35] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:36:06.294Z] [12:36:06] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:36:12.990Z] [12:36:12] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:36:50.861Z] [12:36:50] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:36:57.343Z] [12:36:57] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:37:34.234Z] [12:37:34] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:37:40.990Z] [12:37:40] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:39:12.650Z] [12:39:12] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:39:20.791Z] [12:39:20] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:39:42.406Z] [12:39:42] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:39:48.860Z] [12:39:48] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:40:33.106Z] [12:40:33] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:40:39.826Z] [12:40:39] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:41:21.986Z] [12:41:21] [SKILL] Allocated skill point to: ATK (28/30)
+[2026-10-04T12:41:26.528Z] [MILESTONE] Captain cuang-bot is now Level 29! Coins: 4,680 | Zone: 6 | Vessel: boat-sail-a
+[2026-10-04T12:41:28.215Z] [12:41:28] [SKILL] Allocated skill point to: ATK (28/30)
+[2026-10-04T12:41:34.305Z] [12:41:34] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:41:38.699Z] [12:41:38] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:42:16.542Z] [12:42:16] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:42:22.537Z] [12:42:22] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:43:43.015Z] [12:43:43] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:44:10.640Z] [12:44:10] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:44:17.748Z] [12:44:17] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:47:11.134Z] [12:47:11] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:47:19.900Z] [12:47:19] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:47:41.314Z] [12:47:41] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:47:45.835Z] [12:47:45] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:49:02.994Z] [12:49:02] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:49:08.230Z] [12:49:07] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:49:55.012Z] [12:49:55] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:50:25.714Z] [12:50:25] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:50:36.090Z] [12:50:36] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:51:20.236Z] [12:51:20] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:51:28.336Z] [12:51:28] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:52:07.662Z] [12:52:07] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:52:13.333Z] [12:52:13] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:52:43.435Z] [12:52:43] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:52:53.367Z] [12:52:53] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:53:25.189Z] [12:53:25] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:53:39.658Z] [12:53:39] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:53:46.635Z] [12:53:46] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:54:10.868Z] [12:54:10] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:54:17.135Z] [12:54:17] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:54:58.749Z] [12:54:58] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:55:06.766Z] [12:55:06] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:55:40.028Z] [12:55:40] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:55:45.755Z] [12:55:45] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:55:59.584Z] [12:55:59] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:57:58.041Z] [12:57:57] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:58:01.445Z] [12:58:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:59:00.350Z] [12:59:00] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:59:08.538Z] [12:59:08] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:59:46.102Z] [12:59:46] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T12:59:52.585Z] [12:59:52] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:00:39.372Z] [13:00:39] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:00:44.996Z] [13:00:44] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:01:38.511Z] [13:01:38] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:01:45.011Z] [13:01:45] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:02:31.384Z] [13:02:31] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:02:54.223Z] [13:02:54] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:03:19.398Z] [13:03:19] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:03:55.749Z] [13:03:55] [SKILL] Allocated skill point to: ATK (29/30)
+[2026-10-04T13:03:56.628Z] [MILESTONE] Captain cuang-bot is now Level 30! Coins: 8,290 | Zone: 6 | Vessel: boat-sail-a
+[2026-10-04T13:05:36.353Z] [13:05:36] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:05:42.280Z] [13:05:42] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:06:55.937Z] [13:06:55] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:08:05.430Z] [13:08:05] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:08:12.924Z] [13:08:12] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:09:14.322Z] [13:09:14] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:11:00.356Z] [13:11:00] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:11:34.856Z] [13:11:34] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:11:40.166Z] [13:11:40] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:12:33.046Z] [13:12:33] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:12:38.343Z] [13:12:38] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:14:05.589Z] [13:14:05] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:15:11.045Z] [13:15:11] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T13:15:16.357Z] [13:15:16] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T13:15:16.359Z] [13:15:16] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:15:16.361Z] [13:15:16] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T13:15:24.901Z] [13:15:24] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T13:15:24.903Z] [13:15:24] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:15:24.903Z] [13:15:24] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:15:24.904Z] [13:15:24] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T13:15:31.912Z] [13:15:31] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:15:31.913Z] [13:15:31] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T13:16:01.253Z] [13:16:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:16:08.240Z] [13:16:08] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:17:23.078Z] [13:17:23] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:18:18.278Z] [13:18:18] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:18:25.624Z] [13:18:25] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:19:59.340Z] [13:19:59] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:20:07.148Z] [13:20:07] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:20:23.214Z] [13:20:23] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:20:30.438Z] [13:20:30] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:21:15.740Z] [13:21:15] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:21:22.781Z] [13:21:22] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:22:50.585Z] [13:22:50] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:22:54.703Z] [13:22:54] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:23:59.933Z] [13:23:59] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:24:04.605Z] [13:24:04] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:25:32.665Z] [13:25:32] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:25:58.805Z] [13:25:58] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:26:04.793Z] [13:26:04] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:26:10.116Z] [13:26:10] [SKILL] Allocated skill point to: ATK (30/30)
+[2026-10-04T13:26:10.130Z] [MILESTONE] Captain cuang-bot is now Level 31! Coins: 2,141 | Zone: 6 | Vessel: boat-sail-a
+[2026-10-04T13:26:14.581Z] [13:26:14] [SKILL] Allocated skill point to: ATK (30/30)
+[2026-10-04T13:26:14.582Z] [13:26:14] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:26:23.893Z] [13:26:23] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:26:36.788Z] [13:26:36] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:27:55.205Z] [13:27:55] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:28:43.117Z] [13:28:43] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:28:50.083Z] [13:28:50] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:29:03.868Z] [13:29:03] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:29:10.256Z] [13:29:10] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:29:47.449Z] [13:29:47] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:29:53.160Z] [13:29:53] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:30:32.126Z] [13:30:32] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:30:37.265Z] [13:30:37] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:32:21.422Z] [13:32:21] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:32:30.802Z] [13:32:30] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:32:53.127Z] [13:32:53] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:33:01.171Z] [13:33:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:33:18.755Z] [13:33:18] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:33:25.573Z] [13:33:25] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:34:15.593Z] [13:34:15] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:34:23.814Z] [13:34:23] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:36:00.290Z] [13:36:00] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:36:09.309Z] [13:36:09] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:38:10.224Z] [13:38:10] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:38:18.446Z] [13:38:18] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:39:01.521Z] [13:39:01] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:39:05.807Z] [13:39:05] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:41:06.070Z] [13:41:06] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:41:12.523Z] [13:41:12] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:41:24.753Z] [13:41:24] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:41:32.259Z] [13:41:32] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:42:24.484Z] [13:42:24] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:42:31.312Z] [13:42:31] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:42:55.020Z] [13:42:55] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:43:00.731Z] [13:43:00] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:43:48.498Z] [13:43:48] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:43:56.760Z] [13:43:56] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:45:18.156Z] [13:45:18] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:45:24.334Z] [13:45:24] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:45:49.079Z] [13:45:49] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:47:41.352Z] [13:47:41] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:47:47.633Z] [13:47:47] [ZONE_CHANGE] Setting sail into Zone 6: Frostbite Fjord (Lv 27+)
+[2026-10-04T13:48:48.829Z] [MILESTONE] Captain cuang-bot is now Level 32! Coins: 6,251 | Zone: 6 | Vessel: boat-sail-a
+[2026-10-04T13:48:53.907Z] [13:48:53] [SKILL] Allocated skill point to: ASPD (1/30)
+[2026-10-04T13:48:53.911Z] [13:48:53] [ZONE_CHANGE] Advancing from Zone 6 to Zone 7 (Glacier Rift)!
+[2026-10-04T13:48:59.805Z] [13:48:59] [SKILL] Allocated skill point to: ASPD (1/30)
+[2026-10-04T13:48:59.805Z] [13:48:59] [ZONE_CHANGE] Advancing from Zone 6 to Zone 7 (Glacier Rift)!
+[2026-10-04T13:49:06.291Z] [13:49:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:49:14.390Z] [13:49:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:49:35.355Z] [13:49:35] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:49:40.736Z] [13:49:40] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:50:06.290Z] [13:50:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:50:13.259Z] [13:50:13] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:50:31.399Z] [13:50:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:50:59.943Z] [13:50:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:51:10.103Z] [13:51:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:51:42.823Z] [13:51:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:51:49.272Z] [13:51:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:52:04.284Z] [13:52:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:52:07.300Z] [13:52:07] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:52:27.275Z] [13:52:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:52:32.931Z] [13:52:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:52:45.142Z] [13:52:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:52:51.327Z] [13:52:51] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:53:04.823Z] [13:53:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:53:25.430Z] [13:53:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:53:33.092Z] [13:53:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:53:39.624Z] [13:53:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:53:46.761Z] [13:53:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:54:01.383Z] [13:54:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:54:16.321Z] [13:54:16] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:54:25.776Z] [13:54:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:54:31.676Z] [13:54:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:54:48.131Z] [13:54:48] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:54:54.524Z] [13:54:54] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:55:32.749Z] [13:55:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:55:41.531Z] [13:55:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:56:03.023Z] [13:56:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:56:36.136Z] [13:56:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:56:39.298Z] [13:56:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:57:09.848Z] [13:57:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:57:19.565Z] [13:57:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:58:01.190Z] [13:58:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:58:39.216Z] [13:58:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:59:02.793Z] [13:59:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T13:59:09.364Z] [13:59:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:00:02.681Z] [14:00:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:00:32.235Z] [14:00:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:00:37.797Z] [14:00:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:01:26.290Z] [14:01:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:01:33.828Z] [14:01:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:02:09.967Z] [14:02:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:02:17.686Z] [14:02:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:02:25.327Z] [14:02:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:02:40.287Z] [14:02:40] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:02:46.103Z] [14:02:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:03:22.939Z] [14:03:22] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:03:30.087Z] [14:03:30] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:03:42.565Z] [14:03:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:03:50.264Z] [14:03:50] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:05:21.467Z] [14:05:21] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:05:28.839Z] [14:05:28] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:05:54.439Z] [14:05:54] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:06:03.614Z] [14:06:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:06:10.006Z] [14:06:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:06:41.010Z] [14:06:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:06:47.322Z] [14:06:47] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:07:07.237Z] [14:07:07] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:07:13.742Z] [14:07:13] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:07:45.585Z] [14:07:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:07:53.807Z] [14:07:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:09:14.905Z] [14:09:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:09:21.933Z] [14:09:21] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:09:32.523Z] [14:09:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:09:49.458Z] [14:09:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:09:55.790Z] [14:09:55] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:10:22.273Z] [14:10:22] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:10:31.281Z] [14:10:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:10:45.583Z] [14:10:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:11:32.960Z] [14:11:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:11:38.185Z] [14:11:38] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:12:14.422Z] [14:12:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:12:19.989Z] [14:12:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:13:19.955Z] [14:13:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:13:27.052Z] [14:13:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:13:58.275Z] [14:13:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:14:05.138Z] [14:14:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:14:09.341Z] [14:14:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:14:50.533Z] [14:14:50] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:14:57.536Z] [14:14:57] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:15:43.509Z] [14:15:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:15:49.807Z] [14:15:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:16:20.784Z] [14:16:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:16:44.697Z] [14:16:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:17:02.240Z] [14:17:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:17:08.221Z] [14:17:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:17:52.153Z] [14:17:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:18:00.503Z] [14:18:00] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:18:26.022Z] [14:18:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:18:33.830Z] [14:18:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:18:59.369Z] [14:18:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:19:06.652Z] [14:19:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:19:40.243Z] [14:19:40] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:19:48.623Z] [14:19:48] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:20:34.742Z] [14:20:34] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:20:41.441Z] [14:20:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:21:02.014Z] [14:21:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:21:08.874Z] [14:21:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:21:28.901Z] [14:21:28] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:21:47.207Z] [14:21:47] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:21:55.208Z] [14:21:55] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:22:35.707Z] [14:22:35] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:22:42.339Z] [14:22:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:22:53.578Z] [14:22:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:23:00.087Z] [14:23:00] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:23:16.875Z] [14:23:16] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:23:19.528Z] [14:23:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:23:43.441Z] [14:23:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:23:51.262Z] [14:23:51] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:24:08.862Z] [14:24:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:24:14.990Z] [14:24:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:24:49.031Z] [14:24:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:25:15.945Z] [14:25:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:25:23.033Z] [14:25:23] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:25:32.578Z] [14:25:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:25:38.900Z] [14:25:38] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:26:06.112Z] [14:26:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:26:14.433Z] [14:26:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:27:10.760Z] [14:27:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:27:18.317Z] [14:27:18] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:28:04.116Z] [14:28:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:28:18.943Z] [14:28:18] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:28:27.593Z] [14:28:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:29:05.801Z] [14:29:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:29:12.677Z] [14:29:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:29:20.256Z] [14:29:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:29:58.310Z] [14:29:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:30:19.982Z] [14:30:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:30:48.228Z] [14:30:48] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:30:57.500Z] [14:30:57] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:31:19.391Z] [14:31:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:31:26.168Z] [14:31:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:31:32.218Z] [14:31:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:32:09.732Z] [14:32:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:32:53.360Z] [14:32:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:32:57.642Z] [14:32:57] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:33:17.463Z] [14:33:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:34:03.275Z] [14:34:03] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T14:34:10.473Z] [14:34:10] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T14:34:10.474Z] [14:34:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:34:10.475Z] [14:34:10] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T14:34:20.075Z] [14:34:20] [FORGE] Crafted new blaster at Forge: Tri-Spreader for 10,000 coins!
+[2026-10-04T14:34:20.078Z] [14:34:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:34:20.079Z] [14:34:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:34:20.080Z] [14:34:20] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T14:34:26.575Z] [14:34:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:34:26.577Z] [14:34:26] [UPGRADE] Equipped newly forged weapon: Tri-Spreader
+[2026-10-04T14:34:51.227Z] [14:34:51] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:34:58.786Z] [14:34:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:35:07.481Z] [14:35:07] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:35:21.858Z] [14:35:21] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:35:31.075Z] [14:35:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:35:58.178Z] [14:35:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:36:04.525Z] [14:36:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:36:36.931Z] [14:36:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:36:45.754Z] [14:36:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:37:06.803Z] [14:37:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:37:13.708Z] [14:37:13] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:37:19.651Z] [14:37:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:37:43.591Z] [14:37:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:38:03.506Z] [14:38:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:38:11.082Z] [14:38:11] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:38:45.432Z] [14:38:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:38:53.431Z] [14:38:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:39:29.914Z] [14:39:29] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:39:38.130Z] [14:39:38] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:39:56.089Z] [14:39:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:40:03.669Z] [14:40:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:40:18.354Z] [14:40:18] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:40:25.324Z] [14:40:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:40:41.053Z] [14:40:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:40:56.129Z] [14:40:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:41:03.133Z] [14:41:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:41:37.957Z] [14:41:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:41:45.988Z] [14:41:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:42:09.075Z] [14:42:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:42:17.171Z] [14:42:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:43:25.980Z] [14:43:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:43:32.921Z] [14:43:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:43:44.231Z] [14:43:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:43:53.843Z] [14:43:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:44:35.373Z] [14:44:35] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:44:42.310Z] [14:44:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:44:48.832Z] [14:44:48] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:45:15.558Z] [14:45:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:45:24.910Z] [14:45:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:45:31.496Z] [14:45:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:45:53.563Z] [14:45:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:46:03.759Z] [14:46:03] [PARTY] Popup: Party invitation from Captain william. Accepting!
+[2026-10-04T14:46:03.760Z] [14:46:03] [PARTY] Party disbanded or kicked from crew. Resuming independent solo grind!
+[2026-10-04T14:46:03.760Z] [14:46:03] [ZONE_CHANGE] Setting sail solo into Zone 7: Glacier Rift
+[2026-10-04T14:46:03.760Z] [14:46:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:46:26.289Z] [14:46:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:46:30.783Z] [14:46:30] [PARTY] Area vote proposed by party leader. Auto-voting YES!
+[2026-10-04T14:46:35.553Z] [14:46:35] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:46:44.357Z] [14:46:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:46:51.353Z] [14:46:51] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:47:01.054Z] [14:47:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:47:01.062Z] [14:47:01] [PARTY] Area vote proposed by party leader. Auto-voting YES!
+[2026-10-04T14:47:08.382Z] [14:47:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:48:39.828Z] [MILESTONE] Captain cuang-bot is now Level 33! Coins: 8,931 | Zone: 7 | Vessel: boat-sail-a
+[2026-10-04T14:48:41.880Z] [14:48:41] [SKILL] Allocated skill point to: ASPD (2/30)
+[2026-10-04T14:48:45.229Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 8,981 | Zone: 7 | Vessel: boat-sail-a
+[2026-10-04T14:48:54.752Z] [14:48:54] [SKILL] Allocated skill point to: ASPD (2/30)
+[2026-10-04T14:49:00.923Z] [14:49:00] [SYSTEM] Dismissed Zone Clear modal (stayed fishing)
+[2026-10-04T14:49:07.806Z] [14:49:06] [PARTY] Party disbanded or kicked from crew. Resuming independent solo grind!
+[2026-10-04T14:49:07.806Z] [14:49:06] [ZONE_CHANGE] Setting sail solo into Zone 7: Glacier Rift
+[2026-10-04T14:49:07.807Z] [14:49:06] [SKILL] Allocated skill point to: ASPD (2/30)
+[2026-10-04T14:49:16.634Z] [14:49:16] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:49:35.933Z] [14:49:35] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:49:41.977Z] [14:49:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:50:02.847Z] [14:50:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:50:09.042Z] [14:50:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:50:41.157Z] [14:50:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:50:49.129Z] [14:50:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:51:06.480Z] [14:51:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:51:17.333Z] [14:51:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:51:33.803Z] [14:51:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:51:40.710Z] [14:51:40] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:52:10.060Z] [14:52:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:52:17.987Z] [14:52:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:52:42.517Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T14:52:46.219Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T14:52:48.064Z] Waiting for harbor and captain session to load...
+[2026-10-04T14:52:51.734Z] [.WebGL-0x23f4008e6c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T14:53:11.836Z] [.WebGL-0x23f4008e6c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T14:53:11.837Z] [.WebGL-0x23f4008e6c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T14:53:14.133Z] [.WebGL-0x23f4008e6c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T14:53:29.518Z] Session loaded: {"name":"cuang-bot","level":34,"coins":9388}
+[2026-10-04T14:53:31.835Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T14:53:34.123Z] [14:53:34] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T14:53:36.201Z] [14:53:36] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T14:53:36.202Z] Auto-Progression Bot injected and active!
+[2026-10-04T14:53:46.726Z] [14:53:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:53:50.438Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 9,388 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T14:53:50.516Z] [14:53:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:53:54.626Z] [14:53:54] [MARKET] Market Deal: Rift Seeker (Q: 45%) for 28,000 coins (90% off fair val of 270,000) by Kent
+[2026-10-04T14:54:13.552Z] [14:54:13] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:54:17.940Z] [14:54:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:54:32.624Z] [14:54:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:55:20.317Z] [14:55:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:55:38.130Z] [14:55:38] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:55:44.651Z] [14:55:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:56:07.441Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T14:56:16.322Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T14:56:18.669Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T14:56:19.964Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T14:56:22.605Z] Waiting for harbor and captain session to load...
+[2026-10-04T14:56:23.871Z] [.WebGL-0x399400965a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T14:56:43.067Z] [.WebGL-0x399400965a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T14:56:45.572Z] [.WebGL-0x399400965a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T14:56:47.976Z] [.WebGL-0x399400965a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T14:56:56.881Z] Session loaded: {"name":"cuang-bot","level":34,"coins":9860}
+[2026-10-04T14:56:59.373Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T14:57:01.667Z] [14:57:01] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T14:57:04.079Z] [14:57:04] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T14:57:04.080Z] Auto-Progression Bot injected and active!
+[2026-10-04T14:57:06.890Z] [14:57:06] [UPGRADE] Equipped best weapon in inventory: Tri-Spreader (Tier 1, Q: 51%)
+[2026-10-04T14:57:07.198Z] [14:57:06] [MARKET] Listing duplicate trispread on Market for 9,800 coins.
+[2026-10-04T14:57:07.206Z] [14:57:07] [MARKET] Listing duplicate trispread on Market for 9,400 coins.
+[2026-10-04T14:57:07.206Z] [14:57:07] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:57:11.464Z] [14:57:11] [UPGRADE] Equipped best weapon in inventory: Tri-Spreader (Tier 1, Q: 51%)
+[2026-10-04T14:57:11.464Z] [14:57:11] [MARKET] Listing duplicate trispread on Market for 9,800 coins.
+[2026-10-04T14:57:11.464Z] [14:57:11] [MARKET] Listing duplicate trispread on Market for 9,400 coins.
+[2026-10-04T14:57:11.464Z] [14:57:11] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:57:22.181Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 9,879 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T14:57:22.260Z] [14:57:21] [MARKET] Market Deal: Rift Seeker (Q: 45%) for 28,000 coins (90% off fair val of 270,000) by Kent
+[2026-10-04T14:57:24.486Z] [14:57:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:57:46.483Z] [IPC] Triggering test chat: {"text":"Ahoy cuang-bot, how is the fishing?","from":"william","ch":"global"}
+[2026-10-04T14:57:48.075Z] [14:57:48] [CHAT] Incoming [GLOBAL] from william: "Ahoy cuang-bot, how is the fishing?"
+[2026-10-04T14:57:53.362Z] [14:57:53] [CHAT] Gemini 3.5 Flash Lite reply: "Ahoy william! We are blasting reef fish straight from our cannons today!" -> Sending to GLOBAL...
+[2026-10-04T14:57:53.362Z] [14:57:53] [CHAT] Successfully sent message to GLOBAL: "Ahoy william! We are blasting reef fish straight from our cannons today!"
+[2026-10-04T14:57:59.162Z] [14:57:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:58:03.275Z] [14:58:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:58:33.086Z] [14:58:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:58:37.761Z] [14:58:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:58:39.462Z] [IPC] Triggering test chat: {"text":"ready for boss?","from":"william","ch":"party"}
+[2026-10-04T14:58:41.095Z] [14:58:41] [CHAT] Incoming [PARTY] from william: "ready for boss?"
+[2026-10-04T14:58:45.371Z] [14:58:45] [CHAT] Gemini 3.5 Flash Lite reply: "Ahoy william, blast the reef and let us sink that boss together!" -> Sending to PARTY...
+[2026-10-04T14:58:45.371Z] [14:58:45] [CHAT] Successfully sent message to PARTY: "Ahoy william, blast the reef and let us sink that boss together!"
+[2026-10-04T14:58:53.007Z] [14:58:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T14:59:15.892Z] [14:59:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:00:14.363Z] [15:00:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:00:18.471Z] [15:00:18] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:01:32.677Z] [15:01:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:01:37.370Z] [15:01:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:01:46.805Z] [15:01:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:01:51.082Z] [15:01:51] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:02:01.869Z] [15:02:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:02:27.482Z] [15:02:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:02:32.971Z] [15:02:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:02:48.562Z] [15:02:48] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:02:52.918Z] [15:02:52] [CHAT] Incoming [GLOBAL] from william: "hey"
+[2026-10-04T15:02:58.272Z] [15:02:58] [CHAT] Gemini 3.5 Flash Lite reply: "Ahoy william, grab yer cannons and let us blast some fish on the reef" -> Sending to GLOBAL...
+[2026-10-04T15:02:58.273Z] [15:02:58] [CHAT] Successfully sent message to GLOBAL: "Ahoy william, grab yer cannons and let us blast some fish on the reef"
+[2026-10-04T15:03:08.862Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:03:14.377Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:05:47.835Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T15:06:13.851Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T15:06:16.407Z] Waiting for harbor and captain session to load...
+[2026-10-04T15:06:17.536Z] [.WebGL-0x222400c16600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:06:34.755Z] [.WebGL-0x222400c16600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:06:37.555Z] [.WebGL-0x222400c16600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:06:40.441Z] [.WebGL-0x222400c16600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T15:06:56.583Z] Session loaded: {"name":"cuang-bot","level":34,"coins":12143}
+[2026-10-04T15:06:58.742Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T15:07:00.955Z] [15:07:00] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:07:01.131Z] [15:07:01] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:07:01.131Z] Auto-Progression Bot injected and active!
+[2026-10-04T15:07:05.828Z] [15:07:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:07:10.344Z] [15:07:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:07:13.229Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 12,143 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T15:07:15.131Z] [15:07:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:07:15.134Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:07:15.956Z] [15:07:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:07:17.557Z] [15:07:17] [MARKET] Market Deal: Rift Seeker (Q: 45%) for 28,000 coins (90% off fair val of 270,000) by Kent
+[2026-10-04T15:07:26.752Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:07:31.339Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:07:36.547Z] [15:07:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:07:39.839Z] [15:07:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:07:47.932Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:07:49.733Z] [IPC] Triggering Gemini command: {"command":"Captain cuang-bot, what are your recent logs and what level and vessel are you on? Also set your skill priority to crit, aspd, atk, regen, hp, def!","from":"FleetAdmiral","ch":"party"}
+[2026-10-04T15:07:51.157Z] [15:07:51] [CHAT] Incoming [PARTY] from FleetAdmiral: "Captain cuang-bot, what are your recent logs and what level and vessel are you on? Also set your skill priority to crit, aspd, atk, regen, hp, def!"
+[2026-10-04T15:07:52.648Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:07:55.557Z] [15:07:55] [GEMINI] [Gemini Action] Executing: set_skill_priority
+[2026-10-04T15:07:55.558Z] [15:07:55] [SYSTEM] [Gemini] Updated skill priority order: crit > aspd > atk > regen > hp > def
+[2026-10-04T15:07:55.558Z] [15:07:55] [CHAT] Gemini 3.5 Flash Lite reply: "Ahoy FleetAdmiral, my logs show we sailed to Glacier Rift, I am level thirty four commanding a trusty Skiff!" -> Sending to PARTY...
+[2026-10-04T15:07:55.561Z] [15:07:55] [CHAT] Successfully sent message to PARTY: "Ahoy FleetAdmiral, my logs show we sailed to Glacier Rift, I am level thirty four commanding a trusty Skiff!"
+[2026-10-04T15:07:57.751Z] [15:07:57] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:02.135Z] [15:08:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:04.245Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:08:06.446Z] [15:08:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:14.347Z] [15:08:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:14.432Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:08:16.554Z] [IPC] Triggering Gemini command: {"command":"Captain cuang-bot, how many unspent skill points do we have, what are our current skill numbers, and what is our best combo? If we have any points, put them into crit!","from":"Quartermaster","ch":"global"}
+[2026-10-04T15:08:18.735Z] [15:08:18] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:18.737Z] [15:08:18] [CHAT] Incoming [GLOBAL] from Quartermaster: "Captain cuang-bot, how many unspent skill points do we have, what are our current skill numbers, and what is our best combo? If we have any points, put them into crit!"
+[2026-10-04T15:08:24.140Z] [15:08:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:24.142Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:08:26.663Z] [15:08:26] [CHAT] Gemini 3.5 Flash Lite reply: "We hold zero unspent skill points, firepower sits at thirty, and our finest combo reached fifty nine." -> Sending to GLOBAL...
+[2026-10-04T15:08:26.729Z] [15:08:26] [CHAT] Successfully sent message to GLOBAL: "We hold zero unspent skill points, firepower sits at thirty, and our finest combo reached fifty nine."
+[2026-10-04T15:08:29.265Z] [15:08:29] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:34.045Z] [15:08:34] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:34.050Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:08:36.348Z] [IPC] Triggering Gemini command: {"command":"Captain cuang-bot, please return our vessel to the Harbor to inspect the tavern and shipyard!","from":"HarborMaster","ch":"party"}
+[2026-10-04T15:08:41.600Z] [15:08:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:41.600Z] [15:08:41] [CHAT] Incoming [PARTY] from HarborMaster: "Captain cuang-bot, please return our vessel to the Harbor to inspect the tavern and shipyard!"
+[2026-10-04T15:08:43.632Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:08:43.632Z] [15:08:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:43.633Z] [15:08:43] [GEMINI] [Gemini Action] Executing: set_zone
+[2026-10-04T15:08:43.633Z] [15:08:43] [ZONE_CHANGE] [Gemini] Returning vessel to Harbor.
+[2026-10-04T15:08:43.633Z] [15:08:43] [CHAT] Gemini 3.5 Flash Lite reply: "Aye HarborMaster, we are dropping anchor at the Harbor right now to inspect our tavern and shipyard." -> Sending to PARTY...
+[2026-10-04T15:08:43.634Z] [15:08:43] [CHAT] Successfully sent message to PARTY: "Aye HarborMaster, we are dropping anchor at the Harbor right now to inspect our tavern and shipyard."
+[2026-10-04T15:08:47.737Z] [15:08:47] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:51.847Z] [15:08:51] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:08:54.504Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:08:56.640Z] [15:08:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:00.740Z] [15:09:00] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:04.845Z] [15:09:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:04.929Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:09:09.054Z] [15:09:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:13.341Z] [15:09:13] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:13.344Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:09:17.459Z] [15:09:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:19.858Z] [15:09:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:22.653Z] [15:09:22] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:24.641Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:09:37.350Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:09:42.827Z] [15:09:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:45.028Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:09:47.562Z] [15:09:47] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:52.045Z] [15:09:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:09:54.236Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:09:56.446Z] [15:09:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:00.738Z] [15:10:00] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:04.849Z] [15:10:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:04.940Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:10:08.954Z] [15:10:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:13.334Z] [15:10:13] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:15.351Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:10:17.438Z] [15:10:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:24.241Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:10:32.166Z] [15:10:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:34.535Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:10:34.538Z] [15:10:34] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:36.940Z] [15:10:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:41.541Z] [15:10:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:43.842Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:10:45.935Z] [15:10:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:50.131Z] [15:10:50] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:54.633Z] [15:10:54] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:10:54.664Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:10:54.932Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:11:01.245Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:11:06.154Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T15:11:07.897Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T15:11:09.931Z] Waiting for harbor and captain session to load...
+[2026-10-04T15:11:11.168Z] [.WebGL-0x3f2c00908400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:11:32.159Z] [.WebGL-0x3f2c00908400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:11:35.915Z] [.WebGL-0x3f2c00908400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:11:39.856Z] [.WebGL-0x3f2c00908400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T15:11:53.166Z] Session loaded: {"name":"cuang-bot","level":34,"coins":12200}
+[2026-10-04T15:11:55.876Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T15:11:58.756Z] [15:11:58] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:11:58.852Z] [15:11:58] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:11:58.852Z] Auto-Progression Bot injected and active!
+[2026-10-04T15:12:05.509Z] [15:12:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:10.659Z] [15:12:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:10.766Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 12,200 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T15:12:13.368Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:12:15.861Z] [15:12:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:21.080Z] [15:12:21] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:23.893Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:12:23.956Z] [15:12:23] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:27.055Z] [IPC] Executing eval.js...
+[2026-10-04T15:12:33.949Z] [15:12:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:34.056Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:12:36.748Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:12:39.649Z] [15:12:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:42.455Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:12:44.848Z] [15:12:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:49.671Z] [15:12:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:52.376Z] [15:12:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:12:52.461Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:12:59.637Z] [15:12:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:13:02.957Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:13:07.273Z] [15:13:07] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:13:12.459Z] [15:13:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:13:12.556Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:13:17.694Z] [15:13:17] [MARKET] Market Deal: Rift Seeker (Q: 45%) for 28,000 coins (90% off fair val of 270,000) by Kent
+[2026-10-04T15:13:21.855Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:13:31.462Z] [15:13:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:13:34.783Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:13:34.850Z] [15:13:34] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:13:41.759Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:13:53.168Z] [15:13:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:13:53.262Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:13:56.565Z] [IPC] Executing eval.js...
+[2026-10-04T15:13:59.148Z] [15:13:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:13:59.153Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:14:03.516Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:14:08.470Z] [15:14:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:13.171Z] [15:14:13] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:13.177Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:14:15.648Z] [15:14:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:21.172Z] [15:14:21] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:24.452Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:14:27.262Z] [15:14:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:33.452Z] [15:14:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:33.453Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:14:39.156Z] [15:14:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:41.997Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:14:41.997Z] [15:14:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:14:52.001Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:14:56.253Z] [15:14:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:15:01.176Z] [15:15:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:15:03.667Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:15:06.984Z] [15:15:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:15:12.482Z] [15:15:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:15:12.551Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:15:17.467Z] [15:15:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:15:19.252Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:15:29.727Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T15:15:31.230Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T15:15:33.030Z] Waiting for harbor and captain session to load...
+[2026-10-04T15:15:34.530Z] [.WebGL-0x3c7c0094be00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:15:51.043Z] [.WebGL-0x3c7c0094be00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:15:53.627Z] [.WebGL-0x3c7c0094be00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:15:56.087Z] [.WebGL-0x3c7c0094be00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T15:16:08.728Z] Session loaded: {"name":"cuang-bot","level":34,"coins":12219}
+[2026-10-04T15:16:10.837Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T15:16:13.233Z] [15:16:13] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:16:13.345Z] [15:16:13] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:16:13.345Z] Auto-Progression Bot injected and active!
+[2026-10-04T15:16:15.520Z] [15:16:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:22.322Z] [15:16:22] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:24.829Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 12,219 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T15:16:27.220Z] [15:16:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:27.220Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:16:32.522Z] [15:16:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:39.532Z] [15:16:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:39.533Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:16:43.717Z] [15:16:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:45.731Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:16:47.740Z] [15:16:47] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:52.126Z] [15:16:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:56.727Z] [15:16:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:16:56.815Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:16:58.923Z] [IPC] Executing eval.js...
+[2026-10-04T15:17:01.115Z] [15:17:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:01.118Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:17:05.212Z] [15:17:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:07.218Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:17:17.326Z] [15:17:17] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:19.722Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:17:22.335Z] [15:17:22] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:22.338Z] [IPC] Executing eval.js...
+[2026-10-04T15:17:24.741Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:17:27.232Z] [15:17:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:27.317Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:17:32.130Z] [15:17:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:36.724Z] [15:17:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:37.013Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:17:41.619Z] [15:17:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:49.123Z] [15:17:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:51.132Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:17:53.413Z] [15:17:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:57.512Z] [15:17:57] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:17:57.517Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:18:01.814Z] [15:18:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:06.028Z] [15:18:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:06.029Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:18:12.799Z] [15:18:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:14.724Z] [15:18:14] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:18:16.712Z] [15:18:16] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:16.715Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:18:19.018Z] [15:18:18] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:18:21.437Z] [15:18:21] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:24.315Z] [15:18:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:26.730Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:18:26.730Z] [15:18:26] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:18:26.731Z] [15:18:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:31.835Z] [15:18:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:38.691Z] [15:18:38] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:18:38.698Z] [15:18:38] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:38.712Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:18:41.212Z] [15:18:41] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:18:41.215Z] [15:18:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:45.338Z] [15:18:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:47.428Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:18:49.526Z] [15:18:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:51.617Z] [15:18:51] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:18:53.829Z] [15:18:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:56.033Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:18:58.025Z] [15:18:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:18:58.041Z] [IPC] Executing eval.js...
+[2026-10-04T15:18:58.043Z] [15:18:58] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:00.234Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:19:02.476Z] [15:19:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:06.730Z] [15:19:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:06.741Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:19:10.133Z] [15:19:10] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:12.224Z] [15:19:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:16.215Z] [15:19:16] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:16.217Z] [15:19:16] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:16.217Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:19:18.317Z] [IPC] Executing eval.js...
+[2026-10-04T15:19:24.335Z] [15:19:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:24.336Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:19:26.727Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:19:26.728Z] [15:19:26] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:26.732Z] [15:19:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:31.716Z] [15:19:31] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:31.717Z] [15:19:31] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:36.325Z] [15:19:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:36.326Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:19:42.094Z] [15:19:42] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:42.095Z] [15:19:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:46.323Z] [15:19:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:46.324Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:19:48.438Z] [15:19:48] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:48.521Z] [IPC] Executing eval.js...
+[2026-10-04T15:19:50.628Z] [15:19:50] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:50.634Z] [15:19:50] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:50.713Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:19:54.918Z] [15:19:54] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:19:56.937Z] [15:19:56] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:19:57.026Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:19:59.320Z] [15:19:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:07.480Z] [15:20:07] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:08.420Z] [15:20:07] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:20:10.346Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:20:10.413Z] [15:20:10] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:20:12.522Z] [15:20:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:15.802Z] [15:20:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:17.729Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:20:20.243Z] [15:20:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:20.245Z] [15:20:20] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:20:20.245Z] [IPC] Executing eval.js...
+[2026-10-04T15:20:22.831Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:20:25.727Z] [15:20:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:28.224Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:20:28.231Z] [15:20:28] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:20:28.232Z] [15:20:28] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:33.237Z] [15:20:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:39.992Z] [15:20:39] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:20:43.216Z] [15:20:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:43.241Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:20:45.231Z] [15:20:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:47.420Z] [15:20:47] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:20:47.423Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:20:49.518Z] [15:20:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:51.532Z] [15:20:51] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:20:53.736Z] [15:20:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:20:55.944Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:20:58.128Z] [15:20:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:00.416Z] [15:21:00] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:21:02.523Z] [15:21:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:06.533Z] [15:21:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:06.621Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:21:08.821Z] [15:21:08] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:21:10.929Z] [15:21:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:15.122Z] [15:21:15] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:21:15.122Z] [15:21:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:17.129Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:21:19.714Z] [15:21:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:24.630Z] [15:21:24] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:21:24.633Z] [15:21:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:24.721Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:21:29.741Z] [15:21:29] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:33.292Z] [15:21:33] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:21:33.301Z] [15:21:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:38.716Z] [15:21:38] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:21:38.719Z] [15:21:38] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:38.720Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:21:43.123Z] [15:21:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:21:45.124Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:21:53.720Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:21:56.416Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T15:21:57.811Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T15:22:01.109Z] Waiting for harbor and captain session to load...
+[2026-10-04T15:22:02.130Z] [.WebGL-0x2d0402bc8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:22:16.513Z] [.WebGL-0x2d0402bc8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:22:19.436Z] [.WebGL-0x2d0402bc8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:22:22.530Z] [.WebGL-0x2d0402bc8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T15:22:41.211Z] Session loaded: {"name":"cuang-bot","level":34,"coins":12257}
+[2026-10-04T15:22:43.325Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T15:22:45.522Z] [15:22:45] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:22:45.616Z] [15:22:45] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:22:45.617Z] Auto-Progression Bot injected and active!
+[2026-10-04T15:22:54.739Z] [15:22:54] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:22:57.211Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 12,257 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T15:22:59.408Z] [15:22:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:22:59.409Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:23:01.812Z] [15:23:01] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:06.231Z] [15:23:06] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:08.629Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:23:10.720Z] [15:23:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:14.924Z] [15:23:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:19.221Z] [15:23:19] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:19.237Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:23:21.711Z] [IPC] Executing eval.js...
+[2026-10-04T15:23:24.419Z] [15:23:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:32.533Z] [15:23:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:32.534Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:23:32.534Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:23:37.117Z] [15:23:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:39.718Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:23:41.711Z] [15:23:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:45.927Z] [15:23:45] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:49.207Z] [15:23:49] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:23:50.713Z] [15:23:50] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:23:50.717Z] [15:23:50] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:23:50.721Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:23:52.119Z] [IPC] Executing eval.js...
+[2026-10-04T15:23:54.536Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:23:56.633Z] [15:23:56] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:23:59.777Z] [15:23:59] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:23:59.789Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:24:04.047Z] [15:24:04] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:24:06.223Z] [15:24:06] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:24:08.409Z] [15:24:08] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:24:08.409Z] [15:24:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:24:08.411Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:24:12.627Z] [15:24:12] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:24:12.627Z] [15:24:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:24:12.628Z] [15:24:12] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:24:16.727Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:24:25.716Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:24:28.309Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T15:24:31.057Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T15:24:33.442Z] Waiting for harbor and captain session to load...
+[2026-10-04T15:24:35.560Z] [.WebGL-0x2dac00c2fe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:24:57.377Z] [.WebGL-0x2dac00c2fe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:25:01.675Z] [.WebGL-0x2dac00c2fe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:25:05.481Z] [.WebGL-0x2dac00c2fe00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T15:25:19.181Z] Session loaded: {"name":"cuang-bot","level":34,"coins":12257}
+[2026-10-04T15:25:22.880Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T15:25:26.383Z] [15:25:26] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:25:26.560Z] [15:25:26] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:25:26.562Z] Auto-Progression Bot injected and active!
+[2026-10-04T15:25:37.561Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 12,257 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T15:25:37.563Z] [15:25:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:25:47.280Z] [15:25:47] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:25:53.857Z] [15:25:53] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:25:57.189Z] [15:25:57] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:04.259Z] [15:26:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:10.559Z] [15:26:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:16.889Z] [15:26:16] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:20.379Z] [15:26:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:25.383Z] [15:26:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:32.270Z] [IPC] Executing eval.js...
+[2026-10-04T15:26:32.357Z] [15:26:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:38.675Z] [15:26:38] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:41.582Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:26:44.669Z] [15:26:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:55.875Z] [15:26:55] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:26:55.875Z] [IPC] Executing eval.js...
+[2026-10-04T15:26:59.161Z] [IPC] Failed to execute eval.js: page.evaluate: TypeError: Cannot read properties of null (reading 'addEventListener')
+    at eval (eval at evaluate (:311:30), <anonymous>:4:8)
+    at eval (eval at evaluate (:311:30), <anonymous>:13:3)
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:311:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[2026-10-04T15:26:59.175Z] [15:26:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:05.577Z] [15:27:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:14.093Z] [15:27:14] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:14.094Z] [IPC] Executing eval.js...
+[2026-10-04T15:27:20.766Z] [15:27:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:20.771Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:27:24.091Z] [15:27:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:30.557Z] [15:27:30] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:37.357Z] [15:27:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:40.384Z] [15:27:40] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:46.672Z] [15:27:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:49.864Z] [15:27:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:27:58.686Z] [15:27:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:05.865Z] [15:28:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:08.974Z] [15:28:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:15.161Z] [15:28:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:20.568Z] [15:28:20] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:23.961Z] [15:28:23] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:27.068Z] [15:28:27] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:33.383Z] [15:28:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:36.688Z] [15:28:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:43.087Z] [15:28:43] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:46.472Z] [15:28:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:52.778Z] [15:28:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:28:59.275Z] [15:28:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:02.684Z] [IPC] Executing eval.js...
+[2026-10-04T15:29:05.757Z] [15:29:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:05.781Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:29:12.676Z] [15:29:12] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:18.674Z] [15:29:18] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:24.874Z] [15:29:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:33.163Z] [15:29:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:36.086Z] [IPC] Executing eval.js...
+[2026-10-04T15:29:36.159Z] [15:29:36] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:39.662Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:29:42.976Z] [15:29:42] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:46.077Z] [15:29:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:52.782Z] [15:29:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:29:59.071Z] [15:29:59] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:02.379Z] [15:30:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:08.683Z] [15:30:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:12.726Z] [IPC] Executing eval.js...
+[2026-10-04T15:30:15.670Z] [15:30:15] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:15.690Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:30:21.976Z] [15:30:21] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:28.280Z] [15:30:28] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:37.532Z] [15:30:37] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:41.177Z] [IPC] Executing eval.js...
+[2026-10-04T15:30:41.182Z] [15:30:41] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:44.172Z] [IPC] Failed to execute eval.js: page.evaluate: TypeError: Cannot read properties of null (reading 'onmessage')
+    at eval (eval at evaluate (:311:30), <anonymous>:4:30)
+    at eval (eval at evaluate (:311:30), <anonymous>:21:3)
+    at eval (<anonymous>)
+    at UtilityScript.evaluate (<anonymous>:311:30)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[2026-10-04T15:30:44.173Z] [15:30:44] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:50.478Z] [15:30:50] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:30:56.577Z] [15:30:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:03.459Z] [15:31:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:03.860Z] [15:31:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:04.284Z] [15:31:04] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:05.786Z] [15:31:05] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:18.969Z] [15:31:18] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:22.468Z] [IPC] Executing eval.js...
+[2026-10-04T15:31:25.573Z] [15:31:25] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:25.664Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:31:32.584Z] [15:31:32] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:40.654Z] [15:31:40] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:46.590Z] [15:31:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:49.960Z] [15:31:49] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:52.961Z] [IPC] Executing eval.js...
+[2026-10-04T15:31:52.966Z] [15:31:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:52.969Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:31:56.073Z] [15:31:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:31:59.063Z] [15:31:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:02.583Z] [15:32:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:09.755Z] [15:32:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:16.559Z] [15:32:16] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:23.386Z] [15:32:23] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:23.386Z] [IPC] Executing eval.js...
+[2026-10-04T15:32:26.561Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:32:26.564Z] [15:32:26] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:33.079Z] [15:32:33] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:39.681Z] [15:32:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:46.157Z] [15:32:46] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:52.591Z] [15:32:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:52.662Z] [IPC] Executing eval.js...
+[2026-10-04T15:32:55.860Z] [IPC] Executed eval.js successfully
+[2026-10-04T15:32:55.969Z] [15:32:55] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:32:59.183Z] [ERROR] Monitor poll error: page.evaluate: Execution context was destroyed, most likely because of a navigation
+[2026-10-04T15:33:49.617Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:34:13.215Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:34:33.210Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:34:53.173Z] [WARN] Connection lost detected. Triggering reconnect...
+[2026-10-04T15:35:00.558Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:35:07.464Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:35:34.141Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T15:35:35.957Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T15:35:37.241Z] [PAGE_ERROR] Cannot read properties of null (reading 'appendChild')
+[2026-10-04T15:35:37.449Z] [PAGE_ERROR] Cannot read properties of null (reading 'appendChild')
+[2026-10-04T15:35:38.345Z] Waiting for harbor and captain session to load...
+[2026-10-04T15:35:38.549Z] [PAGE_ERROR] Cannot read properties of null (reading 'appendChild')
+[2026-10-04T15:35:39.644Z] [.WebGL-0x3e54009f6e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:35:54.759Z] [.WebGL-0x3e54009f6e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:35:57.156Z] [.WebGL-0x3e54009f6e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:35:59.755Z] [.WebGL-0x3e54009f6e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T15:36:16.751Z] Session loaded: {"name":"cuang-bot","level":34,"coins":12353}
+[2026-10-04T15:36:19.055Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T15:36:21.857Z] [15:36:21] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:36:21.975Z] [15:36:21] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:36:21.975Z] Auto-Progression Bot injected and active!
+[2026-10-04T15:36:24.739Z] [15:36:24] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:36:32.552Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:36:42.041Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed
+[2026-10-04T15:36:43.923Z] === Reefblast 24/7 Docker Runner Starting ===
+[2026-10-04T15:36:45.227Z] Navigating to https://greentea.id/reefblast/ ...
+[2026-10-04T15:36:47.024Z] Waiting for harbor and captain session to load...
+[2026-10-04T15:36:48.022Z] [.WebGL-0x73c009f0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:37:03.347Z] [.WebGL-0x73c009f0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:37:06.027Z] [.WebGL-0x73c009f0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels
+[2026-10-04T15:37:08.517Z] [.WebGL-0x73c009f0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)
+[2026-10-04T15:37:14.921Z] [15:37:14] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:37:15.024Z] [15:37:15] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:37:20.479Z] [15:37:20] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:37:23.845Z] Session loaded: {"name":"cuang-bot","level":34,"coins":12353}
+[2026-10-04T15:37:26.622Z] Injecting Reefblast Auto-Progression & Deal Hunter script...
+[2026-10-04T15:37:29.432Z] [15:37:29] [SYSTEM] Bot paused by user.
+[2026-10-04T15:37:29.435Z] [15:37:29] [SYSTEM] Auto-Progression & Deal Hunter initialized.
+[2026-10-04T15:37:29.443Z] [15:37:29] [SYSTEM] Bot started for Captain cuang-bot (Lv 34).
+[2026-10-04T15:37:29.445Z] Auto-Progression Bot injected and active!
+[2026-10-04T15:37:34.730Z] [15:37:34] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:37:41.048Z] [MILESTONE] Captain cuang-bot is now Level 34! Coins: 12,353 | Zone: Harbor | Vessel: boat-sail-a
+[2026-10-04T15:37:43.337Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:37:58.340Z] [15:37:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:38:00.335Z] [15:38:00] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:02.522Z] [15:38:02] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:38:02.522Z] [15:38:02] [SYSTEM] Attempting reconnection to game server...
+[2026-10-04T15:38:02.522Z] [15:38:02] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:08.539Z] [15:38:08] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:10.525Z] [15:38:10] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:38:12.631Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:38:14.824Z] [15:38:14] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:16.727Z] [15:38:16] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:24.248Z] [15:38:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:38:24.248Z] [15:38:24] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:30.128Z] [15:38:30] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:38:30.129Z] [15:38:30] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:38:32.426Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:38:32.426Z] [15:38:32] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:38:32.431Z] [15:38:32] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:38:37.141Z] [15:38:37] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:38:49.923Z] [15:38:49] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:52.030Z] [15:38:52] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:52.035Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:38:54.138Z] [15:38:54] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:38:54.145Z] [15:38:54] [SYSTEM] Attempting reconnection to game server...
+[2026-10-04T15:38:54.146Z] [15:38:54] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:54.147Z] [15:38:54] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:38:58.245Z] [15:38:58] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:39:02.427Z] [15:39:02] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:39:02.428Z] [15:39:02] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:06.531Z] [15:39:06] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:08.420Z] [15:39:08] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:39:08.422Z] [15:39:08] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:39:11.217Z] [15:39:11] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:39:11.217Z] [15:39:11] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:39:11.217Z] [15:39:11] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:39:11.222Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:39:21.935Z] [15:39:21] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:39:24.731Z] [15:39:24] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:27.243Z] [15:39:27] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:39:29.833Z] [15:39:29] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:32.334Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:39:37.030Z] [15:39:37] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:39.445Z] [15:39:39] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:39:43.625Z] [15:39:43] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:45.826Z] [15:39:45] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:47.930Z] [15:39:47] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:49.939Z] [15:39:49] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:39:50.017Z] [15:39:49] [SYSTEM] Attempting reconnection to game server...
+[2026-10-04T15:39:52.418Z] [15:39:52] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:52.418Z] [15:39:52] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:39:52.418Z] [15:39:52] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:39:56.525Z] [15:39:56] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:40:00.941Z] [15:40:00] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:00.942Z] [15:40:00] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:40:00.945Z] [15:40:00] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:03.041Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:40:09.228Z] [15:40:09] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:40:09.234Z] [15:40:09] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:15.330Z] [15:40:15] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:17.336Z] [15:40:17] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:19.723Z] [15:40:19] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:40:19.724Z] [15:40:19] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:24.921Z] [15:40:24] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:40:24.921Z] [15:40:24] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:24.921Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:40:27.347Z] [15:40:27] [SYSTEM] Attempting reconnection to game server...
+[2026-10-04T15:40:29.919Z] [15:40:29] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:40:34.745Z] [15:40:34] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:39.443Z] [15:40:39] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:41.826Z] [15:40:41] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:43.836Z] [15:40:43] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:40:43.838Z] [15:40:43] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:43.839Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:40:47.929Z] [15:40:47] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:40:47.930Z] [15:40:47] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:51.932Z] [15:40:51] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:40:56.317Z] [15:40:56] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:40:56.317Z] [15:40:56] [UPGRADE] SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!
+[2026-10-04T15:41:00.493Z] [15:41:00] [SYSTEM] Signed in elsewhere. Waiting before reconnecting...
+[2026-10-04T15:41:02.035Z] [WARN] Session kicked by another login. Retrying reconnect...
+[2026-10-04T15:41:03.427Z] [15:41:03] [ZONE_CHANGE] Setting sail into Zone 7: Glacier Rift (Lv 32+)
+[2026-10-04T15:41:03.431Z] [15:41:03] [UPGRADE] Found affordable market upgrade: Seeker for 5,000c. Returning to Harbor to buy!
+[2026-10-04T15:41:09.730Z] [ERROR] Monitor poll error: page.evaluate: Target page, context or browser has been closed

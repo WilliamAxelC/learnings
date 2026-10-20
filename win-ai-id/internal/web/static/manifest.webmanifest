@@ -1,0 +1,13 @@
+{
+  "name": "win.ai.id",
+  "short_name": "win",
+  "description": "Tiny daily wins, gentle AI coach.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f3faff",
+  "theme_color": "#eaf6ff",
+  "icons": [
+    { "src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

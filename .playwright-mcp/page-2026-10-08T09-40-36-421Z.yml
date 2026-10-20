@@ -1,0 +1,157 @@
+- main [ref=f3e2]:
+  - generic [ref=f3e3]:
+    - navigation "Main Navigation" [ref=f3e4]:
+      - link "win.ai.id mascot win .ai.id" [ref=f3e5] [cursor=pointer]:
+        - /url: /
+        - img "win.ai.id mascot" [ref=f3e6]
+        - text: win
+        - generic [ref=f3e7]: .ai.id
+      - generic [ref=f3e8]:
+        - link "Dev Log" [ref=f3e9] [cursor=pointer]:
+          - /url: /log
+        - link "Sign in" [ref=f3e10] [cursor=pointer]:
+          - /url: /login
+        - button "Switch to dark theme" [ref=f3e11] [cursor=pointer]
+    - generic [ref=f3e14]:
+      - generic [ref=f3e17]: Adaptive Behavioral Intelligence Engine
+      - heading "win.ai.id" [level=1] [ref=f3e30]
+      - paragraph [ref=f3e31]: Grounded daily execution, powered by Claude's contextual intelligence.
+      - paragraph [ref=f3e32]:
+        - text: Traditional to-do apps induce guilt with endless backlogs. Ungrounded chat bots hallucinate generic advice.
+        - strong [ref=f3e33]: win.ai.id
+        - text: bridges the gap with a human-in-the-loop AI coach that calibrates cognitive load, decomposes overwhelming projects into microscopic daily wins, and protects long-term momentum.
+      - generic [ref=f3e34]:
+        - generic [ref=f3e35]: Claude 3.5 Contextual Architecture
+        - generic [ref=f3e39]: Zero-Data Training Privacy
+        - generic [ref=f3e42]: Sub-50ms Go + SQLite Performance
+      - generic [ref=f3e45]:
+        - link "Try it" [ref=f3e46] [cursor=pointer]:
+          - /url: /login
+        - link "Read the dev log" [ref=f3e47] [cursor=pointer]:
+          - /url: /log
+    - region [ref=f3e48]:
+      - generic [ref=f3e49]:
+        - heading "Interactive Live Demo" [level=2] [ref=f3e50]
+        - paragraph [ref=f3e51]: Test the core experience right now. Click any task to toggle it, or prompt the AI coach below to propose a microscopic win.
+      - generic [ref=f3e53]:
+        - generic [ref=f3e54]:
+          - generic [ref=f3e55]: Interactive Sandbox · Click items to test
+          - generic "Reset demo state" [ref=f3e56] [cursor=pointer]: Reset Demo
+        - generic [ref=f3e57]:
+          - generic [ref=f3e58]: Today · Tuesday, 14 April
+          - generic [ref=f3e59]: 5 day streak · 1 skip available
+        - generic [ref=f3e65]:
+          - generic [ref=f3e66]: 2 of 3 won today
+          - generic [ref=f3e67]: 66%
+        - list [ref=f3e68]:
+          - listitem [ref=f3e69] [cursor=pointer]:
+            - button "Toggle task": ✓
+            - generic [ref=f3e70]:
+              - generic [ref=f3e71]: Drink a tall glass of cold water
+              - generic [ref=f3e72]: morning habit
+          - listitem [ref=f3e73] [cursor=pointer]:
+            - button "Toggle task": ✓
+            - generic [ref=f3e74]:
+              - generic [ref=f3e75]: 15-minute brisk walk outside
+              - generic [ref=f3e76]: weekdays habit
+          - listitem [ref=f3e77] [cursor=pointer]:
+            - button "Toggle task": ○
+            - generic [ref=f3e78]:
+              - generic [ref=f3e79]: Draft outline for project proposal
+              - generic [ref=f3e80]: coach proposal
+        - generic [ref=f3e81]:
+          - generic [ref=f3e82]:
+            - generic [ref=f3e83]: 🤖
+            - generic [ref=f3e84]:
+              - strong [ref=f3e85]: Claude Behavioral Copilot
+              - generic [ref=f3e86]: Contextual proposal engine · Zero autonomous writes
+          - generic [ref=f3e87]: "\"You've completed your physical habits! Feeling overwhelmed by the project proposal? Click below to let me deconstruct it into a low-friction micro-step.\""
+          - generic [ref=f3e88]:
+            - button "✨ Deconstruct big task" [ref=f3e89] [cursor=pointer]
+            - button "🧘 Low-energy recovery win" [ref=f3e90] [cursor=pointer]
+            - button "🌙 Evening shutdown win" [ref=f3e91] [cursor=pointer]
+        - paragraph [ref=f3e92]: Suggestions from your AI coach are always presented as proposals for you to accept, customize, or dismiss.
+    - region [ref=f3e93]:
+      - generic [ref=f3e94]:
+        - heading "The Claude Behavioral Architecture" [level=2] [ref=f3e95]
+        - paragraph [ref=f3e96]: How deep reasoning transforms everyday habits from a source of guilt into sustainable momentum.
+      - generic [ref=f3e97]:
+        - article [ref=f3e98]:
+          - heading "1. Cognitive Load Calibration" [level=3] [ref=f3e102]
+          - paragraph [ref=f3e103]: Traditional tools let you pile on 20 unrealistic tasks, triggering anxiety and avoidance. Our Claude engine models your daily completion velocity and cognitive fatigue, actively proposing smaller, achievable micro-wins before burnout occurs.
+        - article [ref=f3e104]:
+          - heading "2. Longitudinal Pattern Synthesis" [level=3] [ref=f3e109]
+          - paragraph [ref=f3e110]: Instead of requiring hours of manual journaling, the AI synthesizes weeks of completion rhythms and time-stamped reflections. It identifies hidden triggers—such as how poor sleep or skipping morning hydration affects your afternoon focus.
+        - article [ref=f3e111]:
+          - heading "3. Sovereign Human-in-the-Loop Agency" [level=3] [ref=f3e116]
+          - paragraph [ref=f3e117]: Built strictly on Constitutional AI principles. The coach never mutates your schedule autonomously or judges missed days. It acts as an empathetic strategic copilot—proposing actions that you explicitly accept, adapt, or dismiss.
+    - region [ref=f3e118]:
+      - generic [ref=f3e119]:
+        - heading "How It Works in Practice" [level=2] [ref=f3e120]
+        - paragraph [ref=f3e121]: Three straightforward steps to cultivate steady, pressure-free progress.
+      - generic [ref=f3e122]:
+        - article [ref=f3e123]:
+          - generic [aria-hidden] [ref=f3e124]: "1"
+          - heading "Pick tiny wins" [level=3] [ref=f3e125]
+          - paragraph [ref=f3e126]: Choose one to three small, realistic wins each morning. Recurring habits automatically appear on your daily checklist right when scheduled.
+        - article [ref=f3e127]:
+          - generic [aria-hidden] [ref=f3e128]: "2"
+          - heading "Check them off" [level=3] [ref=f3e129]
+          - paragraph [ref=f3e130]: Single-tap checks provide clear, satisfying feedback as you finish each task. Late night? The 4:00 AM rollover ensures your evening efforts count properly.
+        - article [ref=f3e131]:
+          - generic [aria-hidden] [ref=f3e132]: "3"
+          - heading "Let the coach nudge you" [level=3] [ref=f3e133]
+          - paragraph [ref=f3e134]: When you need ideas or gentle encouragement, the AI coach offers supportive suggestions based on your history. You stay in control of what gets added.
+    - region [ref=f3e135]:
+      - generic [ref=f3e136]:
+        - heading "Built for Real Life, Zero Gimmicks" [level=2] [ref=f3e137]
+        - paragraph [ref=f3e138]: Only authentic, implemented capabilities designed for real-world daily rhythm.
+      - generic [ref=f3e139]:
+        - article [ref=f3e140]:
+          - heading "Streak with a Free Weekly Skip" [level=3] [ref=f3e145]
+          - paragraph [ref=f3e146]: Life happens and missing a day shouldn't reset weeks of dedication. One free skip per ISO week preserves your streak automatically when rest is needed.
+        - article [ref=f3e147]:
+          - heading "4:00 AM Day Rollover" [level=3] [ref=f3e152]
+          - paragraph [ref=f3e153]: Your calendar doesn't abruptly reset at midnight. All wins count until 4:00 AM local time, accommodating night owls and evening routines.
+        - article [ref=f3e154]:
+          - heading "Flexible Habit Cadences" [level=3] [ref=f3e159]
+          - paragraph [ref=f3e160]: Schedule habits for every day, weekdays only, or N days per week. Habit-specific streaks keep track of your consistency over time.
+        - article [ref=f3e161]:
+          - heading "Guardrailed AI Coach" [level=3] [ref=f3e165]
+          - paragraph [ref=f3e166]: The coach only proposes wins for you to accept or edit—it never writes to your data directly. Enforces a strict monthly budget cap with instant rule-based fallback.
+        - article [ref=f3e167]:
+          - heading "Biometric Passkey & Password Auth" [level=3] [ref=f3e171]
+          - paragraph [ref=f3e172]: Sign in effortlessly with Touch ID, Face ID, security keys, or a traditional secure password hashed with bcrypt and stored in private SQLite.
+        - article [ref=f3e173]:
+          - heading "Installable Progressive Web App" [level=3] [ref=f3e177]
+          - paragraph [ref=f3e178]: Service-worker powered PWA that installs on your phone or desktop home screen. Loads in milliseconds with offline resilience and zero bundle bloat.
+        - article [ref=f3e179]:
+          - heading "Building in Public Dev Log" [level=3] [ref=f3e183]
+          - paragraph [ref=f3e184]: Full transparent record of product milestones, architectural ADRs, and database iterations published regularly in our open public log.
+    - region [ref=f3e185]:
+      - generic [ref=f3e186]:
+        - generic [ref=f3e187]: zh.win.ai.id · Coming Soon
+        - 'heading "Multi-Domain Neural Learning: Mandarin Micro-Rounds" [level=2] [ref=f3e188]'
+        - paragraph [aria-hidden] [ref=f3e189]: 每天一点点 · A little every day
+        - paragraph [ref=f3e190]:
+          - text: Coming soon to
+          - strong [ref=f3e191]: zh.win.ai.id
+          - text: ": a focused 3-minute daily Mandarin micro-round for intermediate learners (HSK 3–5). Combines modern FSRS spaced repetition, high-fidelity neural audio, sentence cloze drills, and AI-generated micro-stories woven from today's vocabulary."
+        - paragraph [ref=f3e192]: Designed to launch after several weeks of core app testing. Single sign-in seamlessly covers both domains.
+    - generic [ref=f3e193]:
+      - heading "Ready to build sustainable momentum?" [level=2] [ref=f3e194]
+      - paragraph [ref=f3e195]: Sign in with a secure password or biometric passkey to begin your daily rhythm.
+      - generic [ref=f3e196]:
+        - link "Try it" [ref=f3e197] [cursor=pointer]:
+          - /url: /login
+        - link "Read the dev log" [ref=f3e198] [cursor=pointer]:
+          - /url: /log
+    - generic [ref=f3e199]:
+      - link "win.ai.id" [ref=f3e200] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer Navigation" [ref=f3e201]:
+        - link "Dev Log" [ref=f3e202] [cursor=pointer]:
+          - /url: /log
+        - link "Sign in" [ref=f3e203] [cursor=pointer]:
+          - /url: /login
+      - paragraph [ref=f3e204]: Built with Go, SQLite, and Claude AI.

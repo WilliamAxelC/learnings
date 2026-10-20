@@ -1,0 +1,410 @@
+- generic:
+  - generic:
+    - generic:
+      - generic [aria-hidden]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Orca
+                    - button
+                  - generic:
+                    - button [disabled]
+                    - button [disabled]
+              - generic:
+                - generic:
+                  - generic:
+                    - button:
+                      - generic: Search
+                    - button:
+                      - generic: Onboarding checklist
+                    - generic:
+                      - button:
+                        - generic: Tasks
+                      - generic:
+                        - button
+                        - button
+                    - button:
+                      - generic: Automations
+                    - generic:
+                      - button:
+                        - generic: Orca Mobile
+                        - generic: New
+                  - generic:
+                    - generic: Projects
+                    - generic:
+                      - button
+                      - button
+                      - button
+                  - generic:
+                    - listbox:
+                      - button [expanded]:
+                        - generic: Portofolio
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: IDX-notifier
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: Med-Journal-Helper
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: coursera-mcp-server
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: Blogs
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: learnings
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Active
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic: "Unread:"
+                                        - text: main
+                                      - generic: primary
+                                  - generic:
+                                    - generic: main
+                                    - generic:
+                                      - generic:
+                                        - button
+                                - group:
+                                  - treeitem [level=1]:
+                                    - generic:
+                                      - text: Done
+                                      - generic: "- Antigravity"
+                                    - generic: 4h
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: IDXClaw
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: AI-nimate
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Active
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic:
+                                    - generic: main
+                                    - generic: Workspace notes
+                                - group:
+                                  - treeitem [level=1]:
+                                    - generic:
+                                      - img [aria-hidden]:
+                                        - generic: "?"
+                                    - generic:
+                                      - text: Done
+                                      - generic: "- Agent"
+                                    - generic: 4h
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: Roblox-mcp-dev
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                      - button [expanded]:
+                        - generic: Oracle-A1-VM-Snatcher
+                      - option:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - button
+                                - generic: Inactive
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: main
+                                      - generic: primary
+                                  - generic: main
+                          - button [aria-hidden]
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button
+                            - button
+                        - generic:
+                          - button
+                          - button
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading [level=1]: ORCA
+                        - paragraph: Select a workspace from the sidebar to begin.
+                        - generic:
+                          - button: Add Project
+                          - button: Create worktree
+                        - generic:
+                          - generic:
+                            - generic: Create worktree
+                            - generic:
+                              - generic: Ctrl
+                              - generic: +
+                              - generic: "N"
+                          - generic:
+                            - generic: Move up workspace
+                            - generic:
+                              - generic: Ctrl
+                              - generic: +
+                              - generic: Shift
+                              - generic: +
+                              - generic: ↑
+                          - generic:
+                            - generic: Move down workspace
+                            - generic:
+                              - generic: Ctrl
+                              - generic: +
+                              - generic: Shift
+                              - generic: +
+                              - generic: ↓
+                    - generic:
+                      - generic:
+                        - button: Open GitHub
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - button
+                    - button
+                    - button
+                    - button
+              - generic:
+                - button
+            - generic: Select a workspace to browse files
+      - generic [aria-hidden]:
+        - generic:
+          - button
+        - generic:
+          - button:
+            - generic: 0 KB
+            - generic: ·
+            - generic: "0"
+          - button:
+            - generic: "3"
+          - button:
+            - generic: 1 host
+        - button [aria-hidden]
+      - region "Notifications alt+T"
+  - dialog [ref=e2355]:
+    - generic [ref=e2356]:
+      - heading "Create worktree" [level=2] [ref=e2357]
+      - paragraph [ref=e2358]: Choose the project, workspace name, and agent before creating the workspace.
+    - generic [ref=e2359]:
+      - generic [ref=e2360]:
+        - generic [ref=e2361]:
+          - generic [ref=e2362]:
+            - generic [ref=e2363]: Project
+            - button "Add project" [ref=e2364] [cursor=pointer]
+          - generic [ref=e2365]:
+            - generic [ref=e2368]:
+              - combobox "Project" [ref=e2369]
+              - generic [aria-hidden]:
+                - generic:
+                  - generic: Portofolio
+                  - generic: WilliamAxelC/Portofolio
+            - button "Browse projects" [ref=e2370] [cursor=pointer]
+          - generic [ref=e2373]:
+            - generic [ref=e2374]: Run on
+            - generic [ref=e2375]:
+              - generic [ref=e2380]:
+                - combobox "Run on" [ref=e2381]
+                - generic [aria-hidden]:
+                  - generic:
+                    - generic: Orca Server
+                    - generic: /home/agent/orca/Portofolio
+              - button "Browse run targets" [ref=e2382] [cursor=pointer]
+        - generic [ref=e2385]:
+          - generic [ref=e2386]: Name or 'Create From' [Optional]
+          - generic [ref=e2387]:
+            - tablist [ref=e2390]:
+              - tab "Smart" [selected] [ref=e2391] [cursor=pointer]
+              - tab "GitHub" [ref=e2393] [cursor=pointer]
+              - tab "GitLab" [ref=e2395] [cursor=pointer]
+              - tab "Branch" [ref=e2397] [cursor=pointer]
+              - tab "Name" [ref=e2399] [cursor=pointer]
+            - 'textbox "Type a name, #1234, branch, GitHub, GitLab, or Jira URL" [ref=e2404]'
+          - generic [ref=e2405]:
+            - generic [ref=e2406]:
+              - checkbox [disabled] [ref=e2410]
+              - generic [ref=e2411]: Reuse branch
+            - paragraph [ref=e2412]: Check out the existing branch instead of creating a new one from it.
+        - generic [ref=e2413]:
+          - generic [ref=e2414]:
+            - generic [ref=e2415]: Agent
+            - button "Open agent settings" [ref=e2416] [cursor=pointer]
+          - combobox [expanded] [ref=e2418] [cursor=pointer]:
+            - generic [ref=e2419]: OpenCode
+        - button "Advanced" [ref=e2423] [cursor=pointer]
+        - generic [ref=e2424]:
+          - generic [ref=e2425]:
+            - text: Branch name
+            - textbox [ref=e2426]:
+              - /placeholder: feature/my-branch
+          - generic [ref=e2427]:
+            - generic [ref=e2428]: Parent worktree
+            - combobox [disabled]:
+              - generic: No parent
+            - paragraph [ref=e2429]: Nests this workspace under another in the sidebar. Does not change the base branch.
+          - generic [ref=e2430]:
+            - text: Note
+            - textbox [ref=e2431]:
+              - /placeholder: Write a note
+          - generic [ref=e2432]:
+            - generic [ref=e2433]:
+              - generic [ref=e2434]: Setup script
+              - generic [ref=e2435]: local settings
+            - generic [ref=e2436]: npm install
+            - generic [ref=e2438]:
+              - generic [ref=e2439]:
+                - generic [ref=e2440]: Run setup command
+                - switch [checked] [ref=e2441] [cursor=pointer]
+              - generic [ref=e2442]:
+                - generic [ref=e2443]:
+                  - generic [ref=e2444]: Wait for setup to complete before starting agent
+                  - generic [ref=e2445]: Turn this on when setup installs dependencies, MCP servers, or config files the agent needs during startup.
+                - switch [ref=e2446] [cursor=pointer]
+          - generic [ref=e2447]:
+            - text: Sparse checkout
+            - combobox [ref=e2448] [cursor=pointer]:
+              - generic [ref=e2449]: "Off"
+      - generic [ref=e2450]:
+        - switch "Create more" [ref=e2451] [cursor=pointer]
+        - button "Create worktree Ctrl" [ref=e2454] [cursor=pointer]:
+          - text: Create worktree
+          - generic [ref=e2455]: Ctrl
+    - button "Close" [ref=e2457] [cursor=pointer]
+  - dialog [ref=e2459]:
+    - generic [ref=e2460]:
+      - combobox [expanded] [active] [ref=e2466]
+      - listbox "Suggestions" [ref=e2467]:
+        - generic [ref=e2468]:
+          - option "Blank Terminal" [ref=e2469]
+          - option "OpenCode" [selected] [ref=e2473]
+          - option "Antigravity" [ref=e2477]
+          - option "Kiro" [ref=e2482]
+          - option "IBM Bob" [ref=e2487]
+          - option "Antigravity-2" [ref=e2492]
+          - option "Antigravity-3" [ref=e2497]
+      - button "Manage agents" [ref=e2503] [cursor=pointer]

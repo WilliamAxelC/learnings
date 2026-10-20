@@ -1,0 +1,100 @@
+{{define "content"}}
+<header class="top">
+  <h1 class="brand"><a href="/"><img src="/static/icon.svg?v=haiku55" alt="win.ai.id logo" class="brand-mascot" width="28" height="28">win<span>.ai.id</span></a></h1>
+  <nav>
+    <a href="/habits">Habits</a> · <a href="/log">Dev Log</a>
+    <button type="button" class="theme-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="theme-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="1" y2="3"/><line x1="12" y1="21" x2="1" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="theme-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <form method="post" action="/logout" class="inline"><button class="link">Log out</button></form>
+  </nav>
+</header>
+{{template "app" .}}
+{{end}}
+
+{{define "app"}}
+<div id="app">
+  <section class="hero">
+    <p class="muted date-badge">{{.Pretty}}</p>
+    <div class="streak {{if .Streak.TodayWon}}lit{{end}}">
+      <div class="streak-badge-wrap">
+        <span class="streak-glyph" aria-hidden="true">{{if ge .Streak.Days 30}}🌸{{else if ge .Streak.Days 14}}🌿{{else if ge .Streak.Days 7}}🌷{{else if ge .Streak.Days 3}}🌱{{else if gt .Streak.Days 0}}🌱{{else}}✨{{end}}</span>
+      </div>
+      <strong>{{.Streak.Days}}</strong>
+      <span class="streak-label">day streak{{if .Streak.SkipLeftNow}} <span class="muted">· skip available</span>{{end}}</span>
+    </div>
+    <p class="muted won-summary">{{.Done}} of {{len .Wins}} won today</p>
+  </section>
+
+  <section class="card">
+    <ul class="wins">
+      {{range .Wins}}
+      <li class="{{if .Done}}done{{end}}">
+        <button class="check" hx-post="/wins/{{.ID}}/toggle" hx-target="#app" hx-swap="outerHTML"
+                aria-label="toggle {{.Title}}" data-win="{{if not .Done}}1{{end}}">
+          <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+        </button>
+        <div class="win-body">
+          <div class="win-header">
+            <span class="title">{{.Title}}</span>
+            {{if .HabitID.Valid}}
+              {{$s := index $.HabitStreaks .HabitID.Int64}}
+              {{if gt $s 0}}<span class="streak-badge">🔥 {{$s}}</span>{{end}}
+            {{end}}
+            <span class="tag">{{if .HabitID.Valid}}habit{{else}}{{.Source}}{{end}}</span>
+            <button type="button" class="link-btn" onclick="toggleWinNote({{.ID}})">{{if .Note}}note{{else}}+ note{{end}}</button>
+            {{if not .HabitID.Valid}}
+            <button class="x" hx-post="/wins/{{.ID}}/delete" hx-target="#app" hx-swap="outerHTML" aria-label="delete">×</button>
+            {{end}}
+          </div>
+          {{if .Note}}
+          <p class="win-note">{{.Note}}</p>
+          {{end}}
+          <form id="note-form-{{.ID}}" class="note-form hidden" hx-post="/wins/{{.ID}}/note" hx-target="#app" hx-swap="outerHTML">
+            <input name="note" value="{{.Note}}" placeholder="Add a quick note or reflection…" maxlength="200" autocomplete="off">
+            <button type="submit">Save</button>
+          </form>
+        </div>
+      </li>
+      {{else}}
+      <li class="empty empty-state muted">
+        <span class="empty-icon" aria-hidden="true">🌱</span>
+        <div class="empty-text">
+          <p class="empty-title">No wins yet — pick one tiny thing 🌱</p>
+          <p class="empty-desc">Even 2 minutes counts. Add a win below or ask your coach.</p>
+        </div>
+      </li>
+      {{end}}
+    </ul>
+    <form class="row" hx-post="/wins" hx-target="#app" hx-swap="outerHTML">
+      <input name="title" placeholder="Pick one tiny win for today… (e.g. 5m walk, drink water)" maxlength="140" autocomplete="off" required>
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+  <section class="card coach">
+    <h2>Coach</h2>
+    <div id="coach-messages">
+      {{range .Messages}}
+        <p class="msg {{.Role}}">{{.Content}}</p>
+      {{end}}
+    </div>
+    {{range .Proposals}}
+    <form class="proposal" hx-post="/proposals/{{.ID}}/accept" hx-target="#app" hx-swap="outerHTML">
+      <input name="title" value="{{.Title}}" maxlength="140">
+      {{if .Reason}}<small class="muted">{{.Reason}}</small>{{end}}
+      <div class="row">
+        <button type="submit">Accept</button>
+        <button type="button" class="ghost" hx-post="/proposals/{{.ID}}/dismiss" hx-target="#app" hx-swap="outerHTML">Dismiss</button>
+      </div>
+    </form>
+    {{end}}
+    <form class="row" hx-post="/coach" hx-target="#app" hx-swap="outerHTML" hx-disabled-elt="find button" onsubmit="return handleCoachSubmit(event, this)">
+      <input id="coach-input" name="message" placeholder="{{if .Messages}}Reply to the coach…{{else}}Anything on your plate today? (e.g. 3 deep breaths, finish draft){{end}}" autocomplete="off">
+      <button id="coach-btn" type="submit">{{if .Messages}}Send{{else}}Plan my day{{end}}</button>
+    </form>
+    {{if not .CoachEnabled}}<small class="muted">AI isn't configured, so suggestions are rule-based.</small>{{end}}
+  </section>
+</div>
+{{end}}

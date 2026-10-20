@@ -1,0 +1,75 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "⚡ projects.cuang.dev" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - generic [ref=e4]: ⚡
+      - heading "projects.cuang.dev" [level=1] [ref=e5]
+    - navigation [ref=e6]:
+      - link "AudioDiff Simulator" [ref=e7] [cursor=pointer]:
+        - /url: /AudioDiff/
+      - link "Slides" [ref=e8] [cursor=pointer]:
+        - /url: /AudioDiff/slides.html
+      - link "GitHub" [ref=e9] [cursor=pointer]:
+        - /url: https://github.com/WilliamAxelC/AudioDiff
+      - link "Hackathon" [ref=e10] [cursor=pointer]:
+        - /url: https://lablab.ai/ai-hackathons/assemblyai-voice-agent-hackathon
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: Engineering Showcase & AI Lab
+      - heading "William Axel Cuangdinata" [level=2] [ref=e14]
+      - paragraph [ref=e15]: Autonomous AI systems, voice agents, developer tooling, and distributed infrastructure.
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - heading "🎙️ AudioDiff" [level=3] [ref=e19]
+          - paragraph [ref=e20]: Hands-Free Voice Code Review & Pull Request Explainer
+        - generic [ref=e21]: AssemblyAI Hackathon Submission
+      - paragraph [ref=e23]:
+        - text: A voice-first conversational AI partner for GitHub pull requests that transforms static code diffs into natural, hands-free spoken dialogues. Powered by
+        - strong [ref=e24]: AssemblyAI Universal-2
+        - text: for multi-speaker voice walkthrough diarization,
+        - strong [ref=e25]: AssemblyAI Streaming STT
+        - text: with 33-term developer word boosting, and
+        - strong [ref=e26]: AssemblyAI LeMUR v3
+        - text: for grounded AST reasoning, security audits, and automated comment generation.
+      - generic [ref=e27]:
+        - generic [ref=e28]: AssemblyAI Universal-2
+        - generic [ref=e29]: AssemblyAI Streaming STT
+        - generic [ref=e30]: AssemblyAI LeMUR v3
+        - generic [ref=e31]: Barge-In Interruption
+        - generic [ref=e32]: AST Diff Grounding
+        - generic [ref=e33]: TypeScript 5.7
+        - generic [ref=e34]: WebSocket Hub
+      - generic [ref=e35]:
+        - link "🚀 Launch AudioDiff Simulator" [ref=e36] [cursor=pointer]:
+          - /url: /AudioDiff/
+        - link "📊 View Presentation Slides" [ref=e37] [cursor=pointer]:
+          - /url: /AudioDiff/slides.html
+        - link "💻 GitHub Repository" [ref=e38] [cursor=pointer]:
+          - /url: https://github.com/WilliamAxelC/AudioDiff
+    - generic [ref=e39]:
+      - heading "📂 Other Projects & Research" [level=3] [ref=e40]
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - heading "🎨 AI-nimate" [level=4] [ref=e44]
+            - paragraph [ref=e45]: Automated 2D vector animation pipeline with moving conic glows, idle float physics, and Edge-TTS voiceover synchronization.
+          - generic [ref=e46]:
+            - generic [ref=e47]: Motion Canvas
+            - generic [ref=e48]: TypeScript
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - heading "🛡️ S1Gate Remote MCP" [level=4] [ref=e51]
+            - paragraph [ref=e52]: Remote Model Context Protocol server providing automated diff triage, security inspection, and verified remediation.
+          - generic [ref=e53]:
+            - generic [ref=e54]: FastAPI
+            - generic [ref=e55]: MCP
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - heading "📈 TradingAgents Validator" [level=4] [ref=e58]
+            - paragraph [ref=e59]: Quantitative multi-agent financial validation framework running autonomous backtesting and risk assessment.
+          - generic [ref=e60]:
+            - generic [ref=e61]: Python
+            - generic [ref=e62]: Docker
+  - contentinfo [ref=e63]:
+    - paragraph [ref=e64]: © 2026 William Axel Cuangdinata (cuang.dev). Built for the Lablab.ai AssemblyAI Voice Agent Hackathon.

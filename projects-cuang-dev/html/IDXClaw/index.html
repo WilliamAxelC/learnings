@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDXClaw | Systematic IDX Microstructure & Market Intelligence Engine</title>
+  <meta name="description" content="Quantitative trading, deterministic breakout detection, asymmetric ARA/ARB limit modeling, and automated MSCI rebalancing tracker for the Indonesia Stock Exchange (IDX / BEI).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070a12;
+      --bg-card: #0e1526;
+      --bg-card-hover: #141f36;
+      --bg-terminal: #090e1a;
+      --border: #1e293b;
+      --border-accent: #334155;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --cyan: #06b6d4;
+      --cyan-glow: rgba(6, 182, 212, 0.25);
+      --emerald: #10b981;
+      --emerald-glow: rgba(16, 185, 129, 0.2);
+      --amber: #f59e0b;
+      --amber-glow: rgba(245, 158, 11, 0.2);
+      --rose: #f43f5e;
+      --primary: #3b82f6;
+      --primary-glow: rgba(59, 130, 246, 0.3);
+      --purple: #8b5cf6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.5;
+      overflow-x: hidden;
+      background-image:
+        radial-gradient(circle at 15% 10%, rgba(6, 182, 212, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 25%, rgba(59, 130, 246, 0.07) 0%, transparent 45%),
+        radial-gradient(circle at 50% 70%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+    }
+
+    /* Subtle grid background overlay */
+    .grid-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 1100px;
+      background-size: 40px 40px;
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      pointer-events: none;
+      z-index: 0;
+      mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    }
+
+    /* Header & Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 10, 18, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: #fff;
+    }
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, #0284c7, #0369a1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 16px var(--cyan-glow);
+    }
+    .brand-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+    .brand-tag {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.72rem;
+      color: var(--cyan);
+      background: rgba(6, 182, 212, 0.12);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.95rem;
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.4);
+      border-radius: 8px;
+      color: var(--cyan) !important;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.85rem !important;
+      font-weight: 600 !important;
+      transition: all 0.2s ease;
+    }
+    .nav-cta:hover {
+      background: rgba(6, 182, 212, 0.25);
+      border-color: var(--cyan);
+      box-shadow: 0 0 12px var(--cyan-glow);
+    }
+    .nav-terminal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.95rem;
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(59, 130, 246, 0.2));
+      border: 1px solid var(--cyan);
+      border-radius: 8px;
+      color: #38bdf8 !important;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.85rem !important;
+      font-weight: 700 !important;
+      box-shadow: 0 0 14px var(--cyan-glow);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .nav-terminal-btn:hover {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.35), rgba(59, 130, 246, 0.35));
+      border-color: #7dd3fc;
+      box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+      transform: translateY(-1px);
+    }
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 6px var(--emerald);
+      animation: pulse 1.8s infinite;
+    }
+    .terminal-callout-banner {
+      background: linear-gradient(135deg, rgba(14, 21, 38, 0.9), rgba(6, 182, 212, 0.08));
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      border-radius: 14px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    .banner-badge {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--emerald);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .banner-content h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+    .banner-content p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      max-width: 720px;
+      margin: 0 !important;
+    }
+    .btn-terminal-launch {
+      background: linear-gradient(135deg, #06b6d4, #2563eb);
+      color: #fff !important;
+      font-family: 'Fira Code', monospace;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 10px;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      box-shadow: 0 0 20px var(--cyan-glow);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+    .btn-terminal-launch:hover {
+      background: linear-gradient(135deg, #0891b2, #1d4ed8);
+      box-shadow: 0 0 28px rgba(6, 182, 212, 0.6);
+      transform: translateY(-2px);
+    }
+
+    /* Layout */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem 3.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 9999px;
+      background: rgba(6, 182, 212, 0.08);
+      border: 1px solid rgba(6, 182, 212, 0.25);
+      color: var(--cyan);
+      font-family: 'Fira Code', monospace;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 1.5rem;
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 8px var(--emerald);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.15); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .hero h1 {
+      font-size: 3.25rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero h1 span.highlight {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 780px;
+      margin: 0 auto 2.5rem;
+    }
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn svg {
+      flex-shrink: 0;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: #fff;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(2, 132, 199, 0.55);
+      border-color: #38bdf8;
+    }
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+    .btn-terminal {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.88rem;
+    }
+
+    /* Live stats ticker tape bar */
+    .market-tape-bar {
+      display: flex;
+      background: rgba(14, 21, 38, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow-x: auto;
+      gap: 1.5rem;
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 3.5rem;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.82rem;
+      align-items: center;
+    }
+    .tape-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      white-space: nowrap;
+    }
+    .tape-symbol { font-weight: 700; color: #fff; }
+    .tape-up { color: var(--emerald); }
+    .tape-down { color: var(--rose); }
+    .tape-flow { color: var(--cyan); font-size: 0.75rem; }
+
+    /* Section Styling */
+    .section-head {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .section-head h2 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .section-head p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 650px;
+    }
+
+    /* Interactive Signal Engine Demo */
+    .scanner-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      margin-bottom: 4rem;
+    }
+    .scanner-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.45rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover {
+      color: #fff;
+      border-color: var(--cyan);
+    }
+    .filter-btn.active {
+      background: rgba(6, 182, 212, 0.15);
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.45rem 0.85rem;
+      font-family: 'Fira Code', monospace;
+    }
+    .search-box input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 0.85rem;
+      width: 170px;
+    }
+    .search-box input::placeholder {
+      color: var(--text-dim);
+    }
+
+    .signals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.25rem;
+    }
+    .ticker-card {
+      background: rgba(9, 14, 26, 0.7);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      position: relative;
+    }
+    .ticker-card:hover {
+      border-color: var(--cyan);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.85rem;
+    }
+    .ticker-symbol {
+      font-family: 'Fira Code', monospace;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .ticker-name {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-weight: 500;
+      margin-top: 0.15rem;
+    }
+    .price-box {
+      text-align: right;
+    }
+    .price-val {
+      font-family: 'Fira Code', monospace;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .price-change {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+    .val-positive { color: var(--emerald); }
+    .val-negative { color: var(--rose); }
+
+    .micro-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.78rem;
+      margin-bottom: 0.85rem;
+    }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    .metric-label { color: var(--text-dim); }
+    .metric-val { color: var(--text); font-weight: 600; }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+    }
+    .signal-pill {
+      font-family: 'Fira Code', monospace;
+      font-weight: 700;
+      font-size: 0.72rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .pill-breakout {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: var(--emerald);
+    }
+    .pill-msci {
+      background: rgba(6, 182, 212, 0.15);
+      border: 1px solid rgba(6, 182, 212, 0.4);
+      color: var(--cyan);
+    }
+    .pill-ara {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: var(--amber);
+    }
+    .broker-flow {
+      font-family: 'Fira Code', monospace;
+      color: var(--text-muted);
+    }
+
+    /* Core Microstructure & Architecture Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card:hover {
+      border-color: var(--cyan);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+    .feature-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      color: var(--cyan);
+    }
+    .feature-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.02em;
+    }
+    .feature-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.15rem;
+    }
+    .feature-tags {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    .feature-tag {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.73rem;
+      padding: 0.2rem 0.5rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      color: var(--cyan);
+    }
+
+    /* Interactive Calculator & Microstructure Specs */
+    .interactive-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+    @media (max-width: 900px) {
+      .interactive-split { grid-template-columns: 1fr; }
+    }
+    .calc-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+    }
+    .calc-panel h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .calc-panel p.sub {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+    .calc-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .calc-input-wrap {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border-accent);
+      border-radius: 8px;
+      padding: 0.65rem 0.95rem;
+      font-family: 'Fira Code', monospace;
+    }
+    .calc-input-wrap span {
+      color: var(--text-dim);
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .calc-input-wrap input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      width: 100%;
+      font-family: inherit;
+    }
+    .quick-preset-chips {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .chip {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.25rem 0.6rem;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .chip:hover {
+      color: #fff;
+      border-color: var(--cyan);
+    }
+    .calc-results {
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-top: 1.25rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      font-family: 'Fira Code', monospace;
+    }
+    .calc-result-box {
+      border-left: 2px solid var(--border-accent);
+      padding-left: 0.75rem;
+    }
+    .calc-result-box.ara { border-color: var(--emerald); }
+    .calc-result-box.arb { border-color: var(--rose); }
+    .calc-result-box.tier { border-color: var(--cyan); }
+    .calc-result-box.fraction { border-color: var(--amber); }
+    .result-lbl { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; }
+    .result-val { font-size: 1.2rem; font-weight: 700; color: #fff; margin-top: 0.2rem; }
+
+    /* Code Terminal & CLI Preview */
+    .terminal-container {
+      background: var(--bg-terminal);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 4rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+    .terminal-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0d1322;
+      padding: 0.75rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .term-dots {
+      display: flex;
+      gap: 0.45rem;
+    }
+    .term-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+    .terminal-tabs {
+      display: flex;
+      gap: 0.35rem;
+    }
+    .term-tab {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-dim);
+      padding: 0.35rem 0.8rem;
+      border-radius: 6px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .term-tab.active {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--border-accent);
+      color: var(--cyan);
+    }
+    .term-tab:hover { color: #fff; }
+    .terminal-content {
+      padding: 1.5rem;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.86rem;
+      color: #e2e8f0;
+      overflow-x: auto;
+      line-height: 1.7;
+    }
+    .terminal-code { display: none; }
+    .terminal-code.active { display: block; }
+    .token-prompt { color: var(--emerald); font-weight: 700; }
+    .token-cmd { color: #fff; font-weight: 600; }
+    .token-comment { color: var(--text-dim); font-style: italic; }
+    .token-cyan { color: var(--cyan); }
+    .token-amber { color: var(--amber); }
+    .token-emerald { color: var(--emerald); }
+
+    /* Telegram Topic 1724 Live Card Preview */
+    .telegram-preview-card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-left: 4px solid #38bdf8;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.84rem;
+      margin-top: 1rem;
+    }
+    .tg-header {
+      display: flex;
+      justify-content: space-between;
+      color: #38bdf8;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 0.5rem;
+    }
+
+    /* Universe Table */
+    .universe-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin-bottom: 4rem;
+    }
+    .universe-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.25rem;
+    }
+    .universe-pill {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.8rem;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .universe-pill span.badge-lq {
+      font-size: 0.65rem;
+      background: rgba(59, 130, 246, 0.2);
+      color: #60a5fa;
+      padding: 0.1rem 0.3rem;
+      border-radius: 3px;
+    }
+
+    /* Modal for Detailed Signal Breakdown */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+    }
+    .modal-backdrop.show { display: flex; }
+    .modal-window {
+      background: var(--bg-card);
+      border: 1px solid var(--cyan);
+      box-shadow: 0 0 35px var(--cyan-glow);
+      border-radius: 16px;
+      max-width: 650px;
+      width: 100%;
+      padding: 2rem;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+    .modal-close:hover { color: #fff; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      background: #060911;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.88rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--cyan); }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <a href="/IDXClaw/" class="brand">
+        <div class="brand-icon">
+          <!-- Stylized Quant Claw SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f0f9ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 4c1 4 2 8.5 6 15" />
+            <path d="M12 3c0.5 4.5 1 9.5 3 16" />
+            <path d="M19 4.5c-0.5 4-1.5 8-1 14.5" />
+          </svg>
+        </div>
+        <div class="brand-name">
+          IDXClaw
+          <span class="brand-tag">BEI QUANT CORE</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#signals">Live Signals</a>
+        <a href="#microstructure">ARA/ARB Limits</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#cli">CLI & SDK</a>
+        <a href="https://idxclaw.cuang.dev" target="_blank" rel="noopener" class="nav-terminal-btn">
+          <span class="live-dot"></span>
+          Live Terminal ↗
+        </a>
+        <a href="https://github.com/Cuang-dev/IDXClaw" target="_blank" rel="noopener" class="nav-cta">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+          </svg>
+          GitHub Repo
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        BURSA EFEK INDONESIA (IDX) MARKET RESEARCH & INTELLIGENCE
+      </div>
+      <h1>
+        High-Precision Microstructure & <br>
+        <span class="highlight">Autonomous Market Research</span>
+      </h1>
+      <p>
+        Purpose-built market intelligence and quantitative research engine for the Indonesia Stock Exchange. Delivers low-latency tape research ingestion, deterministic liquidity analytics, asymmetric ARA/ARB regulatory limit modeling, and automated MSCI/FTSE quarterly rebalancing research — providing objective data intelligence without financial advice.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://idxclaw.cuang.dev" target="_blank" rel="noopener" class="btn btn-primary" style="background: linear-gradient(135deg, #06b6d4, #2563eb); box-shadow: 0 0 22px rgba(6, 182, 212, 0.45);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+          Launch Live Terminal (idxclaw.cuang.dev) ↗
+        </a>
+        <a href="#signals" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2"></circle>
+            <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+          </svg>
+          Explore Research Telemetry
+        </a>
+        <a href="https://github.com/Cuang-dev/IDXClaw" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          View GitHub (Cuang-dev/IDXClaw)
+        </a>
+        <a href="#calculator" class="btn btn-secondary btn-terminal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path>
+          </svg>
+          ARA Limit Calculator
+        </a>
+      </div>
+
+      <!-- Live Simulated Market Tape Bar -->
+      <div class="market-tape-bar" id="marketTapeBar">
+        <div class="tape-item"><span class="tape-symbol">IHSG</span> 7,612.45 <span class="tape-up">+0.54%</span></div>
+        <div class="tape-item"><span class="tape-symbol">BBCA</span> 10,450 <span class="tape-up">+2.45%</span> <span class="tape-flow">[Net Foreign: +Rp 312B]</span></div>
+        <div class="tape-item"><span class="tape-symbol">BREN</span> 8,950 <span class="tape-up">+9.82%</span> <span class="tape-flow">[Dist ARA: 8.6%]</span></div>
+        <div class="tape-item"><span class="tape-symbol">AMMN</span> 9,925 <span class="tape-up">+3.38%</span> <span class="tape-flow">[RVOL: 3.1x]</span></div>
+        <div class="tape-item"><span class="tape-symbol">BMRI</span> 7,150 <span class="tape-up">+1.42%</span> <span class="tape-flow">[MSCI Inflow Target]</span></div>
+        <div class="tape-item"><span class="tape-symbol">GOTO</span> 54 <span class="tape-down">-1.82%</span> <span class="tape-flow">[Tier 1 ARB Floor: 50]</span></div>
+      </div>
+
+      <!-- Live Dialectic Boardroom Terminal Callout Banner -->
+      <div class="terminal-callout-banner">
+        <div class="banner-content" style="flex: 1; min-width: 280px;">
+          <span class="banner-badge">🟢 LIVE TELEMETRY STREAMING</span>
+          <h3>Institutional Multi-Agent Deliberation Terminal</h3>
+          <p>Watch 7 autonomous LangGraph agents powered by <strong>Anthropic Claude 5.5 Sonnet</strong> conduct real-time dialectic debates, broker Bandarmology flow analysis, and risk sizing guardrails on live Bursa Efek Indonesia candidates.</p>
+        </div>
+        <a href="https://idxclaw.cuang.dev" target="_blank" rel="noopener" class="btn-terminal-launch">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+          Open idxclaw.cuang.dev ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Interactive Live Signals Demo -->
+    <section id="signals" class="scanner-container">
+      <div class="scanner-controls">
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all">All Market Research (8)</button>
+          <button class="filter-btn" data-filter="breakout">Volume Expansion (RVOL ≥ 2x)</button>
+          <button class="filter-btn" data-filter="msci">MSCI Rebalance Dossiers</button>
+          <button class="filter-btn" data-filter="ara">ARA Proximity Watch</button>
+          <button class="filter-btn" data-filter="foreign">Institutional Inflow Tracking</button>
+        </div>
+        <div class="search-box">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="tickerSearch" placeholder="Search ticker (e.g. BBCA)...">
+        </div>
+      </div>
+
+      <div class="signals-grid" id="signalsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- Core Pillars / Quantitative Features Grid -->
+    <section id="architecture" style="margin-bottom: 4rem;">
+      <div class="section-head">
+        <div>
+          <h2>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            System Microstructure & Quant Pillars
+          </h2>
+          <p>Engineered for the unique mechanics and regulatory structure of Bursa Efek Indonesia.</p>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3>IPOT Web 2.0 SocketCluster Gateway</h3>
+          <p>
+            Real-time tape ingestion via Indo Premier's SocketCluster gateway (<code style="color:var(--cyan)">wss://ipotapp.ipot.id/socketcluster/</code>). Ingests live trades across all ~888 tickers with bounded LRU Level-2 order book caching.
+          </p>
+          <div class="feature-tags">
+            <span class="feature-tag">WebSocket</span>
+            <span class="feature-tag">Asyncio</span>
+            <span class="feature-tag">LRU Cache</span>
+            <span class="feature-tag">LiveTape Stream</span>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+              <line x1="2" y1="4" x2="22" y2="4" stroke-dasharray="2 2"></line>
+            </svg>
+          </div>
+          <h3>Asymmetric ARA / ARB Circuit Breakers</h3>
+          <p>
+            Deterministic modeling of BEI regulatory limits: Tier 1 (Rp 50–200: +35%), Tier 2 (Rp 200–5,000: +25%), and Tier 3 (>Rp 5,000: +20%) with ARB floor safety buffers to prevent liquidity traps.
+          </p>
+          <div class="feature-tags">
+            <span class="feature-tag">ARA Ceiling</span>
+            <span class="feature-tag">ARB Floor</span>
+            <span class="feature-tag">Tick Fractions</span>
+            <span class="feature-tag">Headroom Safety</span>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"></path>
+              <path d="M3 10h18"></path>
+              <path d="M5 6l7-3 7 3"></path>
+              <path d="M4 10v11"></path>
+              <path d="M20 10v11"></path>
+              <path d="M8 14v4"></path>
+              <path d="M12 14v4"></path>
+              <path d="M16 14v4"></path>
+            </svg>
+          </div>
+          <h3>Foreign Flow & Broker Bandarmology</h3>
+          <p>
+            Real-time broker summary deconstruction tracking institutional foreign desks (<code style="color:var(--emerald)">BK, AK, ZP, KZ, CC</code>) vs retail distribution (<code style="color:var(--rose)">YP, PD, XC</code>) to confirm genuine institutional demand.
+          </p>
+          <div class="feature-tags">
+            <span class="feature-tag">Net Foreign Flow</span>
+            <span class="feature-tag">Top 3 Broker Delta</span>
+            <span class="feature-tag">Institutional Volume</span>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3>Automated MSCI & FTSE Rebalancing</h3>
+          <p>
+            Autonomous scraper for MSCI Global Standard & Small Cap quarterly reviews. Parses announcements, resolves corporate entities to IDX 4-letter tickers, and calculates passive fund flow arbitrage.
+          </p>
+          <div class="feature-tags">
+            <span class="feature-tag">MSCI Quarterly</span>
+            <span class="feature-tag">PDF Parsing</span>
+            <span class="feature-tag">Ticker Resolver</span>
+            <span class="feature-tag">Passive Index Flow</span>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <h3>Deterministic Breakout Engine</h3>
+          <p>
+            Rigorous 6-stage quantitative strategy filter: Minimum 1B IDR turnover, RVOL ≥ 2.0x, buyer VWAP dominance, intraday upper range ratio ≥ 0.60, and >1% headroom from the ARA ceiling.
+          </p>
+          <div class="feature-tags">
+            <span class="feature-tag">RVOL 10-Day</span>
+            <span class="feature-tag">VWAP Bias</span>
+            <span class="feature-tag">Range Ratio</span>
+            <span class="feature-tag">Liquidity Guard</span>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </div>
+          <h3>Telegram Topic 1724 Alert Dispatcher</h3>
+          <p>
+            Automated notification pipeline dispatching structured markdown alerts to Telegram Supergroup Topic <code style="color:var(--cyan)">1724 (NEWS / SIGNALS)</code> with immediate breakout conviction scores.
+          </p>
+          <div class="feature-tags">
+            <span class="feature-tag">Telegram Bot API</span>
+            <span class="feature-tag">Forum Topics</span>
+            <span class="feature-tag">Markdown Alerts</span>
+            <span class="feature-tag">Zero-Latency</span>
+          </div>
+        </div>
+
+        <!-- Feature 7: Multi-Agent Boardroom Deliberation (idxclaw.cuang.dev) -->
+        <div class="feature-card" style="border-color: rgba(6, 182, 212, 0.4); background: linear-gradient(135deg, rgba(14, 21, 38, 0.95), rgba(6, 182, 212, 0.08));">
+          <div class="feature-icon-box" style="background: rgba(6, 182, 212, 0.2); border-color: rgba(6, 182, 212, 0.5);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/>
+              <path d="M6 10v2a6 6 0 0 0 12 0v-2"/>
+              <line x1="12" y1="18" x2="12" y2="22"/>
+            </svg>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.5rem;">
+            <h3>Multi-Agent Boardroom Deliberation</h3>
+            <span class="feature-tag" style="background:rgba(16,185,129,0.15); border-color:var(--emerald); color:var(--emerald); font-weight:700;">LIVE TERMINAL</span>
+          </div>
+          <p>
+            7-Agent LangGraph dialectic state machine powered by <strong>Anthropic Claude 5.5 Sonnet</strong>. Specialist agents (Bandarmology, Foreign Flow, Technical, News) debate alongside Bull and Bear adversarial analysts before CRO risk synthesis.
+          </p>
+          <div class="feature-tags" style="margin-top: 0.75rem; margin-bottom: 1.25rem;">
+            <span class="feature-tag">Claude 5.5 Sonnet</span>
+            <span class="feature-tag">LangGraph State Machine</span>
+            <span class="feature-tag">Adversarial Bull/Bear</span>
+            <span class="feature-tag">EOD Bandarmology</span>
+          </div>
+          <div>
+            <a href="https://idxclaw.cuang.dev" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.88rem; width: 100%; justify-content: center; background: linear-gradient(135deg, #0284c7, #2563eb);">
+              Open Terminal (idxclaw.cuang.dev) ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive ARA / ARB Calculator & Microstructure Rules -->
+    <section id="calculator" class="interactive-split">
+      <div class="calc-panel">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="6" x2="16" y2="6"></line>
+            <line x1="16" y1="14" x2="16" y2="18"></line>
+            <path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"></path>
+          </svg>
+          Interactive IDX Limit Calculator
+        </h3>
+        <p class="sub">Calculate exact BEI price fractions, Auto Rejection Atas (+35%/+25%/+20%), and Auto Rejection Bawah limits.</p>
+
+        <div class="calc-form">
+          <div class="form-group">
+            <label for="calcPriceInput">Previous Close Price (Rp)</label>
+            <div class="calc-input-wrap">
+              <span>Rp</span>
+              <input type="number" id="calcPriceInput" value="10200" step="1" min="50">
+            </div>
+          </div>
+
+          <div class="quick-preset-chips">
+            <span class="chip" onclick="setPresetPrice(120)">Rp 120 (Tier 1)</span>
+            <span class="chip" onclick="setPresetPrice(1850)">Rp 1,850 (Tier 2)</span>
+            <span class="chip" onclick="setPresetPrice(4950)">Rp 4,950 (Tier 2 Peak)</span>
+            <span class="chip" onclick="setPresetPrice(10200)">Rp 10,200 (BBCA)</span>
+            <span class="chip" onclick="setPresetPrice(8950)">Rp 8,950 (BREN)</span>
+          </div>
+
+          <div class="calc-results" id="calcResults">
+            <div class="calc-result-box ara">
+              <div class="result-lbl">ARA Ceiling Price (+<span id="resAraPct">20</span>%)</div>
+              <div class="result-val" id="resAraPrice">Rp 12,250</div>
+            </div>
+            <div class="calc-result-box arb">
+              <div class="result-lbl">ARB Floor Price (-20%)</div>
+              <div class="result-val" id="resArbPrice">Rp 8,175</div>
+            </div>
+            <div class="calc-result-box tier">
+              <div class="result-lbl">Market Tier & Rule</div>
+              <div class="result-val" id="resTier">Tier 3 (>Rp 5K)</div>
+            </div>
+            <div class="calc-result-box fraction">
+              <div class="result-lbl">Tick Size (Fraksi Harga)</div>
+              <div class="result-val" id="resFraction">Rp 25 / tick</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Telegram Alert Preview -->
+      <div class="calc-panel">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+          Telegram Topic #1724 Research Digest
+        </h3>
+        <p class="sub">Sample market research synthesis dispatched to internal analyst topics.</p>
+
+        <div class="telegram-preview-card">
+          <div class="tg-header">
+            <span>⚡ IDXClaw RESEARCH DIGEST [TOPIC 1724]</span>
+            <span>ANALYTICS</span>
+          </div>
+          <div>
+            <span class="token-emerald">📊 VOLUME EXPANSION OBSERVED: BBCA.JK</span><br>
+            • <b>Last Price:</b> Rp 10,450 (+2.45%)<br>
+            • <b>VWAP:</b> Rp 10,320 (Buyer Bias: +1.26%)<br>
+            • <b>RVOL (10-Day):</b> 2.85x (Expansion Surge)<br>
+            • <b>ARA Ceiling:</b> Rp 12,250 (Buffer Headroom: 17.2%)<br>
+            • <b>Institutional Delta:</b> +Rp 312.4B<br>
+            • <b>Top Accumulators:</b> BK (+Rp 142B), AK (+Rp 98B), ZP (+Rp 72B)<br>
+            • <b>Top Distributers:</b> YP (-Rp 84B), PD (-Rp 41B)<br>
+            • <b>Telemetry Alignment Score:</b> <span class="token-cyan">88.4 / 100</span><br>
+            <br>
+            <span class="token-comment">#MarketResearch #BEI #BBCA #LQ45 #Microstructure</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Terminal & CLI Preview -->
+    <section id="cli" class="terminal-container">
+      <div class="terminal-topbar">
+        <div class="term-dots">
+          <div class="term-dot dot-red"></div>
+          <div class="term-dot dot-yellow"></div>
+          <div class="term-dot dot-green"></div>
+        </div>
+        <div class="terminal-tabs">
+          <button class="term-tab active" data-tab="msci">msci_tracker.py</button>
+          <button class="term-tab" data-tab="breakout">breakout_engine.py</button>
+          <button class="term-tab" data-tab="ipot">ipot_client.py</button>
+        </div>
+      </div>
+
+      <div class="terminal-content">
+        <!-- Tab 1: MSCI Tracker -->
+        <div class="terminal-code active" id="tab-msci">
+<span class="token-comment"># 1. Print upcoming 8 MSCI review announcement & effective rebalancing dates</span>
+<span class="token-prompt">$</span> <span class="token-cmd">python -m idxclaw.intelligence.msci_tracker --schedule</span>
+[INFO] Next MSCI Index Review:
+  Announcement: 2026-11-06 (23:00 CET)
+  Effective Date: 2026-12-01 (Market Close)
+  Coverage: MSCI Global Standard & Small Cap Index
+
+<span class="token-comment"># 2. Check official MSCI review portal and notify Topic 1724 only if review detected</span>
+<span class="token-prompt">$</span> <span class="token-cmd">python -m idxclaw.intelligence.msci_tracker --check</span>
+[INFO] Fetching https://app2.msci.com/eqb/gimi/stdindex/index_review.html...
+[SUCCESS] Document parsed: MSCI Standard Index Additions:
+  + Barito Renewables Energy -> <span class="token-emerald">BREN.JK</span> [Standard Addition, Est Inflow: +$140M]
+  + Amman Mineral Internasional -> <span class="token-emerald">AMMN.JK</span> [Standard Weight Increase]
+[NOTIFY] Alert dispatched to Telegram Topic <span class="token-cyan">1724</span>.
+        </div>
+
+        <!-- Tab 2: Breakout Engine -->
+        <div class="terminal-code" id="tab-breakout">
+<span class="token-comment"># Deterministic Breakout Engine Rule Evaluation</span>
+<span class="token-cyan">class</span> <span class="token-cmd">DeterministicBreakoutEngine</span>:
+    <span class="token-cyan">def</span> evaluate_snapshot(self, s: StockSnapshot) -&gt; Optional[BreakoutCandidate]:
+        <span class="token-comment"># 1. Liquidity Guard (Minimum Rp 1,000,000,000 IDR turnover)</span>
+        <span class="token-cyan">if</span> s.turnover_idr &lt; 1_000_000_000.0: <span class="token-cyan">return None</span>
+
+        <span class="token-comment"># 2. Volume expansion (RVOL >= 2.0x 10-day SMA)</span>
+        <span class="token-cyan">if</span> s.rvol_10d &lt; 2.0: <span class="token-cyan">return None</span>
+
+        <span class="token-comment"># 3. Intraday momentum (Price gain >= 2.0%)</span>
+        <span class="token-cyan">if</span> s.change_pct &lt; 2.0: <span class="token-cyan">return None</span>
+
+        <span class="token-comment"># 4. VWAP buyer dominance</span>
+        <span class="token-cyan">if not</span> s.is_above_vwap: <span class="token-cyan">return None</span>
+
+        <span class="token-comment"># 5. Room to run (Ensures distance to ARA ceiling >= 1.0%)</span>
+        <span class="token-cyan">if</span> s.dist_to_ara_pct &lt; 1.0: <span class="token-cyan">return None</span>
+
+        <span class="token-cyan">return</span> BreakoutCandidate(s.ticker, score=calculate_score(s))
+        </div>
+
+        <!-- Tab 3: IPOT Client -->
+        <div class="terminal-code" id="tab-ipot">
+<span class="token-comment"># IPOT Web 2.0 SocketCluster Client (wss://ipotapp.ipot.id/socketcluster/)</span>
+<span class="token-cyan">async def</span> <span class="token-cmd">stream_idx_tape</span>():
+    client = IPOTStreamingClient(session_file=<span class="token-amber">"storage/ipot_session.json"</span>)
+    <span class="token-cyan">await</span> client.connect()
+
+    <span class="token-comment"># Subscribe to LiveTrade broadcast tape</span>
+    <span class="token-cyan">await</span> client.subscribe_livetrade(callback=on_raw_tick)
+
+    <span class="token-comment"># LRU bounded Level 2 Order Book subscriptions (&lt;= 30 active symbols)</span>
+    <span class="token-cyan">await</span> client.subscribe_orderbook_lru([<span class="token-amber">"BBCA"</span>, <span class="token-amber">"BREN"</span>, <span class="token-amber">"AMMN"</span>, <span class="token-amber">"BMRI"</span>])
+        </div>
+      </div>
+    </section>
+
+    <!-- Universe & LQ45 Constituents -->
+    <section class="universe-wrap">
+      <div class="section-head">
+        <div>
+          <h2>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            LQ45 Liquidity Coverage Universe
+          </h2>
+          <p>Continuous monitoring across Indonesia's 45 most liquid and institutionally capitalized bluechip equities.</p>
+        </div>
+      </div>
+
+      <div class="universe-pills">
+        <span class="universe-pill"><strong>BBCA</strong> Bank Central Asia <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>BMRI</strong> Bank Mandiri <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>BBRI</strong> Bank Rakyat Indonesia <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>BBNI</strong> Bank Negara Indonesia <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>BREN</strong> Barito Renewables <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>AMMN</strong> Amman Mineral <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>ASII</strong> Astra International <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>TLKM</strong> Telkom Indonesia <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>ADRO</strong> Adaro Energy <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>CUAN</strong> Petrindo Jaya Kreasi <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>BRPT</strong> Barito Pacific <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>ANTM</strong> Aneka Tambang <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>MDKA</strong> Merdeka Copper Gold <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>GOTO</strong> GoTo Gojek Tokopedia <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>UNVR</strong> Unilever Indonesia <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>ICBP</strong> Indofood CBP <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>INDF</strong> Indofood Sukses Makmur <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>KLBF</strong> Kalbe Farma <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>CPIN</strong> Charoen Pokphand <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>PGAS</strong> Perusahaan Gas Negara <span class="badge-lq">LQ45</span></span>
+        <span class="universe-pill"><strong>MEDC</strong> Medco Energi <span class="badge-lq">LQ45</span></span>
+      </div>
+    </section>
+
+    <!-- Compliance & Research Disclaimer -->
+    <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 12px; padding: 1.35rem 1.75rem; margin-top: 2rem; margin-bottom: 2rem; display: flex; align-items: flex-start; gap: 1rem;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="8" x2="12" y2="12"></line>
+        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+      </svg>
+      <div>
+        <h4 style="font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.35rem;">Market Research & Educational Analytics Notice</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+          IDXClaw is an automated market research and equities data intelligence platform engineered for the Indonesia Stock Exchange (IDX / BEI). All indicators, formulas, rebalancing trackers, and order-flow telemetry are synthesized strictly for objective research, historical analysis, and educational demonstration. <strong>IDXClaw does not provide financial advice, investment recommendations, portfolio management, or trade execution services.</strong>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Signal Details Modal -->
+  <div class="modal-backdrop" id="detailModal">
+    <div class="modal-window">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div id="modalBody">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://idxclaw.cuang.dev" target="_blank" rel="noopener" style="color: var(--cyan); font-weight: 700;">Live Boardroom Terminal (idxclaw.cuang.dev) ↗</a>
+      <a href="https://github.com/Cuang-dev/IDXClaw" target="_blank" rel="noopener">GitHub (Cuang-dev/IDXClaw)</a>
+      <a href="/">Projects Portal</a>
+      <a href="/AudioDiff/">AudioDiff Simulator</a>
+      <a href="https://cuang.dev">cuang.dev</a>
+    </div>
+    <p>© 2026 IDXClaw • Quantitative Market Research & Intelligence for Bursa Efek Indonesia.</p>
+    <p style="margin-top: 0.35rem; font-size: 0.78rem; color: #475569;">
+      Developed by Axel Cuangdinata (<a href="https://github.com/Cuang-dev" style="color:#64748b; text-decoration:none;">Cuang-dev</a>). Strictly for automated research, quantitative analytics, and market microstructure education.
+    </p>
+  </footer>
+
+  <script>
+    // Mock dataset representing real IDX stocks and microstructure indicators
+    const mockSignals = [
+      {
+        ticker: "BBCA",
+        name: "Bank Central Asia Tbk",
+        price: 10450,
+        changePct: 2.45,
+        araPrice: 12250,
+        distAraPct: 17.2,
+        vwap: 10320,
+        rvol: 2.85,
+        turnoverIdr: "1.24T",
+        netForeignIdr: "+312.4B",
+        topBrokers: "BK, AK, ZP",
+        distBrokers: "YP, PD",
+        signalType: "breakout",
+        signalLabel: "EXPANSION DETECTED",
+        score: 88.4,
+        details: "Passes 6-stage quantitative filter. High-range close (0.84), RVOL 2.85x, healthy 17.2% buffer from Tier 3 ARA ceiling. Objective research observation only."
+      },
+      {
+        ticker: "BREN",
+        name: "Barito Renewables Energy Tbk",
+        price: 8950,
+        changePct: 9.82,
+        araPrice: 9800,
+        distAraPct: 8.6,
+        vwap: 8520,
+        rvol: 3.40,
+        turnoverIdr: "840.5B",
+        netForeignIdr: "+184.2B",
+        topBrokers: "CC, BK, KZ",
+        distBrokers: "XC, YP",
+        signalType: "ara",
+        signalLabel: "ARA BUFFER WATCH",
+        score: 92.1,
+        details: "Strong institutional accumulation ahead of potential index inclusion. Rapid volume expansion with 8.6% room to ARA limit."
+      },
+      {
+        ticker: "BMRI",
+        name: "Bank Mandiri (Persero) Tbk",
+        price: 7150,
+        changePct: 1.42,
+        araPrice: 8575,
+        distAraPct: 19.9,
+        vwap: 7100,
+        rvol: 1.65,
+        turnoverIdr: "620.1B",
+        netForeignIdr: "+95.8B",
+        topBrokers: "AK, ZP, CS",
+        distBrokers: "PD, NI",
+        signalType: "msci",
+        signalLabel: "MSCI REBALANCE DOSSIER",
+        score: 84.7,
+        details: "MSCI quarterly rebalancing candidate. Anticipated +$42.8M passive index inflow on upcoming effective date."
+      },
+      {
+        ticker: "AMMN",
+        name: "Amman Mineral Internasional Tbk",
+        price: 9925,
+        changePct: 3.38,
+        araPrice: 11900,
+        distAraPct: 19.8,
+        vwap: 9810,
+        rvol: 3.10,
+        turnoverIdr: "490.8B",
+        netForeignIdr: "+142.0B",
+        topBrokers: "BK, CC, AK",
+        distBrokers: "YP, CP",
+        signalType: "breakout",
+        signalLabel: "EXPANSION DETECTED",
+        score: 86.9,
+        details: "Copper & Gold rally momentum. RVOL 3.1x expansion with buyer dominance firmly above VWAP."
+      },
+      {
+        ticker: "CUAN",
+        name: "Petrindo Jaya Kreasi Tbk",
+        price: 7850,
+        changePct: 4.67,
+        araPrice: 9425,
+        distAraPct: 20.0,
+        vwap: 7650,
+        rvol: 2.25,
+        turnoverIdr: "210.5B",
+        netForeignIdr: "+45.2B",
+        topBrokers: "KZ, CC, BK",
+        distBrokers: "YP, PD",
+        signalType: "breakout",
+        signalLabel: "EXPANSION DETECTED",
+        score: 79.5,
+        details: "Mid-cap momentum surge. Tier 3 ARA headroom clear, volume surge confirms breakout entry."
+      },
+      {
+        ticker: "ADRO",
+        name: "Adaro Energy Indonesia Tbk",
+        price: 3680,
+        changePct: 2.22,
+        araPrice: 4600,
+        distAraPct: 25.0,
+        vwap: 3640,
+        rvol: 2.15,
+        turnoverIdr: "380.0B",
+        netForeignIdr: "+62.3B",
+        topBrokers: "AK, BK, ZP",
+        distBrokers: "YP, XL",
+        signalType: "foreign",
+        signalLabel: "INSTITUTIONAL ACCUMULATION",
+        score: 77.2,
+        details: "Tier 2 stock (Rp 200–5,000) with 25% ARA ceiling. Heavy net institutional buying into dividend season."
+      },
+      {
+        ticker: "BRPT",
+        name: "Barito Pacific Tbk",
+        price: 1140,
+        changePct: 3.64,
+        araPrice: 1425,
+        distAraPct: 25.0,
+        vwap: 1120,
+        rvol: 2.45,
+        turnoverIdr: "195.4B",
+        netForeignIdr: "+38.6B",
+        topBrokers: "CC, AK, BK",
+        distBrokers: "PD, YP",
+        signalType: "breakout",
+        signalLabel: "EXPANSION DETECTED",
+        score: 81.3,
+        details: "Petrochemical sympathy run with BREN. Clear intraday VWAP hold and high-range candle close."
+      },
+      {
+        ticker: "TLKM",
+        name: "Telkom Indonesia (Persero) Tbk",
+        price: 2980,
+        changePct: 0.68,
+        araPrice: 3720,
+        distAraPct: 24.8,
+        vwap: 2970,
+        rvol: 1.10,
+        turnoverIdr: "310.2B",
+        netForeignIdr: "+51.0B",
+        topBrokers: "ZP, BK, AK",
+        distBrokers: "XC, YP",
+        signalType: "foreign",
+        signalLabel: "INSTITUTIONAL ACCUMULATION",
+        score: 72.0,
+        details: "Mean reversion accumulation in Tier 2 zone. Foreign desks quietly accumulating on value dips."
+      }
+    ];
+
+    let currentFilter = "all";
+    let searchQuery = "";
+
+    function renderSignals() {
+      const container = document.getElementById("signalsGrid");
+      container.innerHTML = "";
+
+      const filtered = mockSignals.filter(item => {
+        const matchesFilter = (currentFilter === "all") ||
+          (currentFilter === "breakout" && item.signalType === "breakout") ||
+          (currentFilter === "msci" && item.signalType === "msci") ||
+          (currentFilter === "ara" && item.signalType === "ara") ||
+          (currentFilter === "foreign" && (item.signalType === "foreign" || parseFloat(item.netForeignIdr) > 0));
+
+        const matchesSearch = item.ticker.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.name.toLowerCase().includes(searchQuery.toLowerCase());
+
+        return matchesFilter && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--text-dim); font-family: 'Fira Code', monospace;">No signals match current filter criteria.</div>`;
+        return;
+      }
+
+      filtered.forEach(item => {
+        let pillClass = "pill-breakout";
+        if (item.signalType === "msci") pillClass = "pill-msci";
+        else if (item.signalType === "ara") pillClass = "pill-ara";
+
+        const card = document.createElement("div");
+        card.className = "ticker-card";
+        card.onclick = () => openDetails(item);
+
+        card.innerHTML = `
+          <div class="card-top">
+            <div>
+              <div class="ticker-symbol">
+                ${item.ticker}
+                <span style="font-size: 0.7rem; color: var(--text-dim); font-weight: 500;">.JK</span>
+              </div>
+              <div class="ticker-name">${item.name}</div>
+            </div>
+            <div class="price-box">
+              <div class="price-val">Rp ${item.price.toLocaleString()}</div>
+              <div class="price-change ${item.changePct >= 0 ? 'val-positive' : 'val-negative'}">
+                ${item.changePct >= 0 ? '▲ +' : '▼ '}${item.changePct}%
+              </div>
+            </div>
+          </div>
+
+          <div class="micro-metrics">
+            <div class="metric-row">
+              <span class="metric-label">RVOL (10D):</span>
+              <span class="metric-val" style="color: ${item.rvol >= 2 ? 'var(--cyan)' : 'inherit'}">${item.rvol}x</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Dist to ARA:</span>
+              <span class="metric-val">${item.distAraPct}%</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">VWAP:</span>
+              <span class="metric-val">Rp ${item.vwap.toLocaleString()}</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-label">Net Foreign:</span>
+              <span class="metric-val" style="color: var(--emerald)">${item.netForeignIdr}</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="signal-pill ${pillClass}">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right:2px;">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              ${item.signalLabel}
+            </span>
+            <span class="broker-flow">Brokers: <strong style="color:#e2e8f0">${item.topBrokers}</strong></span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Filter tab buttons
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentFilter = btn.dataset.filter;
+        renderSignals();
+      });
+    });
+
+    // Search input
+    document.getElementById("tickerSearch").addEventListener("input", (e) => {
+      searchQuery = e.target.value.trim();
+      renderSignals();
+    });
+
+    // Modal popup
+    function openDetails(item) {
+      const modal = document.getElementById("detailModal");
+      const body = document.getElementById("modalBody");
+      body.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom:1px solid var(--border); padding-bottom:0.75rem;">
+          <div>
+            <h2 style="font-family:'Fira Code', monospace; color:#fff; font-size:1.6rem;">${item.ticker}.JK</h2>
+            <div style="color:var(--text-muted); font-size:0.85rem;">${item.name}</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-family:'Fira Code', monospace; font-size:1.4rem; font-weight:700;">Rp ${item.price.toLocaleString()}</div>
+            <span style="font-family:'Fira Code', monospace; color:var(--emerald); font-size:0.85rem; font-weight:700;">+${item.changePct}%</span>
+          </div>
+        </div>
+
+        <p style="color:#d1d5db; font-size:0.95rem; line-height:1.6; margin-bottom:1.5rem;">${item.details}</p>
+
+        <div style="background:rgba(0,0,0,0.3); border:1px solid var(--border); border-radius:10px; padding:1.2rem; font-family:'Fira Code', monospace; font-size:0.82rem; margin-bottom:1.5rem;">
+          <div style="color:var(--cyan); font-weight:700; margin-bottom:0.6rem; display:flex; align-items:center; gap:0.4rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            IDX MICROSTRUCTURE TELEMETRY
+          </div>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0.6rem;">
+            <div>Turnover Today: <b>Rp ${item.turnoverIdr}</b></div>
+            <div>RVOL Multiplier: <b>${item.rvol}x SMA10</b></div>
+            <div>ARA Ceiling Limit: <b>Rp ${item.araPrice.toLocaleString()}</b></div>
+            <div>ARA Buffer Headroom: <b>${item.distAraPct}%</b></div>
+            <div>Volume-Weighted AP: <b>Rp ${item.vwap.toLocaleString()}</b></div>
+            <div>Net Foreign Capital: <b style="color:var(--emerald)">${item.netForeignIdr}</b></div>
+            <div>Top Accumulator Desks: <b>${item.topBrokers}</b></div>
+            <div>Top Distributing Desks: <b>${item.distBrokers}</b></div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem;">
+          <span style="font-family:'Fira Code', monospace; font-size:0.85rem; color:var(--text-dim);">
+            Composite Score: <strong style="color:var(--cyan); font-size:1.1rem;">${item.score} / 100</strong>
+          </span>
+          <div style="display:flex; gap:0.6rem;">
+            <a href="https://idxclaw.cuang.dev" target="_blank" rel="noopener" class="btn btn-primary" style="padding:0.45rem 0.95rem; font-size:0.82rem; text-decoration:none; display:inline-flex; align-items:center; gap:0.4rem;">
+              <span>Boardroom Terminal</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+            <button class="btn btn-secondary" onclick="closeModal()" style="padding:0.45rem 0.95rem; font-size:0.82rem;">Dismiss</button>
+          </div>
+        </div>
+      `;
+      modal.classList.add("show");
+    }
+
+    function closeModal() {
+      document.getElementById("detailModal").classList.remove("show");
+    }
+    document.getElementById("detailModal").addEventListener("click", (e) => {
+      if (e.target.id === "detailModal") closeModal();
+    });
+
+    // Terminal tab switcher
+    document.querySelectorAll(".term-tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".term-tab").forEach(t => t.classList.remove("active"));
+        document.querySelectorAll(".terminal-code").forEach(c => c.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
+      });
+    });
+
+    // ARA/ARB Calculator logic
+    function calculateIdxLimits(price) {
+      let araPct = 0.20;
+      let tierName = "Tier 3 (>Rp 5,000)";
+      let fraction = 25;
+
+      if (price <= 200) {
+        araPct = 0.35;
+        tierName = "Tier 1 (Rp 50 - Rp 200)";
+        fraction = (price < 200) ? 1 : 2;
+      } else if (price <= 5000) {
+        araPct = 0.25;
+        tierName = "Tier 2 (>Rp 200 - Rp 5,000)";
+        if (price <= 500) fraction = 2;
+        else if (price <= 2000) fraction = 5;
+        else fraction = 10;
+      } else {
+        araPct = 0.20;
+        tierName = "Tier 3 (>Rp 5,000)";
+        fraction = 25;
+      }
+
+      // Theoretical ARA & ARB
+      const rawAra = price * (1 + araPct);
+      const rawArb = price * (1 - 0.20); // BEI ARB is currently 20%
+
+      // Round according to price fraction
+      const araPrice = Math.floor(rawAra / fraction) * fraction;
+      const arbPrice = Math.ceil(rawArb / fraction) * fraction;
+
+      return {
+        araPct: Math.round(araPct * 100),
+        araPrice,
+        arbPrice,
+        tierName,
+        fraction
+      };
+    }
+
+    function updateCalculator() {
+      const input = document.getElementById("calcPriceInput");
+      let price = parseFloat(input.value) || 10000;
+      if (price < 50) price = 50;
+
+      const res = calculateIdxLimits(price);
+      document.getElementById("resAraPct").innerText = res.araPct;
+      document.getElementById("resAraPrice").innerText = "Rp " + res.araPrice.toLocaleString();
+      document.getElementById("resArbPrice").innerText = "Rp " + res.arbPrice.toLocaleString();
+      document.getElementById("resTier").innerText = res.tierName;
+      document.getElementById("resFraction").innerText = `Rp ${res.fraction} / tick`;
+    }
+
+    function setPresetPrice(price) {
+      document.getElementById("calcPriceInput").value = price;
+      updateCalculator();
+    }
+
+    document.getElementById("calcPriceInput").addEventListener("input", updateCalculator);
+
+    // Initial render
+    renderSignals();
+    updateCalculator();
+  </script>
+</body>
+</html>

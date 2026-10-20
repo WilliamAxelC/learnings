@@ -1,0 +1,12 @@
+{
+  "name": "reefblast-247-bot",
+  "version": "1.0.0",
+  "description": "24/7 Headless Docker Auto-Progression Runner for Reefblast",
+  "main": "bot_runner.js",
+  "scripts": {
+    "start": "node bot_runner.js"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

@@ -1,0 +1,155 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - generic [ref=f1e10]:
+      - heading "AudioDiff AssemblyAI Inside" [level=1] [ref=f1e11]:
+        - text: AudioDiff
+        - generic [ref=f1e12]: AssemblyAI Inside
+      - paragraph [ref=f1e13]: Hands-Free Voice Code Review & PR Explainer
+    - generic [ref=f1e14]:
+      - generic [ref=f1e15]:
+        - generic [ref=f1e16]: "Active PR:"
+        - combobox "Active PR:" [ref=f1e17] [cursor=pointer]:
+          - 'option "PR #104: Concurrency & Mutex (Lock-free)" [selected]'
+          - 'option "PR #242: Security & IDOR Mitigation"'
+          - 'option "PR #318: Webhook Idempotency & Backoff"'
+        - button "Fetch PR" [ref=f1e18] [cursor=pointer]
+        - link "📊 Slides" [ref=f1e21] [cursor=pointer]:
+          - /url: slides.html
+      - generic [ref=f1e22]:
+        - generic [ref=f1e24]: Gateway Online
+        - generic [ref=f1e25]: Universal-2 + LeMUR
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]:
+          - generic [ref=f1e31]: PR-318
+          - 'heading "feat(billing): implement Stripe webhook idempotency and exponential backoff" [level=2] [ref=f1e231]'
+        - paragraph [ref=f1e33]: Prevents duplicate customer charges from webhook retries using Redis NX keys with 24h TTL. Implements exponential backoff wrapper for invoice processing.
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]:
+            - text: "Author:"
+            - strong [ref=f1e36]: marcus-cloud
+          - generic [ref=f1e37]:
+            - text: "Branch:"
+            - strong [ref=f1e38]: feat/stripe-idempotency
+          - generic [ref=f1e39]: "+15"
+          - generic [ref=f1e40]: "-3"
+          - generic [ref=f1e41]:
+            - text: "Files:"
+            - strong [ref=f1e42]: "1"
+      - generic [ref=f1e43]:
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]: 📄
+          - generic [ref=f1e46]: src/billing/stripe_webhook_handler.ts
+          - generic [ref=f1e47]: TypeScript
+        - generic [ref=f1e232]:
+          - generic [ref=f1e233]:
+            - generic [ref=f1e234]: "export class StripeWebhookHandler {"
+            - generic [ref=f1e235]: src/billing/stripe_webhook_handler.ts (Lines 25-48)
+          - generic [ref=f1e236]:
+            - generic [ref=f1e237]: "- 25"
+            - generic [ref=f1e238]: "- async processEvent(event: Stripe.Event): Promise<void> {"
+          - generic [ref=f1e239]:
+            - generic [ref=f1e240]: "- 26"
+            - generic [ref=f1e241]: "- await this.handleInvoicePaymentSucceeded(event.data.object);"
+          - generic [ref=f1e242]:
+            - generic [ref=f1e243]: "- 27"
+            - generic [ref=f1e244]: "- }"
+          - generic [ref=f1e245]:
+            - generic [ref=f1e246]: + 25
+            - generic [ref=f1e247]: "+ async processEvent(event: Stripe.Event): Promise<void> {"
+          - generic [ref=f1e248]:
+            - generic [ref=f1e249]: + 26
+            - generic [ref=f1e250]: "+ const idempotencyKey = `webhook:stripe:${event.id}`;"
+          - generic [ref=f1e251]:
+            - generic [ref=f1e252]: + 27
+            - generic [ref=f1e253]: + const acquired = await this.redis.set(idempotencyKey, "processing", "NX", "EX", 86400);
+          - generic [ref=f1e254]:
+            - generic [ref=f1e255]: + 28
+            - generic [ref=f1e256]: "+ if (!acquired) {"
+          - generic [ref=f1e257]:
+            - generic [ref=f1e258]: + 29
+            - generic [ref=f1e259]: "+ console.warn(`Duplicate webhook detected for event ${event.id}, skipping.`);"
+          - generic [ref=f1e260]:
+            - generic [ref=f1e261]: + 30
+            - generic [ref=f1e262]: + return;
+          - generic [ref=f1e263]:
+            - generic [ref=f1e264]: + 31
+            - generic [ref=f1e265]: "+ }"
+          - generic [ref=f1e266]:
+            - generic [ref=f1e267]: + 32
+            - generic [ref=f1e268]: +
+          - generic [ref=f1e269]:
+            - generic [ref=f1e270]: + 33
+            - generic [ref=f1e271]: "+ try {"
+          - generic [ref=f1e272]:
+            - generic [ref=f1e273]: + 34
+            - generic [ref=f1e274]: + await this.retryWithBackoff(() => this.handleInvoicePaymentSucceeded(event.data.object), 3);
+          - generic [ref=f1e275]:
+            - generic [ref=f1e276]: + 35
+            - generic [ref=f1e277]: "+ } catch (err) {"
+          - generic [ref=f1e278]:
+            - generic [ref=f1e279]: + 36
+            - generic [ref=f1e280]: + await this.redis.del(idempotencyKey);
+          - generic [ref=f1e281]:
+            - generic [ref=f1e282]: + 37
+            - generic [ref=f1e283]: + throw err;
+          - generic [ref=f1e284]:
+            - generic [ref=f1e285]: + 38
+            - generic [ref=f1e286]: "+ }"
+          - generic [ref=f1e287]:
+            - generic [ref=f1e288]: + 39
+            - generic [ref=f1e289]: "+ }"
+          - generic [ref=f1e290]:
+            - generic [ref=f1e291]: "40"
+            - generic [ref=f1e292]: "}"
+    - generic [ref=f1e122]:
+      - generic [ref=f1e123]:
+        - button "🎙️ Live Voice Review (Streaming STT)" [ref=f1e124] [cursor=pointer]
+        - button "📼 Ingest Voice Walkthrough (Universal-2)" [ref=f1e125] [cursor=pointer]
+      - generic [ref=f1e126]:
+        - generic [ref=f1e127]:
+          - generic [ref=f1e128]:
+            - generic [ref=f1e129]: 🎙️
+            - generic [ref=f1e132]:
+              - heading "AudioDiff Ready" [level=3] [ref=f1e229]
+              - paragraph [ref=f1e134]: Listening for developer inquiries or choose a LeMUR action below
+          - generic [ref=f1e137]:
+            - button "● Talk to AudioDiff" [ref=f1e138] [cursor=pointer]:
+              - generic [ref=f1e139]: ●
+              - generic [ref=f1e140]: Talk to AudioDiff
+            - button "🛑 Barge-In Interruption" [ref=f1e141] [cursor=pointer]
+            - 'button "❓ Ask: \"Why was the mutex removed?\"" [ref=f1e142] [cursor=pointer]'
+          - generic [ref=f1e143]:
+            - generic [ref=f1e144]:
+              - generic [ref=f1e145]: Real-Time Transcription Stream
+              - generic [ref=f1e146]: AssemblyAI Streaming STT (Domain Boosted)
+            - emphasis [ref=f1e293]: "Loaded PR-318: feat(billing): implement Stripe webhook idempotency and exponential backoff"
+        - generic [ref=f1e149]:
+          - heading "⚡ AssemblyAI LeMUR Cognitive Actions" [level=4] [ref=f1e150]
+          - generic [ref=f1e151]:
+            - button "📋 Executive Walkthrough High-level architecture intent" [ref=f1e152] [cursor=pointer]:
+              - generic [ref=f1e153]: 📋
+              - generic [ref=f1e154]:
+                - strong [ref=f1e155]: Executive Walkthrough
+                - text: High-level architecture intent
+            - button "🛡️ Security & Concurrency Audit Scan for OWASP & race conditions" [ref=f1e156] [cursor=pointer]:
+              - generic [ref=f1e157]: 🛡️
+              - generic [ref=f1e158]:
+                - strong [ref=f1e159]: Security & Concurrency Audit
+                - text: Scan for OWASP & race conditions
+            - button "💡 Explain Selected Hunk Deep dive into code logic" [ref=f1e160] [cursor=pointer]:
+              - generic [ref=f1e161]: 💡
+              - generic [ref=f1e162]:
+                - strong [ref=f1e163]: Explain Selected Hunk
+                - text: Deep dive into code logic
+            - button "✍️ Draft PR Review Comment Generates markdown suggestions" [ref=f1e164] [cursor=pointer]:
+              - generic [ref=f1e165]: ✍️
+              - generic [ref=f1e166]:
+                - strong [ref=f1e167]: Draft PR Review Comment
+                - text: Generates markdown suggestions
+        - generic [ref=f1e168]:
+          - generic [ref=f1e169]:
+            - generic [ref=f1e170]: 🎧 AudioDiff Spoken Response
+            - generic [ref=f1e171]: "Latency: -- ms"
+          - generic [ref=f1e172]: "\"Select a PR and ask a question or click an action button to receive verbal code review feedback.\""

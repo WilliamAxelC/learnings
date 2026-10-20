@@ -1,0 +1,156 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e10]:
+      - heading "AudioDiff AssemblyAI Inside" [level=1] [ref=e11]:
+        - text: AudioDiff
+        - generic [ref=e12]: AssemblyAI Inside
+      - paragraph [ref=e13]: Hands-Free Voice Code Review & PR Explainer
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: "Active PR:"
+        - combobox "Active PR:" [ref=e17] [cursor=pointer]:
+          - 'option "PR #104: Concurrency & Mutex (Lock-free)"'
+          - 'option "PR #242: Security & IDOR Mitigation" [selected]'
+          - 'option "PR #318: Webhook Idempotency & Backoff"'
+        - button "Fetch PR" [ref=e18] [cursor=pointer]
+      - generic [ref=e21]:
+        - generic [ref=e23]: Gateway Online
+        - generic [ref=e24]: Universal-2 + LeMUR
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: PR-242
+          - 'heading "sec(api): sanitize GraphQL input and mitigate IDOR in tenant endpoint" [level=2] [ref=e227]'
+        - paragraph [ref=e32]: Addresses critical vulnerability finding in tenant billing endpoint. Adds cross-tenant organization authorization checks and parameterizes raw SQL queries.
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - text: "Author:"
+            - strong [ref=e35]: sara-sec
+          - generic [ref=e36]:
+            - text: "Branch:"
+            - strong [ref=e37]: sec/tenant-idor-fix
+          - generic [ref=e38]: "+11"
+          - generic [ref=e39]: "-3"
+          - generic [ref=e40]:
+            - text: "Files:"
+            - strong [ref=e41]: "1"
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: 📄
+          - generic [ref=e45]: src/api/tenant_resolver.ts
+          - generic [ref=e46]: TypeScript
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - generic [ref=e230]: "export class TenantResolver {"
+            - generic [ref=e231]: src/api/tenant_resolver.ts (Lines 88-105)
+          - generic [ref=e232]:
+            - generic [ref=e233]: "88"
+            - generic [ref=e234]: "async getTenantBilling(tenantId: string, context: RequestContext): Promise<BillingRecord> {"
+          - generic [ref=e235]:
+            - generic [ref=e236]: "- 89"
+            - generic [ref=e237]: "- // Query directly by tenantId from input"
+          - generic [ref=e238]:
+            - generic [ref=e239]: "- 90"
+            - generic [ref=e240]: "- const billing = await this.db.query(\"SELECT * FROM billing WHERE tenant_id = \" + tenantId);"
+          - generic [ref=e241]:
+            - generic [ref=e242]: "- 91"
+            - generic [ref=e243]: "- return billing[0];"
+          - generic [ref=e244]:
+            - generic [ref=e245]: + 89
+            - generic [ref=e246]: "+ // IDOR vulnerability mitigation: verify session organization matches target tenant"
+          - generic [ref=e247]:
+            - generic [ref=e248]: + 90
+            - generic [ref=e249]: "+ if (context.user.organizationId !== tenantId && !context.user.isSuperAdmin) {"
+          - generic [ref=e250]:
+            - generic [ref=e251]: + 91
+            - generic [ref=e252]: + throw new ForbiddenException("Unauthorized cross-tenant billing access attempt");
+          - generic [ref=e253]:
+            - generic [ref=e254]: + 92
+            - generic [ref=e255]: "+ }"
+          - generic [ref=e256]:
+            - generic [ref=e257]: + 93
+            - generic [ref=e258]: +
+          - generic [ref=e259]:
+            - generic [ref=e260]: + 94
+            - generic [ref=e261]: + // Parameterized query prevents SQL injection
+          - generic [ref=e262]:
+            - generic [ref=e263]: + 95
+            - generic [ref=e264]: + const billing = await this.db.query(
+          - generic [ref=e265]:
+            - generic [ref=e266]: + 96
+            - generic [ref=e267]: + "SELECT * FROM billing WHERE tenant_id = $1 AND status = 'active'",
+          - generic [ref=e268]:
+            - generic [ref=e269]: + 97
+            - generic [ref=e270]: + [tenantId]
+          - generic [ref=e271]:
+            - generic [ref=e272]: + 98
+            - generic [ref=e273]: + );
+          - generic [ref=e274]:
+            - generic [ref=e275]: + 99
+            - generic [ref=e276]: + return billing[0];
+          - generic [ref=e277]:
+            - generic [ref=e278]: "100"
+            - generic [ref=e279]: "}"
+          - generic [ref=e280]:
+            - generic [ref=e281]: "101"
+            - generic [ref=e282]: "}"
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - button "🎙️ Live Voice Review (Streaming STT)" [ref=e123] [cursor=pointer]
+        - button "📼 Ingest Voice Walkthrough (Universal-2)" [ref=e124] [cursor=pointer]
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - generic [ref=e128]: 🎙️
+            - generic [ref=e131]:
+              - heading "AudioDiff Ready" [level=3] [ref=e283]
+              - paragraph [ref=e133]: Listening for developer inquiries or choose a LeMUR action below
+          - generic [ref=e136]:
+            - button "● Talk to AudioDiff" [ref=e137] [cursor=pointer]:
+              - generic [ref=e138]: ●
+              - generic [ref=e139]: Talk to AudioDiff
+            - button "🛑 Barge-In Interruption" [ref=e140] [cursor=pointer]
+            - 'button "❓ Ask: \"Why was the mutex removed?\"" [ref=e141] [cursor=pointer]'
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - generic [ref=e144]: Real-Time Transcription Stream
+              - generic [ref=e145]: AssemblyAI Streaming STT (Domain Boosted)
+            - generic [ref=e146]:
+              - strong [ref=e285]: "Developer:"
+              - text: "\"Perform a security and concurrency audit on the modified code.\""
+        - generic [ref=e148]:
+          - heading "⚡ AssemblyAI LeMUR Cognitive Actions" [level=4] [ref=e149]
+          - generic [ref=e150]:
+            - button "📋 Executive Walkthrough High-level architecture intent" [ref=e151] [cursor=pointer]:
+              - generic [ref=e152]: 📋
+              - generic [ref=e153]:
+                - strong [ref=e154]: Executive Walkthrough
+                - text: High-level architecture intent
+            - button "🛡️ Security & Concurrency Audit Scan for OWASP & race conditions" [active] [ref=e155] [cursor=pointer]:
+              - generic [ref=e156]: 🛡️
+              - generic [ref=e157]:
+                - strong [ref=e158]: Security & Concurrency Audit
+                - text: Scan for OWASP & race conditions
+            - button "💡 Explain Selected Hunk Deep dive into code logic" [ref=e159] [cursor=pointer]:
+              - generic [ref=e160]: 💡
+              - generic [ref=e161]:
+                - strong [ref=e162]: Explain Selected Hunk
+                - text: Deep dive into code logic
+            - button "✍️ Draft PR Review Comment Generates markdown suggestions" [ref=e163] [cursor=pointer]:
+              - generic [ref=e164]: ✍️
+              - generic [ref=e165]:
+                - strong [ref=e166]: Draft PR Review Comment
+                - text: Generates markdown suggestions
+        - generic [ref=e167]:
+          - generic [ref=e168]:
+            - generic [ref=e169]: 🎧 AudioDiff Spoken Response
+            - generic [ref=e170]: "Latency: 351ms [AssemblyAI LeMUR (Simulation)]"
+          - generic [ref=e171]: "\"In `src/api/tenant_resolver.ts`, the developer mitigated an IDOR vulnerability by validating the user's organizationId before querying billing data, and replaced string concatenation with parameterized SQL query `$1`, completely mitigating SQL injection.\""
+          - generic [ref=e174]:
+            - generic [ref=e175]:
+              - generic [ref=e176]: 📝 Suggested GitHub PR Comment
+              - generic [ref=e177]:
+                - text: APPROVE
+                - button "Copy Markdown" [ref=e178] [cursor=pointer]
+            - generic [ref=e179]: "### 🛡️ Security Audit: PASS ✅ Great catch on enforcing tenant authorization checks (`context.user.organizationId !== tenantId`) and moving to parameterized queries ($1). This effectively closes the OWASP A01: Broken Access Control vector."

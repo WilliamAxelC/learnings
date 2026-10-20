@@ -1,0 +1,37 @@
+- generic [ref=f4e3]:
+  - banner [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - generic [ref=f4e6]: 🏛️
+      - generic [ref=f4e7]:
+        - generic [ref=f4e8]:
+          - heading "IDXClaw" [level=1] [ref=f4e9]
+          - generic [ref=f4e10]: 🟢 FORWARD-TESTING LIVE
+        - paragraph [ref=f4e11]: Institutional Multi-Agent Autonomous Trading Terminal
+    - generic [ref=f4e12]:
+      - generic [ref=f4e13]:
+        - generic [ref=f4e18]: "DB:"
+        - generic [ref=f4e19]: PG ONLINE
+      - generic [ref=f4e20]: 16:52:54 WIB
+      - button "Run Debate" [ref=f4e25] [cursor=pointer]
+      - button "Refresh Telemetry & Data" [ref=f4e29] [cursor=pointer]
+  - navigation [ref=f4e35]:
+    - button "Boardroom Deliberations" [ref=f4e36] [cursor=pointer]
+    - button "Candlestick & Bandar Flow" [ref=f4e41] [cursor=pointer]
+    - button "Bandarmology Broker Matrix" [ref=f4e48] [cursor=pointer]
+    - button "Open Orders & Queue" [ref=f4e55] [cursor=pointer]
+    - button "Portfolio Holdings & Ledger" [ref=f4e61] [cursor=pointer]
+    - button "System Telemetry & Queue" [ref=f4e67] [cursor=pointer]
+  - main [ref=f4e73]:
+    - generic [ref=f4e74]:
+      - generic [ref=f4e75]: "Boardroom Deliberation Session:"
+      - generic [ref=f4e81]:
+        - generic [ref=f4e82]:
+          - generic [ref=f4e83]: "Candidates for 2026-08-18:"
+          - generic [ref=f4e84]:
+            - button "By Conviction" [ref=f4e85] [cursor=pointer]
+            - button "By Screener Rank" [ref=f4e86] [cursor=pointer]
+        - button "+ Live Debate" [ref=f4e87] [cursor=pointer]
+      - generic [ref=f4e90]:
+        - heading "No Deliberation Records Found for 2026-08-18" [level=3] [ref=f4e93]
+        - paragraph [ref=f4e94]: Run the autonomous multi-agent boardroom debate pipeline to evaluate candidates for this trading session.
+        - button "Trigger Boardroom Debate" [ref=f4e95] [cursor=pointer]

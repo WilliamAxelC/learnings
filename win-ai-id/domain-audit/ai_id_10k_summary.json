@@ -1,0 +1,678 @@
+{
+  "meta": {
+    "scan_timestamp": "2026-10-06 06:29:11 UTC",
+    "total_scanned": 10267,
+    "available_count": 9849,
+    "registered_count": 418,
+    "availability_pct": 95.93,
+    "by_length": {
+      "3": 1758,
+      "4": 3430,
+      "5": 5079
+    }
+  },
+  "top_50_available": [
+    {
+      "rank": 1,
+      "domain": "win.ai.id",
+      "word": "win",
+      "length": 3,
+      "score": 95,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "Developer & Cloud Infra"
+    },
+    {
+      "rank": 2,
+      "domain": "max.ai.id",
+      "word": "max",
+      "length": 3,
+      "score": 92,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "Fintech & Business"
+    },
+    {
+      "rank": 3,
+      "domain": "sun.ai.id",
+      "word": "sun",
+      "length": 3,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "Premium Brandable English"
+    },
+    {
+      "rank": 4,
+      "domain": "mod.ai.id",
+      "word": "mod",
+      "length": 3,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Machine Learning"
+    },
+    {
+      "rank": 5,
+      "domain": "mem.ai.id",
+      "word": "mem",
+      "length": 3,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Machine Learning"
+    },
+    {
+      "rank": 6,
+      "domain": "sim.ai.id",
+      "word": "sim",
+      "length": 3,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Machine Learning"
+    },
+    {
+      "rank": 7,
+      "domain": "dat.ai.id",
+      "word": "dat",
+      "length": 3,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Machine Learning"
+    },
+    {
+      "rank": 8,
+      "domain": "vis.ai.id",
+      "word": "vis",
+      "length": 3,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Machine Learning"
+    },
+    {
+      "rank": 9,
+      "domain": "look.ai.id",
+      "word": "look",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 10,
+      "domain": "real.ai.id",
+      "word": "real",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 11,
+      "domain": "room.ai.id",
+      "word": "room",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 12,
+      "domain": "head.ai.id",
+      "word": "head",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 13,
+      "domain": "door.ai.id",
+      "word": "door",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 14,
+      "domain": "case.ai.id",
+      "word": "case",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 15,
+      "domain": "deal.ai.id",
+      "word": "deal",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 16,
+      "domain": "fire.ai.id",
+      "word": "fire",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 17,
+      "domain": "read.ai.id",
+      "word": "read",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 18,
+      "domain": "city.ai.id",
+      "word": "city",
+      "length": 4,
+      "score": 88,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 19,
+      "domain": "tip.ai.id",
+      "word": "tip",
+      "length": 3,
+      "score": 87,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "Fintech & Business"
+    },
+    {
+      "rank": 20,
+      "domain": "vip.ai.id",
+      "word": "vip",
+      "length": 3,
+      "score": 87,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "Fintech & Business"
+    },
+    {
+      "rank": 21,
+      "domain": "fit.ai.id",
+      "word": "fit",
+      "length": 3,
+      "score": 85,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Machine Learning"
+    },
+    {
+      "rank": 22,
+      "domain": "res.ai.id",
+      "word": "res",
+      "length": 3,
+      "score": 85,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Machine Learning"
+    },
+    {
+      "rank": 23,
+      "domain": "ace.ai.id",
+      "word": "ace",
+      "length": 3,
+      "score": 85,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "Fintech & Business"
+    },
+    {
+      "rank": 24,
+      "domain": "call.ai.id",
+      "word": "call",
+      "length": 4,
+      "score": 85,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 25,
+      "domain": "true.ai.id",
+      "word": "true",
+      "length": 4,
+      "score": 85,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 26,
+      "domain": "rest.ai.id",
+      "word": "rest",
+      "length": 4,
+      "score": 85,
+      "tier": "Tier 1: Ultra-Premium",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 27,
+      "domain": "sea.ai.id",
+      "word": "sea",
+      "length": 3,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "Premium Brandable English"
+    },
+    {
+      "rank": 28,
+      "domain": "cool.ai.id",
+      "word": "cool",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 29,
+      "domain": "team.ai.id",
+      "word": "team",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 30,
+      "domain": "safe.ai.id",
+      "word": "safe",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 31,
+      "domain": "road.ai.id",
+      "word": "road",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 32,
+      "domain": "boat.ai.id",
+      "word": "boat",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 33,
+      "domain": "wine.ai.id",
+      "word": "wine",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 34,
+      "domain": "bear.ai.id",
+      "word": "bear",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 35,
+      "domain": "beer.ai.id",
+      "word": "beer",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 36,
+      "domain": "moon.ai.id",
+      "word": "moon",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 37,
+      "domain": "hero.ai.id",
+      "word": "hero",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 38,
+      "domain": "rain.ai.id",
+      "word": "rain",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 39,
+      "domain": "cake.ai.id",
+      "word": "cake",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 40,
+      "domain": "meat.ai.id",
+      "word": "meat",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 41,
+      "domain": "feed.ai.id",
+      "word": "feed",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 42,
+      "domain": "view.ai.id",
+      "word": "view",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 43,
+      "domain": "heat.ai.id",
+      "word": "heat",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 44,
+      "domain": "pool.ai.id",
+      "word": "pool",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 45,
+      "domain": "page.ai.id",
+      "word": "page",
+      "length": 4,
+      "score": 84,
+      "tier": "Tier 2: High Value",
+      "category": "AI & Core Tech"
+    },
+    {
+      "rank": 46,
+      "domain": "hot.ai.id",
+      "word": "hot",
+      "length": 3,
+      "score": 83,
+      "tier": "Tier 2: High Value",
+      "category": "Premium Brandable English"
+    },
+    {
+      "rank": 47,
+      "domain": "red.ai.id",
+      "word": "red",
+      "length": 3,
+      "score": 83,
+      "tier": "Tier 2: High Value",
+      "category": "Premium Brandable English"
+    },
+    {
+      "rank": 48,
+      "domain": "dog.ai.id",
+      "word": "dog",
+      "length": 3,
+      "score": 83,
+      "tier": "Tier 2: High Value",
+      "category": "Premium Brandable English"
+    },
+    {
+      "rank": 49,
+      "domain": "cat.ai.id",
+      "word": "cat",
+      "length": 3,
+      "score": 83,
+      "tier": "Tier 2: High Value",
+      "category": "Premium Brandable English"
+    },
+    {
+      "rank": 50,
+      "domain": "fox.ai.id",
+      "word": "fox",
+      "length": 3,
+      "score": 83,
+      "tier": "Tier 2: High Value",
+      "category": "Premium Brandable English"
+    }
+  ],
+  "top_30_registered": [
+    {
+      "domain": "lab.ai.id",
+      "word": "lab",
+      "score": 100,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T00:50:12Z"
+    },
+    {
+      "domain": "run.ai.id",
+      "word": "run",
+      "score": 95,
+      "registrar": "PT Trisaka Digital Indonesia",
+      "created": "2026-10-05T04:14:19Z"
+    },
+    {
+      "domain": "net.ai.id",
+      "word": "net",
+      "score": 95,
+      "registrar": "PT Exabytes Network Indonesia",
+      "created": "2026-10-05T00:51:46Z"
+    },
+    {
+      "domain": "dev.ai.id",
+      "word": "dev",
+      "score": 95,
+      "registrar": "Unknown",
+      "created": "Unknown"
+    },
+    {
+      "domain": "hub.ai.id",
+      "word": "hub",
+      "score": 95,
+      "registrar": "PANDI Registrar",
+      "created": "2026-09-30T08:35:13Z"
+    },
+    {
+      "domain": "bot.ai.id",
+      "word": "bot",
+      "score": 95,
+      "registrar": "PANDI Registrar",
+      "created": "2026-09-11T13:12:27Z"
+    },
+    {
+      "domain": "top.ai.id",
+      "word": "top",
+      "score": 92,
+      "registrar": "PT Media Cloud Indonesia",
+      "created": "2026-10-05T04:35:26Z"
+    },
+    {
+      "domain": "key.ai.id",
+      "word": "key",
+      "score": 91,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T03:26:05Z"
+    },
+    {
+      "domain": "one.ai.id",
+      "word": "one",
+      "score": 90,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T02:08:30Z"
+    },
+    {
+      "domain": "web.ai.id",
+      "word": "web",
+      "score": 90,
+      "registrar": "PT Infinys System Indonesia",
+      "created": "2026-10-05T00:56:13Z"
+    },
+    {
+      "domain": "rag.ai.id",
+      "word": "rag",
+      "score": 90,
+      "registrar": "PT Registrasi Neva Angkasa",
+      "created": "2026-10-04T23:56:21Z"
+    },
+    {
+      "domain": "car.ai.id",
+      "word": "car",
+      "score": 88,
+      "registrar": "PT Dewabisnis Digital Indonesia",
+      "created": "2026-10-05T06:21:26Z"
+    },
+    {
+      "domain": "box.ai.id",
+      "word": "box",
+      "score": 88,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T02:04:04Z"
+    },
+    {
+      "domain": "pay.ai.id",
+      "word": "pay",
+      "score": 88,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T02:51:06Z"
+    },
+    {
+      "domain": "api.ai.id",
+      "word": "api",
+      "score": 88,
+      "registrar": "PT Dewabisnis Digital Indonesia",
+      "created": "2026-10-04T23:16:08Z"
+    },
+    {
+      "domain": "gen.ai.id",
+      "word": "gen",
+      "score": 88,
+      "registrar": "PT Registrasi Neva Angkasa",
+      "created": "2026-10-04T23:56:07Z"
+    },
+    {
+      "domain": "good.ai.id",
+      "word": "good",
+      "score": 88,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T18:14:10Z"
+    },
+    {
+      "domain": "make.ai.id",
+      "word": "make",
+      "score": 88,
+      "registrar": "PT Registrasi Neva Angkasa",
+      "created": "2026-10-05T13:42:00Z"
+    },
+    {
+      "domain": "home.ai.id",
+      "word": "home",
+      "score": 88,
+      "registrar": "PT Registrasi Neva Angkasa",
+      "created": "2026-10-05T09:54:08Z"
+    },
+    {
+      "domain": "live.ai.id",
+      "word": "live",
+      "score": 88,
+      "registrar": "PANDI Registrar",
+      "created": "2026-09-11T08:21:34Z"
+    },
+    {
+      "domain": "meet.ai.id",
+      "word": "meet",
+      "score": 88,
+      "registrar": "PT Registrasi Neva Angkasa",
+      "created": "2026-10-05T12:42:05Z"
+    },
+    {
+      "domain": "game.ai.id",
+      "word": "game",
+      "score": 88,
+      "registrar": "PANDI Registrar",
+      "created": "2026-09-11T08:21:40Z"
+    },
+    {
+      "domain": "tax.ai.id",
+      "word": "tax",
+      "score": 87,
+      "registrar": "PT Exabytes Network Indonesia",
+      "created": "2026-10-05T01:57:15Z"
+    },
+    {
+      "domain": "cap.ai.id",
+      "word": "cap",
+      "score": 87,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T02:50:04Z"
+    },
+    {
+      "domain": "biz.ai.id",
+      "word": "biz",
+      "score": 87,
+      "registrar": "PT Exabytes Network Indonesia",
+      "created": "2026-10-05T01:02:00Z"
+    },
+    {
+      "domain": "fin.ai.id",
+      "word": "fin",
+      "score": 87,
+      "registrar": "PANDI Registrar",
+      "created": "2026-09-28T03:07:22Z"
+    },
+    {
+      "domain": "app.ai.id",
+      "word": "app",
+      "score": 86,
+      "registrar": "PANDI Registrar",
+      "created": "2026-09-28T03:10:52Z"
+    },
+    {
+      "domain": "ops.ai.id",
+      "word": "ops",
+      "score": 86,
+      "registrar": "PT Registrasi Neva Angkasa",
+      "created": "2026-10-05T07:01:39Z"
+    },
+    {
+      "domain": "find.ai.id",
+      "word": "find",
+      "score": 85,
+      "registrar": "PT Registrasi Neva Angkasa",
+      "created": "2026-10-06T03:39:07Z"
+    },
+    {
+      "domain": "work.ai.id",
+      "word": "work",
+      "score": 85,
+      "registrar": "PT Digital Registra Indonesia",
+      "created": "2026-10-05T03:07:03Z"
+    }
+  ]
+}

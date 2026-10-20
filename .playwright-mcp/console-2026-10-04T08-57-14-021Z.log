@@ -1,0 +1,480 @@
+[    2007ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495:0
+[    5861ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://greentea.id/reefblast/:0
+[    5876ms] [WARNING] [.WebGL-0x34ac008d2a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://greentea.id/reefblast/:0
+[   15634ms] [WARNING] [.WebGL-0x34ac008d2a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://greentea.id/reefblast/:0
+[   16635ms] [WARNING] [.WebGL-0x34ac008d2a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://greentea.id/reefblast/:0
+[   17442ms] [WARNING] [.WebGL-0x34ac008d2a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat) @ https://greentea.id/reefblast/:0
+[  312637ms] [LOG] [ReefBlast Bot] Bot started. @ :25
+[  343950ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://greentea.id/reefblast/reefblast_afk_bot.js:0
+[  370288ms] TypeError: window.__ReefBlastBot.destroy is not a function
+    at <anonymous>:12:27
+    at <anonymous>:346:3
+    at eval (eval at <anonymous> (eval at evaluate (:311:30)), <anonymous>:351:17)
+    at eval (eval at evaluate (:311:30), <anonymous>:4:50)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+[  386421ms] [LOG] [ReefBlast Bot] Bot stopped. @ :25
+[  421829ms] [LOG] %c[Reefblast Bot] Initializing... color: #00d2ff; font-weight: bold; @ :39
+[  421830ms] [LOG] %c[Reefblast Bot] Ready! Press F2 or click START in the overlay. color: #00ff88; font-weight: bold; @ :43
+[  421836ms] [LOG] %c[Reefblast Bot] Bot started. color: #00ff88; @ :78
+[  443333ms] [LOG] %c[Reefblast Bot] Bot stopped. color: #ffaa00; @ :90
+[  443344ms] [LOG] %c[Reefblast Bot] Bot started. color: #00ff88; @ :78
+[  544399ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495:0
+[  544780ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://greentea.id/reefblast/:0
+[ 1091742ms] [ERROR] Access to fetch at 'http://127.0.0.1:8999/reefblast_auto_progression.js' from origin 'https://greentea.id' has been blocked by CORS policy: Permission was denied for this request to access the `loopback` address space. @ https://greentea.id/reefblast/:0
+[ 1091743ms] [ERROR] Failed to load resource: net::ERR_FAILED @ http://127.0.0.1:8999/reefblast_auto_progression.js:0
+[ 1132058ms] [LOG] [16:16:06] [SYSTEM] Auto-Progression Bot initialized. Ready to sail. @ :73
+[ 1132066ms] [LOG] [16:16:06] [SYSTEM] Bot started for Captain cuang-bot (Lv 5). @ :73
+[ 1133985ms] [LOG] [16:16:08] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1135263ms] [LOG] [16:16:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1137130ms] [LOG] [16:16:11] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1138487ms] [LOG] [16:16:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1140201ms] [LOG] [16:16:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1141486ms] [LOG] [16:16:15] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1142897ms] [LOG] [16:16:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1144798ms] [LOG] [16:16:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1145634ms] [LOG] [16:16:19] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1147856ms] [LOG] [16:16:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1149054ms] [LOG] [16:16:23] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1151822ms] [LOG] [16:16:25] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1153760ms] [LOG] [16:16:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1154978ms] [LOG] [16:16:28] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1156448ms] [LOG] [16:16:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1157966ms] [LOG] [16:16:31] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1159641ms] [LOG] [16:16:33] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1163365ms] [LOG] [16:16:37] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1164564ms] [LOG] [16:16:38] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1165181ms] [LOG] [16:16:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1166686ms] [LOG] [16:16:40] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1168493ms] [LOG] [16:16:42] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1169624ms] [LOG] [16:16:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1171724ms] [LOG] [16:16:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1173103ms] [LOG] [16:16:47] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1174561ms] [LOG] [16:16:48] [LEVEL_UP] Leveled up to Level 6! (+1 point) @ :73
+[ 1174562ms] [LOG] [16:16:48] [UPGRADE] Allocated skill point to: ATK (5/30) @ :73
+[ 1174562ms] [LOG] [16:16:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1176374ms] [LOG] [16:16:50] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1177300ms] [LOG] [16:16:51] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1179140ms] [LOG] [16:16:53] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1180792ms] [LOG] [16:16:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1181627ms] [LOG] [16:16:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1183437ms] [LOG] [16:16:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1184763ms] [LOG] [16:16:58] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1186781ms] [LOG] [16:17:00] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1187765ms] [LOG] [16:17:01] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1189892ms] [LOG] [16:17:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1191538ms] [LOG] [16:17:05] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1192600ms] [LOG] [16:17:06] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1194003ms] [LOG] [16:17:08] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1195535ms] [LOG] [16:17:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1196703ms] [LOG] [16:17:10] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1198500ms] [LOG] [16:17:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1200095ms] [LOG] [16:17:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1201632ms] [LOG] [16:17:15] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1203148ms] [LOG] [16:17:17] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1204834ms] [LOG] [16:17:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1206152ms] [LOG] [16:17:20] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1207834ms] [LOG] [16:17:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1208911ms] [LOG] [16:17:22] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1210495ms] [LOG] [16:17:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1211645ms] [LOG] [16:17:25] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1213716ms] [LOG] [16:17:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1214981ms] [LOG] [16:17:29] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1216840ms] [LOG] [16:17:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1218393ms] [LOG] [16:17:32] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1219481ms] [LOG] [16:17:33] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1221029ms] [LOG] [16:17:35] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1222428ms] [LOG] [16:17:36] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1224004ms] [LOG] [16:17:38] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1227074ms] [LOG] [16:17:41] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1228520ms] [LOG] [16:17:42] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1229906ms] [LOG] [16:17:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1231387ms] [LOG] [16:17:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1233093ms] [LOG] [16:17:47] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1234189ms] [LOG] [16:17:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1236039ms] [LOG] [16:17:50] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1237448ms] [LOG] [16:17:51] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1238825ms] [LOG] [16:17:52] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1240506ms] [LOG] [16:17:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1241578ms] [LOG] [16:17:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1243611ms] [LOG] [16:17:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1245066ms] [LOG] [16:17:59] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1246179ms] [LOG] [16:18:00] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1248091ms] [LOG] [16:18:02] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1249450ms] [LOG] [16:18:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1250659ms] [LOG] [16:18:04] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1252897ms] [LOG] [16:18:06] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1253948ms] [LOG] [16:18:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1255517ms] [LOG] [16:18:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1258295ms] [LOG] [16:18:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1260042ms] [LOG] [16:18:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1262727ms] [LOG] [16:18:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1264255ms] [LOG] [16:18:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1266346ms] [LOG] [16:18:20] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1267665ms] [LOG] [16:18:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1268656ms] [LOG] [16:18:22] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1270265ms] [LOG] [16:18:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1271761ms] [LOG] [16:18:25] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1273519ms] [LOG] [16:18:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1275057ms] [LOG] [16:18:29] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1276211ms] [LOG] [16:18:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1278015ms] [LOG] [16:18:32] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1279676ms] [LOG] [16:18:33] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1281321ms] [LOG] [16:18:35] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1282094ms] [LOG] [16:18:36] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1284092ms] [LOG] [16:18:38] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1285338ms] [LOG] [16:18:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1286725ms] [LOG] [16:18:40] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1288458ms] [LOG] [16:18:42] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1290032ms] [LOG] [16:18:44] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1291467ms] [LOG] [16:18:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1292880ms] [LOG] [16:18:46] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1294597ms] [LOG] [16:18:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1295985ms] [LOG] [16:18:50] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1297403ms] [LOG] [16:18:51] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1299090ms] [LOG] [16:18:53] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1300427ms] [LOG] [16:18:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1301893ms] [LOG] [16:18:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1303412ms] [LOG] [16:18:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1305054ms] [LOG] [16:18:59] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1306271ms] [LOG] [16:19:00] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1308129ms] [LOG] [16:19:02] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1309399ms] [LOG] [16:19:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1311070ms] [LOG] [16:19:05] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1312553ms] [LOG] [16:19:06] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1313879ms] [LOG] [16:19:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1315129ms] [LOG] [16:19:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1316841ms] [LOG] [16:19:10] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1318389ms] [LOG] [16:19:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1320077ms] [LOG] [16:19:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1321112ms] [LOG] [16:19:15] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1322883ms] [LOG] [16:19:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1324876ms] [LOG] [16:19:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1325825ms] [LOG] [16:19:19] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1327862ms] [LOG] [16:19:21] [LEVEL_UP] Leveled up to Level 7! (+1 point) @ :73
+[ 1327863ms] [LOG] [16:19:21] [UPGRADE] Allocated skill point to: ATK (6/30) @ :73
+[ 1327864ms] [LOG] [16:19:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1328977ms] [LOG] [16:19:22] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1330607ms] [LOG] [16:19:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1332451ms] [LOG] [16:19:26] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1333900ms] [LOG] [16:19:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1335176ms] [LOG] [16:19:29] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1336368ms] [LOG] [16:19:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1338125ms] [LOG] [16:19:32] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1339706ms] [LOG] [16:19:33] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1341131ms] [LOG] [16:19:35] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1342789ms] [LOG] [16:19:36] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1344069ms] [LOG] [16:19:38] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1345695ms] [LOG] [16:19:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1347080ms] [LOG] [16:19:41] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1348131ms] [LOG] [16:19:42] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1349775ms] [LOG] [16:19:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1351625ms] [LOG] [16:19:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1352898ms] [LOG] [16:19:46] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1354493ms] [LOG] [16:19:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1356044ms] [LOG] [16:19:50] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1357546ms] [LOG] [16:19:51] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1359105ms] [LOG] [16:19:53] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1360587ms] [LOG] [16:19:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1361739ms] [LOG] [16:19:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1363205ms] [LOG] [16:19:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1364779ms] [LOG] [16:19:58] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1366659ms] [LOG] [16:20:00] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1368041ms] [LOG] [16:20:02] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1369550ms] [LOG] [16:20:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1371286ms] [LOG] [16:20:05] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1372637ms] [LOG] [16:20:06] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1374079ms] [LOG] [16:20:08] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1375345ms] [LOG] [16:20:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1376965ms] [LOG] [16:20:10] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1378224ms] [LOG] [16:20:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1380045ms] [LOG] [16:20:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1381680ms] [LOG] [16:20:15] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1382716ms] [LOG] [16:20:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1386415ms] [LOG] [16:20:20] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1387849ms] [LOG] [16:20:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1389019ms] [LOG] [16:20:23] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1390546ms] [LOG] [16:20:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1392080ms] [LOG] [16:20:26] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1393807ms] [LOG] [16:20:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1395015ms] [LOG] [16:20:29] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1396226ms] [LOG] [16:20:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1398184ms] [LOG] [16:20:32] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1399416ms] [LOG] [16:20:33] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1401324ms] [LOG] [16:20:35] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1402842ms] [LOG] [16:20:36] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1403692ms] [LOG] [16:20:37] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1405366ms] [LOG] [16:20:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1406921ms] [LOG] [16:20:40] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1408278ms] [LOG] [16:20:42] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1409932ms] [LOG] [16:20:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1411875ms] [LOG] [16:20:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1412832ms] [LOG] [16:20:46] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1414155ms] [LOG] [16:20:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1418058ms] [LOG] [16:20:52] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1419035ms] [LOG] [16:20:53] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1420499ms] [LOG] [16:20:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1421943ms] [LOG] [16:20:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1423522ms] [LOG] [16:20:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1425070ms] [LOG] [16:20:59] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1426452ms] [LOG] [16:21:00] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1428068ms] [LOG] [16:21:02] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1429610ms] [LOG] [16:21:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1431115ms] [LOG] [16:21:05] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1432635ms] [LOG] [16:21:06] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1434035ms] [LOG] [16:21:08] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1435509ms] [LOG] [16:21:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1437091ms] [LOG] [16:21:11] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :73
+[ 1437763ms] [LOG] [16:21:11] [SYSTEM] Bot paused by user. @ :73
+[ 1437768ms] [LOG] [16:21:11] [SYSTEM] Bot paused by user. @ :73
+[ 1437773ms] [LOG] [16:21:11] [SYSTEM] Auto-Progression & Deal Hunter initialized. @ :34
+[ 1437784ms] [LOG] [16:21:11] [SYSTEM] Bot started for Captain cuang-bot (Lv 7). @ :34
+[ 1438816ms] [LOG] [16:21:12] [MARKET] DEAL SPOTTED: Rift Seeker (Q: 45%) for 28,000c (90% off) sold by Kent @ :34
+[ 1439727ms] [LOG] [16:21:13] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1444246ms] [LOG] [16:21:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1449097ms] [LOG] [16:21:23] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1453860ms] [LOG] [16:21:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1457867ms] [LOG] [16:21:31] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1462187ms] [LOG] [16:21:36] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1466727ms] [LOG] [16:21:40] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1469788ms] [LOG] [16:21:43] [LEVEL_UP] Leveled up to Level 8! (+1 pts) @ :34
+[ 1469788ms] [LOG] [16:21:43] [SKILL] Allocated skill point to: ATK (7/30) @ :34
+[ 1469788ms] [LOG] [16:21:43] [ZONE_CHANGE] Advancing from Zone 1 to Zone 2 (Sunrise Kelp)! @ :34
+[ 1471496ms] [LOG] [16:21:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1473173ms] [LOG] [16:21:47] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 1473937ms] [LOG] [16:21:47] [ZONE_CHANGE] Setting sail into Zone 2: Sunrise Kelp (Lv 8+) @ :34
+[ 1474937ms] [LOG] [16:21:48] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 1475892ms] [LOG] [16:21:49] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1475893ms] [LOG] [16:21:49] [ZONE_CHANGE] Setting sail into Zone 2: Sunrise Kelp (Lv 8+) @ :34
+[ 1480875ms] [LOG] [16:21:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1484664ms] [LOG] [16:21:58] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1489310ms] [LOG] [16:22:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1493665ms] [LOG] [16:22:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1498364ms] [LOG] [16:22:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1502590ms] [LOG] [16:22:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1507210ms] [LOG] [16:22:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1512021ms] [LOG] [16:22:26] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1516263ms] [LOG] [16:22:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1520886ms] [LOG] [16:22:34] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1525496ms] [LOG] [16:22:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1529562ms] [LOG] [16:22:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1534075ms] [LOG] [16:22:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1538764ms] [LOG] [16:22:52] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1543833ms] [LOG] [16:22:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1549248ms] [LOG] [16:23:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1553700ms] [LOG] [16:23:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1558070ms] [LOG] [16:23:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1562312ms] [LOG] [16:23:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1567189ms] [LOG] [16:23:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1572043ms] [LOG] [16:23:26] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1576382ms] [LOG] [16:23:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1580571ms] [LOG] [16:23:34] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1585318ms] [LOG] [16:23:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1589817ms] [LOG] [16:23:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1594206ms] [LOG] [16:23:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1598870ms] [LOG] [16:23:52] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1602887ms] [LOG] [16:23:56] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1607329ms] [LOG] [16:24:01] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1612154ms] [LOG] [16:24:06] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1616663ms] [LOG] [16:24:10] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1621207ms] [LOG] [16:24:15] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1626060ms] [LOG] [16:24:20] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1630463ms] [LOG] [16:24:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1634781ms] [LOG] [16:24:28] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1639122ms] [LOG] [16:24:33] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1643582ms] [LOG] [16:24:37] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1648885ms] [LOG] [16:24:42] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1652669ms] [LOG] [16:24:46] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1654197ms] [LOG] [16:24:48] [LEVEL_UP] Leveled up to Level 9! (+1 pts) @ :34
+[ 1654198ms] [LOG] [16:24:48] [SKILL] Allocated skill point to: ATK (8/30) @ :34
+[ 1656890ms] [LOG] [16:24:50] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1661796ms] [LOG] [16:24:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1665973ms] [LOG] [16:24:59] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1670430ms] [LOG] [16:25:04] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1675236ms] [LOG] [16:25:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1680063ms] [LOG] [16:25:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1684328ms] [LOG] [16:25:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1688907ms] [LOG] [16:25:22] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1693599ms] [LOG] [16:25:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1697876ms] [LOG] [16:25:31] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1702071ms] [LOG] [16:25:36] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1706626ms] [LOG] [16:25:40] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1711235ms] [LOG] [16:25:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1715611ms] [LOG] [16:25:49] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1720266ms] [LOG] [16:25:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1724508ms] [LOG] [16:25:58] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1729408ms] [LOG] [16:26:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1733800ms] [LOG] [16:26:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1738375ms] [LOG] [16:26:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1742275ms] [LOG] [16:26:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1750951ms] [LOG] [16:26:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1758903ms] [LOG] [16:26:32] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1763907ms] [LOG] [16:26:37] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1779636ms] [LOG] [16:26:53] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1783228ms] [LOG] [16:26:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1787936ms] [LOG] [16:27:01] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1793787ms] [LOG] [16:27:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1798165ms] [LOG] [16:27:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1804248ms] [LOG] [16:27:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1810345ms] [LOG] [16:27:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1814516ms] [LOG] [16:27:28] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1820940ms] [LOG] [16:27:34] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1826943ms] [LOG] [16:27:40] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1833745ms] [LOG] [16:27:47] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1837268ms] [LOG] [16:27:51] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1841770ms] [LOG] [16:27:55] [LEVEL_UP] Leveled up to Level 10! (+1 pts) @ :34
+[ 1841771ms] [LOG] [16:27:55] [SKILL] Allocated skill point to: ATK (9/30) @ :34
+[ 1841772ms] [LOG] [16:27:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1847125ms] [LOG] [16:28:01] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1851221ms] [LOG] [16:28:05] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1856604ms] [LOG] [16:28:10] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1861322ms] [LOG] [16:28:15] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1866345ms] [LOG] [16:28:20] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1872129ms] [LOG] [16:28:26] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1875930ms] [LOG] [16:28:29] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1884367ms] [LOG] [16:28:38] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1889447ms] [LOG] [16:28:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1900211ms] [LOG] [16:28:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1905560ms] [LOG] [16:28:59] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1909178ms] [LOG] [16:29:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1915042ms] [LOG] [16:29:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1919673ms] [LOG] [16:29:13] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1924856ms] [LOG] [16:29:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1931750ms] [LOG] [16:29:25] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1945261ms] [LOG] [16:29:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1949921ms] [LOG] [16:29:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1954425ms] [LOG] [16:29:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1960177ms] [LOG] [16:29:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1966209ms] [LOG] [16:30:00] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1970765ms] [LOG] [16:30:04] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1974016ms] [LOG] [16:30:08] [LEVEL_UP] Leveled up to Level 14! (+4 pts) @ :34
+[ 1974017ms] [LOG] [16:30:08] [SKILL] Allocated skill point to: ATK (10/30) @ :34
+[ 1974017ms] [LOG] [16:30:08] [ZONE_CHANGE] Advancing from Zone 2 to Zone 3 (Mangrove Maze)! @ :34
+[ 1974364ms] [LOG] [16:30:08] [SYSTEM] Dismissed Zone Clear modal (stayed fishing) @ :34
+[ 1975644ms] [LOG] [16:30:09] [SKILL] Allocated skill point to: ATK (11/30) @ :34
+[ 1975645ms] [LOG] [16:30:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1978310ms] [LOG] [16:30:12] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 1978311ms] [LOG] [16:30:12] [SKILL] Allocated skill point to: ATK (11/30) @ :34
+[ 1978804ms] [LOG] [16:30:12] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 1979648ms] [LOG] [16:30:13] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 1980070ms] [LOG] [16:30:14] [SKILL] Allocated skill point to: ATK (13/30) @ :34
+[ 1980073ms] [LOG] [16:30:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1980074ms] [LOG] [16:30:14] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 1981723ms] [LOG] [16:30:15] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 1982353ms] [LOG] [16:30:16] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 1985571ms] [LOG] [16:30:19] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1990393ms] [LOG] [16:30:24] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 1997719ms] [LOG] [16:30:31] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2005989ms] [LOG] [16:30:40] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2014233ms] [LOG] [16:30:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2018372ms] [LOG] [16:30:52] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2025699ms] [LOG] [16:30:59] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2029083ms] [LOG] [16:31:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2033562ms] [LOG] [16:31:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2051377ms] [LOG] [16:31:25] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2059258ms] [LOG] [16:31:33] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2065241ms] [LOG] [16:31:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2067549ms] [LOG] [16:31:41] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2069815ms] [LOG] [16:31:43] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 2070807ms] [LOG] [16:31:44] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2070824ms] [LOG] [16:31:44] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2073705ms] [LOG] [16:31:47] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 2075656ms] [LOG] [16:31:49] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2081879ms] [LOG] [16:31:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2086234ms] [LOG] [16:32:00] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2091419ms] [LOG] [16:32:05] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2095889ms] [LOG] [16:32:09] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2100521ms] [LOG] [16:32:14] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2104475ms] [LOG] [16:32:18] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2108422ms] [LOG] [16:32:22] [LEVEL_UP] Leveled up to Level 15! (+1 pts) @ :34
+[ 2108423ms] [LOG] [16:32:22] [SKILL] Allocated skill point to: ATK (14/30) @ :34
+[ 2108423ms] [LOG] [16:32:22] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2113129ms] [LOG] [16:32:27] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2117876ms] [LOG] [16:32:31] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2122678ms] [LOG] [16:32:36] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2127193ms] [LOG] [16:32:41] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2131145ms] [LOG] [16:32:45] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2137418ms] [LOG] [16:32:51] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2141780ms] [LOG] [16:32:55] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2149372ms] [LOG] [16:33:03] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2153844ms] [LOG] [16:33:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2158229ms] [LOG] [16:33:12] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2162649ms] [LOG] [16:33:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2166833ms] [LOG] [16:33:20] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2171767ms] [LOG] [16:33:25] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2181341ms] [LOG] [16:33:35] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2185447ms] [LOG] [16:33:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2190627ms] [LOG] [16:33:44] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2195909ms] [LOG] [16:33:49] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2198761ms] [LOG] [16:33:52] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2200094ms] [LOG] [16:33:54] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 2200649ms] [LOG] [16:33:54] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2200651ms] [LOG] [16:33:54] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2201590ms] [LOG] [16:33:55] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2201591ms] [LOG] [16:33:55] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 2202816ms] [LOG] [16:33:56] [ZONE_CHANGE] Setting sail into Zone 3: Mangrove Maze (Lv 12+) @ :34
+[ 2204763ms] [LOG] [16:33:58] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2213159ms] [LOG] [16:34:07] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2216953ms] [LOG] [16:34:10] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2222891ms] [LOG] [16:34:16] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2227220ms] [LOG] [16:34:21] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2232231ms] [LOG] [16:34:26] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2236173ms] [LOG] [16:34:30] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2241236ms] [LOG] [16:34:35] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2245471ms] [LOG] [16:34:39] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2249803ms] [LOG] [16:34:43] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2254470ms] [LOG] [16:34:48] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2258609ms] [LOG] [16:34:52] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2263487ms] [LOG] [16:34:57] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2270822ms] [LOG] [16:35:04] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2276266ms] [LOG] [16:35:10] [QUEST] Claiming daily quest: "Catch 250 fish" (+1675 coins, +8800 XP) @ :34
+[ 2278083ms] [LOG] [16:35:12] [LEVEL_UP] Leveled up to Level 17! (+2 pts) @ :34
+[ 2278084ms] [LOG] [16:35:12] [SKILL] Allocated skill point to: ATK (15/30) @ :34
+[ 2278085ms] [LOG] [16:35:12] [ZONE_CHANGE] Advancing from Zone 3 to Zone 4 (Amber Bay)! @ :34
+[ 2279821ms] [LOG] [16:35:13] [SKILL] Allocated skill point to: ATK (16/30) @ :34
+[ 2280236ms] [LOG] [16:35:14] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2281199ms] [LOG] [16:35:15] [TAVERN] Hired crew helper: Deckhand Dex (Keeps a steady stream of shots going.) for 6,700 coins! @ :34
+[ 2282170ms] [LOG] [16:35:16] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2282648ms] [LOG] [16:35:16] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2283209ms] [LOG] [16:35:17] [TAVERN] Hired crew helper: Deckhand Dex (Keeps a steady stream of shots going.) for 6,700 coins! @ :34
+[ 2284321ms] [LOG] [16:35:18] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2284323ms] [LOG] [16:35:18] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2286378ms] [LOG] [16:35:20] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2519548ms] [LOG] [16:39:13] [LEVEL_UP] Leveled up to Level 18! (+1 pts) @ :34
+[ 2519549ms] [LOG] [16:39:13] [SKILL] Allocated skill point to: ATK (17/30) @ :34
+[ 2736745ms] [LOG] [16:42:50] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2740020ms] [LOG] [16:42:54] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2740031ms] [LOG] [16:42:54] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2757481ms] [LOG] [16:43:11] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2757483ms] [LOG] [16:43:11] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2764558ms] [LOG] [16:43:18] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2766205ms] [LOG] [16:43:20] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2768312ms] [LOG] [16:43:22] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2768515ms] [LOG] [16:43:22] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2769024ms] [LOG] [16:43:23] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2818018ms] [LOG] [16:44:12] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2819270ms] [LOG] [16:44:13] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2819274ms] [LOG] [16:44:13] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2820356ms] [LOG] [16:44:14] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2821146ms] [LOG] [16:44:15] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2822834ms] [LOG] [16:44:16] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2862242ms] [LOG] [16:44:56] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 2863607ms] [LOG] [16:44:57] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2864804ms] [LOG] [16:44:58] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 2866075ms] [LOG] [16:45:00] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 2871208ms] [LOG] [16:45:05] [LEVEL_UP] Leveled up to Level 19! (+1 skill point) @ :34
+[ 2871209ms] [LOG] [16:45:05] [SKILL] Allocated skill point to: ATK (18/30) @ :34
+[ 3025060ms] [LOG] [16:47:39] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 3029154ms] [LOG] [16:47:43] [UPGRADE] Equipped vessel: Rowboat (100 HP, 5 DEF) @ :34
+[ 3029154ms] [LOG] [16:47:43] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 3030460ms] [LOG] [16:47:44] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 3030461ms] [LOG] [16:47:44] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 3040550ms] [LOG] [16:47:54] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 3040551ms] [LOG] [16:47:54] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 3042299ms] [LOG] [16:47:56] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 3127530ms] [LOG] [16:49:21] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 3127733ms] [LOG] [16:49:21] [UPGRADE] Equipped vessel: Trawler (120 HP, 13 DEF) @ :34
+[ 3128031ms] [LOG] [16:49:22] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 3128237ms] [LOG] [16:49:22] [ZONE_CHANGE] Setting sail into Zone 4: Amber Bay (Lv 17+) @ :34
+[ 3228016ms] [LOG] [16:51:02] [LEVEL_UP] Leveled up to Level 20! (+1 skill point) @ :34
+[ 3228016ms] [LOG] [16:51:02] [SKILL] Allocated skill point to: ATK (19/30) @ :34

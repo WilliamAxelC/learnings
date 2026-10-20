@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0000: Mandarin Baseline Diagnostic & Calibration</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .diagnostic-panel {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 28px 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+    .axis-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+    }
+    .axis-badge {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: var(--code-bg);
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+    }
+    .sentence-card {
+      background: var(--code-bg);
+      border-left: 4px solid var(--secondary-color);
+      padding: 16px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .sentence-zh {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .pinyin-box {
+      display: none;
+      font-family: var(--font-mono);
+      color: var(--secondary-color);
+      font-size: 1.05rem;
+      margin-top: 8px;
+      padding: 6px 10px;
+      background: var(--secondary-light);
+      border-radius: 4px;
+    }
+    .pinyin-box.visible {
+      display: block;
+    }
+    .pinyin-toggle-btn {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid var(--border-color);
+      background: var(--surface-color);
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+      margin-right: 8px;
+    }
+    .pinyin-toggle-btn:hover {
+      border-color: var(--secondary-color);
+      color: var(--secondary-color);
+    }
+    .pinyin-toggle-btn.used {
+      background: var(--warning-bg);
+      border-color: var(--warning-color);
+      color: var(--warning-color);
+    }
+    .botfit-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 18px 24px;
+      margin: 20px 0;
+      color: #f8fafc;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    }
+    .botfit-verdict-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      margin-bottom: 6px;
+    }
+    .botfit-badge {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #38bdf8;
+      font-family: var(--font-sans);
+    }
+    .botfit-desc {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+    .scorecard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .scorecard-item {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 14px;
+      text-align: center;
+    }
+    .scorecard-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .scorecard-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--accent-color);
+      font-family: var(--font-mono);
+    }
+    .output-pre {
+      background: #0f172a;
+      color: #38bdf8;
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      margin: 14px 0;
+      border: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="lesson-header">
+      <span class="lesson-badge">Diagnostic 0000 &bull; Universal Placement</span>
+      <h1>Universal Mandarin &amp; Technical Baseline Assessment</h1>
+      <p class="subtitle">
+        Calibrate your Mandarin foundation across three progressive tiers: Everyday Basics (HSK 1–2), Workplace Syntax &amp; Connectors (HSK 3–4), and Engineering Telemetry (AIOps). Zero upfront assumptions — whether building foundations or bridging to technical fluency, calibrate your Bot-Fit verdict in 3 minutes.
+      </p>
+      <div class="lesson-meta">
+        <span>⏱ 3-5 min check</span>
+        <span>🎯 Goal: Calibrate Bot-Fit &amp; Curriculum Track</span>
+        <span>🎙️ Universal Gemini Live Interview Included</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Adaptive Diagnostic Calibration</h2>
+      <p>
+        Every learner starts from a unique combination of spoken intuition, character literacy, and domain terminology. This universal placement diagnostic diagnoses your precise zone of proximal development across 3 progressive axes:
+      </p>
+      <div class="callout zpd">
+        <strong class="title">The 3 Diagnostic Axes</strong>
+        <ol style="margin-left: 20px; margin-top: 6px;">
+          <li><strong>Axis 1: Character vs. Pinyin Retrieval</strong> — Do you recognize core sentences in pure Hanzi, or do you need phonetic Pinyin scaffolding?</li>
+          <li><strong>Axis 2: Grammar &amp; Sentence Skeletons</strong> — Can you handle preverbal markers (<code>把</code>), paired connectors (<code>虽然...但是...</code>), and aspect particles (<code>推迟到...了</code>)?</li>
+          <li><strong>Axis 3: Technical &amp; AIOps Workplace Baseline</strong> — What core IT terms (<code>服务器</code>, <code>数据库</code>, <code>延迟</code>, <code>告警</code>, <code>根因</code>, <code>回滚</code>) do you already recognize?</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- AXIS 1: Character vs Pinyin Retrieval -->
+    <section class="diagnostic-panel quiz-section" id="axis1-panel">
+      <div class="axis-title">
+        <h3>Axis 1: HSK 3 Character vs. Pinyin Retrieval</h3>
+        <span class="axis-badge">4 Questions &bull; Pure Hanzi Test</span>
+      </div>
+      <p style="margin-bottom: 16px; color: var(--text-muted);">
+        Try reading each sentence in pure Hanzi first. If you need help, click <strong>"👁️ Show Pinyin Hint"</strong>. The diagnostic will automatically calibrate your reading level.
+      </p>
+
+      <!-- Axis 1 Q1 -->
+      <div class="quiz-question-box" data-axis="axis1" data-qid="a1q1">
+        <div class="sentence-card">
+          <div class="sentence-zh">这个问题我们已经解决了</div>
+          <div class="pinyin-box" id="py-a1q1">Zhè ge wèntí wǒmen yǐjīng jiějué le</div>
+          <div style="margin-top: 10px;">
+            <button class="pinyin-toggle-btn" data-target="py-a1q1" data-qid="a1q1">👁️ Show Pinyin Hint</button>
+            <button class="speak-btn" data-zh="这个问题我们已经解决了">🔊 Listen</button>
+            <button class="mic-btn" data-expected="这个问题我们已经解决了" data-feedback="mic-fb-a1q1">🎙️ Mic Test</button>
+          </div>
+          <div class="mic-feedback" id="mic-fb-a1q1"></div>
+        </div>
+        <div class="question-text">
+          What is the accurate English meaning of this sentence?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Exact match! '这个问题 (This problem) 我们已经解决了 (we have already solved).'">
+            We have already solved this problem.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Logged' would be 记录了 (jìlù le), not 解决了.">
+            We have already logged this problem.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Tested' would be 测试了 (cèshì le), not 解决了.">
+            We have already tested this problem.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Traced' would be 追踪了 (zhuīzōng le), not 解决了.">
+            We have already traced this problem.
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Axis 1 Q2 -->
+      <div class="quiz-question-box" data-axis="axis1" data-qid="a1q2">
+        <div class="sentence-card">
+          <div class="sentence-zh">虽然今天很忙，但是他还是来帮忙了</div>
+          <div class="pinyin-box" id="py-a1q2">Suīrán jīntiān hěn máng, dànshì tā háishì lái bāngmáng le</div>
+          <div style="margin-top: 10px;">
+            <button class="pinyin-toggle-btn" data-target="py-a1q2" data-qid="a1q2">👁️ Show Pinyin Hint</button>
+            <button class="speak-btn" data-zh="虽然今天很忙，但是他还是来帮忙了">🔊 Listen</button>
+            <button class="mic-btn" data-expected="虽然今天很忙但是他还是来帮忙了" data-feedback="mic-fb-a1q2">🎙️ Mic Test</button>
+          </div>
+          <div class="mic-feedback" id="mic-fb-a1q2"></div>
+        </div>
+        <div class="question-text">
+          What is the accurate English meaning of this sentence?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Correct! '虽然...但是...' (Suīrán... dànshì...) is the classic HSK 3 'Although... but...' concession pattern.">
+            Although busy today, he still came to help out.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'很忙' means very busy, not free (有空/不忙).">
+            Although free today, he still came to help out.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'很忙' means very busy, not late (迟到).">
+            Although late today, he still came to help out.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'很忙' means very busy, not sick (生病).">
+            Although sick today, he still came to help out.
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Axis 1 Q3 -->
+      <div class="quiz-question-box" data-axis="axis1" data-qid="a1q3">
+        <div class="sentence-card">
+          <div class="sentence-zh">请你把那份报告发给我</div>
+          <div class="pinyin-box" id="py-a1q3">Qǐng nǐ bǎ nà fèn bàogào fā gěi wǒ</div>
+          <div style="margin-top: 10px;">
+            <button class="pinyin-toggle-btn" data-target="py-a1q3" data-qid="a1q3">👁️ Show Pinyin Hint</button>
+            <button class="speak-btn" data-zh="请你把那份报告发给我">🔊 Listen</button>
+            <button class="mic-btn" data-expected="请你把那份报告发给我" data-feedback="mic-fb-a1q3">🎙️ Mic Test</button>
+          </div>
+          <div class="mic-feedback" id="mic-fb-a1q3"></div>
+        </div>
+        <div class="question-text">
+          What is the accurate English meaning of this sentence?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Spot on! '请你把...发给我' = 'Please send [object] to me'. '发 (fā)' is to send/dispatch.">
+            Please send that report to me now.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Read' would be 读 (dú) or 看 (kàn), not 发 (fā).">
+            Please read that report to me now.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Sign' would be 签 (qiān), not 发 (fā).">
+            Please sign that report to me now.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'File' / archive would be 归档 (guīdàng), not 发 (fā).">
+            Please file that report to me now.
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Axis 1 Q4 -->
+      <div class="quiz-question-box" data-axis="axis1" data-qid="a1q4">
+        <div class="sentence-card">
+          <div class="sentence-zh">会议推迟到下午三点了</div>
+          <div class="pinyin-box" id="py-a1q4">Huìyì tuīchí dào xiàwǔ sān diǎn le</div>
+          <div style="margin-top: 10px;">
+            <button class="pinyin-toggle-btn" data-target="py-a1q4" data-qid="a1q4">👁️ Show Pinyin Hint</button>
+            <button class="speak-btn" data-zh="会议推迟到下午三点了">🔊 Listen</button>
+            <button class="mic-btn" data-expected="会议推迟到下午三点了" data-feedback="mic-fb-a1q4">🎙️ Mic Test</button>
+          </div>
+          <div class="mic-feedback" id="mic-fb-a1q4"></div>
+        </div>
+        <div class="question-text">
+          What is the accurate English meaning of this sentence?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Exact match! '推迟 (tuīchí)' is the HSK 3 verb for postpone / delay; '到' is the destination time complement.">
+            The meeting was delayed until 3 PM.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Started' would be 开始 (kāishǐ), not 推迟 (tuīchí).">
+            The meeting was started until 3 PM.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Planned' would be 计划 (jìhuà) or 安排 (ānpái).">
+            The meeting was planned until 3 PM.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'Stopped' / ended would be 结束 (jiéshù).">
+            The meeting was stopped until 3 PM.
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+    </section>
+
+    <!-- AXIS 2: HSK 3 Grammar & Word Order Skeletons -->
+    <section class="diagnostic-panel quiz-section" id="axis2-panel">
+      <div class="axis-title">
+        <h3>Axis 2: HSK 3 Grammar &amp; Word Order Skeletons</h3>
+        <span class="axis-badge">3 Questions &bull; Exact Word/Char Matching</span>
+      </div>
+      <p style="margin-bottom: 16px; color: var(--text-muted);">
+        Select the sentence that follows natural Mandarin word order. Notice how grammatical slot positions govern meaning.
+      </p>
+
+      <!-- Axis 2 Q1 -->
+      <div class="quiz-question-box" data-axis="axis2" data-qid="a2q1">
+        <div class="question-text">
+          1. You want to ask a colleague: "Please send that report to me." Which sentence uses the correct HSK 3 <code>把 (bǎ)</code> disposal word order?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Correct! In the '把' construction: Subject + 把 + Object + Verb + Complement (请你 + 把那份报告 + 发 + 给我).">
+            请 你 把 那 份 报 告 发 给 我
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="Missing the '把' marker; in modern workplace requests, disposing of a specific definite object (那份报告) naturally takes 把.">
+            请 你 发 那 份 报 告 给 我 吧
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'在 (zài)' marks location or continuous action, not the disposal/transfer of an object.">
+            请 你 在 那 份 报 告 发 给 我
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'让 (ràng)' is a causative verb ('to allow / make someone do something'), ungrammatical here.">
+            请 你 让 那 份 报 告 发 给 我
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Axis 2 Q2 -->
+      <div class="quiz-question-box" data-axis="axis2" data-qid="a2q2">
+        <div class="question-text">
+          2. You want to state: "Although today is very busy, he still came to help." Which sentence uses the correct paired connectors and adverb placement?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Correct! '虽然...但是...' pairs concession with contrast, reinforced by '还是' (still).">
+            虽 然 今 天 很 忙 但 是 他 还 是 来 帮 忙 了
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'因为...所以...' denotes cause and effect ('Because... therefore...'), which contradicts the concession.">
+            因 为 今 天 很 忙 所 以 他 还 是 来 帮 忙 了
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'如果...就是...' denotes condition ('If... then...'), which does not match reality.">
+            如 果 今 天 很 忙 就 是 他 还 是 来 帮 忙 了
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'不但...而且...' denotes progressive addition ('Not only... but also...'), not contrast.">
+            不 但 今 天 很 忙 而 且 他 还 是 来 帮 忙 了
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Axis 2 Q3 -->
+      <div class="quiz-question-box" data-axis="axis2" data-qid="a2q3">
+        <div class="question-text">
+          3. You want to inform your team: "The meeting has already been postponed to 3:00 PM." Which sentence correctly positions the aspect adverb, verb, destination complement, and particle?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Perfect! '已经' precedes the verb '推迟', '到' introduces the time destination, and sentence-final '了' marks change of state.">
+            会 议 已 经 推 迟 到 下 午 三 点 了
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'推迟在' is ungrammatical; verbs of rescheduling require '到' as the target time complement.">
+            会 议 已 经 推 迟 在 下 午 三 点 了
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'已经' cannot be placed at the end of the clause after the time expression.">
+            会 议 推 迟 到 下 午 三 点 已 经 了
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'刚刚推迟在' combines an incorrect complement with conflicting aspect.">
+            会 议 刚 刚 推 迟 在 下 午 三 点 了
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+    </section>
+
+    <!-- AXIS 3: Technical & AIOps Baseline -->
+    <section class="diagnostic-panel quiz-section" id="axis3-panel">
+      <div class="axis-title">
+        <h3>Axis 3: Technical &amp; AIOps Workplace Baseline</h3>
+        <span class="axis-badge">3 Questions &bull; Server, Latency, RCA &amp; Rollback</span>
+      </div>
+      <p style="margin-bottom: 16px; color: var(--text-muted);">
+        Test how many core technical compounds you already recognize in Mandarin IT and AIOps environments.
+      </p>
+
+      <!-- Axis 3 Q1 -->
+      <div class="quiz-question-box" data-axis="axis3" data-qid="a3q1">
+        <div class="question-text">
+          1. In a Huawei engineering standup, you need to report on <em>servers</em> and <em>databases</em>. Which phrase correctly references <strong>服务器</strong> and <strong>数据库</strong>?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Spot on! '服务器 (fúwùqì)' = server; '数据库 (shùjùkù)' = database.">
+            服 务 器 和 数 据 库
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'路由器 (lùyóuqì)' is router; '防火墙 (fánghuǒqiáng)' is firewall.">
+            路 由 器 和 防 火 墙
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'交换机 (jiāohuànjī)' is network switch; '网关盒' is gateway box.">
+            交 换 机 和 网 关 盒
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'客户端 (kèhùduān)' is client; '缓存区 (huǎncúnqū)' is cache zone.">
+            客 户 端 和 缓 存 区
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Axis 3 Q2 -->
+      <div class="quiz-question-box" data-axis="axis3" data-qid="a3q2">
+        <div class="question-text">
+          2. An observability alert spikes. Which phrase accurately conveys: <em>"Latency is elevated and alerts have triggered"</em> (using <strong>延迟</strong> and <strong>告警</strong>)?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Exact match! '延迟 (yánchí)' = latency/delay; '告警 (gàojǐng)' = alert/alarm; '触发 (chùfā)' = trigger.">
+            延 迟 偏 高 且 触 发 告 警
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'流量 (liúliàng)' = traffic; '熔断 (róngduàn)' = circuit breaker trip.">
+            流 量 偏 高 且 触 发 熔 断
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'错误 (cuòwù)' = error; '重试 (chóngshì)' = retry.">
+            错 误 偏 高 且 触 发 重 试
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'内存 (nèicún)' = memory; '降级 (jiàngjí)' = service downgrade.">
+            内 存 偏 高 且 触 发 降 级
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Axis 3 Q3 -->
+      <div class="quiz-question-box" data-axis="axis3" data-qid="a3q3">
+        <div class="question-text">
+          3. During an incident postmortem, you need to say: <em>"Pinpoint root cause and execute rollback"</em> (using <strong>根因</strong> and <strong>回滚</strong>). Which phrase is correct?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Perfect! '根因 (gēnyīn)' = root cause (根 root + 因 cause); '回滚 (huígǔn)' = rollback.">
+            定 位 根 因 并 执 行 回 滚
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'发布版本' = release version; '压测' = stress test.">
+            发 布 版 本 并 执 行 压 测
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'阻断流量' = block traffic; '重启' = restart.">
+            阻 断 流 量 并 执 行 重 启
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'更新配置' = update config; '迁移' = migration.">
+            更 新 配 置 并 执 行 迁 移
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+    </section>
+
+    <!-- LIVE SCORECARD & BASELINE OUTPUT -->
+    <section class="diagnostic-panel" id="scorecard-panel">
+      <div class="axis-title">
+        <h3>Diagnostic Scorecard &amp; Baseline Output</h3>
+        <span class="axis-badge">Live Real-Time Calibration</span>
+      </div>
+
+      <!-- BOT-FIT VERDICT CARD -->
+      <div class="botfit-banner" id="botfit-card">
+        <div class="botfit-verdict-title">🤖 Bot-Fit &amp; Curriculum Calibration Verdict</div>
+        <div class="botfit-badge" id="disp-botfit">🟢 Ideal Fit — Fluency &amp; Workplace/Technical Bridge</div>
+        <div class="botfit-desc" id="disp-botfit-desc">
+          Ready for balanced daily morning drops, preverbal syntax expansion (把, 虽然...但是), and technical incident roleplay.
+        </div>
+      </div>
+
+      <div class="scorecard-grid">
+        <div class="scorecard-item">
+          <div class="scorecard-label">Detected Level</div>
+          <div class="scorecard-value" id="disp-level" style="font-size: 1.15rem; color: #38bdf8;">HSK 3-4</div>
+        </div>
+        <div class="scorecard-item">
+          <div class="scorecard-label">HSK Grammar Retention</div>
+          <div class="scorecard-value" id="disp-grammar">0%</div>
+        </div>
+        <div class="scorecard-item">
+          <div class="scorecard-label">Hanzi Reading Level</div>
+          <div class="scorecard-value" id="disp-hanzi" style="font-size: 1.05rem;">untested</div>
+        </div>
+        <div class="scorecard-item">
+          <div class="scorecard-label">Tech Vocab Baseline</div>
+          <div class="scorecard-value" id="disp-tech" style="font-size: 1.05rem;">beginner</div>
+        </div>
+        <div class="scorecard-item">
+          <div class="scorecard-label">Recommended Track</div>
+          <div class="scorecard-value" id="disp-track" style="font-size: 1.05rem; color: #10b981;">hsk3_4</div>
+        </div>
+        <div class="scorecard-item">
+          <div class="scorecard-label">Recommended Pace</div>
+          <div class="scorecard-value" id="disp-pace" style="font-size: 1.05rem;">standard</div>
+        </div>
+      </div>
+
+      <h4>📋 Copyable Discord Calibration Block</h4>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">
+        Paste this block directly into <code>#mandarin-learning</code> on Discord (or in your Antigravity chat) to auto-configure your daily spaced repetition queue and pace:
+      </p>
+      <pre class="output-pre" id="baseline-output">[MANDARIN_BASELINE]
+date: 2026-10-16
+detected_hsk_level: HSK 3-4
+bot_fit: ideal_workplace_bridge
+bot_fit_label: 🟢 Ideal Fit — Fluency &amp; Workplace/Technical Bridge
+hsk_grammar_retention: 0%
+hanzi_reading_level: untested
+tone_accuracy: 85%
+tech_vocab_baseline: beginner
+recommended_track: hsk3_4
+recommended_pace: standard
+strengths: Baseline assessment in progress.
+gaps: Complete the questions above to calibrate your profile.
+[/MANDARIN_BASELINE]</pre>
+      <button class="copy-prompt-btn" data-target="baseline-output" id="copy-baseline-btn">📋 Copy [MANDARIN_BASELINE] Block</button>
+
+      <div style="margin-top: 32px; border-top: 1px solid var(--border-color); padding-top: 24px;">
+        <h4>🎙️ 1-Click Copy: Universal Gemini Live 3-Minute Spoken Baseline Prompt</h4>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">
+          Want to test your spoken tones and fluency with Gemini Live? Paste this prompt into Gemini Live on your phone or web for an adaptive voice interview:
+        </p>
+        <pre class="output-pre" id="gemini-live-prompt">Act as a supportive, adaptive Mandarin language proficiency evaluator &amp; conversation partner.
+Goal: Conduct a friendly 3-minute spoken diagnostic placement interview to determine the user's true Mandarin level (HSK 0 to HSK 6+) and learning goals.
+
+[FLOW - 3-MINUTE ADAPTIVE STAIRCASE]
+1. Start at Tier 1 (HSK 1): Greet warmly in simple Mandarin (~0.8x speed):
+   "你好！我是你的中文测评助手。请问你叫什么名字？你学过中文吗？"
+   (If the user does not understand or speaks English, gently note HSK 0 and guide them with basic words).
+2. If they respond comfortably, step up to Tier 2 (HSK 2-3):
+   Ask about their daily life, work, or why they want to learn Mandarin ("你平时工作忙吗？你为什么要学习中文？"). Listen for SVO word order, time markers, and basic connectors (因为...所以...).
+3. If fluent, step up to Tier 3 (HSK 4-5 &amp; Professional/Technical):
+   Ask them to describe a workplace challenge or technical scenario:
+   "在你的工作中，如果系统或者项目遇到突发问题，你通常怎么跟同事或者主管汇报？"
+   Listen for formal connectors (虽然...但是..., 由于...导致...), domain terms, and result complements.
+4. Pronunciation &amp; Tone Assessment: Warmly point out any flat tones or pitch contour slips.
+
+At the very end of the 3-minute conversation, give encouraging feedback and output ONLY this exact calibration block in your response transcript so they can paste it into Discord:
+
+[MANDARIN_BASELINE]
+date: YYYY-MM-DD
+detected_hsk_level: &lt;HSK 0|HSK 1-2|HSK 3-4|HSK 5-6+&gt;
+bot_fit: &lt;partial_foundations|strong_foundation_builder|ideal_workplace_bridge|specialized_jargon_only&gt;
+hsk_grammar_retention: &lt;0-100&gt;%
+hanzi_reading_level: &lt;needs_pinyin|partial_hanzi|comfortable_hanzi&gt;
+tone_accuracy: &lt;0-100&gt;%
+tech_vocab_baseline: &lt;beginner|intermediate|advanced&gt;
+recommended_track: &lt;hsk1_2|hsk3_4|tech_aiops|all&gt;
+recommended_pace: &lt;light|standard|deep&gt;
+strengths: &lt;1-line summary&gt;
+gaps: &lt;1-line summary&gt;
+[/MANDARIN_BASELINE]</pre>
+        <button class="copy-prompt-btn" data-target="gemini-live-prompt">📋 Copy Universal Gemini Live Voice Prompt</button>
+      </div>
+    </section>
+
+    <div class="ask-agent-box">
+      <h4>💬 Connect with Your Antigravity Coach</h4>
+      <p>
+        After copying your <code>[MANDARIN_BASELINE]</code>, paste it into Discord channel <code>#mandarin-learning</code> or send it to me here. We will immediately tune tomorrow's morning drop (08:30 WIB) to your exact zone of proximal development!
+      </p>
+    </div>
+
+    <footer class="lesson-nav">
+      <span>← Inception</span>
+      <span>Diagnostic 0000</span>
+      <span><a href="./0001-reactivating-hsk3-for-aiops-incident-reporting.html">Proceed to Lesson 0001 →</a></span>
+    </footer>
+  </div>
+
+  <script src="../assets/quiz.js"></script>
+  <script>
+    // Live Baseline Diagnostic State & Scorecard Calculator
+    document.addEventListener("DOMContentLoaded", () => {
+      const state = {
+        axis1: { total: 4, answered: 0, correct: 0, pinyinUsed: new Set() },
+        axis2: { total: 3, answered: 0, correct: 0 },
+        axis3: { total: 3, answered: 0, correct: 0 }
+      };
+
+      // 1. Pinyin Hint Toggles for Axis 1
+      const pinyinToggles = document.querySelectorAll(".pinyin-toggle-btn");
+      pinyinToggles.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const targetId = btn.dataset.target;
+          const qid = btn.dataset.qid;
+          const box = document.getElementById(targetId);
+          if (box) {
+            const isVis = box.classList.toggle("visible");
+            if (isVis) {
+              btn.classList.add("used");
+              btn.textContent = "✓ Pinyin Hint Shown";
+              state.axis1.pinyinUsed.add(qid);
+            } else {
+              btn.classList.remove("used");
+              btn.textContent = "👁️ Show Pinyin Hint";
+            }
+            updateBaseline();
+          }
+        });
+      });
+
+      // 2. Track quiz answers per axis
+      const allQuestionBoxes = document.querySelectorAll(".quiz-question-box[data-axis]");
+      allQuestionBoxes.forEach(box => {
+        const axisKey = box.dataset.axis;
+        const buttons = box.querySelectorAll(".option-btn");
+        buttons.forEach(btn => {
+          btn.addEventListener("click", () => {
+            // Note: quiz.js handles button color classes and disable
+            setTimeout(() => {
+              recalculateScores();
+            }, 50);
+          });
+        });
+      });
+
+      function recalculateScores() {
+        state.axis1.answered = 0;
+        state.axis1.correct = 0;
+        state.axis2.answered = 0;
+        state.axis2.correct = 0;
+        state.axis3.answered = 0;
+        state.axis3.correct = 0;
+
+        allQuestionBoxes.forEach(box => {
+          const axisKey = box.dataset.axis;
+          const isAnswered = box.dataset.answered === "true";
+          const correctBtn = box.querySelector(".option-btn.selected-correct");
+          if (isAnswered) {
+            state[axisKey].answered++;
+            if (correctBtn) {
+              state[axisKey].correct++;
+            }
+          }
+        });
+
+        updateBaseline();
+      }
+
+      function updateBaseline() {
+        const todayStr = new Date().toISOString().split("T")[0];
+
+        // Total correct across all 3 axes (out of 10)
+        const totalCorrect = state.axis1.correct + state.axis2.correct + state.axis3.correct;
+        const totalAnswered = state.axis1.answered + state.axis2.answered + state.axis3.answered;
+
+        // Grammar retention % (Axis 2 has 3 questions)
+        const grammarPct = state.axis2.total > 0
+          ? Math.round((state.axis2.correct / state.axis2.total) * 100)
+          : 0;
+
+        // Hanzi reading level (Axis 1 has 4 questions)
+        let hanziLevel = "untested";
+        if (state.axis1.answered > 0) {
+          const pCount = state.axis1.pinyinUsed.size;
+          if (pCount === 0 && state.axis1.correct >= 3) {
+            hanziLevel = "comfortable_hanzi";
+          } else if (pCount <= 2 && state.axis1.correct >= 2) {
+            hanziLevel = "partial_hanzi";
+          } else {
+            hanziLevel = "needs_pinyin";
+          }
+        }
+
+        // Tech vocab baseline (Axis 3 has 3 questions)
+        let techBaseline = "beginner";
+        if (state.axis3.correct === 3) {
+          techBaseline = "advanced";
+        } else if (state.axis3.correct === 2) {
+          techBaseline = "intermediate";
+        } else {
+          techBaseline = "beginner";
+        }
+
+        // Calibrate Level, Bot-Fit, Track & Pace based on overall score & axis performance
+        let level = "HSK 3-4";
+        let botFitKey = "ideal_workplace_bridge";
+        let botFitLabel = "🟢 Ideal Fit — Fluency & Workplace/Technical Bridge";
+        let botFitDesc = "Dormant grammatical frames and workplace skeletons are preserved. Ideal candidate for active recall flashcards and technical briefing drills.";
+        let track = "hsk3_4";
+        let pace = "standard";
+        let strengths = "Dormant HSK 3/4 sentence skeletons and workplace disposal structures are well preserved.";
+        let gaps = "Retrieval latency on specialized compounds; benefits from active recall flashcards.";
+
+        if (totalAnswered > 0 && totalCorrect <= 2) {
+          level = totalCorrect === 0 ? "HSK 0" : "HSK 1";
+          botFitKey = "partial_foundations";
+          botFitLabel = "🟡 Partial Fit — Needs Pinyin & Tone Foundations First";
+          botFitDesc = "Requires foundational Pinyin phonetics, 4 tones, and basic everyday vocabulary before fast workplace roleplay.";
+          track = "hsk1_2";
+          pace = "light";
+          strengths = "Eager motivation to begin structured Mandarin study from core foundations.";
+          gaps = "Needs phonetics, tone drill training, and essential everyday SVO patterns.";
+        } else if (totalCorrect >= 3 && totalCorrect <= 5) {
+          level = "HSK 1-2";
+          botFitKey = "strong_foundation_builder";
+          botFitLabel = "🟢 Strong Fit — Foundation Builder Track";
+          botFitDesc = "Familiar with daily basics and basic sentence order. Benefits from progressive sentence expansion and connectors.";
+          track = "hsk1_2";
+          pace = "standard";
+          strengths = "Understands simple greetings, common time markers, and basic sentence structures.";
+          gaps = "Preverbal disposal markers (把) and compound sentence transitions require practice.";
+        } else if (totalCorrect >= 6 && totalCorrect <= 8) {
+          level = "HSK 3-4";
+          botFitKey = "ideal_workplace_bridge";
+          botFitLabel = "🟢 Ideal Fit — Fluency & Workplace/Technical Bridge";
+          botFitDesc = "Ready for balanced daily morning drops, preverbal syntax expansion (把, 虽然...但是), and technical incident roleplay.";
+          track = "hsk3_4";
+          pace = "standard";
+          strengths = "Dormant HSK 3/4 sentence skeletons and workplace disposal structures are well preserved.";
+          gaps = "Retrieval latency on specialized compounds; benefits from active recall flashcards.";
+        } else if (totalCorrect >= 9) {
+          level = "HSK 5-6+";
+          botFitKey = "specialized_jargon_only";
+          botFitLabel = "🔵 Specialized Fit — Domain/Executive Jargon Only";
+          botFitDesc = "Strong grammatical mastery across complex workplace scenarios. Focus strictly on AIOps telemetry and executive incident drills.";
+          track = "tech_aiops";
+          pace = "deep";
+          strengths = "Advanced fluency across complex grammatical frames and professional scenarios.";
+          gaps = "General Mandarin drills are too easy; focus strictly on technical engineering jargon.";
+        }
+
+        // Update displays
+        const dispLevel = document.getElementById("disp-level");
+        const dispBotfit = document.getElementById("disp-botfit");
+        const dispBotfitDesc = document.getElementById("disp-botfit-desc");
+        const dispTrack = document.getElementById("disp-track");
+        const dispGrammar = document.getElementById("disp-grammar");
+        const dispHanzi = document.getElementById("disp-hanzi");
+        const dispTech = document.getElementById("disp-tech");
+        const dispPace = document.getElementById("disp-pace");
+        const outputPre = document.getElementById("baseline-output");
+
+        if (dispLevel) dispLevel.textContent = level;
+        if (dispBotfit) dispBotfit.textContent = botFitLabel;
+        if (dispBotfitDesc) dispBotfitDesc.textContent = botFitDesc;
+        if (dispTrack) dispTrack.textContent = track;
+        if (dispGrammar) dispGrammar.textContent = `${grammarPct}%`;
+        if (dispHanzi) dispHanzi.textContent = hanziLevel;
+        if (dispTech) dispTech.textContent = techBaseline;
+        if (dispPace) dispPace.textContent = pace;
+
+        if (outputPre) {
+          outputPre.textContent = `[MANDARIN_BASELINE]
+date: ${todayStr}
+detected_hsk_level: ${level}
+bot_fit: ${botFitKey}
+bot_fit_label: ${botFitLabel}
+hsk_grammar_retention: ${grammarPct}%
+hanzi_reading_level: ${hanziLevel}
+tone_accuracy: 85%
+tech_vocab_baseline: ${techBaseline}
+recommended_track: ${track}
+recommended_pace: ${pace}
+strengths: ${strengths}
+gaps: ${gaps}
+[/MANDARIN_BASELINE]`;
+        }
+      }
+    });
+  </script>
+</body>
+</html>

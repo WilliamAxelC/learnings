@@ -1,0 +1,149 @@
+- generic [ref=f3e2]:
+  - banner [ref=f3e3]:
+    - generic [ref=f3e10]:
+      - heading "AudioDiff AssemblyAI Inside" [level=1] [ref=f3e11]:
+        - text: AudioDiff
+        - generic [ref=f3e12]: AssemblyAI Inside
+      - paragraph [ref=f3e13]: Hands-Free Voice Code Review & PR Explainer
+    - generic [ref=f3e14]:
+      - generic [ref=f3e15]:
+        - generic [ref=f3e16]: "Active PR:"
+        - combobox "Active PR:" [ref=f3e17] [cursor=pointer]:
+          - 'option "PR #104: Concurrency & Mutex (Lock-free)" [selected]'
+          - 'option "PR #242: Security & IDOR Mitigation"'
+          - 'option "PR #318: Webhook Idempotency & Backoff"'
+        - button "Fetch PR" [ref=f3e18] [cursor=pointer]
+        - link "📊 Slides" [ref=f3e21] [cursor=pointer]:
+          - /url: slides.html
+      - generic [ref=f3e22]:
+        - generic [ref=f3e24]: Gateway Online
+        - generic [ref=f3e25]: Universal-2 + LeMUR
+  - main [ref=f3e26]:
+    - generic [ref=f3e27]:
+      - generic [ref=f3e29]:
+        - generic [ref=f3e30]:
+          - generic [ref=f3e31]: PR-242
+          - 'heading "sec(api): sanitize GraphQL input and mitigate IDOR in tenant endpoint" [level=2] [ref=f3e32]'
+        - paragraph [ref=f3e33]: Addresses critical vulnerability finding in tenant billing endpoint. Adds cross-tenant organization authorization checks and parameterizes raw SQL queries.
+        - generic [ref=f3e34]:
+          - generic [ref=f3e35]:
+            - text: "Author:"
+            - strong [ref=f3e36]: sara-sec
+          - generic [ref=f3e37]:
+            - text: "Branch:"
+            - strong [ref=f3e38]: sec/tenant-idor-fix
+          - generic [ref=f3e39]: "+11"
+          - generic [ref=f3e40]: "-3"
+          - generic [ref=f3e41]:
+            - text: "Files:"
+            - strong [ref=f3e42]: "1"
+      - generic [ref=f3e43]:
+        - generic [ref=f3e44]:
+          - generic [ref=f3e45]: 📄
+          - generic [ref=f3e46]: src/api/tenant_resolver.ts
+          - generic [ref=f3e47]: TypeScript
+        - generic [ref=f3e49]:
+          - generic [ref=f3e50]:
+            - generic [ref=f3e51]: "export class TenantResolver {"
+            - generic [ref=f3e52]: src/api/tenant_resolver.ts (Lines 88-105)
+          - generic [ref=f3e53]:
+            - generic [ref=f3e54]: "88"
+            - generic [ref=f3e55]: "async getTenantBilling(tenantId: string, context: RequestContext): Promise<BillingRecord> {"
+          - generic [ref=f3e56]:
+            - generic [ref=f3e57]: "- 89"
+            - generic [ref=f3e58]: "- // Query directly by tenantId from input"
+          - generic [ref=f3e59]:
+            - generic [ref=f3e60]: "- 90"
+            - generic [ref=f3e61]: "- const billing = await this.db.query(\"SELECT * FROM billing WHERE tenant_id = \" + tenantId);"
+          - generic [ref=f3e62]:
+            - generic [ref=f3e63]: "- 91"
+            - generic [ref=f3e64]: "- return billing[0];"
+          - generic [ref=f3e65]:
+            - generic [ref=f3e66]: + 89
+            - generic [ref=f3e67]: "+ // IDOR vulnerability mitigation: verify session organization matches target tenant"
+          - generic [ref=f3e68]:
+            - generic [ref=f3e69]: + 90
+            - generic [ref=f3e70]: "+ if (context.user.organizationId !== tenantId && !context.user.isSuperAdmin) {"
+          - generic [ref=f3e71]:
+            - generic [ref=f3e72]: + 91
+            - generic [ref=f3e73]: + throw new ForbiddenException("Unauthorized cross-tenant billing access attempt");
+          - generic [ref=f3e74]:
+            - generic [ref=f3e75]: + 92
+            - generic [ref=f3e76]: "+ }"
+          - generic [ref=f3e77]:
+            - generic [ref=f3e78]: + 93
+            - generic [ref=f3e79]: +
+          - generic [ref=f3e80]:
+            - generic [ref=f3e81]: + 94
+            - generic [ref=f3e82]: + // Parameterized query prevents SQL injection
+          - generic [ref=f3e83]:
+            - generic [ref=f3e84]: + 95
+            - generic [ref=f3e85]: + const billing = await this.db.query(
+          - generic [ref=f3e86]:
+            - generic [ref=f3e87]: + 96
+            - generic [ref=f3e88]: + "SELECT * FROM billing WHERE tenant_id = $1 AND status = 'active'",
+          - generic [ref=f3e89]:
+            - generic [ref=f3e90]: + 97
+            - generic [ref=f3e91]: + [tenantId]
+          - generic [ref=f3e92]:
+            - generic [ref=f3e93]: + 98
+            - generic [ref=f3e94]: + );
+          - generic [ref=f3e95]:
+            - generic [ref=f3e96]: + 99
+            - generic [ref=f3e97]: + return billing[0];
+          - generic [ref=f3e98]:
+            - generic [ref=f3e99]: "100"
+            - generic [ref=f3e100]: "}"
+          - generic [ref=f3e101]:
+            - generic [ref=f3e102]: "101"
+            - generic [ref=f3e103]: "}"
+    - generic [ref=f3e104]:
+      - generic [ref=f3e105]:
+        - button "🎙️ Live Voice Review (Streaming STT)" [ref=f3e106] [cursor=pointer]
+        - button "📼 Ingest Voice Walkthrough (Universal-2)" [ref=f3e107] [cursor=pointer]
+      - generic [ref=f3e108]:
+        - generic [ref=f3e109]:
+          - generic [ref=f3e110]:
+            - generic [ref=f3e111]: 🎙️
+            - generic [ref=f3e114]:
+              - heading "🔊 AudioDiff Speaking" [level=3] [ref=f3e115]
+              - paragraph [ref=f3e116]: Hands-free audio playback with barge-in interruption enabled
+          - generic [ref=f3e119]:
+            - button "● Talk to AudioDiff" [ref=f3e120] [cursor=pointer]:
+              - generic [ref=f3e121]: ●
+              - generic [ref=f3e122]: Talk to AudioDiff
+            - button "🛑 Barge-In Interruption" [ref=f3e123] [cursor=pointer]
+            - 'button "❓ Ask: \"Why was the mutex removed?\"" [ref=f3e124] [cursor=pointer]'
+          - generic [ref=f3e125]:
+            - generic [ref=f3e126]:
+              - generic [ref=f3e127]: Real-Time Transcription Stream
+              - generic [ref=f3e128]: AssemblyAI Streaming STT (Domain Boosted)
+            - emphasis [ref=f3e130]: Press 'Talk to AudioDiff' or click a question to start hands-free code review...
+        - generic [ref=f3e131]:
+          - heading "⚡ AssemblyAI LeMUR Cognitive Actions" [level=4] [ref=f3e132]
+          - generic [ref=f3e133]:
+            - button "📋 Executive Walkthrough High-level architecture intent" [ref=f3e134] [cursor=pointer]:
+              - generic [ref=f3e135]: 📋
+              - generic [ref=f3e136]:
+                - strong [ref=f3e137]: Executive Walkthrough
+                - text: High-level architecture intent
+            - button "🛡️ Security & Concurrency Audit Scan for OWASP & race conditions" [ref=f3e138] [cursor=pointer]:
+              - generic [ref=f3e139]: 🛡️
+              - generic [ref=f3e140]:
+                - strong [ref=f3e141]: Security & Concurrency Audit
+                - text: Scan for OWASP & race conditions
+            - button "💡 Explain Selected Hunk Deep dive into code logic" [ref=f3e142] [cursor=pointer]:
+              - generic [ref=f3e143]: 💡
+              - generic [ref=f3e144]:
+                - strong [ref=f3e145]: Explain Selected Hunk
+                - text: Deep dive into code logic
+            - button "✍️ Draft PR Review Comment Generates markdown suggestions" [ref=f3e146] [cursor=pointer]:
+              - generic [ref=f3e147]: ✍️
+              - generic [ref=f3e148]:
+                - strong [ref=f3e149]: Draft PR Review Comment
+                - text: Generates markdown suggestions
+        - generic [ref=f3e150]:
+          - generic [ref=f3e151]:
+            - generic [ref=f3e152]: 🎧 AudioDiff Spoken Response
+            - generic [ref=f3e153]: "Latency: -- ms"
+          - generic [ref=f3e154]: "\"Select a PR and ask a question or click an action button to receive verbal code review feedback.\""

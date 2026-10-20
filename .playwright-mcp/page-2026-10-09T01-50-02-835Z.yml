@@ -1,0 +1,107 @@
+- main [ref=f11e2]:
+  - generic [ref=f11e3]:
+    - heading [level=1] [ref=f11e4]:
+      - link [ref=f11e5] [cursor=pointer]:
+        - /url: /
+        - img "win.ai.id logo" [ref=f11e6]
+        - text: win.ai.id
+    - navigation [ref=f11e7]:
+      - link "Home" [ref=f11e8] [cursor=pointer]:
+        - /url: /
+      - text: ·
+      - link "Sign in" [ref=f11e9] [cursor=pointer]:
+        - /url: /login
+      - button "Switch to dark theme" [ref=f11e10] [cursor=pointer]
+  - article [ref=f11e13]:
+    - 'heading "Building in Public: Dev Log" [level=2] [ref=f11e14]'
+    - paragraph [ref=f11e15]:
+      - text: A calm, deliberate log of architecture decisions and weekly milestones for
+      - strong [ref=f11e16]: win.ai.id
+      - text: and
+      - strong [ref=f11e17]: zh.win.ai.id
+      - text: .
+    - generic [ref=f11e18]:
+      - generic [ref=f11e19]:
+        - strong [ref=f11e20]: "ADR 004: Haiku 5.5 Frontier Architecture & Team Workspaces"
+        - text: · October 2026
+      - paragraph [ref=f11e21]: Documenting our technical architecture decisions for real-time cognitive co-architecting and longitudinal compounding.
+      - list [ref=f11e22]:
+        - listitem [ref=f11e23]:
+          - strong [ref=f11e24]: Haiku 5.5 Inference Engine
+          - text: ": Standardizing our real-time cognitive co-architect on Haiku 5.5 for sub-150ms latency, high-precision goal deconstruction, and strict structured JSON schema enforcement."
+        - listitem [ref=f11e25]:
+          - strong [ref=f11e26]: Prompt Caching Optimization
+          - text: ": Ephemeral cache breakpoints on system instructions and user habit historical vectors reduce API token expenditure by up to 90% and slash time-to-first-token."
+        - listitem [ref=f11e27]:
+          - strong [ref=f11e28]: Human-in-the-Loop Sovereignty
+          - text: ": Strict architectural boundary ensuring Haiku 5.5 outputs proposals that require explicit user acceptance before any SQLite record is committed."
+        - listitem [ref=f11e29]:
+          - strong [ref=f11e30]: Multi-Tenant Workspace Scope
+          - text: ": Architectural blueprint expanding beyond solo builders into early-stage technical teams for asynchronous standup synthesis and bottleneck detection."
+    - generic [ref=f11e31]:
+      - generic [ref=f11e32]:
+        - strong [ref=f11e33]: "Phase 1.6: Haiku 5.5 Cognitive Architecture & Compounding Mastery"
+        - text: · October 2026
+      - paragraph [ref=f11e34]: Elevating win.ai.id into an aspirational cognitive operating system where Haiku 5.5 co-architects monumental breakthroughs through compounding daily execution.
+      - list [ref=f11e35]:
+        - listitem [ref=f11e36]:
+          - strong [ref=f11e37]: Compounding Velocity Positioning
+          - text: ": Reframed value proposition around deconstructing audacious goals into high-leverage daily strikes and preserving peak cognitive stamina."
+        - listitem [ref=f11e38]:
+          - strong [ref=f11e39]: Spring Botanical & Vector Emblem
+          - text: ": Refreshed the visual identity with a light blue and white palette accented by spring trees and seedlings, crowned with the Ascending Summit 'W'."
+        - listitem [ref=f11e40]:
+          - strong [ref=f11e41]: Interactive Strategic Sandbox
+          - text: ": Enhanced landing page with interactive milestone execution toggling and live Haiku 5.5 Co-Architect proposal generation."
+        - listitem [ref=f11e42]:
+          - strong [ref=f11e43]: Hardened SQLite Password Auth
+          - text: ": Rolled out bcrypt-hashed credential storage with timing-attack mitigation and secure session management."
+    - generic [ref=f11e44]:
+      - generic [ref=f11e45]:
+        - strong [ref=f11e46]: "Phase 1.5: Public landing page & guest mode"
+        - text: · October 2026
+      - paragraph [ref=f11e47]: Welcoming visitors, reviewers, and crawlers with an open, honest front door. Guests can now explore win.ai.id without immediately hitting a login wall.
+      - list [ref=f11e48]:
+        - listitem [ref=f11e49]:
+          - strong [ref=f11e50]: Public Landing Page & Guest Experience
+          - text: ": Server-rendered overview presenting the core daily-wins philosophy, real feature grid, and an honest sample day preview."
+        - listitem [ref=f11e51]:
+          - strong [ref=f11e52]: Session-Aware Root Route
+          - text: ": Signed-out visitors see the calm landing experience; signed-in users go straight to their today checklist as before."
+        - listitem [ref=f11e53]:
+          - strong [ref=f11e54]: zh. Subdomain Teaser
+          - text: ": Open guest teaser for upcoming Mandarin micro-rounds at zh.win.ai.id without forcing a redirect."
+        - listitem [ref=f11e55]:
+          - strong [ref=f11e56]: Crawler-Friendly & Accessible
+          - text: ": Semantic HTML, robots.txt, lightweight CSS with fresh light blue & white theme, and prefers-reduced-motion support."
+    - generic [ref=f11e57]:
+      - generic [ref=f11e58]:
+        - strong [ref=f11e59]: "Phase 1: Core Daily Wins & AI Guardrails"
+        - text: · October 2026
+      - paragraph [ref=f11e60]: "Established the baseline philosophy: wins must feel friction-free. Auto-materializing scheduled habits, single-tap checks with haptic feedback, and a 4:00 AM local day rollover so late-night wins count properly."
+      - list [ref=f11e61]:
+        - listitem [ref=f11e62]:
+          - strong [ref=f11e63]: Global Streak + Free Weekly Skip
+          - text: ": Missing one day doesn't destroy motivation. One free skip per ISO week automatically keeps momentum alive."
+        - listitem [ref=f11e64]:
+          - strong [ref=f11e65]: Habit Streaks
+          - text: ": Per-habit streaks displayed alongside daily tasks."
+        - listitem [ref=f11e66]:
+          - strong [ref=f11e67]: AI Coach with Human in the Loop
+          - text: ": The model never mutates data directly; proposals are rendered as interactive cards that must be accepted or customized."
+        - listitem [ref=f11e68]:
+          - strong [ref=f11e69]: Hard Budget Cap & Fallback
+          - text: ": Fixed monthly spend limit ($5/mo); seamlessly degrades to deterministic rule-based suggestions when reached or offline."
+        - listitem [ref=f11e70]:
+          - strong [ref=f11e71]: Passkeys (WebAuthn) & Magic Link
+          - text: ": Passwordless biometric authentication (Touch ID, Face ID, YubiKey) with email magic-link fallback."
+    - generic [ref=f11e72]:
+      - generic [ref=f11e73]:
+        - strong [ref=f11e74]: "Phase 2: Long-Term Memory & Push Reminders"
+        - text: · Upcoming
+      - paragraph [ref=f11e75]: Transparent memory notes that users can review and edit, plus gentle PWA Web Push notifications for the morning plan and an optional evening nudge.
+    - generic [ref=f11e76]:
+      - generic [ref=f11e77]:
+        - strong [ref=f11e78]: "Phase 3: zh.win.ai.id (Mandarin HSK 3–5)"
+        - text: · Planned
+      - paragraph [ref=f11e79]: "A fast, 3-minute daily Mandarin micro-round designed for intermediate learners: adaptive placement quiz, FSRS spaced repetition, high-fidelity neural audio, sentence cloze, and AI-generated micro-stories using today's target vocabulary."

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AudioDiff Presentation Slides | Lablab.ai AssemblyAI Hackathon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+      --primary: #3b82f6;
+      --cyan: #06b6d4;
+      --purple: #8b5cf6;
+      --green: #10b981;
+      --amber: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .slide-viewport {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+    }
+    .slide {
+      display: none;
+      width: 100%;
+      max-width: 1100px;
+      min-height: 580px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 0.3s ease;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .slide.active { display: flex; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .slide-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      background: linear-gradient(90deg, var(--primary), var(--purple));
+      color: #fff;
+      margin-bottom: 1.25rem;
+    }
+    .slide-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #fff, #9ca3af);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .slide-subtitle {
+      font-size: 1.15rem;
+      color: var(--cyan);
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .content-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .content-box h4 {
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .content-box p, .content-box li {
+      font-size: 0.95rem;
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+    .content-box ul { list-style: none; }
+    .content-box ul li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .table-container th, .table-container td {
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    .table-container th {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--cyan);
+    }
+    .speaker-note-box {
+      background: #090d16;
+      border-left: 3px solid var(--purple);
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #0d121f;
+      border-top: 1px solid var(--border);
+    }
+    .nav-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 0.6rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .nav-btn:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+    .slide-dots {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .dot.active {
+      background: var(--cyan);
+      box-shadow: 0 0 10px var(--cyan);
+    }
+  </style>
+</head>
+<body>
+  <div class="slide-viewport">
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <div>
+        <span class="slide-badge">Lablab.ai AssemblyAI Hackathon</span>
+        <h1 class="slide-title">🎙️ AudioDiff</h1>
+        <p class="slide-subtitle">Hands-Free Voice Code Review & PR Explainer</p>
+        <div class="content-grid">
+          <div class="content-box">
+            <h4>💡 The Vision</h4>
+            <p>Transforming static, friction-heavy git unified diffs into a natural, hands-free conversational dialogue for engineering teams.</p>
+          </div>
+          <div class="content-box">
+            <h4>🏆 Triple Sponsor Integration</h4>
+            <ul>
+              <li>⚡ <strong>AssemblyAI Universal-2:</strong> Async Voice Walkthrough Ingestion</li>
+              <li>⚡ <strong>AssemblyAI Streaming STT:</strong> Sub-second Live WebSocket Streaming</li>
+              <li>⚡ <strong>AssemblyAI LeMUR (v3):</strong> Grounded AST Code Reasoning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-note-box">
+        <strong>Speaker Note:</strong> "Welcome everyone. Today I'm excited to present AudioDiff—a voice-first conversational AI partner for GitHub pull requests that lets software engineers conduct rigorous, hands-free code reviews anywhere."
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <div>
+        <span class="slide-badge">The Problem Statement</span>
+        <h1 class="slide-title">The Code Review Bottleneck</h1>
+        <p class="slide-subtitle">Mandatory ritual, maximum developer friction</p>
+        <div class="content-grid">
+          <div class="content-box">
+            <h4>⏳ Time & Fatigue</h4>
+            <ul>
+              <li>⚠️ Engineers spend <strong>over 20% of their time</strong> reviewing PRs.</li>
+              <li>⚠️ Reading 2,000-line diffs on laptops causes severe eye strain and mental exhaustion.</li>
+            </ul>
+          </div>
+          <div class="content-box">
+            <h4>🔀 Fragmentation & Inaccessibility</h4>
+            <ul>
+              <li>⚠️ Constant tabbing between diffs, issue trackers, and commit logs.</li>
+              <li>⚠️ Zero accessibility when walking, commuting, or away from a desk.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-note-box">
+        <strong>Speaker Note:</strong> "Every developer knows the pain of opening a massive PR on a laptop screen after a long day. You get eye fatigue, you miss subtle race conditions, and you can't review anything on the go."
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <div>
+        <span class="slide-badge">The Solution</span>
+        <h1 class="slide-title">Conversational Code Review</h1>
+        <p class="slide-subtitle">Review smarter, faster, hands-free</p>
+        <div class="content-grid">
+          <div class="content-box">
+            <h4>🎧 Natural Spoken Interaction</h4>
+            <ul>
+              <li>🗣️ Inquire out loud: <em>"Why was the mutex removed on line 42?"</em></li>
+              <li>⚡ Sub-second response using domain-boosted streaming STT.</li>
+              <li>🛑 Instant Barge-In interruption to pivot questions without lag.</li>
+            </ul>
+          </div>
+          <div class="content-box">
+            <h4>👁️ Synchronized Code Intelligence</h4>
+            <ul>
+              <li>✨ Screen auto-scrolls and pulses the exact diff hunk under discussion.</li>
+              <li>🛡️ Specialized LeMUR audits catch concurrency bugs before merge.</li>
+              <li>✍️ One-click GitHub PR review comment generation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-note-box">
+        <strong>Speaker Note:</strong> "AudioDiff transforms static code diffs into an interactive pair programming dialogue. It grounds your voice questions against the git AST, queries LeMUR, and talks back to you while synchronizing your screen."
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+      <div>
+        <span class="slide-badge">Sponsor Integration</span>
+        <h1 class="slide-title">Native AssemblyAI Stack</h1>
+        <p class="slide-subtitle">Triple integration across real-time, async, and cognitive models</p>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Technology</th>
+                <th>Role in AudioDiff</th>
+                <th>Key Capabilities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Universal-2</strong></td>
+                <td>Async Walkthrough Ingestion</td>
+                <td>Diarizes author & reviewer voice memos (98%+ confidence), extracts action items.</td>
+              </tr>
+              <tr>
+                <td><strong>Streaming STT</strong></td>
+                <td>Live Real-Time Voice Hub</td>
+                <td>Sub-second WebSocket audio with <strong>33-term developer word boosting</strong>.</td>
+              </tr>
+              <tr>
+                <td><strong>LeMUR (v3)</strong></td>
+                <td>AST Code Reasoning Core</td>
+                <td>4 specialized workflows: summary, hunk explainer, security audit, and comment drafting.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="speaker-note-box">
+        <strong>Speaker Note:</strong> "We integrated all three designated AssemblyAI technologies into a cohesive workflow: Universal-2 for asynchronous voice memos, Streaming STT with 33-term technical word boosting for live dialogue, and LeMUR for code reasoning."
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+      <div>
+        <span class="slide-badge">Architecture</span>
+        <h1 class="slide-title">Full-Duplex Real-Time Pipeline</h1>
+        <p class="slide-subtitle">AST grounding, sub-second interruption, and cloud AI</p>
+        <div class="content-grid">
+          <div class="content-box">
+            <h4>⚡ Real-Time Voice Gateway</h4>
+            <p>16kHz PCM audio pushed over WebSockets to AssemblyAI Streaming STT. Emits real-time visual events and coordinates sub-50ms barge-in interruption.</p>
+          </div>
+          <div class="content-box">
+            <h4>🔍 Semantic AST Diff Grounder</h4>
+            <p>Parses unified git diffs into structured hunks. Resolves fuzzy spoken questions to specific functions, classes, and line numbers before querying LeMUR.</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-note-box">
+        <strong>Speaker Note:</strong> "Our architecture pairs a Node.js full-duplex WebSocket gateway with our AST DiffIndexer. When developer speech comes in, the DiffIndexer resolves the inquiry to target lines and sends the contextual diff into LeMUR."
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+      <div>
+        <span class="slide-badge">Business Impact</span>
+        <h1 class="slide-title">Measurable Developer ROI</h1>
+        <p class="slide-subtitle">Accelerating engineering velocity and code quality</p>
+        <div class="content-grid">
+          <div class="content-box">
+            <h4>📈 Speed & Safety</h4>
+            <ul>
+              <li>⚡ <strong>40% faster PR turnaround</strong>: unclog review queues across teams.</li>
+              <li>🛡️ <strong>Zero fatigue bugs</strong>: automated audits catch race conditions & OWASP flaws.</li>
+            </ul>
+          </div>
+          <div class="content-box">
+            <h4>🚶 Mobility & Accessibility</h4>
+            <ul>
+              <li>🚶 Conduct reviews while walking, commuting, or away from a desk.</li>
+              <li>♿ Equal access for visually or motor-impaired software engineers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-note-box">
+        <strong>Speaker Note:</strong> "AudioDiff saves senior engineers hours every week, makes code review accessible anywhere, and catches production-breaking bugs before merge."
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide">
+      <div>
+        <span class="slide-badge">Conclusion & Open Source</span>
+        <h1 class="slide-title">Ready for Judging & Production</h1>
+        <p class="slide-subtitle">Experience AudioDiff today</p>
+        <div class="content-grid">
+          <div class="content-box">
+            <h4>📦 Open Source Repository</h4>
+            <p>Available on GitHub: <br><strong>github.com/WilliamAxelC/AudioDiff</strong></p>
+            <p style="margin-top: 0.5rem;">MIT Licensed • 100% Automated Test Coverage</p>
+          </div>
+          <div class="content-box">
+            <h4>🚀 Live Dashboard</h4>
+            <p>Access the live interactive review hub at:<br><strong>http://localhost:3001</strong></p>
+            <p style="margin-top: 0.5rem; color: var(--green);">Offline Simulation Mode Enabled</p>
+          </div>
+        </div>
+      </div>
+      <div class="speaker-note-box">
+        <strong>Speaker Note:</strong> "AudioDiff is open source under the MIT License. Clone the repo, test it in simulation mode with zero setup, and experience hands-free code reviews today. Thank you!"
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="controls">
+    <button id="prev-btn" class="nav-btn">← Previous</button>
+    <div class="slide-dots" id="dots-container"></div>
+    <div style="display: flex; gap: 0.75rem; align-items: center;">
+      <a href="index.html" style="color: var(--cyan); text-decoration: none; font-size: 0.85rem; font-weight: 600;">Launch Dashboard ↗</a>
+      <button id="next-btn" class="nav-btn">Next →</button>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    const dotsContainer = document.getElementById("dots-container");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    let currentSlide = 0;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement("div");
+      dot.className = `dot ${i === 0 ? "active" : ""}`;
+      dot.addEventListener("click", () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll(".dot");
+
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove("active");
+      dots[currentSlide].classList.remove("active");
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add("active");
+      dots[currentSlide].classList.add("active");
+    }
+
+    prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
+    nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") goToSlide(currentSlide - 1);
+      if (e.key === "ArrowRight" || e.key === " ") goToSlide(currentSlide + 1);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+- generic [ref=e4]:
+  - generic [ref=e548]:
+    - complementary [ref=e549]:
+      - button "Back to app" [ref=e551] [cursor=pointer]
+      - generic [ref=e553]:
+        - textbox "Search settings" [active] [ref=e554]
+        - generic:
+          - generic:
+            - generic: Ctrl
+            - generic: +
+            - generic: F
+      - button "Onboarding checklist, 6 of 8 done. Show setup guide." [ref=e556] [cursor=pointer]:
+        - generic "6 of 8 setup steps complete" [ref=e557]
+        - generic [ref=e561]: Onboarding checklist
+      - generic [ref=e564]:
+        - generic [ref=e565]:
+          - paragraph [ref=e566]: AI Capabilities
+          - generic [ref=e567]:
+            - button "Agents" [ref=e568] [cursor=pointer]
+            - button "AI Provider Accounts Optional" [ref=e573] [cursor=pointer]:
+              - generic [ref=e586]: AI Provider Accounts
+              - generic [ref=e587]: Optional
+            - button "Orchestration" [ref=e588] [cursor=pointer]
+        - generic [ref=e595]:
+          - paragraph [ref=e596]: Set Up
+          - generic [ref=e597]:
+            - button "General" [ref=e598] [cursor=pointer]
+            - button "Integrations" [ref=e601] [cursor=pointer]
+        - generic [ref=e606]:
+          - paragraph [ref=e607]: Workflows
+          - generic [ref=e608]:
+            - button "Automations" [ref=e609] [cursor=pointer]
+            - button "Artifacts Beta" [ref=e615] [cursor=pointer]:
+              - generic [ref=e620]: Artifacts
+              - generic [ref=e621]: Beta
+            - button "Share Skills Beta" [ref=e622] [cursor=pointer]:
+              - generic [ref=e625]: Share Skills
+              - generic [ref=e626]: Beta
+            - button "Git & Source Control" [ref=e627] [cursor=pointer]
+            - button "Task Sources" [ref=e633] [cursor=pointer]
+            - button "Terminal" [ref=e638] [cursor=pointer]
+            - button "Quick Commands" [ref=e643] [cursor=pointer]
+            - button "Floating Workspace" [ref=e647] [cursor=pointer]
+        - generic [ref=e651]:
+          - paragraph [ref=e652]: Interface
+          - generic [ref=e653]:
+            - button "Appearance" [ref=e654] [cursor=pointer]
+            - button "Input & Editing" [ref=e662] [cursor=pointer]
+            - button "Shortcuts" [ref=e669] [cursor=pointer]
+            - button "Stats & Usage" [ref=e673] [cursor=pointer]
+        - generic [ref=e677]:
+          - paragraph [ref=e678]: Remote Hosts
+          - button "Remote Orca Servers Beta" [ref=e680] [cursor=pointer]:
+            - generic [ref=e684]: Remote Orca Servers
+            - generic [ref=e685]: Beta
+        - generic [ref=e686]:
+          - paragraph [ref=e687]: Privacy & Security
+          - button "Privacy & Telemetry" [ref=e689] [cursor=pointer]
+        - generic [ref=e694]:
+          - paragraph [ref=e695]: Experimental
+          - button "Experimental" [ref=e697] [cursor=pointer]
+        - generic [ref=e701]:
+          - paragraph [ref=e702]: Projects
+          - generic [ref=e703]:
+            - button "Portofolio" [ref=e704] [cursor=pointer]
+            - button "IDX-notifier" [ref=e707] [cursor=pointer]
+            - button "Med-Journal-Helper" [ref=e710] [cursor=pointer]
+            - button "coursera-mcp-server" [ref=e713] [cursor=pointer]
+            - button "Blogs" [ref=e716] [cursor=pointer]
+            - button "learnings" [ref=e719] [cursor=pointer]
+            - button "IDXClaw" [ref=e722] [cursor=pointer]
+            - button "AI-nimate" [ref=e725] [cursor=pointer]
+            - button "Roblox-mcp-dev" [ref=e728] [cursor=pointer]
+            - button "Oracle-A1-VM-Snatcher" [ref=e731] [cursor=pointer]
+            - button "tradingagents-validation" [ref=e734] [cursor=pointer]
+            - button "shopee-indonesia-mcp" [ref=e737] [cursor=pointer]
+            - button "tokopedia-mcp" [ref=e740] [cursor=pointer]
+            - button "facebook-marketplace-mcp" [ref=e743] [cursor=pointer]
+            - button "IBM-hackathon" [ref=e746] [cursor=pointer]
+            - button "lablab-mcp" [ref=e749] [cursor=pointer]
+    - generic [ref=e755]:
+      - generic [ref=e757]:
+        - heading "General" [level=2] [ref=e758]
+        - paragraph [ref=e759]: Workspace defaults, app setup, and maintenance.
+      - generic [ref=e761]:
+        - generic [ref=e763]:
+          - heading "Navigation" [level=3] [ref=e766]
+          - generic [ref=e768]:
+            - generic [ref=e769]: Tab Order
+            - combobox [ref=e772] [cursor=pointer]:
+              - generic: Most recent
+          - generic [ref=e774]:
+            - generic [ref=e775]:
+              - generic [ref=e776]: Confirm before closing pinned tabs
+              - paragraph [ref=e777]: Show a confirmation dialog before a pinned tab is closed.
+            - switch "Confirm before closing pinned tabs" [checked] [ref=e779] [cursor=pointer]
+        - generic [ref=e781]:
+          - generic [ref=e783]:
+            - heading "Workspace" [level=3] [ref=e784]
+            - paragraph [ref=e785]: Configure where new workspaces are created.
+          - generic [ref=e786]:
+            - generic [ref=e787]:
+              - generic [ref=e788]: Workspace Directory
+              - generic [ref=e789]:
+                - generic [ref=e790]: Apply to
+                - combobox [ref=e791] [cursor=pointer]:
+                  - generic: Client default
+            - generic [ref=e792]:
+              - textbox "Workspace Directory" [ref=e793]: ~/orca/workspaces
+              - button "Browse" [ref=e794] [cursor=pointer]
+            - paragraph [ref=e795]: Use a relative path (e.g. .orca/worktrees) for a per-project location, or an absolute path for one shared folder.
+          - region [ref=e799]:
+            - generic [ref=e800]:
+              - heading "Sources" [level=3] [ref=e801]
+              - paragraph [ref=e802]: Shown sources include current and future worktrees in the sidebar.
+            - generic [ref=e803]:
+              - generic [ref=e804]:
+                - generic [ref=e805]:
+                  - generic [ref=e806]: Claude Code
+                  - generic [ref=e808]: .claude/worktrees/*
+                - radiogroup "Visibility for Claude Code" [ref=e810]:
+                  - radio "Show" [ref=e811] [cursor=pointer]
+                  - radio "Hide" [checked] [ref=e812] [cursor=pointer]
+              - generic [ref=e813]:
+                - generic [ref=e814]:
+                  - generic [ref=e815]: GSD
+                  - generic [ref=e817]: .gsd-workspaces/*
+                - radiogroup "Visibility for GSD" [ref=e819]:
+                  - radio "Show" [ref=e820] [cursor=pointer]
+                  - radio "Hide" [checked] [ref=e821] [cursor=pointer]
+              - generic [ref=e822]:
+                - generic [ref=e823]:
+                  - generic [ref=e824]: Other locations
+                  - generic [ref=e826]: Outside listed sources
+                - radiogroup "Visibility for Other locations" [ref=e828]:
+                  - radio "Show" [ref=e829] [cursor=pointer]
+                  - radio "Hide" [checked] [ref=e830] [cursor=pointer]
+              - form "Add location" [ref=e831]:
+                - generic [ref=e832]: Worktree root
+                - generic [ref=e833]:
+                  - textbox "Worktree root" [ref=e834]
+                  - button "Add" [disabled]
+                - paragraph [ref=e835]: Orca will recognize worktrees beneath this folder.
+          - generic [ref=e837]:
+            - generic [ref=e838]:
+              - generic [ref=e839]: Nest Workspaces
+              - paragraph [ref=e840]: Create workspaces inside a repo-named subfolder.
+            - switch "Nest Workspaces" [checked] [ref=e842] [cursor=pointer]
+          - generic [ref=e845]:
+            - generic [ref=e846]:
+              - generic [ref=e847]: Ask Before Deleting Workspaces
+              - paragraph [ref=e848]: Show a confirmation before deleting a workspace from the context menu. Failed deletes still surface a Force Delete fallback.
+            - switch "Ask Before Deleting Workspaces" [checked] [ref=e850] [cursor=pointer]
+          - generic [ref=e853]:
+            - generic [ref=e854]:
+              - generic [ref=e855]: Ask Before Deleting Automations
+              - paragraph [ref=e856]: Show a confirmation before deleting automations and their run history.
+            - switch "Ask Before Deleting Automations" [checked] [ref=e858] [cursor=pointer]
+          - generic [ref=e861]:
+            - generic [ref=e862]:
+              - generic [ref=e863]: Ask Before Deleting Artifacts
+              - paragraph [ref=e864]: Show a confirmation before deleting a shared artifact. Anyone holding its public link loses access.
+            - switch "Ask Before Deleting Artifacts" [checked] [ref=e866] [cursor=pointer]
+          - generic [ref=e869]:
+            - generic [ref=e870]:
+              - generic [ref=e871]:
+                - generic [ref=e872]: Open In Apps
+                - paragraph [ref=e873]: Choose apps available from a workspace's Open in menu.
+              - button "Add app" [ref=e874] [cursor=pointer]
+            - generic [ref=e877]:
+              - generic [ref=e880]:
+                - generic [ref=e881]: VS Code
+                - generic [ref=e883]: code
+              - generic [ref=e884]:
+                - button "Edit app" [ref=e885] [cursor=pointer]
+                - button "Remove app" [ref=e886] [cursor=pointer]
+        - generic [ref=e888]:
+          - generic [ref=e890]:
+            - heading "Editor" [level=3] [ref=e891]
+            - paragraph [ref=e892]: Configure how Orca persists file edits.
+          - generic [ref=e894]:
+            - generic [ref=e895]:
+              - generic [ref=e896]: Auto Save Files
+              - paragraph [ref=e897]: Save editor and editable diff changes automatically after a short pause.
+            - switch "Auto Save Files" [ref=e899] [cursor=pointer]
+          - generic [ref=e900]:
+            - generic [ref=e901]:
+              - generic [ref=e902]: Auto Save Delay
+              - paragraph [ref=e903]: How long Orca waits after your last edit before saving automatically. First launch defaults to 1000 ms.
+            - generic [ref=e904]:
+              - spinbutton [ref=e905]: "1000"
+              - generic [ref=e906]: ms
+          - generic [ref=e907]:
+            - generic [ref=e908]:
+              - generic [ref=e909]: Default Diff View
+              - paragraph [ref=e910]: Preferred presentation format for showing git diffs by default.
+            - radiogroup "Default Diff View" [ref=e911]:
+              - radio "Inline" [checked] [ref=e912] [cursor=pointer]
+              - radio "Side-by-side" [ref=e913] [cursor=pointer]
+          - generic [ref=e915]:
+            - generic [ref=e916]:
+              - generic [ref=e917]: Editor Font Family
+              - paragraph [ref=e918]: Font used by file editors and diff views. Leave empty to follow the terminal font.
+            - generic [ref=e921]:
+              - combobox "Same as terminal font" [ref=e922]
+              - button "Toggle font suggestions" [ref=e924] [cursor=pointer]
+          - generic [ref=e928]:
+            - generic [ref=e929]:
+              - generic [ref=e930]: Editor Word Wrap
+              - paragraph [ref=e931]: Wrap long lines in file editors instead of requiring horizontal scrolling.
+            - radiogroup "Editor Word Wrap" [ref=e932]:
+              - radio "Off" [ref=e933] [cursor=pointer]
+              - radio "On" [checked] [ref=e934] [cursor=pointer]
+          - generic [ref=e935]:
+            - generic [ref=e936]:
+              - generic [ref=e937]: Diff Word Wrap
+              - paragraph [ref=e938]: Wrap long lines in diff editors instead of requiring horizontal scrolling.
+            - radiogroup "Diff Word Wrap" [ref=e939]:
+              - radio "Off" [checked] [ref=e940] [cursor=pointer]
+              - radio "On" [ref=e941] [cursor=pointer]
+          - generic [ref=e942]:
+            - generic [ref=e943]:
+              - generic [ref=e944]: Default Diff File Tree
+              - paragraph [ref=e945]: Show or hide the file tree when opening combined diff views.
+            - radiogroup "Default Diff File Tree" [ref=e946]:
+              - radio "Shown" [ref=e947] [cursor=pointer]
+              - radio "Hidden" [checked] [ref=e948] [cursor=pointer]
+          - generic [ref=e950]:
+            - generic [ref=e951]:
+              - generic [ref=e952]: Minimap
+              - paragraph [ref=e953]: Show the minimap overview when editing a file.
+            - switch "Minimap" [ref=e955] [cursor=pointer]
+          - generic [ref=e957]:
+            - generic [ref=e958]:
+              - generic [ref=e959]: Rich Markdown Spellcheck
+              - paragraph [ref=e960]: Show browser spelling underlines and suggestions while editing rich Markdown.
+            - switch "Rich Markdown Spellcheck" [checked] [ref=e962] [cursor=pointer]
+          - generic [ref=e964]:
+            - generic [ref=e965]:
+              - generic [ref=e966]: Markdown Review Notes
+              - paragraph [ref=e967]: Show local markdown note controls in rich editor mode and agent handoff actions.
+            - switch "Markdown Review Notes" [checked] [ref=e969] [cursor=pointer]
+        - generic [ref=e971]:
+          - generic [ref=e972]:
+            - heading "Orca CLI" [level=2] [ref=e973]
+            - paragraph [ref=e974]: Use Orca from your terminal to open the app, manage worktrees, and interact with Orca terminals.
+          - generic [ref=e976]:
+            - generic [ref=e977]:
+              - generic [ref=e978]: Shell command
+              - paragraph [ref=e979]: CLI registration is managed on the Orca server, not in the web browser.
+            - button "Refresh CLI status" [ref=e981] [cursor=pointer]
+        - generic [ref=e983]:
+          - generic [ref=e986]:
+            - heading "Updates" [level=3] [ref=e987]
+            - paragraph [ref=e988]: "Current version: web"
+          - generic [ref=e989]:
+            - button "Check for Updates" [ref=e991] [cursor=pointer]
+            - paragraph [ref=e992]: Updates are checked automatically on launch.
+          - generic [ref=e993]:
+            - generic [ref=e994]:
+              - generic [ref=e995]: Remote Orca Servers
+              - paragraph [ref=e996]: Check and update paired Orca servers from this client.
+            - button "Check for Server Updates" [ref=e998] [cursor=pointer]
+            - paragraph [ref=e999]: 1 paired server · 1 manual
+        - generic [ref=e1003]:
+          - heading "Support Orca" [level=3] [ref=e1006]
+          - generic [ref=e1007]:
+            - generic [ref=e1008]: Star Orca on GitHub
+            - button "Open GitHub" [ref=e1009] [cursor=pointer]
+  - generic [ref=e519]:
+    - button "Refresh rate limits" [ref=e521] [cursor=pointer]
+    - generic [ref=e527]:
+      - button "Resource Manager, 0 terminal sessions" [ref=e528] [cursor=pointer]:
+        - generic [ref=e531]: 0 KB
+        - generic [ref=e532]: ·
+        - generic [ref=e535]: "0"
+      - button "Ports, 3 workspace ports" [ref=e536] [cursor=pointer]:
+        - generic [ref=e539]: "3"
+      - button "Remote host connection status" [ref=e540] [cursor=pointer]:
+        - generic [ref=e541]: 1 host
+    - button [aria-hidden]
+  - region "Notifications alt+T"

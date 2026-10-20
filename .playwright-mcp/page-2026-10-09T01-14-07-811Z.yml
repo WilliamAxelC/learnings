@@ -1,0 +1,107 @@
+- main [ref=f7e2]:
+  - generic [ref=f7e3]:
+    - heading [level=1] [ref=f7e4]:
+      - link [ref=f7e5] [cursor=pointer]:
+        - /url: /
+        - img "win.ai.id logo" [ref=f7e6]
+        - text: win.ai.id
+    - navigation [ref=f7e7]:
+      - link "Home" [ref=f7e8] [cursor=pointer]:
+        - /url: /
+      - text: ·
+      - link "Sign in" [ref=f7e9] [cursor=pointer]:
+        - /url: /login
+      - button "Switch to dark theme" [ref=f7e10] [cursor=pointer]
+  - article [ref=f7e13]:
+    - 'heading "Building in Public: Dev Log" [level=2] [ref=f7e14]'
+    - paragraph [ref=f7e15]:
+      - text: A calm, deliberate log of architecture decisions and weekly milestones for
+      - strong [ref=f7e16]: win.ai.id
+      - text: and
+      - strong [ref=f7e17]: zh.win.ai.id
+      - text: .
+    - generic [ref=f7e18]:
+      - generic [ref=f7e19]:
+        - strong [ref=f7e20]: "ADR 004: Claude 3.5 Haiku Frontier Architecture & Team Workspaces"
+        - text: · October 2026
+      - paragraph [ref=f7e21]: Documenting our technical architecture decisions for integration with the Anthropic Claude API ecosystem.
+      - list [ref=f7e22]:
+        - listitem [ref=f7e23]:
+          - strong [ref=f7e24]: Claude 3.5 Haiku Inference Engine
+          - text: ": Standardizing our real-time cognitive co-architect on Claude 3.5 Haiku for sub-150ms latency, high-precision goal deconstruction, and strict structured JSON schema enforcement."
+        - listitem [ref=f7e25]:
+          - strong [ref=f7e26]: Prompt Caching Optimization
+          - text: ": Ephemeral cache breakpoints on system instructions and user habit historical vectors reduce API token expenditure by up to 90% and slash time-to-first-token."
+        - listitem [ref=f7e27]:
+          - strong [ref=f7e28]: Constitutional Human-in-the-Loop Sovereignty
+          - text: ": Strict architectural boundary ensuring Claude outputs proposals that require explicit user acceptance before any SQLite record is committed."
+        - listitem [ref=f7e29]:
+          - strong [ref=f7e30]: Multi-Tenant Workspace Scope
+          - text: ": Architectural blueprint expanding beyond solo builders into early-stage technical teams for asynchronous standup synthesis and bottleneck detection."
+    - generic [ref=f7e31]:
+      - generic [ref=f7e32]:
+        - strong [ref=f7e33]: "Phase 1.6: Anthropic Partnership Architecture & Strategic Co-Architect"
+        - text: · October 2026
+      - paragraph [ref=f7e34]: Elevating win.ai.id from simple task tracking to an aspirational cognitive operating system where Claude 3.5 Haiku co-architects monumental breakthroughs through compounding daily execution.
+      - list [ref=f7e35]:
+        - listitem [ref=f7e36]:
+          - strong [ref=f7e37]: Aspirational Big-Wins Positioning
+          - text: ": Reframed value proposition around deconstructing audacious goals into high-leverage daily strikes and preserving peak cognitive stamina."
+        - listitem [ref=f7e38]:
+          - strong [ref=f7e39]: Minimalist Geometric Emblem
+          - text: ": Redesigned the brand identity into a refined editorial vector emblem featuring the Ascending Summit 'W' crowned with Anthropic's geometric apex star."
+        - listitem [ref=f7e40]:
+          - strong [ref=f7e41]: Interactive Strategic Sandbox
+          - text: ": Enhanced landing page with interactive milestone execution toggling and live Claude 3.5 Haiku Co-Architect proposal generation."
+        - listitem [ref=f7e42]:
+          - strong [ref=f7e43]: Hardened SQLite Password Auth
+          - text: ": Rolled out bcrypt-hashed credential storage with timing-attack mitigation and secure session management."
+    - generic [ref=f7e44]:
+      - generic [ref=f7e45]:
+        - strong [ref=f7e46]: "Phase 1.5: Public landing page & guest mode"
+        - text: · October 2026
+      - paragraph [ref=f7e47]: Welcoming visitors, reviewers, and crawlers with an open, honest front door. Guests can now explore win.ai.id without immediately hitting a login wall.
+      - list [ref=f7e48]:
+        - listitem [ref=f7e49]:
+          - strong [ref=f7e50]: Public Landing Page & Guest Experience
+          - text: ": Server-rendered overview presenting the core daily-wins philosophy, real feature grid, and an honest sample day preview."
+        - listitem [ref=f7e51]:
+          - strong [ref=f7e52]: Session-Aware Root Route
+          - text: ": Signed-out visitors see the calm landing experience; signed-in users go straight to their today checklist as before."
+        - listitem [ref=f7e53]:
+          - strong [ref=f7e54]: zh. Subdomain Teaser
+          - text: ": Open guest teaser for upcoming Mandarin micro-rounds at zh.win.ai.id without forcing a redirect."
+        - listitem [ref=f7e55]:
+          - strong [ref=f7e56]: Crawler-Friendly & Accessible
+          - text: ": Semantic HTML, robots.txt, lightweight CSS with warm editorial theme, and prefers-reduced-motion support."
+    - generic [ref=f7e57]:
+      - generic [ref=f7e58]:
+        - strong [ref=f7e59]: "Phase 1: Core Daily Wins & AI Guardrails"
+        - text: · October 2026
+      - paragraph [ref=f7e60]: "Established the baseline philosophy: wins must feel friction-free. Auto-materializing scheduled habits, single-tap checks with haptic feedback, and a 4:00 AM local day rollover so late-night wins count properly."
+      - list [ref=f7e61]:
+        - listitem [ref=f7e62]:
+          - strong [ref=f7e63]: Global Streak + Free Weekly Skip
+          - text: ": Missing one day doesn't destroy motivation. One free skip per ISO week automatically keeps momentum alive."
+        - listitem [ref=f7e64]:
+          - strong [ref=f7e65]: Habit Streaks
+          - text: ": Per-habit streaks displayed alongside daily tasks."
+        - listitem [ref=f7e66]:
+          - strong [ref=f7e67]: AI Coach with Human in the Loop
+          - text: ": The model never mutates data directly; proposals are rendered as interactive cards that must be accepted or customized."
+        - listitem [ref=f7e68]:
+          - strong [ref=f7e69]: Hard Budget Cap & Fallback
+          - text: ": Fixed monthly spend limit ($5/mo); seamlessly degrades to deterministic rule-based suggestions when reached or offline."
+        - listitem [ref=f7e70]:
+          - strong [ref=f7e71]: Passkeys (WebAuthn) & Magic Link
+          - text: ": Passwordless biometric authentication (Touch ID, Face ID, YubiKey) with email magic-link fallback."
+    - generic [ref=f7e72]:
+      - generic [ref=f7e73]:
+        - strong [ref=f7e74]: "Phase 2: Long-Term Memory & Push Reminders"
+        - text: · Upcoming
+      - paragraph [ref=f7e75]: Transparent memory notes that users can review and edit, plus gentle PWA Web Push notifications for the morning plan and an optional evening nudge.
+    - generic [ref=f7e76]:
+      - generic [ref=f7e77]:
+        - strong [ref=f7e78]: "Phase 3: zh.win.ai.id (Mandarin HSK 3–5)"
+        - text: · Planned
+      - paragraph [ref=f7e79]: "A fast, 3-minute daily Mandarin micro-round designed for intermediate learners: adaptive placement quiz, FSRS spaced repetition, high-fidelity neural audio, sentence cloze, and AI-generated micro-stories using today's target vocabulary."

@@ -1,0 +1,72 @@
+- generic [active] [ref=f6e1]:
+  - link "Skip to content" [ref=f6e2] [cursor=pointer]:
+    - /url: "#content"
+  - button "Switch to dark theme" [ref=f6e3] [cursor=pointer]
+  - main [ref=f6e6]:
+    - generic [ref=f6e7]:
+      - heading [level=1] [ref=f6e8]:
+        - link "win.ai.id" [ref=f6e9] [cursor=pointer]:
+          - /url: /
+      - navigation [ref=f6e10]:
+        - link "Home" [ref=f6e11] [cursor=pointer]:
+          - /url: /
+        - text: ·
+        - link "Sign in" [ref=f6e12] [cursor=pointer]:
+          - /url: /login
+    - article [ref=f6e13]:
+      - 'heading "Building in Public: Dev Log" [level=2] [ref=f6e14]'
+      - paragraph [ref=f6e15]:
+        - text: A calm, deliberate log of decisions, architecture, and weekly milestones for
+        - strong [ref=f6e16]: win.ai.id
+        - text: and
+        - strong [ref=f6e17]: zh.win.ai.id
+        - text: .
+      - generic [ref=f6e18]:
+        - generic [ref=f6e19]:
+          - strong [ref=f6e20]: "Phase 1.5: Public landing page & guest mode"
+          - text: · October 2026
+        - paragraph [ref=f6e21]: Welcoming visitors, reviewers, and crawlers with an open, honest front door. Guests can now explore win.ai.id without immediately hitting a login wall.
+        - list [ref=f6e22]:
+          - listitem [ref=f6e23]:
+            - strong [ref=f6e24]: Public Landing Page & Guest Experience
+            - text: ": Server-rendered overview presenting the core daily-wins philosophy, real feature grid, and an honest sample day preview."
+          - listitem [ref=f6e25]:
+            - strong [ref=f6e26]: Session-Aware Root Route
+            - text: ": Signed-out visitors see the calm landing experience; signed-in users go straight to their today checklist as before."
+          - listitem [ref=f6e27]:
+            - strong [ref=f6e28]: zh. Subdomain Teaser
+            - text: ": Open guest teaser for upcoming Mandarin micro-rounds at zh.win.ai.id without forcing a redirect."
+          - listitem [ref=f6e29]:
+            - strong [ref=f6e30]: Crawler-Friendly & Accessible
+            - text: ": Semantic HTML, robots.txt, lightweight CSS with springtime pastel theme, and prefers-reduced-motion support."
+      - generic [ref=f6e31]:
+        - generic [ref=f6e32]:
+          - strong [ref=f6e33]: "Phase 1: Core Daily Wins & AI Guardrails"
+          - text: · October 2026
+        - paragraph [ref=f6e34]: "Established the baseline philosophy: wins must feel friction-free. Auto-materializing scheduled habits, single-tap checks with haptic feedback, and a 4:00 AM local day rollover so late-night wins count properly."
+        - list [ref=f6e35]:
+          - listitem [ref=f6e36]:
+            - strong [ref=f6e37]: Global Streak + Free Weekly Skip
+            - text: ": Missing one day doesn't destroy motivation. One free skip per ISO week automatically keeps momentum alive."
+          - listitem [ref=f6e38]:
+            - strong [ref=f6e39]: Habit Streaks
+            - text: ": Per-habit streaks displayed alongside daily tasks."
+          - listitem [ref=f6e40]:
+            - strong [ref=f6e41]: AI Coach with Human in the Loop
+            - text: ": The model never mutates data directly; proposals are rendered as interactive cards that must be accepted or customized."
+          - listitem [ref=f6e42]:
+            - strong [ref=f6e43]: Hard Budget Cap & Fallback
+            - text: ": Fixed monthly spend limit ($5/mo); seamlessly degrades to deterministic rule-based suggestions when reached or offline."
+          - listitem [ref=f6e44]:
+            - strong [ref=f6e45]: Passkeys (WebAuthn) & Magic Link
+            - text: ": Passwordless biometric authentication (Touch ID, Face ID, YubiKey) with email magic-link fallback."
+      - generic [ref=f6e46]:
+        - generic [ref=f6e47]:
+          - strong [ref=f6e48]: "Phase 2: Long-Term Memory & Push Reminders"
+          - text: · Upcoming
+        - paragraph [ref=f6e49]: Transparent memory notes that users can review and edit, plus gentle PWA Web Push notifications for the morning plan and an optional evening nudge.
+      - generic [ref=f6e50]:
+        - generic [ref=f6e51]:
+          - strong [ref=f6e52]: "Phase 3: zh.win.ai.id (Mandarin HSK 3–5)"
+          - text: · Planned
+        - paragraph [ref=f6e53]: "A fast, 3-minute daily Mandarin micro-round designed for intermediate learners: adaptive placement quiz, FSRS spaced repetition, high-fidelity neural audio, sentence cloze, and AI-generated micro-stories using today's target vocabulary."

@@ -1,0 +1,18 @@
+{{define "content"}}
+<header class="top">
+  <h1 class="brand"><a href="{{.CoreURL}}"><img src="/static/icon.svg?v=anthropic1" alt="win.ai.id logo" class="brand-mascot" width="28" height="28">zh<span>.win.ai.id</span></a></h1>
+  <nav>
+    <a href="{{.CoreURL}}">← wins</a>
+    <button type="button" class="theme-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <svg class="theme-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="1" y2="3"/><line x1="12" y1="21" x2="1" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="theme-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </nav>
+</header>
+<section class="card zh-card">
+  <p class="hanzi">每天一点点</p>
+  <p class="zh-subtitle">A little every day 🌱</p>
+  <p class="muted">The daily Mandarin round (HSK 3–5 vocab, FSRS spaced repetition, audio, micro-stories) unlocks after a few weeks of using the core app.</p>
+  <p class="muted zh-account">Signed in as <strong>{{.User.Email}}</strong>. Your login is shared across win.ai.id.</p>
+</section>
+{{end}}

@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
+  <title>Kimmy Laundry - Master Commercial Pricelist Brochure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    body {
+      background-color: #D8DFD5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #172B23;
+    }
+
+    /* MASTER FLYER CANVAS (1200 x 1700 px - Pre-Press Print & High-Res Digital Flyer) */
+    .flyer-canvas {
+      width: 1200px;
+      height: 1700px;
+      background: #FAF7F2;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 48px 58px;
+      box-shadow: 0 40px 95px rgba(15, 76, 58, 0.24);
+    }
+
+    /* Ambient Atmosphere */
+    .bg-top-accent {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: linear-gradient(90deg, #0F4C3A 0%, #C5A059 50%, #0F4C3A 100%);
+      z-index: 5;
+    }
+    .bg-aura-gold {
+      position: absolute;
+      top: -140px;
+      right: -90px;
+      width: 580px;
+      height: 580px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(197, 160, 89, 0.16) 0%, rgba(250, 247, 242, 0) 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .bg-aura-green {
+      position: absolute;
+      bottom: 200px;
+      left: -130px;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(15, 76, 58, 0.08) 0%, rgba(250, 247, 242, 0) 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .content-wrapper {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+    }
+
+    /* 1. HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #FFFFFF;
+      padding: 18px 32px;
+      border-radius: 24px;
+      border: 1px solid rgba(15, 76, 58, 0.12);
+      box-shadow: 0 8px 24px rgba(15, 76, 58, 0.05);
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .logo-img {
+      height: 94px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.06));
+    }
+    .brand-meta {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-pill-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: #0F4C3A;
+    }
+    .brand-pill-dot {
+      width: 7px;
+      height: 7px;
+      background: #C5A059;
+      border-radius: 50%;
+    }
+    .brand-descriptor {
+      font-size: 15px;
+      font-weight: 600;
+      color: #3F5B4E;
+      margin-top: 3px;
+    }
+    .header-trust-seal {
+      background: linear-gradient(135deg, #0F4C3A 0%, #154D3C 100%);
+      color: #FFFFFF;
+      padding: 12px 24px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 8px 20px rgba(15, 76, 58, 0.18);
+      border: 1px solid rgba(197, 160, 89, 0.3);
+    }
+    .seal-icon-box {
+      width: 42px;
+      height: 42px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #E6C687;
+      flex-shrink: 0;
+    }
+    .seal-text-group {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    .seal-top {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #E6C687;
+    }
+    .seal-bottom {
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      color: #FFFFFF;
+    }
+
+    /* 2. HERO VALUE PROPOSITION */
+    .hero-zone {
+      text-align: center;
+      margin: 18px 0 12px 0;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #F3EBDD;
+      color: #8C661D;
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 30px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(197, 160, 89, 0.4);
+    }
+    .hero-headline {
+      font-family: 'Outfit', sans-serif;
+      font-size: 45px;
+      font-weight: 900;
+      color: #0F4C3A;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+    }
+    .hero-headline .accent-phrase {
+      color: #B8892D;
+      display: inline-block;
+      position: relative;
+    }
+    .hero-lead {
+      font-size: 17.5px;
+      font-weight: 500;
+      color: #3F5B4E;
+      margin-top: 8px;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.45;
+    }
+
+    /* 3. TRUST PILLARS STRIP */
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .trust-cell {
+      background: #FFFFFF;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(15, 76, 58, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 4px 10px rgba(15, 76, 58, 0.03);
+    }
+    .trust-svg-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: #EDF4F0;
+      color: #0F4C3A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .trust-text-stack {
+      display: flex;
+      flex-direction: column;
+    }
+    .trust-headline {
+      font-size: 12px;
+      font-weight: 800;
+      color: #0F4C3A;
+      line-height: 1.2;
+    }
+    .trust-subline {
+      font-size: 11px;
+      color: #557264;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    /* SECTION DIVIDER */
+    .section-ribbon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .ribbon-rule {
+      height: 1.5px;
+      width: 80px;
+      background: linear-gradient(90deg, transparent, rgba(15, 76, 58, 0.3));
+    }
+    .ribbon-rule.right {
+      background: linear-gradient(90deg, rgba(15, 76, 58, 0.3), transparent);
+    }
+    .ribbon-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 19px;
+      font-weight: 900;
+      color: #0F4C3A;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* 4. THE 3-TIER PRICELIST MATRIX */
+    .pricing-matrix {
+      display: grid;
+      grid-template-columns: 1fr 1.08fr 1fr;
+      gap: 20px;
+      align-items: stretch;
+      margin-bottom: 18px;
+    }
+
+    .matrix-card {
+      background: #FFFFFF;
+      border-radius: 26px;
+      border: 1.5px solid rgba(15, 76, 58, 0.12);
+      padding: 24px 22px 20px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-shadow: 0 10px 26px rgba(15, 76, 58, 0.05);
+    }
+
+    /* FEATURED "FULL SERVICE" HERO CARD */
+    .matrix-card.featured-card {
+      border: 2.5px solid #C5A059;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FCF9F3 100%);
+      box-shadow: 0 20px 45px rgba(197, 160, 89, 0.22);
+      transform: translateY(-5px);
+      padding: 30px 24px 22px 24px;
+    }
+    .featured-crown-banner {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #B8892D 0%, #A0721E 100%);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(160, 114, 30, 0.35);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* CARD HEADER & ICON */
+    .card-head {
+      text-align: center;
+    }
+    .card-icon-container {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 12px auto;
+      border-radius: 18px;
+      background: #F1F6F3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0F4C3A;
+    }
+    .matrix-card.featured-card .card-icon-container {
+      background: #F8F1E2;
+      color: #A0721E;
+      width: 62px;
+      height: 62px;
+    }
+    .service-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 23px;
+      font-weight: 900;
+      color: #0F4C3A;
+      line-height: 1.15;
+    }
+    .service-subtitle {
+      font-size: 13px;
+      font-weight: 600;
+      color: #557264;
+      margin-top: 3px;
+    }
+
+    /* TURNAROUND TIME PILL */
+    .turnaround-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #EDF4F0;
+      color: #0F4C3A;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 12px;
+      margin-top: 8px;
+    }
+    .matrix-card.featured-card .turnaround-pill {
+      background: #F5ECD7;
+      color: #7D5710;
+    }
+
+    /* PRICING BLOCK */
+    .price-display-block {
+      margin: 14px 0 16px 0;
+      padding: 14px 10px;
+      background: #FAF7F2;
+      border-radius: 18px;
+      border: 1px dashed rgba(15, 76, 58, 0.22);
+      text-align: center;
+    }
+    .matrix-card.featured-card .price-display-block {
+      background: #FFFFFF;
+      border-color: rgba(197, 160, 89, 0.5);
+      border-width: 1.5px;
+      padding: 16px 10px;
+    }
+    .price-meta-label {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #4A6358;
+    }
+    .price-main-figure {
+      font-family: 'Outfit', sans-serif;
+      font-size: 40px;
+      font-weight: 900;
+      color: #0F4C3A;
+      line-height: 1;
+      margin: 4px 0 2px 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 3px;
+    }
+    .matrix-card.featured-card .price-main-figure {
+      font-size: 44px;
+      color: #0F4C3A;
+    }
+    .price-main-figure .currency-symbol {
+      font-size: 18px;
+      font-weight: 800;
+    }
+    .price-unit-basis {
+      font-size: 13px;
+      font-weight: 800;
+      color: #0F4C3A;
+    }
+    .price-perceptual-anchor {
+      font-size: 12px;
+      font-weight: 800;
+      color: #9E731C;
+      margin-top: 5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: #FBF6EC;
+      padding: 3px 12px;
+      border-radius: 10px;
+    }
+    .price-perceptual-anchor svg {
+      color: #B8892D;
+      flex-shrink: 0;
+    }
+
+    /* FEATURE BULLETS */
+    .feature-list {
+      list-style: none;
+      text-align: left;
+    }
+    .feature-point {
+      font-size: 12px;
+      color: #2D4238;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.35;
+    }
+    .check-svg {
+      color: #0F4C3A;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .matrix-card.featured-card .check-svg {
+      color: #9E731C;
+    }
+    .feature-bold {
+      font-weight: 700;
+      color: #153126;
+    }
+
+    /* MINIMUM ORDER TAG */
+    .min-order-tag {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(15, 76, 58, 0.08);
+      font-size: 11px;
+      font-weight: 700;
+      color: #647D71;
+      text-align: center;
+    }
+
+    /* 5. ADDONS & SPECIALTY PRICELIST */
+    .specialty-bar {
+      background: #FFFFFF;
+      border-radius: 20px;
+      border: 1px solid rgba(15, 76, 58, 0.12);
+      padding: 14px 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 6px 16px rgba(15, 76, 58, 0.04);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .specialty-label-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .specialty-badge {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: #EDF4F0;
+      color: #0F4C3A;
+      padding: 5px 12px;
+      border-radius: 10px;
+    }
+    .specialty-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      color: #0F4C3A;
+    }
+    .specialty-grid {
+      display: flex;
+      gap: 16px;
+    }
+    .specialty-pill {
+      background: #FAF7F2;
+      border: 1px solid rgba(15, 76, 58, 0.1);
+      padding: 7px 15px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .specialty-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: #3F5B4E;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .specialty-price {
+      font-size: 13px;
+      font-weight: 800;
+      color: #0F4C3A;
+    }
+
+    /* 6. HERO PERK: GRATIS ANTAR JEMPUT 5 KM */
+    .delivery-hero {
+      background: linear-gradient(100deg, #0F4C3A 0%, #154535 55%, #1B513E 100%);
+      border-radius: 24px;
+      padding: 18px 28px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 14px 32px rgba(15, 76, 58, 0.28);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 16px;
+      border: 1px solid rgba(197, 160, 89, 0.35);
+    }
+    .delivery-content {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      z-index: 2;
+    }
+    .delivery-scooter-icon {
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 2px solid rgba(197, 160, 89, 0.5);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #E6C687;
+      flex-shrink: 0;
+    }
+    .delivery-text-stack {
+      display: flex;
+      flex-direction: column;
+    }
+    .delivery-overhead {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #E6C687;
+    }
+    .delivery-main-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 25px;
+      font-weight: 900;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin: 1px 0;
+    }
+    .delivery-coverage-note {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: #C3D5CD;
+    }
+    .delivery-order-terms {
+      background: linear-gradient(135deg, #E5C378 0%, #C59E47 100%);
+      color: #0F4C3A;
+      padding: 11px 22px;
+      border-radius: 16px;
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      z-index: 2;
+      flex-shrink: 0;
+    }
+    .delivery-order-terms span {
+      display: block;
+      font-size: 11px;
+      font-weight: 800;
+      color: #17382B;
+    }
+
+    /* 7. FOOTER ACTION & FRICTIONLESS CTA */
+    .cta-terminal-bar {
+      background: #FFFFFF;
+      border-radius: 26px;
+      border: 1px solid rgba(15, 76, 58, 0.12);
+      padding: 20px 28px;
+      display: grid;
+      grid-template-columns: 1.2fr 1.05fr 145px;
+      gap: 22px;
+      align-items: center;
+      box-shadow: 0 8px 24px rgba(15, 76, 58, 0.05);
+    }
+    .wa-button-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .wa-primary-btn {
+      background: #25D366;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 15px 22px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      letter-spacing: 0.5px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .wa-instruction-line {
+      font-size: 12px;
+      color: #3F5B4E;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .location-details-col {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      border-left: 1px solid rgba(15, 76, 58, 0.1);
+      padding-left: 20px;
+    }
+    .location-header {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #0F4C3A;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .location-street {
+      font-size: 12.5px;
+      line-height: 1.4;
+      color: #2D4238;
+      font-weight: 700;
+    }
+    .location-landmark {
+      font-size: 11.5px;
+      color: #0F4C3A;
+      font-weight: 700;
+      background: #EDF4F0;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-top: 2px;
+      width: fit-content;
+    }
+    .instagram-tag {
+      font-size: 13px;
+      font-weight: 800;
+      color: #0F4C3A;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 3px;
+    }
+    .qr-scan-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid rgba(15, 76, 58, 0.1);
+      padding-left: 20px;
+    }
+    #qrcode-v3 {
+      background: #FFFFFF;
+      padding: 6px;
+      border-radius: 12px;
+      border: 1.5px solid rgba(15, 76, 58, 0.2);
+      box-shadow: 0 4px 12px rgba(15, 76, 58, 0.06);
+    }
+    #qrcode-v3 img {
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
+    .qr-caption {
+      font-size: 10px;
+      font-weight: 800;
+      color: #0F4C3A;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 6px;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- MASTER FLYER CONTAINER (1200 x 1700) -->
+  <main class="flyer-canvas">
+    
+    <!-- Ambient Decor -->
+    <div class="bg-top-accent"></div>
+    <div class="bg-aura-gold"></div>
+    <div class="bg-aura-green"></div>
+
+    <div class="content-wrapper">
+
+      <!-- 1. TOP HEADER: UNMODIFIED ORIGINAL LOGO & HYGIENE SEAL -->
+      <header class="header">
+        <div class="logo-container">
+          <!-- Unmodified Original Logo -->
+          <img src="logo_inner_clean.png" alt="Kimmy Laundry Logo" class="logo-img">
+          <div class="brand-meta">
+            <span class="brand-pill-title">
+              <span class="brand-pill-dot"></span> LAUNDROMAT MODERN & FABRIC CARE SPECIALIST
+            </span>
+            <span class="brand-descriptor">
+              Layanan Laundry Kiloan, Satuan & Self Service Terbaik di Tanjung Duren
+            </span>
+          </div>
+        </div>
+        <div class="header-trust-seal">
+          <div class="seal-icon-box">
+            <!-- Shield SVG -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div class="seal-text-group">
+            <span class="seal-top">STANDAR HIGIENIS RESMI</span>
+            <span class="seal-bottom">1 Mesin 1 Pelanggan</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 2. BENEFIT-DRIVEN HERO HOOK -->
+      <section class="hero-zone">
+        <div class="hero-badge">
+          <!-- Sparkles SVG -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+          <span>DAFTAR HARGA & LAYANAN RESMI</span>
+        </div>
+        <h1 class="hero-headline">
+          Cucian Menumpuk? Biar Kimmy yang <span class="accent-phrase">Cuci, Kering & Setrika Rapi!</span>
+        </h1>
+        <p class="hero-lead">
+          Pakaian bersih higienis, harum semerbak tahan berminggu-minggu, dan selalu dicuci terpisah tanpa pernah dicampur. Hemat waktu, siap pakai, dan bebas repot.
+        </p>
+      </section>
+
+      <!-- 3. TRUST PILLARS BAR (ALL CRISP INLINE SVGs) -->
+      <div class="trust-strip">
+        <div class="trust-cell">
+          <div class="trust-svg-icon">
+            <!-- Shield SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="trust-text-stack">
+            <span class="trust-headline">100% Tidak Dicampur</span>
+            <span class="trust-subline">1 mesin khusus pakaian Anda</span>
+          </div>
+        </div>
+
+        <div class="trust-cell">
+          <div class="trust-svg-icon">
+            <!-- Leaf SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+          </div>
+          <div class="trust-text-stack">
+            <span class="trust-headline">Deterjen & Parfum Mewah</span>
+            <span class="trust-subline">Warna cerah, serat kain lembut</span>
+          </div>
+        </div>
+
+        <div class="trust-cell">
+          <div class="trust-svg-icon">
+            <!-- Steam Iron SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h14a3 3 0 0 0 3-3V9a1 1 0 0 0-1-1H7.83a2 2 0 0 1-1.41-.59L5 6"/><path d="M4 18h16"/><circle cx="8" cy="14" r="1"/><circle cx="12" cy="14" r="1"/></svg>
+          </div>
+          <div class="trust-text-stack">
+            <span class="trust-headline">Setrika Uap Industri</span>
+            <span class="trust-subline">Halus licin & anti gosong</span>
+          </div>
+        </div>
+
+        <div class="trust-cell">
+          <div class="trust-svg-icon">
+            <!-- Scale SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
+          </div>
+          <div class="trust-text-stack">
+            <span class="trust-headline">Timbangan Digital Jujur</span>
+            <span class="trust-subline">Akurat & tanpa biaya siluman</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. CORE 3-TIER PRICELIST MATRIX -->
+      <div>
+        <div class="section-ribbon">
+          <div class="ribbon-rule"></div>
+          <h2 class="ribbon-heading">
+            <!-- Tag SVG -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><circle cx="7" cy="7" r=".5" fill="currentColor"/></svg>
+            PILIHAN LAYANAN & PRICELIST UTAMA
+          </h2>
+          <div class="ribbon-rule right"></div>
+        </div>
+
+        <div class="pricing-matrix">
+
+          <!-- TIER 1: DROP OFF -->
+          <div class="matrix-card">
+            <div class="card-head">
+              <div class="card-icon-container">
+                <!-- Laundry Bag SVG -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11V7a4 4 0 0 0-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+              </div>
+              <h3 class="service-title">Layanan<br>Drop Off</h3>
+              <p class="service-subtitle">Titip Cuci - Kering - Lipat Rapi</p>
+              <div class="turnaround-pill">
+                <!-- Clock SVG -->
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Reguler 2 Hari (Express Tersedia)</span>
+              </div>
+            </div>
+
+            <div class="price-display-block">
+              <div class="price-meta-label">Harga Layanan</div>
+              <div class="price-main-figure">
+                <span class="currency-symbol">Rp</span> 4.000
+              </div>
+              <div class="price-unit-basis">/ Kilogram</div>
+              <div class="price-perceptual-anchor">
+                <!-- Check Circle SVG -->
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Solusi Kiloan Paling Praktis</span>
+              </div>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-point">
+                <!-- Check SVG -->
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Deterjen Khusus Noda:</span> Serat pakaian bersih higienis & wangi</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Kering 100% Dryer:</span> Bebas bau apek & bebas jemur basah</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Lipat Rapi & Segel:</span> Pakaian rapi siap masuk ke lemari kost</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Cocok Untuk:</span> Kaos, celana santai, handuk & pakaian harian</span>
+              </li>
+            </ul>
+
+            <div class="min-order-tag">Minimal Order: 3 Kilogram</div>
+          </div>
+
+          <!-- TIER 2: FULL SERVICE (FEATURED HERO TIER) -->
+          <div class="matrix-card featured-card">
+            <div class="featured-crown-banner">
+              <!-- Star SVG -->
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span>BEST SELLER • PALING FAVORIT</span>
+            </div>
+
+            <div class="card-head">
+              <div class="card-icon-container">
+                <!-- Folded Shirt / Badge SVG -->
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+              </div>
+              <h3 class="service-title">Layanan<br>Full Service</h3>
+              <p class="service-subtitle">Cuci + Kering + Setrika Uap Mewah</p>
+              <div class="turnaround-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Reguler 2 Hari (Express 1 Hari Tersedia)</span>
+              </div>
+            </div>
+
+            <div class="price-display-block">
+              <div class="price-meta-label">Harga Paket Komplit</div>
+              <div class="price-main-figure">
+                <span class="currency-symbol">Rp</span> 8.000
+              </div>
+              <div class="price-unit-basis">/ Kilogram</div>
+              <div class="price-perceptual-anchor">
+                <!-- Clean Inline Vector Star -->
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>Baju Licin Sempurna & Siap Pakai</span>
+              </div>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Paket All-in-One:</span> Cuci bersih + Pengeringan + Setrika Uap boiler</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Setrika Uap Industri:</span> Halus licin maksimal, bebas gosong & kilap</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Parfum Premium Elegan:</span> Aroma wangi tahan lama berminggu-minggu</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Kemasan Segel Higienis:</span> Packing plastik rapi per set pakaian</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Sangat Direkomendasikan:</span> Kemeja kantor, seragam, gamis & dress</span>
+              </li>
+            </ul>
+
+            <div class="min-order-tag">Minimal Order: 3 Kilogram</div>
+          </div>
+
+          <!-- TIER 3: SELF SERVICE (EXPRESS KOIN) -->
+          <div class="matrix-card">
+            <div class="card-head">
+              <div class="card-icon-container">
+                <!-- Washing Machine SVG -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><circle cx="12" cy="13" r="5"/><path d="M12 2v3M7 5h2"/></svg>
+              </div>
+              <h3 class="service-title">Layanan<br>Self Service</h3>
+              <p class="service-subtitle">Cuci Mandiri Express (Mesin Koin)</p>
+              <div class="turnaround-pill">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Selesai Cepat dalam 30 Menit!</span>
+              </div>
+            </div>
+
+            <div class="price-display-block">
+              <div class="price-meta-label">Kapasitas Jumbo (s/d 7 Kg)</div>
+              <div class="price-main-figure">
+                <span class="currency-symbol">Rp</span> 10.000
+              </div>
+              <div class="price-unit-basis">/ Mesin (1 Kali Siklus Cuci)</div>
+              <div class="price-perceptual-anchor">
+                <!-- Sparkle SVG -->
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span>Cuma ~Rp 1.400 / Kg • Super Hemat!</span>
+              </div>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">100% Privasi Terjaga:</span> Anda sendiri yang masukkan pakaian</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Express 30 Menit:</span> Mesin komersial canggih, bersih tuntas cepat</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Mesin Pengering Tersedia:</span> Cukup +1 Koin (Rp 10.000), Kering 100%</span>
+              </li>
+              <li class="feature-point">
+                <svg class="check-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><span class="feature-bold">Lounge Nyaman:</span> Ruang tunggu full AC, colokan & Free Wi-Fi</span>
+              </li>
+            </ul>
+
+            <div class="min-order-tag">Tanpa Antre Panjang • Petugas Siap Membantu</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 5. SECONDARY PRICELIST: SPECIALTY & ADD-ONS -->
+      <div class="specialty-bar">
+        <div class="specialty-label-wrap">
+          <span class="specialty-badge">LAYANAN LAINNYA</span>
+          <span class="specialty-heading">Pricelist Khusus & Satuan:</span>
+        </div>
+        <div class="specialty-grid">
+          <div class="specialty-pill">
+            <span class="specialty-name">
+              <!-- Bed SVG -->
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+              Bed Cover / Selimut:
+            </span>
+            <span class="specialty-price">Mulai Rp 20.000 / Pcs</span>
+          </div>
+
+          <div class="specialty-pill">
+            <span class="specialty-name">
+              <!-- Iron SVG -->
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 14h14a3 3 0 0 0 3-3V9a1 1 0 0 0-1-1H7.83a2 2 0 0 1-1.41-.59L5 6"/><path d="M4 18h16"/></svg>
+              Setrika Uap Saja:
+            </span>
+            <span class="specialty-price">Rp 5.000 / Kg</span>
+          </div>
+
+          <div class="specialty-pill">
+            <span class="specialty-name">
+              <!-- Shoe SVG -->
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3.5 13h6l3 3 4-2 4 2v3H3.5A1.5 1.5 0 0 1 2 17.5v-3A1.5 1.5 0 0 1 3.5 13Z"/></svg>
+              Cuci Sepatu & Tas:
+            </span>
+            <span class="specialty-price">Mulai Rp 25.000 / Pasang</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. THE HERO VALUE PERK: GRATIS ANTAR JEMPUT 5 KM -->
+      <section class="delivery-hero">
+        <div class="delivery-content">
+          <div class="delivery-scooter-icon">
+            <!-- Delivery Scooter / Bike SVG -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18.5" cy="17.5" r="3.5"/>
+              <circle cx="5.5" cy="17.5" r="3.5"/>
+              <path d="M15 6h-2.5a2 2 0 0 0-2 2l-1.5 4h5.5l1.5-4a1 1 0 0 1 1-1h2"/>
+              <path d="M9 17.5H15"/>
+              <path d="M5.5 14h3l2-5"/>
+            </svg>
+          </div>
+          <div class="delivery-text-stack">
+            <span class="delivery-overhead">FASILITAS BEBAS REPOT DARI RUMAH / KOST</span>
+            <h3 class="delivery-main-title">GRATIS ANTAR JEMPUT RADIUS 5 KM!</h3>
+            <p class="delivery-coverage-note">
+              Melayani area Tanjung Duren, Grogol, Tomang, Kemanggisan, Slipi & Sekitarnya. Cukup kirim share loc via WhatsApp!
+            </p>
+          </div>
+        </div>
+        <div class="delivery-order-terms">
+          GRATIS ONGKIR
+          <span>Min. Order 5 Kg / Rp 35.000</span>
+        </div>
+      </section>
+
+      <!-- 7. FRICTIONLESS TERMINAL CTA (100px QR + WHATSAPP BUTTON + ADDRESS) -->
+      <footer class="cta-terminal-bar">
+        
+        <div class="wa-button-col">
+          <a href="https://wa.me/6285717769607" class="wa-primary-btn">
+            <!-- WhatsApp Official SVG -->
+            <svg width="25" height="25" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.044.072.044.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.926l-1.637 5.979 6.136-1.61c1.704.935 3.666 1.471 5.748 1.471 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
+            <span>0857-1776-9607</span>
+          </a>
+          <span class="wa-instruction-line">
+            <!-- Message Chat SVG -->
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Hubungi WhatsApp atau Scan QR untuk Antar-Jemput Langsung
+          </span>
+        </div>
+
+        <div class="location-details-col">
+          <div class="location-header">
+            <!-- Location Pin SVG -->
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            LOKASI KAMI:
+          </div>
+          <p class="location-street">
+            Jl. Salak Masir 9D, RT.7/RW.4, Tanjung Duren Utara, Grogol Petamburan, Jakarta Barat 11470
+          </p>
+          <p class="location-landmark">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ketik di Google Maps: "Kimmy Laundry Tanjung Duren"
+          </p>
+          <div class="instagram-tag">
+            <!-- Instagram SVG -->
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <strong>@kimmy.laundry</strong>
+          </div>
+        </div>
+
+        <div class="qr-scan-col">
+          <div id="qrcode-v3"></div>
+          <span class="qr-caption">SCAN CHAT WA<br>ANTAR-JEMPUT</span>
+        </div>
+
+      </footer>
+
+    </div>
+
+  </main>
+
+  <script>
+    // Generate QR Code with 105x105 high resolution
+    new QRCode(document.getElementById("qrcode-v3"), {
+      text: "https://wa.me/6285717769607?text=Halo%20Admin%20Kimmy%20Laundry,%20saya%20mau%20order%20laundry%20antar%20jemput%20ya...",
+      width: 100,
+      height: 100,
+      colorDark : "#0F4C3A",
+      colorLight : "#FFFFFF",
+      correctLevel : QRCode.CorrectLevel.M
+    });
+  </script>
+</body>
+</html>

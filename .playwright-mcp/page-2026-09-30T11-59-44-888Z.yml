@@ -1,0 +1,165 @@
+- generic [ref=f1e2]:
+  - banner [ref=f1e3]:
+    - generic [ref=f1e10]:
+      - heading "AudioDiff AssemblyAI Inside" [level=1] [ref=f1e11]:
+        - text: AudioDiff
+        - generic [ref=f1e12]: AssemblyAI Inside
+      - paragraph [ref=f1e13]: Hands-Free Voice Code Review & PR Explainer
+    - generic [ref=f1e14]:
+      - generic [ref=f1e15]:
+        - generic [ref=f1e16]: "Active PR:"
+        - combobox "Active PR:" [ref=f1e17] [cursor=pointer]:
+          - 'option "PR #104: Concurrency & Mutex (Lock-free)"'
+          - 'option "PR #242: Security & IDOR Mitigation" [selected]'
+          - 'option "PR #318: Webhook Idempotency & Backoff"'
+        - button "Fetch PR" [ref=f1e18] [cursor=pointer]
+        - link "📊 Slides" [ref=f1e21] [cursor=pointer]:
+          - /url: slides.html
+      - generic [ref=f1e22]:
+        - generic [ref=f1e24]: Gateway Online
+        - generic [ref=f1e25]: Universal-2 + LeMUR
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]:
+          - generic [ref=f1e31]: PR-104
+          - 'heading "perf(auth): replace mutex with lock-free atomic token refresh" [level=2] [ref=f1e32]'
+        - paragraph [ref=f1e33]: Eliminates heavy mutex contention during morning traffic peaks. Implements compare-and-swap token refresh with fallback to cached credentials.
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]:
+            - text: "Author:"
+            - strong [ref=f1e36]: alex-dev
+          - generic [ref=f1e37]:
+            - text: "Branch:"
+            - strong [ref=f1e38]: perf/atomic-token
+          - generic [ref=f1e39]: "+12"
+          - generic [ref=f1e40]: "-7"
+          - generic [ref=f1e41]:
+            - text: "Files:"
+            - strong [ref=f1e42]: "1"
+      - generic [ref=f1e43]:
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]: 📄
+          - generic [ref=f1e46]: src/auth/token_manager.ts
+          - generic [ref=f1e47]: TypeScript
+        - generic [ref=f1e49]:
+          - generic [ref=f1e50]:
+            - generic [ref=f1e51]: "export class TokenManager {"
+            - generic [ref=f1e52]: src/auth/token_manager.ts (Lines 40-58)
+          - generic [ref=f1e53]:
+            - generic [ref=f1e54]: "- 40"
+            - generic [ref=f1e55]: "- private mutex = new Mutex();"
+          - generic [ref=f1e56]:
+            - generic [ref=f1e57]: + 40
+            - generic [ref=f1e58]: + private isRefreshing = new AtomicBoolean(false);
+          - generic [ref=f1e59]:
+            - generic [ref=f1e60]: + 41
+            - generic [ref=f1e61]: "+ private cachedToken: string | null = null;"
+          - generic [ref=f1e62]: "42"
+          - generic [ref=f1e65]:
+            - generic [ref=f1e66]: "43"
+            - generic [ref=f1e67]: "async refreshToken(userId: string): Promise<string> {"
+          - generic [ref=f1e68]:
+            - generic [ref=f1e69]: "- 43"
+            - generic [ref=f1e70]: "- const release = await this.mutex.acquire();"
+          - generic [ref=f1e71]:
+            - generic [ref=f1e72]: "- 44"
+            - generic [ref=f1e73]: "- try {"
+          - generic [ref=f1e74]:
+            - generic [ref=f1e75]: "- 45"
+            - generic [ref=f1e76]: "- return await this.fetchNewToken(userId);"
+          - generic [ref=f1e77]:
+            - generic [ref=f1e78]: "- 46"
+            - generic [ref=f1e79]: "- } finally {"
+          - generic [ref=f1e80]:
+            - generic [ref=f1e81]: "- 47"
+            - generic [ref=f1e82]: "- release();"
+          - generic [ref=f1e83]:
+            - generic [ref=f1e84]: "- 48"
+            - generic [ref=f1e85]: "- }"
+          - generic [ref=f1e86]:
+            - generic [ref=f1e87]: + 44
+            - generic [ref=f1e88]: "+ if (this.isRefreshing.compareAndSet(false, true)) {"
+          - generic [ref=f1e89]:
+            - generic [ref=f1e90]: + 45
+            - generic [ref=f1e91]: "+ try {"
+          - generic [ref=f1e92]:
+            - generic [ref=f1e93]: + 46
+            - generic [ref=f1e94]: + const token = await this.fetchNewToken(userId);
+          - generic [ref=f1e95]:
+            - generic [ref=f1e96]: + 47
+            - generic [ref=f1e97]: + this.cachedToken = token;
+          - generic [ref=f1e98]:
+            - generic [ref=f1e99]: + 48
+            - generic [ref=f1e100]: + return token;
+          - generic [ref=f1e101]:
+            - generic [ref=f1e102]: + 49
+            - generic [ref=f1e103]: "+ } finally {"
+          - generic [ref=f1e104]:
+            - generic [ref=f1e105]: + 50
+            - generic [ref=f1e106]: + this.isRefreshing.set(false);
+          - generic [ref=f1e107]:
+            - generic [ref=f1e108]: + 51
+            - generic [ref=f1e109]: "+ }"
+          - generic [ref=f1e110]:
+            - generic [ref=f1e111]: + 52
+            - generic [ref=f1e112]: "+ }"
+          - generic [ref=f1e113]:
+            - generic [ref=f1e114]: + 53
+            - generic [ref=f1e115]: + return this.getCachedToken(userId);
+          - generic [ref=f1e116]:
+            - generic [ref=f1e117]: "54"
+            - generic [ref=f1e118]: "}"
+          - generic [ref=f1e119]:
+            - generic [ref=f1e120]: "55"
+            - generic [ref=f1e121]: "}"
+    - generic [ref=f1e122]:
+      - generic [ref=f1e123]:
+        - button "🎙️ Live Voice Review (Streaming STT)" [ref=f1e124] [cursor=pointer]
+        - button "📼 Ingest Voice Walkthrough (Universal-2)" [ref=f1e125] [cursor=pointer]
+      - generic [ref=f1e126]:
+        - generic [ref=f1e127]:
+          - generic [ref=f1e128]:
+            - generic [ref=f1e129]: 🎙️
+            - generic [ref=f1e132]:
+              - heading "🔊 AudioDiff Speaking" [level=3] [ref=f1e133]
+              - paragraph [ref=f1e134]: Hands-free audio playback with barge-in interruption enabled
+          - generic [ref=f1e137]:
+            - button "● Talk to AudioDiff" [ref=f1e138] [cursor=pointer]:
+              - generic [ref=f1e139]: ●
+              - generic [ref=f1e140]: Talk to AudioDiff
+            - button "🛑 Barge-In Interruption" [ref=f1e141] [cursor=pointer]
+            - 'button "❓ Ask: \"Why was the mutex removed?\"" [ref=f1e142] [cursor=pointer]'
+          - generic [ref=f1e143]:
+            - generic [ref=f1e144]:
+              - generic [ref=f1e145]: Real-Time Transcription Stream
+              - generic [ref=f1e146]: AssemblyAI Streaming STT (Domain Boosted)
+            - emphasis [ref=f1e148]: Press 'Talk to AudioDiff' or click a question to start hands-free code review...
+        - generic [ref=f1e149]:
+          - heading "⚡ AssemblyAI LeMUR Cognitive Actions" [level=4] [ref=f1e150]
+          - generic [ref=f1e151]:
+            - button "📋 Executive Walkthrough High-level architecture intent" [ref=f1e152] [cursor=pointer]:
+              - generic [ref=f1e153]: 📋
+              - generic [ref=f1e154]:
+                - strong [ref=f1e155]: Executive Walkthrough
+                - text: High-level architecture intent
+            - button "🛡️ Security & Concurrency Audit Scan for OWASP & race conditions" [ref=f1e156] [cursor=pointer]:
+              - generic [ref=f1e157]: 🛡️
+              - generic [ref=f1e158]:
+                - strong [ref=f1e159]: Security & Concurrency Audit
+                - text: Scan for OWASP & race conditions
+            - button "💡 Explain Selected Hunk Deep dive into code logic" [ref=f1e160] [cursor=pointer]:
+              - generic [ref=f1e161]: 💡
+              - generic [ref=f1e162]:
+                - strong [ref=f1e163]: Explain Selected Hunk
+                - text: Deep dive into code logic
+            - button "✍️ Draft PR Review Comment Generates markdown suggestions" [ref=f1e164] [cursor=pointer]:
+              - generic [ref=f1e165]: ✍️
+              - generic [ref=f1e166]:
+                - strong [ref=f1e167]: Draft PR Review Comment
+                - text: Generates markdown suggestions
+        - generic [ref=f1e168]:
+          - generic [ref=f1e169]:
+            - generic [ref=f1e170]: 🎧 AudioDiff Spoken Response
+            - generic [ref=f1e171]: "Latency: -- ms"
+          - generic [ref=f1e172]: "\"Select a PR and ask a question or click an action button to receive verbal code review feedback.\""

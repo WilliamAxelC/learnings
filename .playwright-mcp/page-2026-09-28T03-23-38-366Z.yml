@@ -1,0 +1,290 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "Go to homepage" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "lablab.ai logo - Community innovating and building with artificial intelligence" [ref=e7]
+      - navigation "Desktop navigation" [ref=e8]:
+        - textbox "Search lablab.ai" [ref=e12] [cursor=pointer]
+        - link [ref=e13] [cursor=pointer]:
+          - /url: /ai-hackathons/amd-lablab-ai-academy-challenge
+          - text: Join
+          - img "AMD" [ref=e14]
+          - text: Challenge + Get $100 credits
+        - generic [ref=e15]:
+          - link "AI Hackathons" [ref=e16] [cursor=pointer]:
+            - /url: /ai-hackathons
+          - link "AI Apps" [ref=e17] [cursor=pointer]:
+            - /url: /apps
+          - link "AI Tech" [ref=e18] [cursor=pointer]:
+            - /url: /tech
+          - link "AI Tutorials" [ref=e19] [cursor=pointer]:
+            - /url: /ai-tutorials
+          - link "AI Articles" [ref=e20] [cursor=pointer]:
+            - /url: /ai-articles
+          - link "NativelyAI" [ref=e21] [cursor=pointer]:
+            - /url: https://nativelyai.com/#products
+          - link "Sponsor" [ref=e22] [cursor=pointer]:
+            - /url: /sponsor
+          - button [ref=e24] [cursor=pointer]
+    - generic [ref=e25]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - heading "AI Hackathons" [level=1] [ref=e29]
+          - paragraph [ref=e30]: Revolutionizing software creation with AI. Our hackathons welcome both AI / Tech industry professionals and those with other domain expertise — harness cutting-edge AI technologies, win prizes, and connect with fellow innovators worldwide.
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - textbox "Search.." [ref=e34]
+            - button "Select Technology..." [ref=e36]
+          - link "Sponsor" [ref=e38] [cursor=pointer]:
+            - /url: /sponsor
+        - generic [ref=e40]:
+          - link [ref=e42] [cursor=pointer]:
+            - /url: /ai-hackathons/amd-lablab-ai-academy-challenge
+            - img "Lablab x AMD AI Academy Challenge" [ref=e45]
+            - generic [ref=e46]: LIVE
+            - generic [ref=e50]: Online
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - time [ref=e58]: SEP 1 - DEC 1
+                - paragraph [ref=e62]: "3881"
+              - heading "Lablab x AMD AI Academy Challenge" [level=2] [ref=e63]
+              - paragraph [ref=e64]: Learn. Build. Share. Grow. A 3-month AMD-powered developer growth & community program — open to individual participants only.
+          - link [ref=e67] [cursor=pointer]:
+            - /url: /ai-hackathons/wearedevelopers-hackathon
+            - 'img "WeAreDevelopers x BAND present: Dark Factory (hackathon edition)" [ref=e70]'
+            - generic [ref=e71]: LIVE
+            - generic [ref=e75]: Online
+            - generic [ref=e79]:
+              - generic [ref=e80]:
+                - time [ref=e83]: SEP 26 - OCT 6
+                - paragraph [ref=e87]: "3153"
+              - 'heading "WeAreDevelopers x BAND present: Dark Factory (hackathon edition)" [level=2] [ref=e88]'
+              - paragraph [ref=e89]: "🌎 Online Hackathon | 💻 Online Build: Sept 26 - Oct 5, 2026 A virtual, global hackathon. Build from anywhere in the world. Dark Factory is the official hackathon of WeAreDevelopers World Congress North America, presented by BAND, but you don't need to be in San Jose to take part. For one week, you build a software factory in BAND Desktop: a band of coding agents that plans work, implements it and checks its own results. 🎟️ Bonus for sign-ups: you are eligible for a free ticket to WeAreDevelopers World Congress North America in San Jose (Sep 23–25). If you do go, stop by the BAND booth: a surprise is waiting for you."
+          - link [ref=e92] [cursor=pointer]:
+            - /url: /ai-hackathons/assemblyai-voice-agent-hackathon
+            - img "AssemblyAI - Voice Agent Hackathon" [ref=e95]
+            - generic [ref=e96]: LIVE
+            - generic [ref=e100]: Online
+            - generic [ref=e104]:
+              - generic [ref=e105]:
+                - time [ref=e108]: SEP 1 - 30
+                - paragraph [ref=e112]: "3946"
+              - heading "AssemblyAI - Voice Agent Hackathon" [level=2] [ref=e113]
+              - paragraph [ref=e114]: "🌎 Online Hackathon | 💻 Month-long challenge | Dates: Sep 1–30, 2026 | 🏆 $10,000 Prize Pool ($5k cash + $5k in AAI credits) A month-long online challenge run by lablab.ai together with AssemblyAI, the Voice AI infrastructure company for builders. Every participant builds on AssemblyAI. You can join at any point — registration stays open for the whole build window, so you can start on day one or pick the project up halfway through and still submit. 🌍 Fully online hackathon. Join and build from anywhere in the world."
+          - 'link "AMD Developer Hackathon: ACT III Register Hybrid OCT 12 - 18 3821 AMD Developer Hackathon: ACT III 🌎 Hybrid Hackathon | 💻 Online Build: 12-17 October 2026 | On-site phase: 17-18 October 2026 To participate in the hackathon, simply click Sign up with AMD. If you are not already a member of the AMD AI Developer Program (ADP), you will need to create an account. The AMD Developer Hackathon: ACT III is a hands-on event for developers, founders, engineers and builders who want to push what’s possible with AI on real infrastructure. 📍 If approved for the on-site experience, you''ll also have the opportunity to showcase your project live. Travel and accommodation will not be covered." [ref=e117] [cursor=pointer]':
+            - /url: /ai-hackathons/amd-developer-hackathon-act-iii
+            - 'img "AMD Developer Hackathon: ACT III" [ref=e120]'
+            - generic [ref=e121]: Register
+            - generic [ref=e122]: Hybrid
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - time [ref=e130]: OCT 12 - 18
+                - paragraph [ref=e134]: "3821"
+              - 'heading "AMD Developer Hackathon: ACT III" [level=2] [ref=e135]'
+              - paragraph [ref=e136]: "🌎 Hybrid Hackathon | 💻 Online Build: 12-17 October 2026 | On-site phase: 17-18 October 2026 To participate in the hackathon, simply click Sign up with AMD. If you are not already a member of the AMD AI Developer Program (ADP), you will need to create an account. The AMD Developer Hackathon: ACT III is a hands-on event for developers, founders, engineers and builders who want to push what’s possible with AI on real infrastructure. 📍 If approved for the on-site experience, you'll also have the opportunity to showcase your project live. Travel and accommodation will not be covered."
+          - 'link "TechEx Amsterdam Hackathon - AI & Big Data Expo Europe Register Hybrid OCT 16 - 19 761 TechEx Amsterdam Hackathon - AI & Big Data Expo Europe 🌎 Hybrid Hackathon | 💻 Online Build: October 16–19, 2026 | 📍 On-site: October 19–20, 2026 The official hackathon of AI & Big Data Expo Europe, organized by TechEx Events and lablab.ai. Build AI applications and agents across AI, cybersecurity, cloud, IoT, automation, edge computing, digital transformation, and data infrastructure, then showcase your project live at one of Europe''s largest enterprise technology events. 📍 On-site Venue (October 19–20): RAI Amsterdam Europaplein 24, 1078 GZ Amsterdam, Netherlands 📍 If approved for the on-site experience, you''ll also have the opportunity to showcase your project live. Travel and accommodation will not be covered." [ref=e139] [cursor=pointer]':
+            - /url: /ai-hackathons/techex-amsterdam-hackathon
+            - img "TechEx Amsterdam Hackathon - AI & Big Data Expo Europe" [ref=e142]
+            - generic [ref=e143]: Register
+            - generic [ref=e144]: Hybrid
+            - generic [ref=e148]:
+              - generic [ref=e149]:
+                - time [ref=e152]: OCT 16 - 19
+                - paragraph [ref=e156]: "761"
+              - heading "TechEx Amsterdam Hackathon - AI & Big Data Expo Europe" [level=2] [ref=e157]
+              - paragraph [ref=e158]: "🌎 Hybrid Hackathon | 💻 Online Build: October 16–19, 2026 | 📍 On-site: October 19–20, 2026 The official hackathon of AI & Big Data Expo Europe, organized by TechEx Events and lablab.ai. Build AI applications and agents across AI, cybersecurity, cloud, IoT, automation, edge computing, digital transformation, and data infrastructure, then showcase your project live at one of Europe's largest enterprise technology events. 📍 On-site Venue (October 19–20): RAI Amsterdam Europaplein 24, 1078 GZ Amsterdam, Netherlands 📍 If approved for the on-site experience, you'll also have the opportunity to showcase your project live. Travel and accommodation will not be covered."
+          - 'link "Vultr: Agent Rush Hackathon Register Hybrid NOV 3 - 8 388 Vultr: Agent Rush Hackathon 🌎 Hybrid Hackathon | 💻 Online Build: 3-8 November 2026 | On-site phase: 8 November 2026 📍 If approved for the on-site experience, you''ll also have the opportunity to showcase your project live. Travel and accommodation will not be covered." [ref=e161] [cursor=pointer]':
+            - /url: /ai-hackathons/vultr-hackathon
+            - 'img "Vultr: Agent Rush Hackathon" [ref=e164]'
+            - generic [ref=e165]: Register
+            - generic [ref=e166]: Hybrid
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - time [ref=e174]: NOV 3 - 8
+                - paragraph [ref=e178]: "388"
+              - 'heading "Vultr: Agent Rush Hackathon" [level=2] [ref=e179]'
+              - paragraph [ref=e180]: "🌎 Hybrid Hackathon | 💻 Online Build: 3-8 November 2026 | On-site phase: 8 November 2026 📍 If approved for the on-site experience, you'll also have the opportunity to showcase your project live. Travel and accommodation will not be covered."
+          - 'link "AI GENESIS TBA Hybrid To be announced 1210 AI GENESIS AI Genesis is a global hybrid hackathon that brings AI builders together from around the world, starting online and culminating live. 📅 Dates: TBA • Online Build & Collaboration: Dates TBA • On-site Build Day in Dubai: Date TBA, for selected participants • Live Pitching & Winners Announcement: Date TBA, at the /function1 Conference 🌟 Get support from expert mentors throughout. 👥 Go solo or team up. 📍 Please note: If approved for the on-site experience, you’ll also have the opportunity to showcase your project live. Travel and accommodation will not be covered. 🧑🏻‍💻 Secure your spot now and stay tuned for the confirmed schedule and Kick-Off Stream details." [ref=e183] [cursor=pointer]':
+            - /url: /ai-hackathons/ai-genesis-2026
+            - img "AI GENESIS" [ref=e186]
+            - generic [ref=e187]: TBA
+            - generic [ref=e188]: Hybrid
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - generic [ref=e194]: To be announced
+                - paragraph [ref=e200]: "1210"
+              - heading "AI GENESIS" [level=2] [ref=e201]
+              - paragraph [ref=e202]: "AI Genesis is a global hybrid hackathon that brings AI builders together from around the world, starting online and culminating live. 📅 Dates: TBA • Online Build & Collaboration: Dates TBA • On-site Build Day in Dubai: Date TBA, for selected participants • Live Pitching & Winners Announcement: Date TBA, at the /function1 Conference 🌟 Get support from expert mentors throughout. 👥 Go solo or team up. 📍 Please note: If approved for the on-site experience, you’ll also have the opportunity to showcase your project live. Travel and accommodation will not be covered. 🧑🏻‍💻 Secure your spot now and stay tuned for the confirmed schedule and Kick-Off Stream details."
+          - link "The Rise of AI Agents Hackathon TBA Hybrid To be announced 841 The Rise of AI Agents Hackathon ⏱️ Design, build, and launch a real-world AI Agent - As part of Dubai AI Week 📅 Fall 2026 / TBA 🏆 $60,000+ prize pool 🤝 Join solo or with a team. 📍 Location Deriv Offices, One by Omniyat, 24th Floor, Al Mustaqbal Street, Business Bay, Dubai, UAE On-site participation is by invitation only. Travel and accommodation are not covered. 🧑‍💻 Apply now and build the next generation of AI Agents." [ref=e205] [cursor=pointer]:
+            - /url: /ai-hackathons/ai-agents-ai-week-hackathon
+            - img "The Rise of AI Agents Hackathon" [ref=e208]
+            - generic [ref=e209]: TBA
+            - generic [ref=e210]: Hybrid
+            - generic [ref=e214]:
+              - generic [ref=e215]:
+                - generic [ref=e216]: To be announced
+                - paragraph [ref=e222]: "841"
+              - heading "The Rise of AI Agents Hackathon" [level=2] [ref=e223]
+              - paragraph [ref=e224]: ⏱️ Design, build, and launch a real-world AI Agent - As part of Dubai AI Week 📅 Fall 2026 / TBA 🏆 $60,000+ prize pool 🤝 Join solo or with a team. 📍 Location Deriv Offices, One by Omniyat, 24th Floor, Al Mustaqbal Street, Business Bay, Dubai, UAE On-site participation is by invitation only. Travel and accommodation are not covered. 🧑‍💻 Apply now and build the next generation of AI Agents.
+          - 'link "IBM Bob 2.0 hackathon Finished Online SEP 25 - 27 15727 IBM Bob 2.0 hackathon 💻 Online Hackathon | ⏳ Build: 48 hours | 📅 September 25–27, 2026 The official IBM Bob 2.0 hackathon. Build what''s next in AI-assisted development, alongside the developers and experts shaping it. ⭐ Get help from experts throughout the event 🤝 Join a team or build solo 💰 Prize pool: $12,000 🧑🏻‍💻 Register before the Kick-Off Stream to start building with Bob" [ref=e227] [cursor=pointer]':
+            - /url: /ai-hackathons/ibm-bob-2-hackathon
+            - img "IBM Bob 2.0 hackathon" [ref=e230]
+            - generic [ref=e231]: Finished
+            - generic [ref=e232]: Online
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - time [ref=e240]: SEP 25 - 27
+                - paragraph [ref=e244]: "15727"
+              - heading "IBM Bob 2.0 hackathon" [level=2] [ref=e245]
+              - paragraph [ref=e246]: "💻 Online Hackathon | ⏳ Build: 48 hours | 📅 September 25–27, 2026 The official IBM Bob 2.0 hackathon. Build what's next in AI-assisted development, alongside the developers and experts shaping it. ⭐ Get help from experts throughout the event 🤝 Join a team or build solo 💰 Prize pool: $12,000 🧑🏻‍💻 Register before the Kick-Off Stream to start building with Bob"
+          - 'link "AI Infra Summit Hackathon Finished Hybrid SEP 10 - 16 3018 AI Infra Summit Hackathon 🌎 Hybrid Hackathon | 💻 Online Build: September 10–16, 2026 | 📍 On-site: September 15–17, 2026 The official hackathon of AI Infra Summit — co-organized by Kisaco Research and lablab.ai. Build production-grade AI applications on the modern AI infrastructure stack, alongside 8,000+ attendees, researchers, founders, and infra leaders. 📍 On-site Venue (September 15–17): Santa Clara Convention Center 5001 Great America Pkwy, Santa Clara, CA 📍 On-site participation is by invitation only. Travel and accommodation expenses will not be covered." [ref=e249] [cursor=pointer]':
+            - /url: /ai-hackathons/ai-infra-summit-hackathon
+            - img "AI Infra Summit Hackathon" [ref=e252]
+            - generic [ref=e253]: Finished
+            - generic [ref=e254]: Hybrid
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - time [ref=e262]: SEP 10 - 16
+                - paragraph [ref=e266]: "3018"
+              - heading "AI Infra Summit Hackathon" [level=2] [ref=e267]
+              - paragraph [ref=e268]: "🌎 Hybrid Hackathon | 💻 Online Build: September 10–16, 2026 | 📍 On-site: September 15–17, 2026 The official hackathon of AI Infra Summit — co-organized by Kisaco Research and lablab.ai. Build production-grade AI applications on the modern AI infrastructure stack, alongside 8,000+ attendees, researchers, founders, and infra leaders. 📍 On-site Venue (September 15–17): Santa Clara Convention Center 5001 Great America Pkwy, Santa Clara, CA 📍 On-site participation is by invitation only. Travel and accommodation expenses will not be covered."
+          - 'link "Alpaca AI Trading Agents Hackathon Finished Online AUG 28 - SEP 4 3602 Alpaca AI Trading Agents Hackathon 🌎 Online Hackathon | 💻 Dates: 28 August–4 September 2026 | 🏆 $6,000 Prize Pool Build AI trading agents on Alpaca — autonomous agents and trading apps using Alpaca''s Trading API, MCP server and CLI. 🌍 Fully online hackathon. Join and build from anywhere in the world." [ref=e271] [cursor=pointer]':
+            - /url: /ai-hackathons/alpaca-ai-trading-agents-hackathon
+            - img "Alpaca AI Trading Agents Hackathon" [ref=e274]
+            - generic [ref=e275]: Finished
+            - generic [ref=e276]: Online
+            - generic [ref=e280]:
+              - generic [ref=e281]:
+                - time [ref=e284]: AUG 28 - SEP 4
+                - paragraph [ref=e288]: "3602"
+              - heading "Alpaca AI Trading Agents Hackathon" [level=2] [ref=e289]
+              - paragraph [ref=e290]: "🌎 Online Hackathon | 💻 Dates: 28 August–4 September 2026 | 🏆 $6,000 Prize Pool Build AI trading agents on Alpaca — autonomous agents and trading apps using Alpaca's Trading API, MCP server and CLI. 🌍 Fully online hackathon. Join and build from anywhere in the world."
+          - 'link "AI Factory Finished Online AUG 3 - 10 3711 AI Factory 🌎 Online Hackathon | 📅 August 3–10, 2026| 💻 Powered by native.builder The official native.builder hackathon, hosted by NativelyAI and lablab.ai. Join founders, developers, designers, and builders to create real AI-native applications powered by native.builder: from idea to deployed product, fully in the cloud. 💻 This hackathon is fully online. No travel required." [ref=e293] [cursor=pointer]':
+            - /url: /ai-hackathons/nativebuilder-build-without-limits
+            - img "AI Factory" [ref=e296]
+            - generic [ref=e297]: Finished
+            - generic [ref=e298]: Online
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - time [ref=e306]: AUG 3 - 10
+                - paragraph [ref=e310]: "3711"
+              - heading "AI Factory" [level=2] [ref=e311]
+              - paragraph [ref=e312]: "🌎 Online Hackathon | 📅 August 3–10, 2026| 💻 Powered by native.builder The official native.builder hackathon, hosted by NativelyAI and lablab.ai. Join founders, developers, designers, and builders to create real AI-native applications powered by native.builder: from idea to deployed product, fully in the cloud. 💻 This hackathon is fully online. No travel required."
+        - button "Load More" [ref=e315] [cursor=pointer]
+      - generic [ref=e328]:
+        - generic [ref=e329]:
+          - heading "Get notified and stay in the loop" [level=2] [ref=e330]
+          - paragraph [ref=e331]: Sign up for our newsletter to stay in the loop with lablab events and platform updates
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - generic [ref=e334]: Email address
+            - textbox "Email address" [ref=e335]:
+              - /placeholder: Enter your email
+          - button "Notify me" [ref=e337] [cursor=pointer]
+  - contentinfo [ref=e338]:
+    - heading "Footer navigation" [level=3] [ref=e339]
+    - generic [ref=e340]:
+      - generic [ref=e341]:
+        - generic [ref=e342]:
+          - img "Community innovating and building with artificial intelligence" [ref=e343]
+          - paragraph [ref=e344]: Unlocking state-of-the-art artificial intelligence and building with the world's talent
+          - list [ref=e346]:
+            - listitem [ref=e347]:
+              - link "LinkedIn" [ref=e348] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/lablab-ai/
+            - listitem [ref=e352]:
+              - link "Twitter/X" [ref=e353] [cursor=pointer]:
+                - /url: https://x.com/lablabai
+            - listitem [ref=e357]:
+              - link "Instagram" [ref=e358] [cursor=pointer]:
+                - /url: https://www.instagram.com/lablab.ai/
+            - listitem [ref=e362]:
+              - link "Discord" [ref=e363] [cursor=pointer]:
+                - /url: https://discord.gg/lablabai
+            - listitem [ref=e367]:
+              - link "YouTube" [ref=e368] [cursor=pointer]:
+                - /url: https://www.youtube.com/@lablabai
+            - listitem [ref=e372]:
+              - link "Twitch" [ref=e373] [cursor=pointer]:
+                - /url: https://www.twitch.tv/lablabai
+          - generic [ref=e377]:
+            - paragraph [ref=e378]: "Other group brands:"
+            - link [ref=e380] [cursor=pointer]:
+              - /url: https://nativelyai.com
+              - img "https://nativelyai.com" [ref=e381]
+        - generic [ref=e382]:
+          - generic [ref=e383]:
+            - text: Links
+            - list [ref=e384]:
+              - listitem [ref=e385]:
+                - link "AI Tech" [ref=e386] [cursor=pointer]:
+                  - /url: /tech
+              - listitem [ref=e387]:
+                - link "AI Hackathons" [ref=e388] [cursor=pointer]:
+                  - /url: /ai-hackathons
+              - listitem [ref=e389]:
+                - link "AI Tutorials" [ref=e390] [cursor=pointer]:
+                  - /url: /ai-tutorials
+              - listitem [ref=e391]:
+                - link "AI Applications" [ref=e392] [cursor=pointer]:
+                  - /url: /apps
+              - listitem [ref=e393]:
+                - link "NativelyAI" [ref=e394] [cursor=pointer]:
+                  - /url: https://nativelyai.com/#products
+              - listitem [ref=e395]:
+                - link "AI Articles" [ref=e396] [cursor=pointer]:
+                  - /url: /ai-articles
+              - listitem [ref=e397]:
+                - link "Leaderboard" [ref=e398] [cursor=pointer]:
+                  - /url: /leaderboard
+              - listitem [ref=e399]:
+                - link "Writers" [ref=e400] [cursor=pointer]:
+                  - /url: /writers
+          - generic [ref=e401]:
+            - text: lablab
+            - list [ref=e402]:
+              - listitem [ref=e403]:
+                - link "About" [ref=e404] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e405]:
+                - link "Brand" [ref=e406] [cursor=pointer]:
+                  - /url: /brand
+              - listitem [ref=e407]:
+                - link "Hackathon Guidelines" [ref=e408] [cursor=pointer]:
+                  - /url: /guide
+              - listitem [ref=e409]:
+                - link "Terms of Use" [ref=e410] [cursor=pointer]:
+                  - /url: /terms-of-use
+              - listitem [ref=e411]:
+                - link "Code of Conduct" [ref=e412] [cursor=pointer]:
+                  - /url: /code-of-conduct
+              - listitem [ref=e413]:
+                - link "Privacy Policy" [ref=e414] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=e415]:
+                - link "Security" [ref=e416] [cursor=pointer]:
+                  - /url: /security-policy
+          - generic [ref=e417]:
+            - text: Get in touch
+            - list [ref=e418]:
+              - listitem [ref=e419]:
+                - link "Discord" [ref=e420] [cursor=pointer]:
+                  - /url: https://discord.gg/lablabai
+              - listitem [ref=e421]:
+                - link "Sponsor" [ref=e422] [cursor=pointer]:
+                  - /url: /sponsor
+              - listitem [ref=e423]:
+                - link "Cooperation" [ref=e424] [cursor=pointer]:
+                  - /url: /cooperation
+              - listitem [ref=e425]:
+                - link "Contribute" [ref=e426] [cursor=pointer]:
+                  - /url: https://wkf.ms/3PQMLlq
+              - listitem [ref=e427]:
+                - link "Send email" [ref=e428] [cursor=pointer]:
+                  - /url: mailto:community@lablab.ai
+      - generic [ref=e429]:
+        - paragraph [ref=e430]: © 2026 NativelyAI Inc. All rights reserved.
+        - paragraph [ref=e431]: 3.69.1
+  - button "Help" [ref=e433] [cursor=pointer]

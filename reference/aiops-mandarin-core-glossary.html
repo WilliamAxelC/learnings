@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference: Huawei AIOps Technical Mandarin Glossary &amp; Briefing Cheat Sheet</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="lesson-header">
+      <span class="lesson-badge">Quick Reference &amp; Canonical Glossary</span>
+      <h1>Huawei AIOps Technical Mandarin Glossary</h1>
+      <p class="subtitle">Compressed reference mapping dormant HSK 3 roots to Huawei Cloud / SRE observability, anomaly detection, and spoken manager briefings (技术汇报).</p>
+      <div class="lesson-meta">
+        <span>📌 Canonical Term Reference</span>
+        <span>🔊 Click any phrase to hear Mandarin audio</span>
+        <span>🔗 <a href="../lessons/0001-reactivating-hsk3-for-aiops-incident-reporting.html">Go to Lesson 0001</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. The HSK 3 &rarr; Huawei Engineering Upgrade Matrix</h2>
+      <p>
+        You do not need to learn a new language from scratch. Your HSK 3 sentence skeletons are already intact—you only need to swap conversational HSK 3 words for their 2-character engineering equivalents:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Meaning</th>
+            <th>Dormant HSK 3 Word</th>
+            <th>Huawei Engineering Equivalent</th>
+            <th>Root Memory Anchor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Because of X, it caused Y</strong></td>
+            <td>因为 X，所以 Y<br><span class="en-gloss">yīnwèi X, suǒyǐ Y</span></td>
+            <td>
+              <strong>由于 X，导致 Y</strong><br>
+              <span class="pinyin-lg">yóuyú X, dǎozhì Y</span><br>
+              <button class="speak-btn" data-zh="由于流量突增，导致延迟升高">🔊 Hear Example</button>
+            </td>
+            <td><code>由</code> (from) + <code>导</code> (lead to). Used in 90% of RCA reports for negative incidents.</td>
+          </tr>
+          <tr>
+            <td><strong>Check / Troubleshoot</strong></td>
+            <td>看问题 / 检查<br><span class="en-gloss">kàn wèntí / jiǎnchá</span></td>
+            <td>
+              <strong>排查</strong><br>
+              <span class="pinyin-lg">páichá</span><br>
+              <button class="speak-btn" data-zh="我们正在排查这个问题">🔊 פּáichá</button>
+            </td>
+            <td><code>排</code> (rule out line by line) + <code>查</code> (check, from HSK 3 检查).</td>
+          </tr>
+          <tr>
+            <td><strong>Bug / Outage / Fault</strong></td>
+            <td>出问题了 / 坏了<br><span class="en-gloss">chū wèntí le / huài le</span></td>
+            <td>
+              <strong>故障 / 异常</strong><br>
+              <span class="pinyin-lg">gùzhàng / yìcháng</span><br>
+              <button class="speak-btn" data-zh="线上出现故障，指标异常">🔊 gùzhàng / yìcháng</button>
+            </td>
+            <td><code>故障</code> = service fault/outage; <code>异常</code> = abnormal metric/anomaly (opposite of HSK 3 <code>正常</code>).</td>
+          </tr>
+          <tr>
+            <td><strong>Fixed / Back to normal</strong></td>
+            <td>修好了 / 好了<br><span class="en-gloss">xiū hǎo le / hǎo le</span></td>
+            <td>
+              <strong>已恢复正常</strong><br>
+              <span class="pinyin-lg">yǐ huīfù zhèngcháng</span><br>
+              <button class="speak-btn" data-zh="目前服务已恢复正常">🔊 yǐ huīfù zhèngcháng</button>
+            </td>
+            <td><code>已</code> (short for HSK 3 已经) + <code>恢复</code> (recover) + <code>正常</code> (HSK 3 normal).</td>
+          </tr>
+          <tr>
+            <td><strong>Right now / Currently</strong></td>
+            <td>现在<br><span class="en-gloss">xiànzài</span></td>
+            <td>
+              <strong>目前</strong><br>
+              <span class="pinyin-lg">mùqián</span><br>
+              <button class="speak-btn" data-zh="目前我们已经完成回滚">🔊 mùqián</button>
+            </td>
+            <td>Literally "before the eyes" (<code>目</code> eye + <code>前</code> front). Standard opener for status updates.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>2. Canonical AIOps &amp; Observability Glossary (智能运维核心词汇)</h2>
+
+      <h3>A. Telemetry &amp; Observability (可观测性 — kě guāncè xìng)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Hanzi</th>
+            <th>Pinyin</th>
+            <th>English Term</th>
+            <th>HSK 3 Character Breakdown &amp; Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>指标</strong> <button class="speak-btn" data-zh="指标">🔊</button></td>
+            <td><code>zhǐbiāo</code></td>
+            <td>Metrics</td>
+            <td><code>指</code> (point/indicator) + <code>标</code> (mark/standard). E.g., <em>核心指标异常 (Core metrics are anomalous).</em></td>
+          </tr>
+          <tr>
+            <td><strong>日志</strong> <button class="speak-btn" data-zh="日志">🔊</button></td>
+            <td><code>rìzhì</code></td>
+            <td>Logs</td>
+            <td><code>日</code> (day) + <code>志</code> (record). E.g., <em>报错日志 (error logs)</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>调用链</strong> <button class="speak-btn" data-zh="调用链">🔊</button></td>
+            <td><code>diàoyòngliàn</code></td>
+            <td>Distributed Traces</td>
+            <td><code>调用</code> (call/invoke) + <code>链</code> (chain). Also called <code>链路追踪 (liànlù zhuīzōng)</code>.</td>
+          </tr>
+          <tr>
+            <td><strong>阈值</strong> <button class="speak-btn" data-zh="阈值">🔊</button></td>
+            <td><code>yùzhí</code></td>
+            <td>Threshold</td>
+            <td><code>阈</code> (boundary) + <code>值</code> (value). E.g., <em>调整告警阈值 (tune the alert threshold)</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>延迟</strong> <button class="speak-btn" data-zh="延迟">🔊</button></td>
+            <td><code>yánchí</code></td>
+            <td>Latency</td>
+            <td><code>延</code> (extend/delay) + <code>迟</code> (HSK 3 迟到 late). E.g., <em>接口延迟飙升 (API latency spiked)</em>.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>B. Alerting &amp; AIOps Models (告警与智能算法)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Hanzi</th>
+            <th>Pinyin</th>
+            <th>English Term</th>
+            <th>HSK 3 Character Breakdown &amp; Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>智能运维</strong> <button class="speak-btn" data-zh="智能运维">🔊</button></td>
+            <td><code>zhìnéng yùnwéi</code></td>
+            <td>AIOps</td>
+            <td><code>智能</code> (intelligent) + <code>运维</code> (operations &amp; maintenance, short for 运行维护).</td>
+          </tr>
+          <tr>
+            <td><strong>异常检测</strong> <button class="speak-btn" data-zh="异常检测">🔊</button></td>
+            <td><code>yìcháng jiǎncè</code></td>
+            <td>Anomaly Detection</td>
+            <td><code>异常</code> (abnormal, vs HSK 3 正常) + <code>检测</code> (detect/inspect, cousin of HSK 3 检查).</td>
+          </tr>
+          <tr>
+            <td><strong>告警风暴</strong> <button class="speak-btn" data-zh="告警风暴">🔊</button></td>
+            <td><code>gàojǐng fēngbào</code></td>
+            <td>Alert Storm</td>
+            <td><code>告警</code> (alert/warn) + <code>风暴</code> (storm). Flood of correlated alerts during an outage.</td>
+          </tr>
+          <tr>
+            <td><strong>告警降噪</strong> <button class="speak-btn" data-zh="告警降噪">🔊</button></td>
+            <td><code>gàojǐng jiàngzào</code></td>
+            <td>Alert Noise Reduction</td>
+            <td><code>降</code> (lower/drop, from HSK 3 降低) + <code>噪</code> (noise). Deduplication, grouping, and suppression.</td>
+          </tr>
+          <tr>
+            <td><strong>误报 / 漏报</strong> <button class="speak-btn" data-zh="误报和漏报">🔊</button></td>
+            <td><code>wùbào / lòubào</code></td>
+            <td>False Positive / False Negative</td>
+            <td><code>误</code> (mistaken) + <code>报</code> (report) = false alarm; <code>漏</code> (leak/miss) + <code>报</code> = missed alert.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>C. Incident Diagnosis &amp; Remediation (故障定位与恢复)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Hanzi</th>
+            <th>Pinyin</th>
+            <th>English Term</th>
+            <th>HSK 3 Character Breakdown &amp; Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>故障定位</strong> <button class="speak-btn" data-zh="故障定位">🔊</button></td>
+            <td><code>gùzhàng dìngwèi</code></td>
+            <td>Fault Localization</td>
+            <td><code>故障</code> (fault) + <code>定位</code> (pinpoint location, <code>位</code> from HSK 3 位/位置).</td>
+          </tr>
+          <tr>
+            <td><strong>根因分析</strong> <button class="speak-btn" data-zh="根因分析">🔊</button></td>
+            <td><code>gēnyīn fēnxī</code></td>
+            <td>Root Cause Analysis (RCA)</td>
+            <td><code>根</code> (root) + <code>因</code> (cause, from HSK 2 因为) + <code>分析</code> (analyze). Shortened to <code>根因 (gēnyīn)</code>.</td>
+          </tr>
+          <tr>
+            <td><strong>回滚</strong> <button class="speak-btn" data-zh="回滚">🔊</button></td>
+            <td><code>huígǔn</code></td>
+            <td>Rollback</td>
+            <td><code>回</code> (HSK 1 return/back) + <code>滚</code> (roll). E.g., <em>先把版本回滚 (roll back the version first)</em>.</td>
+          </tr>
+          <tr>
+            <td><strong>复盘</strong> <button class="speak-btn" data-zh="复盘">🔊</button></td>
+            <td><code>fùpán</code></td>
+            <td>Postmortem / Retrospective</td>
+            <td>Originally a Go (Weiqi) term for replaying the board; universal Chinese tech term for incident postmortems.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. The 4-Sentence Manager Briefing Blueprint (故障汇报四步法)</h2>
+      <p>
+        When your Chinese manager asks <strong>"刚才那个告警是怎么回事？"</strong> (<em>Gāngcái nàge gàojǐng shì zěnme huí shì?</em> — What happened with that alert just now?), answer in this crisp 4-step order:
+      </p>
+      <div class="pattern-box">
+        <div class="pattern-formula">1. 现象 (Symptom) &rarr; 2. 根因 (Root Cause) &rarr; 3. 措施 (Action) &rarr; 4. 进展 (Status)</div>
+        <ol>
+          <li>
+            <strong>Symptom + Root Cause:</strong><br>
+            <span class="hanzi-lg">由于新版本内存泄漏，导致接口延迟飙升。</span><br>
+            <span class="pinyin-lg">Yóuyú xīn bǎnběn nèicún xièlòu, dǎozhì jiēkǒu yánchí biāoshēng.</span><br>
+            <span class="en-gloss">"Due to a memory leak in the new release, API latency spiked."</span><br>
+            <button class="speak-btn" data-zh="由于新版本内存泄漏，导致接口延迟飙升。">🔊 Listen (Slow 0.88x)</button>
+          </li>
+          <li>
+            <strong>Diagnosis Method (AIOps Value-Add):</strong><br>
+            <span class="hanzi-lg">我们通过根因分析，定位到了异常节点。</span><br>
+            <span class="pinyin-lg">Wǒmen tōngguò gēnyīn fēnxī, dìngwèi dào le yìcháng jiédiǎn.</span><br>
+            <span class="en-gloss">"Through root cause analysis, we localized the anomalous node."</span><br>
+            <button class="speak-btn" data-zh="我们通过根因分析，定位到了异常节点。">🔊 Listen (Slow 0.88x)</button>
+          </li>
+          <li>
+            <strong>Action &amp; Current Status:</strong><br>
+            <span class="hanzi-lg">目前已经完成回滚，各项指标已恢复正常。</span><br>
+            <span class="pinyin-lg">Mùqián yǐjīng wánchéng huígǔn, gè xiàng zhǐbiāo yǐ huīfù zhèngcháng.</span><br>
+            <span class="en-gloss">"Currently we have completed the rollback, and all metrics have returned to normal."</span><br>
+            <button class="speak-btn" data-zh="目前已经完成回滚，各项指标已恢复正常。">🔊 Listen (Slow 0.88x)</button>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="ask-agent-box">
+      <h4>💬 Practice With Your AI Coach</h4>
+      <p>Keep this reference open during standups or ask me in chat: <em>"Quiz me on the 10 core AIOps terms"</em> or <em>"Help me translate a real incident I worked on today into the 4-Step Manager Briefing format."</em></p>
+    </div>
+  </div>
+  <script src="../assets/quiz.js"></script>
+</body>
+</html>

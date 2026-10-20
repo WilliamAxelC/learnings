@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f9fd">
+  <title>win.ai.id — Strategic Execution with Haiku 5.5</title>
+  <meta name="description" content="Deconstruct monumental ambitions into high-velocity daily execution with Haiku 5.5, your real-time strategic cognitive co-architect.">
+  <link rel="canonical" href="https://win.ai.id/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="win.ai.id — Strategic Execution with Haiku 5.5">
+  <meta property="og:description" content="Deconstruct monumental ambitions into high-velocity daily execution with Haiku 5.5, your real-time strategic cognitive co-architect.">
+  <meta property="og:url" content="https://win.ai.id/">
+  <meta property="og:image" content="https://win.ai.id/static/icon.svg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="win.ai.id — Strategic Execution with Haiku 5.5">
+  <meta name="twitter:description" content="Deconstruct monumental ambitions into high-velocity daily execution with Haiku 5.5, your real-time strategic cognitive co-architect.">
+  <meta name="twitter:image" content="https://win.ai.id/static/icon.svg">
+
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/static/icon.svg?v=haiku55" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/icon.svg?v=haiku55">
+  <link rel="stylesheet" href="/static/app.css?v=haiku55">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('win-theme');
+        if (t === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute('content', '#090e17');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (_) {}
+    })();
+  </script>
+
+  <script src="https://unpkg.com/htmx.org@2.0.4" defer></script>
+  <script src="/static/app.js?v=haiku55" defer></script>
+</head>
+<body>
+  <main class="wrap" id="content">
+    {{template "content" .}}
+  </main>
+</body>
+</html>

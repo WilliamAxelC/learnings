@@ -1,0 +1,134 @@
+{
+  "accounts": [
+    {
+      "key": "capt_1a74cb",
+      "email": "capt_1a74cb@cuang.dev",
+      "password": "Rb!acfd36d3",
+      "token": "Y2FwdF8xYTc0Y2J8MTc5MzgwOTQxM3ww.U_SDQvlQTLKDmAIPJ7hfhC4GO6wnbLiM5RbyMF46G6c",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "capt_9aac46",
+      "email": "capt_9aac46@cuang.dev",
+      "password": "Rb!a3dffb2e",
+      "token": "Y2FwdF85YWFjNDZ8MTc5MzgwOTQxNHww.Qr1LJaQmg0FrtxliGrNiWLVj5cV_atoN2yls8EmXL3I",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "capt_06e0d0",
+      "email": "capt_06e0d0@cuang.dev",
+      "password": "Rb!812353fb",
+      "token": "Y2FwdF8wNmUwZDB8MTc5MzgwOTQxNXww.FzIrZgcRvagxbghS0QXBbB6gNTtTl5Bh4PFjaz9Ns9I",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "capt_f2adb3",
+      "email": "capt_f2adb3@cuang.dev",
+      "password": "Rb!e6a79c11",
+      "token": "Y2FwdF9mMmFkYjN8MTc5MzgwOTQxNnww.fxL5l57ZXuF-Mf5toijztyXPlJ8fJam5PMwdTA6XuMY",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "capt_5363b5",
+      "email": "capt_5363b5@cuang.dev",
+      "password": "Rb!da14ccfe",
+      "token": "Y2FwdF81MzYzYjV8MTc5MzgwOTQxN3ww.y1MidvIt_t-NRZb-RHnIJ-Wgz4HdCKWif57mgd4nh0M",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "capt_cbf33e",
+      "email": "capt_cbf33e@cuang.dev",
+      "password": "Rb!ee97442e",
+      "token": "Y2FwdF9jYmYzM2V8MTc5Mzg0NTg0M3ww.MH_tx3WZNpaR0uhRgem2vbdayyg7DV9ztc8lizYYPDo",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "capt_4cbb71",
+      "email": "capt_4cbb71@cuang.dev",
+      "password": "Rb!f3c475b6",
+      "token": "Y2FwdF80Y2JiNzF8MTc5Mzg0NTg0NHww.SJFjd-mj9Ge8SsBY73BTE5cd4iuhC-ck1eha-GobhN4",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "capt_cd40e6",
+      "email": "capt_cd40e6@cuang.dev",
+      "password": "Rb!00edebf2",
+      "token": "Y2FwdF9jZDQwZTZ8MTc5Mzg0NTg0Nnww.PpMHdxKX3xdvVa-xYALEAPFscQhQlnGZwHuamzA_fH8",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "helmszack",
+      "email": "helmszack@cuang.dev",
+      "password": "Rb!91ed94bf",
+      "token": "aGVsbXN6YWNrfDE3OTM4NjQ3MzZ8MA.iw2rJVOK680k6lE7HP9WZjQY8mP1rlET12cktut1rBs",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    },
+    {
+      "key": "bleakshore",
+      "email": "bleakshore@cuang.dev",
+      "password": "Rb!32be2667",
+      "token": "YmxlYWtzaG9yZXwxNzkzODY0NzM2fDA.aTCkb5_wW9FtZVHMacFxvVpo-T4zkOT0seakADWDZ4U",
+      "enabled": false,
+      "policy": {
+        "allowBuying": true,
+        "allowSalvaging": false,
+        "allowMarketSelling": false,
+        "updatedAt": "2026-10-06T15:00:00Z"
+      }
+    }
+  ]
+}

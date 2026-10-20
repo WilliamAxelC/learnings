@@ -1,0 +1,9 @@
+dbs:
+  - path: /data/win.db
+    replicas:
+      - type: s3
+        bucket: ${LITESTREAM_BUCKET}
+        path: win.db
+        endpoint: ${LITESTREAM_ENDPOINT}   # e.g. https://<account>.r2.cloudflarestorage.com
+        access-key-id: ${LITESTREAM_ACCESS_KEY_ID}
+        secret-access-key: ${LITESTREAM_SECRET_ACCESS_KEY}

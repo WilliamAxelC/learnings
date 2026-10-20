@@ -1,0 +1,10 @@
+services:
+  projects-nginx:
+    build: .
+    image: projects-cuang-nginx:latest
+    container_name: projects-cuang-nginx
+    restart: unless-stopped
+    ports:
+      - "8095:80"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

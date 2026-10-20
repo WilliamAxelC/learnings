@@ -1,0 +1,229 @@
+- generic [ref=f6e3]:
+  - banner [ref=f6e4]:
+    - generic [ref=f6e5]:
+      - generic [ref=f6e6]: 🏛️
+      - generic [ref=f6e7]:
+        - generic [ref=f6e8]:
+          - heading "IDXClaw" [level=1] [ref=f6e9]
+          - generic [ref=f6e10]: 🟢 QUANT RESEARCH TELEMETRY LIVE
+        - paragraph [ref=f6e11]: Institutional Multi-Agent Quantitative Research Terminal
+    - generic [ref=f6e12]:
+      - generic [ref=f6e13]:
+        - generic [ref=f6e18]: "DB:"
+        - generic [ref=f6e19]: PG ONLINE
+      - generic [ref=f6e98]:
+        - generic [ref=f6e99]: EQUITY:Rp 105.60M
+        - generic [ref=f6e101]:
+          - text: "WIN:"
+          - generic [ref=f6e102]: 80%
+      - generic [ref=f6e20]: 17:13:20 WIB
+      - button "Run Debate" [ref=f6e25] [cursor=pointer]
+      - link "📖 Research Docs" [ref=f6e29] [cursor=pointer]:
+        - /url: https://cuang.dev/idxclaw/
+      - button "Refresh Telemetry & Data" [ref=f6e31] [cursor=pointer]
+  - navigation [ref=f6e37]:
+    - button "Boardroom Deliberations 17" [ref=f6e103] [cursor=pointer]:
+      - generic [ref=f6e42]: Boardroom Deliberations
+      - generic [ref=f6e104]: "17"
+    - button "Candlestick & Bandar Flow" [ref=f6e43] [cursor=pointer]
+    - button "Bandarmology Broker Matrix" [ref=f6e50] [cursor=pointer]
+    - button "Open Orders & Queue 7" [ref=f6e105] [cursor=pointer]:
+      - generic [ref=f6e62]: Open Orders & Queue
+      - generic [ref=f6e106]: "7"
+    - button "Portfolio Holdings & Ledger 5" [active] [ref=f6e107] [cursor=pointer]:
+      - generic [ref=f6e68]: Portfolio Holdings & Ledger
+      - generic [ref=f6e108]: "5"
+    - button "System Telemetry & Queue" [ref=f6e69] [cursor=pointer]
+  - main [ref=f6e75]:
+    - generic [ref=f6e1876]:
+      - generic [ref=f6e1877]:
+        - generic [ref=f6e1878]:
+          - generic [ref=f6e1879]: Live Forward-Testing Portfolio
+          - generic [ref=f6e1880]: ZERO DATA LEAKAGE
+        - button "Reset Simulation" [ref=f6e1882] [cursor=pointer]
+      - generic [ref=f6e1887]:
+        - generic [ref=f6e1888]:
+          - generic [ref=f6e1889]: Total Portfolio Equity
+          - generic [ref=f6e1890]: Rp 105.600.000
+          - generic [ref=f6e1891]: Real-time Mark-to-Market
+        - generic [ref=f6e1892]:
+          - generic [ref=f6e1893]: Available Cash
+          - generic [ref=f6e1894]: Rp 24.150.000
+          - generic [ref=f6e1895]: Ready for Market Open Fill
+        - generic [ref=f6e1896]:
+          - generic [ref=f6e1897]: Invested Value
+          - generic [ref=f6e1898]: Rp 81.450.000
+          - generic [ref=f6e1899]: 5 Active Open Positions
+        - generic [ref=f6e1900]:
+          - generic [ref=f6e1901]: Alpha vs IHSG
+          - generic [ref=f6e1902]: +4.75%
+          - generic [ref=f6e1907]: "IHSG Benchmark: +0.85%"
+        - generic [ref=f6e1908]:
+          - generic [ref=f6e1909]: Starting Capital
+          - generic [ref=f6e1910]: Rp 100,000,000
+          - generic [ref=f6e1911]: Simulation Base
+      - generic [ref=f6e1913]:
+        - generic [ref=f6e1914]: Portfolio Performance vs. IHSG Benchmark
+        - generic [ref=f6e1919]:
+          - generic [ref=f6e1920]:
+            - generic [ref=f6e1922]: "PORTFOLIO:"
+            - generic [ref=f6e1923]: +5.60%
+          - generic [ref=f6e1924]:
+            - generic [ref=f6e1926]: "IHSG:"
+            - generic [ref=f6e1927]: +0.97%
+          - generic [ref=f6e1928]:
+            - generic [ref=f6e1932]: "ALPHA:"
+            - generic [ref=f6e1933]: +4.63%
+      - generic [ref=f6e1936]:
+        - generic [ref=f6e1937]:
+          - generic [ref=f6e1938]:
+            - generic [ref=f6e1939]: Forward-Testing Execution Performance
+            - generic [ref=f6e1944]: PAPER FORWARD-TEST (ZERO LEAKAGE)
+          - generic [ref=f6e1945]:
+            - generic [ref=f6e1946]:
+              - generic [ref=f6e1947]: Total Realized Net Gain
+              - generic [ref=f6e1948]: +Rp 0
+              - generic [ref=f6e1949]: 0 Closed Forward Trades
+            - generic [ref=f6e1950]:
+              - generic [ref=f6e1951]: Win Rate
+              - generic [ref=f6e1952]: 0.0%
+              - generic [ref=f6e1953]: 0 Wins / 0 Loss
+            - generic [ref=f6e1954]:
+              - generic [ref=f6e1955]: Profit Factor
+              - generic [ref=f6e1956]: ∞
+              - generic [ref=f6e1957]: Gross Win / Gross Loss
+            - generic [ref=f6e1958]:
+              - generic [ref=f6e1959]: Active Slots
+              - generic [ref=f6e1960]: 5 / 5
+              - generic [ref=f6e1961]: CRO Risk Sizing Limit
+        - generic [ref=f6e1962]:
+          - generic [ref=f6e1963]:
+            - button "All Trades (5)" [ref=f6e1964] [cursor=pointer]
+            - button "Active Open (5)" [ref=f6e1966] [cursor=pointer]
+            - button "Closed History (0)" [ref=f6e1968] [cursor=pointer]
+            - button "Take Profit (0)" [ref=f6e1970] [cursor=pointer]
+            - button "Stop Loss (0)" [ref=f6e1972] [cursor=pointer]
+          - textbox "Filter ticker / reason..." [ref=f6e1978]
+        - generic [ref=f6e1979]:
+          - generic [ref=f6e1980]:
+            - generic [ref=f6e1981]:
+              - text: Positions & Execution Ledger
+              - generic [ref=f6e1982]: 5 Records
+            - generic [ref=f6e1983]: Click any row to inspect complete trade audit dossier
+          - table [ref=f6e1985]:
+            - rowgroup [ref=f6e1986]:
+              - row [ref=f6e1987]:
+                - columnheader "Status" [ref=f6e1988]
+                - columnheader "Ticker" [ref=f6e1989]
+                - columnheader "Entry Date" [ref=f6e1990]
+                - columnheader "Exit Date" [ref=f6e1991]
+                - columnheader "Entry Fill" [ref=f6e1992]
+                - columnheader "Current / Exit Fill" [ref=f6e1993]
+                - columnheader "Position Size" [ref=f6e1994]
+                - columnheader "Total Cost" [ref=f6e1995]
+                - columnheader "Realized / Unrealized PnL" [ref=f6e1996]
+                - columnheader "Return %" [ref=f6e1997]
+                - columnheader "Action" [ref=f6e1998]
+            - rowgroup [ref=f6e1999]:
+              - row [ref=f6e2000] [cursor=pointer]:
+                - cell "OPEN" [ref=f6e2001]
+                - cell "BBCA Bank Central Asia Tbk" [ref=f6e2003]:
+                  - text: BBCA
+                  - generic [ref=f6e2004]: Bank Central Asia Tbk
+                - cell "2026-08-18" [ref=f6e2005]
+                - cell "—" [ref=f6e2006]
+                - cell "Rp 6.350" [ref=f6e2007]
+                - cell "Rp 6.350" [ref=f6e2008]
+                - cell "23 lots" [ref=f6e2009]
+                - cell "Rp 14.626.908" [ref=f6e2010]
+                - cell "+Rp 0" [ref=f6e2011]
+                - cell "0.00%" [ref=f6e2012]
+                - cell [ref=f6e2013]:
+                  - button "Audit" [ref=f6e2014]
+              - row [ref=f6e2018] [cursor=pointer]:
+                - cell "OPEN" [ref=f6e2019]
+                - cell "BBNI Bank Negara Indonesia (Persero) Tbk" [ref=f6e2021]:
+                  - text: BBNI
+                  - generic [ref=f6e2022]: Bank Negara Indonesia (Persero) Tbk
+                - cell "2026-08-18" [ref=f6e2023]
+                - cell "—" [ref=f6e2024]
+                - cell "Rp 3.630" [ref=f6e2025]
+                - cell "Rp 3.630" [ref=f6e2026]
+                - cell "39 lots" [ref=f6e2027]
+                - cell "Rp 14.178.236" [ref=f6e2028]
+                - cell "+Rp 0" [ref=f6e2029]
+                - cell "0.00%" [ref=f6e2030]
+                - cell [ref=f6e2031]:
+                  - button "Audit" [ref=f6e2032]
+              - row [ref=f6e2036] [cursor=pointer]:
+                - cell "OPEN" [ref=f6e2037]
+                - cell "BBRI Bank Rakyat Indonesia (Persero) Tbk" [ref=f6e2039]:
+                  - text: BBRI
+                  - generic [ref=f6e2040]: Bank Rakyat Indonesia (Persero) Tbk
+                - cell "2026-08-18" [ref=f6e2041]
+                - cell "—" [ref=f6e2042]
+                - cell "Rp 3.120" [ref=f6e2043]
+                - cell "Rp 3.120" [ref=f6e2044]
+                - cell "63 lots" [ref=f6e2045]
+                - cell "Rp 19.685.484" [ref=f6e2046]
+                - cell "+Rp 0" [ref=f6e2047]
+                - cell "0.00%" [ref=f6e2048]
+                - cell [ref=f6e2049]:
+                  - button "Audit" [ref=f6e2050]
+              - row [ref=f6e2054] [cursor=pointer]:
+                - cell "OPEN" [ref=f6e2055]
+                - cell "BUKA Bukalapak.com PT Tbk" [ref=f6e2057]:
+                  - text: BUKA
+                  - generic [ref=f6e2058]: Bukalapak.com PT Tbk
+                - cell "2026-08-18" [ref=f6e2059]
+                - cell "—" [ref=f6e2060]
+                - cell "Rp 115" [ref=f6e2061]
+                - cell "Rp 115" [ref=f6e2062]
+                - cell "1,302 lots" [ref=f6e2063]
+                - cell "Rp 14.995.460" [ref=f6e2064]
+                - cell "+Rp 0" [ref=f6e2065]
+                - cell "0.00%" [ref=f6e2066]
+                - cell [ref=f6e2067]:
+                  - button "Audit" [ref=f6e2068]
+              - row [ref=f6e2072] [cursor=pointer]:
+                - cell "OPEN" [ref=f6e2073]
+                - cell "ICBP Indofood CBP Sukses Makmur Tbk" [ref=f6e2075]:
+                  - text: ICBP
+                  - generic [ref=f6e2076]: Indofood CBP Sukses Makmur Tbk
+                - cell "2026-08-18" [ref=f6e2077]
+                - cell "—" [ref=f6e2078]
+                - cell "Rp 7.600" [ref=f6e2079]
+                - cell "Rp 7.600" [ref=f6e2080]
+                - cell "19 lots" [ref=f6e2081]
+                - cell "Rp 14.461.660" [ref=f6e2082]
+                - cell "+Rp 0" [ref=f6e2083]
+                - cell "0.00%" [ref=f6e2084]
+                - cell [ref=f6e2085]:
+                  - button "Audit" [ref=f6e2086]
+      - generic [ref=f6e2090]:
+        - generic [ref=f6e2091]:
+          - generic [ref=f6e2092]: IDX Transaction Fee & Sizing Calculator
+          - generic [ref=f6e2096]: Standard IDX Fees (0.15% Buy / 0.25% Sell)
+        - generic [ref=f6e2097]:
+          - generic [ref=f6e2098]:
+            - generic [ref=f6e2099]: "Entry Price (IDR):"
+            - spinbutton [ref=f6e2100]: "8500"
+          - generic [ref=f6e2101]:
+            - generic [ref=f6e2102]: "Target Exit Price (IDR):"
+            - spinbutton [ref=f6e2103]: "9350"
+          - generic [ref=f6e2104]:
+            - generic [ref=f6e2105]: "Position Lots (1 lot = 100 shares):"
+            - spinbutton [ref=f6e2106]: "24"
+        - generic [ref=f6e2107]:
+          - generic [ref=f6e2108]:
+            - generic [ref=f6e2109]: TOTAL BUY OUTLAY
+            - text: Rp 20.430.600
+            - generic [ref=f6e2110]: "Gross: Rp 20.400.000 + Fee: Rp 30.600 (0.15%)"
+          - generic [ref=f6e2111]:
+            - generic [ref=f6e2112]: NET SELL PROCEEDS
+            - text: Rp 22.383.900
+            - generic [ref=f6e2113]: "Gross: Rp 22.440.000 - Fee: Rp 56.100 (0.25%)"
+          - generic [ref=f6e2114]:
+            - generic [ref=f6e2115]: NET REALIZED PROFIT / LOSS
+            - generic [ref=f6e2116]: +Rp 1.953.300 (+9.56%)
+            - generic [ref=f6e2117]: Net of all broker fees & IDX tax

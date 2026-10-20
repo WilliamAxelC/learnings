@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0001: The Senior AI System Design Framework</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="lesson-header">
+      <span class="lesson-badge">Lesson 0001</span>
+      <h1>The 4-Phase Senior AI System Design Blueprint</h1>
+      <p class="subtitle">How to transition from ML modeling intuition to structured, distributed production systems leadership in 45-minute technical interviews.</p>
+      <div class="lesson-meta">
+        <span>⏱ 12 min read &amp; practice</span>
+        <span>🎯 Target: Senior &amp; Staff AI Interview Loops</span>
+        <span>📄 <a href="../reference/ai-system-design-interview-framework.html">Open Cheat Sheet Reference</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>The "Data Scientist Trap" in System Design</h2>
+      <p>
+        When an interviewer asks: <em>"Design a real-time AI code completion assistant like GitHub Copilot,"</em> candidates with strong ML backgrounds often commit a fatal error: they immediately dive into model choices, tokenizer types, or fine-tuning loss functions.
+      </p>
+      <p>
+        To an interviewer assessing a <strong>Senior or Staff AI Engineer</strong>, this is an immediate red flag. A production AI system is 90% distributed data infrastructure, memory scheduling, API contracts, latency budgets, and fallback circuits—and only 10% model weights.
+      </p>
+
+      <div class="callout interview-trap">
+        <strong class="title">The Failure Mode: The Modeling Rabbit Hole</strong>
+        Spending your first 15 minutes debating LoRA vs. full fine-tuning without knowing whether the system needs 10 QPS or 10,000 QPS, or whether the p95 latency budget is 50ms or 5 seconds, will fail you the round.
+      </div>
+
+      <p>
+        To consistently clear Staff-level loops, you must lead the discussion using a structured <strong>4-Phase Architecture Blueprint</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>The 4-Phase System Design Framework</h2>
+
+      <h3>Phase 1: Clarifying &amp; Scoping (Minutes 0–8)</h3>
+      <p>
+        Never start drawing architecture boxes until you have pinned down both <strong>Functional</strong> and <strong>Non-Functional</strong> constraints:
+      </p>
+      <ul>
+        <li><strong>Traffic &amp; Throughput:</strong> Average QPS, peak multiplier, and total daily active users.</li>
+        <li><strong>Latency SLAs:</strong>
+          <ul>
+            <li><strong>TTFT (Time to First Token):</strong> The time from prompt arrival to the first streamed token. For autocomplete, this must be &lt;50ms; for conversational chat, &lt;500ms.</li>
+            <li><strong>TPOT (Time Per Output Token):</strong> The inter-token generation speed. Human reading speed is ~25–30 tokens/sec (~33ms/token).</li>
+          </ul>
+        </li>
+        <li><strong>Context Window Budgets:</strong> Expected prompt input length vs. output generation length.</li>
+        <li><strong>Hardware &amp; Cost Constraints:</strong> Self-hosted cluster on proprietary GPUs vs. cloud model APIs.</li>
+      </ul>
+
+      <h3>Phase 2: High-Level Architecture (Minutes 8–22)</h3>
+      <p>
+        Cleanly divide the system into two distinct planes:
+      </p>
+      <ol>
+        <li><strong>The Offline Data Plane:</strong> Document extraction, tokenization, semantic chunking, embedding generation, and vector index building. This runs asynchronously via Kafka, Celery, or Spark.</li>
+        <li><strong>The Online Serving Plane:</strong> The real-time path traversed by every user request: API Gateway &rarr; Authentication &rarr; Guardrails / Prompt Injection Filter &rarr; Retrieval Engine &rarr; LLM Serving Cluster &rarr; Response Streamer.</li>
+      </ol>
+
+      <div class="callout staff-level">
+        <strong class="title">Staff-Level Seam Principle</strong>
+        Always identify the synchronous vs. asynchronous boundary early. Keep the user-facing request loop strictly isolated from heavy compute tasks (such as background indexing or offline eval logging).
+      </div>
+
+      <h3>Phase 3: Deep Dive into AI Bottlenecks &amp; Scale (Minutes 22–37)</h3>
+      <p>
+        This is where Senior/Staff candidates shine. LLM inference has a unique characteristic:
+      </p>
+      <ul>
+        <li><strong>Prefill Phase (Prompt Processing):</strong> Compute-bound. Matrix multiplications across all prompt tokens happen simultaneously.</li>
+        <li><strong>Decode Phase (Token Generation):</strong> Memory-bandwidth bound. To generate a single new token, all 140GB of model weights (for a 70B FP16 model) and the KV cache must be loaded from GPU HBM into SRAM!</li>
+      </ul>
+      <p>
+        Here you introduce modern systems optimizations:
+      </p>
+      <ul>
+        <li><strong>Continuous (Iteration-Level) Batching:</strong> Dynamically inserting new requests into the forward pass as soon as existing ones finish, eliminating GPU idle time caused by static batching.</li>
+        <li><strong>PagedAttention (vLLM):</strong> Allocating KV cache in non-contiguous virtual memory blocks, eliminating internal fragmentation (which otherwise wastes up to 60–80% of GPU memory).</li>
+        <li><strong>Hybrid Retrieval:</strong> Combining sparse BM25 (keyword precision) with dense embeddings (semantic meaning) merged via Reciprocal Rank Fusion (RRF).</li>
+      </ul>
+
+      <h3>Phase 4: Operational Resilience &amp; Evals (Minutes 37–45)</h3>
+      <p>
+        Wrap up by showing production maturity:
+      </p>
+      <ul>
+        <li><strong>The Evaluation Flywheel:</strong> The "RAG Triad" (Context Relevance, Faithfulness, Answer Relevance) tracked via golden test sets and LLM-as-a-judge.</li>
+        <li><strong>Graceful Degradation:</strong> If GPU inference queues back up, fall back to a smaller distilled model (e.g., 8B instead of 70B) or serve semantic cache hits.</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="callout primary-source">
+        <strong class="title">Recommended Primary Source</strong>
+        <p>
+          Read <strong>Chapter 2: "Introduction to Machine Learning Systems Design"</strong> in Chip Huyen's <em>Designing Machine Learning Systems</em> (O'Reilly, 2022). It details how to frame business objectives into ML metrics and engineering SLAs.
+        </p>
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <div class="quiz-header">
+        <h3>Interactive Retrieval Practice</h3>
+        <p>Test your conceptual retention. Immediate automated feedback will be provided.</p>
+      </div>
+
+      <!-- Question 1 -->
+      <div class="quiz-question-box">
+        <div class="question-text">
+          1. What is the primary reason single-stream autoregressive LLM decoding is bottlenecked by GPU memory bandwidth rather than compute FLOPS?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="In autoregressive decoding, every single generated token requires transferring the entire multi-gigabyte model weights from High Bandwidth Memory (HBM) into compute registers. The arithmetic compute takes microseconds, but moving the weights takes milliseconds.">
+            Model weights must load from VRAM per generated token.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="During the token generation phase, matrix multiplication involves a vector-matrix product (batch size 1), which underutilizes tensor cores rather than overloading them.">
+            Matrix multiplication arithmetic units stay overloaded across long lengths.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="Vector database lookups happen once during the retrieval phase before generation begins; they do not recur on every generated token.">
+            Input prompt embeddings require constant network roundtrips to databases.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="Attention score calculation for a single token uses negligible floating-point operations relative to the hardware capacity of modern GPUs.">
+            Attention score calculation exceeds hardware tensor core floating capacity.
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="quiz-question-box">
+        <div class="question-text">
+          2. In a Senior AI System Design interview, what should you systematically establish during the opening five minutes?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="false" data-explanation="Jumping straight to model selection and training loss without clarifying constraints is the quintessential junior ML failure mode.">
+            Select specific open-source weights and fine-tuning loss functions.
+          </button>
+          <button class="option-btn" data-correct="true" data-explanation="Staff engineers first anchor the problem with clear requirements: QPS scale, latency targets (TTFT/TPOT), context length, and availability expectations before drafting architecture.">
+            Clarify traffic scale, latency SLAs, and context budgets.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="Vector indexing is an implementation detail belonging to Phase 2/3 deep-dives, not the opening requirements phase.">
+            Implement vector database index structures using hierarchical graphs.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="Prompt chains and guardrail mechanics belong to the component design phase once latency and functional boundaries are agreed upon.">
+            Write multi-agent prompt chains and deterministic guardrail regexes.
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="quiz-question-box">
+        <div class="question-text">
+          3. Why does production LLM serving rely on continuous (iteration-level) batching instead of standard naive batching?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Continuous batching operates at the iteration step. Completed requests immediately yield their slots and return results, while incoming requests are injected on the very next token iteration without waiting for the slowest sequence to finish.">
+            It allows requests to join and exit per iteration.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="Waiting for all sequences to produce EOS is naive batching, which causes massive GPU underutilization due to stragglers.">
+            It waits until all active sequences produce end-of-sequence tokens.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="AOT graph compilation is an orthogonal compiler optimization (e.g. torch.compile or TensorRT), not iteration-level batching.">
+            It compiles PyTorch graph computation ahead of runtime execution.
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="KV caches are still strictly necessary for autoregressive attention; continuous batching schedules their forward passes more efficiently.">
+            It completely eliminates the need for storing KV caches.
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <div class="quiz-score-bar">
+        <span>Score: <span class="current-score">0</span> / <span class="total-questions">3</span></span>
+        <span>Storage Strength Practice</span>
+      </div>
+    </section>
+
+    <div class="ask-agent-box">
+      <h4>💬 Continue Pair Learning With Your AI Coach</h4>
+      <p>
+        Try asking me in the chat right now:
+      </p>
+      <ul>
+        <li><em>"Let's do a mock back-of-the-envelope calculation: How much VRAM do we need for 50 concurrent requests on Llama 3 70B?"</em></li>
+        <li><em>"Can you explain why the Prefill phase is compute-bound while Decode is memory-bound in more detail?"</em></li>
+        <li><em>"Let's move on to Lesson 2: Sizing Memory, KV Cache, and Cluster Footprint."</em></li>
+      </ul>
+    </div>
+
+    <footer class="lesson-nav">
+      <span>← Previous: Course Inception</span>
+      <span><a href="../reference/ai-system-design-interview-framework.html">View Framework Reference ↗</a></span>
+      <span>Next: Lesson 0002 (Upcoming) →</span>
+    </footer>
+  </div>
+
+  <script src="../assets/quiz.js"></script>
+</body>
+</html>

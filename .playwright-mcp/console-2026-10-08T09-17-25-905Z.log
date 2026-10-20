@@ -1,0 +1,6 @@
+[     220ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920:0
+[  136819ms] [LOG] btn.onclick is function onclick(event) {
+toggleTheme()
+} @ :2
+[  205736ms] [LOG] toggleTheme called, total count: 1 @ :5
+[  205736ms] [LOG] toggleTheme called, total count: 2 @ :5

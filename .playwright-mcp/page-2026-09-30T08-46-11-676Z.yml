@@ -1,0 +1,556 @@
+- generic [ref=e4]:
+  - generic [ref=e698]:
+    - complementary [ref=e699]:
+      - button "Back to app" [ref=e701] [cursor=pointer]
+      - generic [ref=e703]:
+        - textbox "Search settings" [ref=e704]
+        - generic:
+          - generic:
+            - generic: Ctrl
+            - generic: +
+            - generic: F
+      - button "Onboarding checklist, 6 of 8 done. Show setup guide." [ref=e706] [cursor=pointer]:
+        - generic "6 of 8 setup steps complete" [ref=e707]
+        - generic [ref=e711]: Onboarding checklist
+      - generic [ref=e714]:
+        - generic [ref=e715]:
+          - paragraph [ref=e716]: AI Capabilities
+          - generic [ref=e717]:
+            - button "Agents" [active] [ref=e718] [cursor=pointer]
+            - button "AI Provider Accounts Optional" [ref=e723] [cursor=pointer]:
+              - generic [ref=e736]: AI Provider Accounts
+              - generic [ref=e737]: Optional
+            - button "Orchestration" [ref=e738] [cursor=pointer]
+        - generic [ref=e745]:
+          - paragraph [ref=e746]: Set Up
+          - generic [ref=e747]:
+            - button "General" [ref=e748] [cursor=pointer]
+            - button "Integrations" [ref=e751] [cursor=pointer]
+        - generic [ref=e756]:
+          - paragraph [ref=e757]: Workflows
+          - generic [ref=e758]:
+            - button "Automations" [ref=e759] [cursor=pointer]
+            - button "Artifacts Beta" [ref=e765] [cursor=pointer]:
+              - generic [ref=e770]: Artifacts
+              - generic [ref=e771]: Beta
+            - button "Share Skills Beta" [ref=e772] [cursor=pointer]:
+              - generic [ref=e775]: Share Skills
+              - generic [ref=e776]: Beta
+            - button "Git & Source Control" [ref=e777] [cursor=pointer]
+            - button "Task Sources" [ref=e783] [cursor=pointer]
+            - button "Terminal" [ref=e788] [cursor=pointer]
+            - button "Quick Commands" [ref=e793] [cursor=pointer]
+            - button "Floating Workspace" [ref=e797] [cursor=pointer]
+        - generic [ref=e801]:
+          - paragraph [ref=e802]: Interface
+          - generic [ref=e803]:
+            - button "Appearance" [ref=e804] [cursor=pointer]
+            - button "Input & Editing" [ref=e812] [cursor=pointer]
+            - button "Shortcuts" [ref=e819] [cursor=pointer]
+            - button "Stats & Usage" [ref=e823] [cursor=pointer]
+        - generic [ref=e827]:
+          - paragraph [ref=e828]: Remote Hosts
+          - button "Remote Orca Servers Beta" [ref=e830] [cursor=pointer]:
+            - generic [ref=e834]: Remote Orca Servers
+            - generic [ref=e835]: Beta
+        - generic [ref=e836]:
+          - paragraph [ref=e837]: Privacy & Security
+          - button "Privacy & Telemetry" [ref=e839] [cursor=pointer]
+        - generic [ref=e844]:
+          - paragraph [ref=e845]: Experimental
+          - button "Experimental" [ref=e847] [cursor=pointer]
+        - generic [ref=e851]:
+          - paragraph [ref=e852]: Projects
+          - generic [ref=e853]:
+            - button "Portofolio" [ref=e854] [cursor=pointer]
+            - button "IDX-notifier" [ref=e857] [cursor=pointer]
+            - button "Med-Journal-Helper" [ref=e860] [cursor=pointer]
+            - button "coursera-mcp-server" [ref=e863] [cursor=pointer]
+            - button "Blogs" [ref=e866] [cursor=pointer]
+            - button "learnings" [ref=e869] [cursor=pointer]
+            - button "IDXClaw" [ref=e872] [cursor=pointer]
+            - button "AI-nimate" [ref=e875] [cursor=pointer]
+            - button "Roblox-mcp-dev" [ref=e878] [cursor=pointer]
+            - button "Oracle-A1-VM-Snatcher" [ref=e881] [cursor=pointer]
+            - button "tradingagents-validation" [ref=e884] [cursor=pointer]
+            - button "shopee-indonesia-mcp" [ref=e887] [cursor=pointer]
+            - button "tokopedia-mcp" [ref=e890] [cursor=pointer]
+            - button "facebook-marketplace-mcp" [ref=e893] [cursor=pointer]
+            - button "IBM-hackathon" [ref=e896] [cursor=pointer]
+            - button "lablab-mcp" [ref=e899] [cursor=pointer]
+    - generic [ref=e1160]:
+      - generic [ref=e1162]:
+        - heading "Agents" [level=2] [ref=e1163]
+        - paragraph [ref=e1164]: Manage AI agents, set a default, and customize commands.
+      - generic [ref=e1166]:
+        - generic [ref=e1167]:
+          - generic [ref=e1169]:
+            - heading "Default Agent" [level=3] [ref=e1170]
+            - paragraph [ref=e1171]: Default agent, command overrides, CLI arguments, and launch environment are client preferences. SSH and remote server launches still validate host availability at run time.
+          - generic [ref=e1172]:
+            - button "Auto" [pressed] [ref=e1173] [cursor=pointer]
+            - button "No agent (blank terminal)" [ref=e1176] [cursor=pointer]
+            - button "OpenCode" [ref=e1179] [cursor=pointer]
+            - button "Antigravity" [ref=e1183] [cursor=pointer]
+            - button "Kiro" [ref=e1185] [cursor=pointer]
+            - button "IBM Bob" [ref=e1187] [cursor=pointer]
+            - button "Antigravity-2" [ref=e1189] [cursor=pointer]
+            - button "Antigravity-3" [ref=e1191] [cursor=pointer]
+        - generic [ref=e1194]:
+          - generic [ref=e1195]:
+            - generic [ref=e1196]: Agent status hooks
+            - paragraph [ref=e1197]: Shows working, waiting, and done states in Orca. Turn off to remove Orca-managed hooks and stop reinstalling them.
+          - switch "Agent status hooks" [checked] [ref=e1199] [cursor=pointer]
+        - generic [ref=e1201]:
+          - generic [ref=e1202]:
+            - generic [ref=e1203]: Auto-generate tab titles
+            - paragraph [ref=e1204]: Derive short stable tab names from the first known agent prompt. Manual renames always win.
+          - switch "Auto-generate tab titles" [ref=e1206] [cursor=pointer]
+        - generic [ref=e1207]:
+          - generic [ref=e1209]:
+            - heading "Prompt Cache Timer" [level=3] [ref=e1210]
+            - paragraph [ref=e1211]: Claude caches your conversation to reduce costs. When idle too long the cache expires and the next message resends full context at higher cost. This shows a countdown so you know when to resume.
+          - generic [ref=e1212]:
+            - generic [ref=e1213]:
+              - generic [ref=e1214]: Cache Timer
+              - paragraph [ref=e1219]: Show a countdown in the sidebar after a Claude agent becomes idle.
+            - switch "Cache Timer" [ref=e1220] [cursor=pointer]
+        - generic [ref=e1222]:
+          - generic [ref=e1223]:
+            - heading [level=3] [ref=e1224]:
+              - generic [ref=e1225]:
+                - text: Agent Permissions
+                - button "Agent permissions info" [ref=e1226] [cursor=pointer]
+            - paragraph [ref=e1229]: Choose whether Orca launches agents with fewer permission prompts or with manual checks.
+          - radiogroup "Agent Permissions" [ref=e1231]:
+            - radio "Yolo" [checked] [ref=e1232] [cursor=pointer]
+            - radio "Manual" [ref=e1233] [cursor=pointer]
+        - generic [ref=e1234]:
+          - generic [ref=e1235]:
+            - heading "Installed 6 detected" [level=3] [ref=e1237]:
+              - generic [ref=e1238]:
+                - text: Installed
+                - generic [ref=e1239]: 6 detected
+            - button "Refresh" [ref=e1241] [cursor=pointer]
+          - generic [ref=e1242]:
+            - generic [ref=e1244]:
+              - generic [ref=e1249]:
+                - generic [ref=e1250]: OpenCode
+                - generic [ref=e1252]: opencode
+              - generic [ref=e1253]:
+                - radiogroup "OpenCode availability" [ref=e1254]:
+                  - radio "Enabled" [checked] [ref=e1255] [cursor=pointer]
+                  - radio "Disabled" [ref=e1256] [cursor=pointer]
+                - button "Set default" [ref=e1258] [cursor=pointer]
+                - link "Docs" [ref=e1259] [cursor=pointer]:
+                  - /url: https://opencode.ai/docs/cli/
+                - button "Expand command override" [ref=e1265] [cursor=pointer]
+            - generic [ref=e1267]:
+              - generic [ref=e1270]:
+                - generic [ref=e1271]: Antigravity
+                - generic [ref=e1273]: agy--dangerously-skip-permissions
+              - generic [ref=e1274]:
+                - radiogroup "Antigravity availability" [ref=e1275]:
+                  - radio "Enabled" [checked] [ref=e1276] [cursor=pointer]
+                  - radio "Disabled" [ref=e1277] [cursor=pointer]
+                - button "Set default" [ref=e1279] [cursor=pointer]
+                - link "Docs" [ref=e1280] [cursor=pointer]:
+                  - /url: https://antigravity.google/docs/cli-overview
+                - button "Expand command override" [ref=e1286] [cursor=pointer]
+            - generic [ref=e1288]:
+              - generic [ref=e1291]:
+                - generic [ref=e1292]: Kiro
+                - generic [ref=e1294]: kiro-cli--trust-all-tools
+              - generic [ref=e1295]:
+                - radiogroup "Kiro availability" [ref=e1296]:
+                  - radio "Enabled" [checked] [ref=e1297] [cursor=pointer]
+                  - radio "Disabled" [ref=e1298] [cursor=pointer]
+                - button "Set default" [ref=e1300] [cursor=pointer]
+                - link "Docs" [ref=e1301] [cursor=pointer]:
+                  - /url: https://kiro.dev/docs/cli/
+                - button "Expand command override" [ref=e1307] [cursor=pointer]
+            - generic [ref=e1309]:
+              - generic [ref=e1312]:
+                - generic [ref=e1313]: IBM Bob
+                - generic [ref=e1315]: bob
+              - generic [ref=e1316]:
+                - radiogroup "IBM Bob availability" [ref=e1317]:
+                  - radio "Enabled" [checked] [ref=e1318] [cursor=pointer]
+                  - radio "Disabled" [ref=e1319] [cursor=pointer]
+                - button "Set default" [ref=e1321] [cursor=pointer]
+                - link "Docs" [ref=e1322] [cursor=pointer]:
+                  - /url: https://bob.ibm.com
+                - button "Expand command override" [ref=e1328] [cursor=pointer]
+            - generic [ref=e1330]:
+              - generic [ref=e1333]:
+                - generic [ref=e1334]: Antigravity-2
+                - generic [ref=e1336]: agy2
+              - generic [ref=e1337]:
+                - radiogroup "Antigravity-2 availability" [ref=e1338]:
+                  - radio "Enabled" [checked] [ref=e1339] [cursor=pointer]
+                  - radio "Disabled" [ref=e1340] [cursor=pointer]
+                - button "Set default" [ref=e1342] [cursor=pointer]
+                - link "Docs" [ref=e1343] [cursor=pointer]:
+                  - /url: https://antigravity.google/docs/cli-overview
+                - button "Expand command override" [ref=e1349] [cursor=pointer]
+            - generic [ref=e1351]:
+              - generic [ref=e1354]:
+                - generic [ref=e1355]: Antigravity-3
+                - generic [ref=e1357]: agy3
+              - generic [ref=e1358]:
+                - radiogroup "Antigravity-3 availability" [ref=e1359]:
+                  - radio "Enabled" [checked] [ref=e1360] [cursor=pointer]
+                  - radio "Disabled" [ref=e1361] [cursor=pointer]
+                - button "Set default" [ref=e1363] [cursor=pointer]
+                - link "Docs" [ref=e1364] [cursor=pointer]:
+                  - /url: https://antigravity.google/docs/cli-overview
+                - button "Expand command override" [ref=e1370] [cursor=pointer]
+        - generic [ref=e1371]:
+          - heading "Available to install 33 agents" [level=3] [ref=e1374]:
+            - generic [ref=e1375]:
+              - text: Available to install
+              - generic [ref=e1376]: 33 agents
+          - generic [ref=e1377]:
+            - generic [ref=e1379]:
+              - generic [ref=e1383]:
+                - generic [ref=e1384]: Claude
+                - generic [ref=e1386]: claude--dangerously-skip-permissions
+              - generic [ref=e1387]:
+                - radiogroup "Claude availability" [ref=e1388]:
+                  - radio "Enabled" [checked] [ref=e1389] [cursor=pointer]
+                  - radio "Disabled" [ref=e1390] [cursor=pointer]
+                - link "Install" [ref=e1391] [cursor=pointer]:
+                  - /url: https://code.claude.com/docs
+            - generic [ref=e1398]:
+              - generic [ref=e1402]:
+                - generic [ref=e1403]: Claude Agent Teams
+                - generic [ref=e1405]: orca-ide claude-teams--dangerously-skip-permissions
+              - generic [ref=e1406]:
+                - radiogroup "Claude Agent Teams availability" [ref=e1407]:
+                  - radio "Enabled" [checked] [ref=e1408] [cursor=pointer]
+                  - radio "Disabled" [ref=e1409] [cursor=pointer]
+                - link "Install" [ref=e1410] [cursor=pointer]:
+                  - /url: https://code.claude.com/docs/en/agent-teams
+            - generic [ref=e1417]:
+              - generic [ref=e1420]:
+                - generic [ref=e1421]: OpenClaude
+                - generic [ref=e1423]: openclaude--dangerously-skip-permissions
+              - generic [ref=e1424]:
+                - radiogroup "OpenClaude availability" [ref=e1425]:
+                  - radio "Enabled" [checked] [ref=e1426] [cursor=pointer]
+                  - radio "Disabled" [ref=e1427] [cursor=pointer]
+                - link "Install" [ref=e1428] [cursor=pointer]:
+                  - /url: https://openclaude.gitlawb.com/
+            - generic [ref=e1435]:
+              - generic [ref=e1439]:
+                - generic [ref=e1440]: Codex
+                - generic [ref=e1442]: codex--dangerously-bypass-approvals-and-sandbox
+              - generic [ref=e1443]:
+                - radiogroup "Codex availability" [ref=e1444]:
+                  - radio "Enabled" [checked] [ref=e1445] [cursor=pointer]
+                  - radio "Disabled" [ref=e1446] [cursor=pointer]
+                - link "Install" [ref=e1447] [cursor=pointer]:
+                  - /url: https://github.com/openai/codex
+            - generic [ref=e1454]:
+              - generic [ref=e1457]:
+                - generic [ref=e1458]: Grok
+                - generic [ref=e1460]: grok--permission-mode bypassPermissions
+              - generic [ref=e1461]:
+                - radiogroup "Grok availability" [ref=e1462]:
+                  - radio "Enabled" [checked] [ref=e1463] [cursor=pointer]
+                  - radio "Disabled" [ref=e1464] [cursor=pointer]
+                - link "Install" [ref=e1465] [cursor=pointer]:
+                  - /url: https://x.ai/cli
+            - generic [ref=e1472]:
+              - generic [ref=e1477]:
+                - generic [ref=e1478]: GitHub Copilot
+                - generic [ref=e1480]: copilot--yolo
+              - generic [ref=e1481]:
+                - radiogroup "GitHub Copilot availability" [ref=e1482]:
+                  - radio "Enabled" [checked] [ref=e1483] [cursor=pointer]
+                  - radio "Disabled" [ref=e1484] [cursor=pointer]
+                - link "Install" [ref=e1485] [cursor=pointer]:
+                  - /url: https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-cli
+            - generic [ref=e1492]:
+              - generic [ref=e1495]:
+                - generic [ref=e1496]: MiMo Code
+                - generic [ref=e1498]: mimo
+              - generic [ref=e1499]:
+                - radiogroup "MiMo Code availability" [ref=e1500]:
+                  - radio "Enabled" [checked] [ref=e1501] [cursor=pointer]
+                  - radio "Disabled" [ref=e1502] [cursor=pointer]
+                - link "Install" [ref=e1503] [cursor=pointer]:
+                  - /url: https://mimo.xiaomi.com/coder
+            - generic [ref=e1510]:
+              - generic [ref=e1513]:
+                - generic [ref=e1514]: Ante
+                - generic [ref=e1516]: ante--yolo
+              - generic [ref=e1517]:
+                - radiogroup "Ante availability" [ref=e1518]:
+                  - radio "Enabled" [checked] [ref=e1519] [cursor=pointer]
+                  - radio "Disabled" [ref=e1520] [cursor=pointer]
+                - link "Install" [ref=e1521] [cursor=pointer]:
+                  - /url: https://github.com/AntigmaLabs/ante-preview
+            - generic [ref=e1528]:
+              - generic [ref=e1531]:
+                - generic [ref=e1532]: Trae
+                - generic [ref=e1534]: traecli--yolo
+              - generic [ref=e1535]:
+                - radiogroup "Trae availability" [ref=e1536]:
+                  - radio "Enabled" [checked] [ref=e1537] [cursor=pointer]
+                  - radio "Disabled" [ref=e1538] [cursor=pointer]
+                - link "Install" [ref=e1539] [cursor=pointer]:
+                  - /url: https://docs.trae.cn/cli_get-started-with-trae-cli
+            - generic [ref=e1546]:
+              - generic [ref=e1551]:
+                - generic [ref=e1552]: Pi
+                - generic [ref=e1554]: pi
+              - generic [ref=e1555]:
+                - radiogroup "Pi availability" [ref=e1556]:
+                  - radio "Enabled" [checked] [ref=e1557] [cursor=pointer]
+                  - radio "Disabled" [ref=e1558] [cursor=pointer]
+                - link "Install" [ref=e1559] [cursor=pointer]:
+                  - /url: https://pi.dev
+            - generic [ref=e1566]:
+              - generic [ref=e1570]:
+                - generic [ref=e1571]: OMP
+                - generic [ref=e1573]: omp
+              - generic [ref=e1574]:
+                - radiogroup "OMP availability" [ref=e1575]:
+                  - radio "Enabled" [checked] [ref=e1576] [cursor=pointer]
+                  - radio "Disabled" [ref=e1577] [cursor=pointer]
+                - link "Install" [ref=e1578] [cursor=pointer]:
+                  - /url: https://omp.sh
+            - generic [ref=e1585]:
+              - generic [ref=e1588]:
+                - generic [ref=e1589]: Prime Agent
+                - generic [ref=e1591]: prime-agent
+              - generic [ref=e1592]:
+                - radiogroup "Prime Agent availability" [ref=e1593]:
+                  - radio "Enabled" [checked] [ref=e1594] [cursor=pointer]
+                  - radio "Disabled" [ref=e1595] [cursor=pointer]
+                - link "Install" [ref=e1596] [cursor=pointer]:
+                  - /url: https://github.com/PrimeIntellect-ai/prime-agent
+            - generic [ref=e1603]:
+              - generic [ref=e1606]:
+                - generic [ref=e1607]: Gemini
+                - generic [ref=e1609]: gemini--yolo
+              - generic [ref=e1610]:
+                - radiogroup "Gemini availability" [ref=e1611]:
+                  - radio "Enabled" [checked] [ref=e1612] [cursor=pointer]
+                  - radio "Disabled" [ref=e1613] [cursor=pointer]
+                - link "Install" [ref=e1614] [cursor=pointer]:
+                  - /url: https://github.com/google-gemini/gemini-cli
+            - generic [ref=e1621]:
+              - generic [ref=e1627]:
+                - generic [ref=e1628]: Aider
+                - generic [ref=e1630]: aider--yes-always
+              - generic [ref=e1631]:
+                - radiogroup "Aider availability" [ref=e1632]:
+                  - radio "Enabled" [checked] [ref=e1633] [cursor=pointer]
+                  - radio "Disabled" [ref=e1634] [cursor=pointer]
+                - link "Install" [ref=e1635] [cursor=pointer]:
+                  - /url: https://aider.chat/docs/
+            - generic [ref=e1642]:
+              - generic [ref=e1645]:
+                - generic [ref=e1646]: Goose
+                - generic [ref=e1648]: gooseGOOSE_MODE=auto
+              - generic [ref=e1649]:
+                - radiogroup "Goose availability" [ref=e1650]:
+                  - radio "Enabled" [checked] [ref=e1651] [cursor=pointer]
+                  - radio "Disabled" [ref=e1652] [cursor=pointer]
+                - link "Install" [ref=e1653] [cursor=pointer]:
+                  - /url: https://block.github.io/goose/docs/quickstart/
+            - generic [ref=e1660]:
+              - generic [ref=e1663]:
+                - generic [ref=e1664]: Amp
+                - generic [ref=e1666]: amp--dangerously-allow-all
+              - generic [ref=e1667]:
+                - radiogroup "Amp availability" [ref=e1668]:
+                  - radio "Enabled" [checked] [ref=e1669] [cursor=pointer]
+                  - radio "Disabled" [ref=e1670] [cursor=pointer]
+                - link "Install" [ref=e1671] [cursor=pointer]:
+                  - /url: https://ampcode.com/manual#install
+            - generic [ref=e1678]:
+              - generic [ref=e1683]:
+                - generic [ref=e1684]: Kilocode
+                - generic [ref=e1686]: kilo
+              - generic [ref=e1687]:
+                - radiogroup "Kilocode availability" [ref=e1688]:
+                  - radio "Enabled" [checked] [ref=e1689] [cursor=pointer]
+                  - radio "Disabled" [ref=e1690] [cursor=pointer]
+                - link "Install" [ref=e1691] [cursor=pointer]:
+                  - /url: https://kilo.ai/docs/cli
+            - generic [ref=e1698]:
+              - generic [ref=e1701]:
+                - generic [ref=e1702]: Charm
+                - generic [ref=e1704]: crush--yolo
+              - generic [ref=e1705]:
+                - radiogroup "Charm availability" [ref=e1706]:
+                  - radio "Enabled" [checked] [ref=e1707] [cursor=pointer]
+                  - radio "Disabled" [ref=e1708] [cursor=pointer]
+                - link "Install" [ref=e1709] [cursor=pointer]:
+                  - /url: https://github.com/charmbracelet/crush
+            - generic [ref=e1716]:
+              - generic [ref=e1719]:
+                - generic [ref=e1720]: Auggie
+                - generic [ref=e1722]: auggie
+              - generic [ref=e1723]:
+                - radiogroup "Auggie availability" [ref=e1724]:
+                  - radio "Enabled" [checked] [ref=e1725] [cursor=pointer]
+                  - radio "Disabled" [ref=e1726] [cursor=pointer]
+                - link "Install" [ref=e1727] [cursor=pointer]:
+                  - /url: https://docs.augmentcode.com/cli/overview
+            - generic [ref=e1734]:
+              - generic [ref=e1737]:
+                - generic [ref=e1738]: Autohand Code
+                - generic [ref=e1740]: autohand--unrestricted
+              - generic [ref=e1741]:
+                - radiogroup "Autohand Code availability" [ref=e1742]:
+                  - radio "Enabled" [checked] [ref=e1743] [cursor=pointer]
+                  - radio "Disabled" [ref=e1744] [cursor=pointer]
+                - link "Install" [ref=e1745] [cursor=pointer]:
+                  - /url: https://github.com/autohandai/code-cli
+            - generic [ref=e1752]:
+              - generic [ref=e1755]:
+                - generic [ref=e1756]: Cline
+                - generic [ref=e1758]: cline--auto-approve true
+              - generic [ref=e1759]:
+                - radiogroup "Cline availability" [ref=e1760]:
+                  - radio "Enabled" [checked] [ref=e1761] [cursor=pointer]
+                  - radio "Disabled" [ref=e1762] [cursor=pointer]
+                - link "Install" [ref=e1763] [cursor=pointer]:
+                  - /url: https://docs.cline.bot/cline-cli/overview
+            - generic [ref=e1770]:
+              - generic [ref=e1773]:
+                - generic [ref=e1774]: Codebuff
+                - generic [ref=e1776]: codebuff
+              - generic [ref=e1777]:
+                - radiogroup "Codebuff availability" [ref=e1778]:
+                  - radio "Enabled" [checked] [ref=e1779] [cursor=pointer]
+                  - radio "Disabled" [ref=e1780] [cursor=pointer]
+                - link "Install" [ref=e1781] [cursor=pointer]:
+                  - /url: https://www.codebuff.com/docs/help/quick-start
+            - generic [ref=e1788]:
+              - generic [ref=e1791]:
+                - generic [ref=e1792]: Command Code
+                - generic [ref=e1794]: command-code--yolo
+              - generic [ref=e1795]:
+                - radiogroup "Command Code availability" [ref=e1796]:
+                  - radio "Enabled" [checked] [ref=e1797] [cursor=pointer]
+                  - radio "Disabled" [ref=e1798] [cursor=pointer]
+                - link "Install" [ref=e1799] [cursor=pointer]:
+                  - /url: https://commandcode.ai/docs/quickstart
+            - generic [ref=e1806]:
+              - generic [ref=e1809]:
+                - generic [ref=e1810]: Continue
+                - generic [ref=e1812]: cn--allow "*"
+              - generic [ref=e1813]:
+                - radiogroup "Continue availability" [ref=e1814]:
+                  - radio "Enabled" [checked] [ref=e1815] [cursor=pointer]
+                  - radio "Disabled" [ref=e1816] [cursor=pointer]
+                - link "Install" [ref=e1817] [cursor=pointer]:
+                  - /url: https://docs.continue.dev/guides/cli
+            - generic [ref=e1824]:
+              - generic [ref=e1827]:
+                - generic [ref=e1828]: Cursor
+                - generic [ref=e1830]: cursor-agent--yolo
+              - generic [ref=e1831]:
+                - radiogroup "Cursor availability" [ref=e1832]:
+                  - radio "Enabled" [checked] [ref=e1833] [cursor=pointer]
+                  - radio "Disabled" [ref=e1834] [cursor=pointer]
+                - link "Install" [ref=e1835] [cursor=pointer]:
+                  - /url: https://cursor.com/cli
+            - generic [ref=e1842]:
+              - generic [ref=e1848]:
+                - generic [ref=e1849]: Droid
+                - generic [ref=e1851]: droid--auto high
+              - generic [ref=e1852]:
+                - radiogroup "Droid availability" [ref=e1853]:
+                  - radio "Enabled" [checked] [ref=e1854] [cursor=pointer]
+                  - radio "Disabled" [ref=e1855] [cursor=pointer]
+                - link "Install" [ref=e1856] [cursor=pointer]:
+                  - /url: https://docs.factory.ai/cli/getting-started/quickstart
+            - generic [ref=e1863]:
+              - generic [ref=e1866]:
+                - generic [ref=e1867]: Kimi
+                - generic [ref=e1869]: kimi--yolo
+              - generic [ref=e1870]:
+                - radiogroup "Kimi availability" [ref=e1871]:
+                  - radio "Enabled" [checked] [ref=e1872] [cursor=pointer]
+                  - radio "Disabled" [ref=e1873] [cursor=pointer]
+                - link "Install" [ref=e1874] [cursor=pointer]:
+                  - /url: https://www.kimi.com/code/docs/en/kimi-code-cli/getting-started.html
+            - generic [ref=e1881]:
+              - generic [ref=e1884]:
+                - generic [ref=e1885]: Mistral Vibe
+                - generic [ref=e1887]: vibe--agent auto-approve
+              - generic [ref=e1888]:
+                - radiogroup "Mistral Vibe availability" [ref=e1889]:
+                  - radio "Enabled" [checked] [ref=e1890] [cursor=pointer]
+                  - radio "Disabled" [ref=e1891] [cursor=pointer]
+                - link "Install" [ref=e1892] [cursor=pointer]:
+                  - /url: https://github.com/mistralai/mistral-vibe
+            - generic [ref=e1899]:
+              - generic [ref=e1902]:
+                - generic [ref=e1903]: Qwen Code
+                - generic [ref=e1905]: qwen--approval-mode yolo
+              - generic [ref=e1906]:
+                - radiogroup "Qwen Code availability" [ref=e1907]:
+                  - radio "Enabled" [checked] [ref=e1908] [cursor=pointer]
+                  - radio "Disabled" [ref=e1909] [cursor=pointer]
+                - link "Install" [ref=e1910] [cursor=pointer]:
+                  - /url: https://github.com/QwenLM/qwen-code
+            - generic [ref=e1917]:
+              - generic [ref=e1920]:
+                - generic [ref=e1921]: Rovo Dev
+                - generic [ref=e1923]: rovo--yolo
+              - generic [ref=e1924]:
+                - radiogroup "Rovo Dev availability" [ref=e1925]:
+                  - radio "Enabled" [checked] [ref=e1926] [cursor=pointer]
+                  - radio "Disabled" [ref=e1927] [cursor=pointer]
+                - link "Install" [ref=e1928] [cursor=pointer]:
+                  - /url: https://support.atlassian.com/rovo/docs/install-and-run-rovo-dev-cli-on-your-device/
+            - generic [ref=e1935]:
+              - generic [ref=e1938]:
+                - generic [ref=e1939]: Hermes
+                - generic [ref=e1941]: hermes--yolo
+              - generic [ref=e1942]:
+                - radiogroup "Hermes availability" [ref=e1943]:
+                  - radio "Enabled" [checked] [ref=e1944] [cursor=pointer]
+                  - radio "Disabled" [ref=e1945] [cursor=pointer]
+                - link "Install" [ref=e1946] [cursor=pointer]:
+                  - /url: https://hermes-agent.nousresearch.com/docs/
+            - generic [ref=e1953]:
+              - generic [ref=e1956]:
+                - generic [ref=e1957]: Devin
+                - generic [ref=e1959]: devin--permission-mode bypass
+              - generic [ref=e1960]:
+                - radiogroup "Devin availability" [ref=e1961]:
+                  - radio "Enabled" [checked] [ref=e1962] [cursor=pointer]
+                  - radio "Disabled" [ref=e1963] [cursor=pointer]
+                - link "Install" [ref=e1964] [cursor=pointer]:
+                  - /url: https://devin.ai/cli
+            - generic [ref=e1971]:
+              - generic [ref=e1974]:
+                - generic [ref=e1975]: OpenClaw
+                - generic [ref=e1977]: openclaw
+              - generic [ref=e1978]:
+                - radiogroup "OpenClaw availability" [ref=e1979]:
+                  - radio "Enabled" [checked] [ref=e1980] [cursor=pointer]
+                  - radio "Disabled" [ref=e1981] [cursor=pointer]
+                - link "Install" [ref=e1982] [cursor=pointer]:
+                  - /url: https://github.com/openclaw/openclaw
+  - generic [ref=e517]:
+    - button "Refresh rate limits" [ref=e519] [cursor=pointer]
+    - generic [ref=e525]:
+      - button "Resource Manager, 0 terminal sessions" [ref=e526] [cursor=pointer]:
+        - generic [ref=e529]: 0 KB
+        - generic [ref=e530]: ·
+        - generic [ref=e533]: "0"
+      - button "Ports, 3 workspace ports" [ref=e534] [cursor=pointer]:
+        - generic [ref=e537]: "3"
+      - button "Remote host connection status" [ref=e538] [cursor=pointer]:
+        - generic [ref=e539]: 1 host
+    - button [aria-hidden]
+  - region "Notifications alt+T"

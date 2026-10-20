@@ -1,0 +1,245 @@
+- generic [ref=e4]:
+  - generic [ref=e7]:
+    - generic [ref=e1840]:
+      - generic [ref=e1842]:
+        - generic [ref=e1843]:
+          - generic "Orca" [ref=e1844] [cursor=pointer]
+          - button "Toggle sidebar" [ref=e1846] [cursor=pointer]
+        - generic [ref=e1849]:
+          - button "Go back" [disabled] [ref=e1850]
+          - button "Go forward" [disabled] [ref=e1853]
+      - generic [ref=e1857]:
+        - generic [ref=e1858]:
+          - button "Search worktrees and browser tabs" [ref=e1859] [cursor=pointer]:
+            - generic [ref=e1863]: Search
+          - button "6 of 8 setup steps complete Onboarding checklist" [ref=e1864] [cursor=pointer]:
+            - generic "6 of 8 setup steps complete" [ref=e1865]
+            - generic [ref=e1869]: Onboarding checklist
+          - generic [ref=e1871]:
+            - button "Tasks" [ref=e1872] [cursor=pointer]
+            - generic:
+              - button "Open GitHub tasks"
+              - button "Open Jira tasks"
+          - button "Automations" [ref=e1875] [cursor=pointer]
+          - button "Orca Mobile New" [ref=e1882] [cursor=pointer]:
+            - generic [ref=e1885]: Orca Mobile
+            - generic [ref=e1886]: New
+        - generic [ref=e1887]:
+          - generic [ref=e1888]: Projects
+          - generic [ref=e1890]:
+            - button "Workspace options" [ref=e1891] [cursor=pointer]
+            - button "Add Project" [ref=e1892] [cursor=pointer]
+            - button "New workspace" [ref=e1893] [cursor=pointer]
+        - listbox "Worktrees" [ref=e1895]:
+          - button "Portofolio Project actions for Portofolio Create new worktree for Portofolio" [expanded] [ref=e1896]:
+            - generic [ref=e1897]: Portofolio
+            - generic:
+              - button "Project actions for Portofolio"
+              - button "Create new worktree for Portofolio"
+          - generic [ref=e2505]:
+            - button "thresher Setting up your workspace…" [ref=e2506] [cursor=pointer]:
+              - generic [ref=e2510]:
+                - generic [ref=e2511]: thresher
+                - generic [ref=e2512]: Setting up your workspace…
+            - button "Cancel worktree creation" [ref=e2513] [cursor=pointer]
+          - option "Mark as unread Inactive main primary main" [ref=e1903]:
+            - generic [ref=e1904]:
+              - generic [ref=e1906] [cursor=pointer]:
+                - generic [ref=e1907]:
+                  - button "Mark as unread" [ref=e1908]
+                  - generic [ref=e1914]: Inactive
+                - generic [ref=e1916]:
+                  - generic [ref=e1918]:
+                    - generic [ref=e1923]: main
+                    - generic [ref=e1924]: primary
+                  - generic [ref=e1925]: main
+              - button [aria-hidden]
+          - button "IDX-notifier Project actions for IDX-notifier Create new worktree for IDX-notifier" [expanded] [ref=e1928]:
+            - generic [ref=e1929]: IDX-notifier
+            - generic:
+              - button "Project actions for IDX-notifier"
+              - button "Create new worktree for IDX-notifier"
+          - option "Mark as unread Inactive main primary main" [ref=e1935]:
+            - generic [ref=e1936]:
+              - generic [ref=e1938] [cursor=pointer]:
+                - generic [ref=e1939]:
+                  - button "Mark as unread" [ref=e1940]
+                  - generic [ref=e1946]: Inactive
+                - generic [ref=e1948]:
+                  - generic [ref=e1950]:
+                    - generic [ref=e1955]: main
+                    - generic [ref=e1956]: primary
+                  - generic [ref=e1957]: main
+              - button [aria-hidden]
+          - button "Med-Journal-Helper Project actions for Med-Journal-Helper Create new worktree for Med-Journal-Helper" [expanded] [ref=e1960]:
+            - generic [ref=e1961]: Med-Journal-Helper
+            - generic:
+              - button "Project actions for Med-Journal-Helper"
+              - button "Create new worktree for Med-Journal-Helper"
+          - option "Mark as unread Inactive main primary main" [ref=e1967]:
+            - generic [ref=e1968]:
+              - generic [ref=e1970] [cursor=pointer]:
+                - generic [ref=e1971]:
+                  - button "Mark as unread" [ref=e1972]
+                  - generic [ref=e1978]: Inactive
+                - generic [ref=e1980]:
+                  - generic [ref=e1982]:
+                    - generic [ref=e1987]: main
+                    - generic [ref=e1988]: primary
+                  - generic [ref=e1989]: main
+              - button [aria-hidden]
+          - button "coursera-mcp-server Project actions for coursera-mcp-server Create new worktree for coursera-mcp-server" [expanded] [ref=e1992]:
+            - generic [ref=e1993]: coursera-mcp-server
+            - generic:
+              - button "Project actions for coursera-mcp-server"
+              - button "Create new worktree for coursera-mcp-server"
+          - option "Mark as unread Inactive main primary main" [ref=e1999]:
+            - generic [ref=e2000]:
+              - generic [ref=e2002] [cursor=pointer]:
+                - generic [ref=e2003]:
+                  - button "Mark as unread" [ref=e2004]
+                  - generic [ref=e2010]: Inactive
+                - generic [ref=e2012]:
+                  - generic [ref=e2014]:
+                    - generic [ref=e2019]: main
+                    - generic [ref=e2020]: primary
+                  - generic [ref=e2021]: main
+              - button [aria-hidden]
+          - button "Blogs Project actions for Blogs Create new worktree for Blogs" [expanded] [ref=e2024]:
+            - generic [ref=e2025]: Blogs
+            - generic:
+              - button "Project actions for Blogs"
+              - button "Create new worktree for Blogs"
+          - option "Mark as unread Inactive main primary main" [ref=e2031]:
+            - generic [ref=e2032]:
+              - generic [ref=e2034] [cursor=pointer]:
+                - generic [ref=e2035]:
+                  - button "Mark as unread" [ref=e2036]
+                  - generic [ref=e2042]: Inactive
+                - generic [ref=e2044]:
+                  - generic [ref=e2046]:
+                    - generic [ref=e2051]: main
+                    - generic [ref=e2052]: primary
+                  - generic [ref=e2053]: main
+              - button [aria-hidden]
+          - button "learnings Project actions for learnings Create new worktree for learnings" [expanded] [ref=e2056]:
+            - generic [ref=e2057]: learnings
+            - generic:
+              - button "Project actions for learnings"
+              - button "Create new worktree for learnings"
+          - 'option "Mark as read Active Unread: main primary main 3 live ports Agents" [ref=e2349]':
+            - generic [ref=e2064]:
+              - generic [ref=e2066] [cursor=pointer]:
+                - generic [ref=e2067]:
+                  - button "Mark as read" [ref=e2068]
+                  - generic [ref=e2071]: Active
+                - generic [ref=e2072]:
+                  - generic [ref=e2073]:
+                    - generic [ref=e2075]:
+                      - generic [ref=e2080]:
+                        - generic [ref=e2081]: "Unread:"
+                        - text: main
+                      - generic [ref=e2082]: primary
+                    - generic [ref=e2083]:
+                      - generic [ref=e2084]: main
+                      - button "3 live ports" [ref=e2350]
+                  - group "Agents" [ref=e2091]:
+                    - treeitem "Done Done - Antigravity 4h" [level=1] [ref=e2092]:
+                      - generic "Done" [ref=e2093]
+                      - generic "Antigravity" [ref=e2097]
+                      - generic "Done - Antigravity" [ref=e2099]:
+                        - text: Done
+                        - generic [ref=e2100]: "- Antigravity"
+                      - generic [ref=e2101]: 4h
+              - button [aria-hidden]
+          - button "IDXClaw Project actions for IDXClaw Create new worktree for IDXClaw" [expanded] [ref=e2102]:
+            - generic [ref=e2103]: IDXClaw
+            - generic:
+              - button "Project actions for IDXClaw"
+              - button "Create new worktree for IDXClaw"
+          - option "Mark as unread Inactive main primary main" [ref=e2109]:
+            - generic [ref=e2110]:
+              - generic [ref=e2112] [cursor=pointer]:
+                - generic [ref=e2113]:
+                  - button "Mark as unread" [ref=e2114]
+                  - generic [ref=e2120]: Inactive
+                - generic [ref=e2122]:
+                  - generic [ref=e2124]:
+                    - generic [ref=e2129]: main
+                    - generic [ref=e2130]: primary
+                  - generic [ref=e2131]: main
+              - button [aria-hidden]
+          - button "AI-nimate Project actions for AI-nimate Create new worktree for AI-nimate" [expanded] [ref=e2134]:
+            - generic [ref=e2135]: AI-nimate
+            - generic:
+              - button "Project actions for AI-nimate"
+              - button "Create new worktree for AI-nimate"
+          - option "Mark as unread Active main primary main Workspace metadata Agents" [ref=e2141]:
+            - generic [ref=e2142]:
+              - generic [ref=e2144] [cursor=pointer]:
+                - generic [ref=e2145]:
+                  - button "Mark as unread" [ref=e2146]
+                  - generic [ref=e2152]: Active
+                - generic [ref=e2153]:
+                  - generic [ref=e2154]:
+                    - generic [ref=e2156]:
+                      - generic [ref=e2161]: main
+                      - generic [ref=e2162]: primary
+                    - generic [ref=e2163]:
+                      - generic [ref=e2164]: main
+                      - generic "Workspace metadata" [ref=e2168]: Workspace notes
+                  - group "Agents" [ref=e2174]:
+                    - treeitem "Done Done - Agent 4h" [level=1] [ref=e2175]:
+                      - generic "Done" [ref=e2176]
+                      - generic "Agent" [ref=e2180]:
+                        - img [aria-hidden] [ref=e2181]:
+                          - generic [ref=e2183]: "?"
+                      - generic "Done - Agent" [ref=e2184]:
+                        - text: Done
+                        - generic [ref=e2185]: "- Agent"
+                      - generic [ref=e2186]: 4h
+              - button [aria-hidden]
+          - button "Roblox-mcp-dev Project actions for Roblox-mcp-dev Create new worktree for Roblox-mcp-dev" [expanded] [ref=e2187]:
+            - generic [ref=e2188]: Roblox-mcp-dev
+            - generic:
+              - button "Project actions for Roblox-mcp-dev"
+              - button "Create new worktree for Roblox-mcp-dev"
+          - option "Mark as unread Inactive main primary main" [ref=e2194]:
+            - generic [ref=e2195]:
+              - generic [ref=e2197] [cursor=pointer]:
+                - generic [ref=e2198]:
+                  - button "Mark as unread" [ref=e2199]
+                  - generic [ref=e2205]: Inactive
+                - generic [ref=e2207]:
+                  - generic [ref=e2209]:
+                    - generic [ref=e2214]: main
+                    - generic [ref=e2215]: primary
+                  - generic [ref=e2216]: main
+              - button [aria-hidden]
+        - generic [ref=e2253]:
+          - generic [ref=e2255]:
+            - button "Settings" [ref=e2256] [cursor=pointer]
+            - button "Help" [ref=e2257] [cursor=pointer]
+          - generic [ref=e2258]:
+            - button "Reveal active workspace" [ref=e2259] [cursor=pointer]
+            - button "Workspace board" [ref=e2260] [cursor=pointer]
+    - generic [ref=e2517]:
+      - generic [ref=e2519]:
+        - generic [ref=e2524]: thresher
+        - button "Cancel worktree creation" [ref=e2525] [cursor=pointer]
+      - generic [ref=e2531]:
+        - generic [ref=e2534]: Setting up your workspace…
+        - generic [ref=e2535]: 0s
+  - generic [ref=e519]:
+    - button "Refresh rate limits" [ref=e521] [cursor=pointer]
+    - generic [ref=e527]:
+      - button "Resource Manager, 0 terminal sessions" [ref=e528] [cursor=pointer]:
+        - generic [ref=e531]: 0 KB
+        - generic [ref=e532]: ·
+        - generic [ref=e535]: "0"
+      - button "Ports, 3 workspace ports" [ref=e2351] [cursor=pointer]:
+        - generic [ref=e539]: "3"
+      - button "Remote host connection status" [ref=e540] [cursor=pointer]:
+        - generic [ref=e541]: 1 host
+    - button [aria-hidden]
+  - region "Notifications alt+T"

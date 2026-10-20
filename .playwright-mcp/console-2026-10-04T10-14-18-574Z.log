@@ -1,0 +1,6 @@
+[   10417ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495:0
+[   28835ms] [WARNING] [.WebGL-0x3cfc001a5000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://greentea.id/reefblast/:0
+[   35792ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://greentea.id/reefblast/:0
+[   53522ms] [WARNING] [.WebGL-0x3cfc001a5000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://greentea.id/reefblast/:0
+[   55449ms] [WARNING] [.WebGL-0x3cfc001a5000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels @ https://greentea.id/reefblast/:0
+[   57091ms] [WARNING] [.WebGL-0x3cfc001a5000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat) @ https://greentea.id/reefblast/:0

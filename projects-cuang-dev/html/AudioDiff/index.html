@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AudioDiff | Hands-Free Voice Code Review & PR Explainer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="navbar">
+      <div class="brand">
+        <div class="logo-icon">
+          <span class="soundwave-bar"></span>
+          <span class="soundwave-bar"></span>
+          <span class="soundwave-bar"></span>
+          <span class="soundwave-bar"></span>
+        </div>
+        <div class="brand-text">
+          <h1>AudioDiff <span class="badge sponsor-pill">AssemblyAI Inside</span></h1>
+          <p class="subtitle">Hands-Free Voice Code Review & PR Explainer</p>
+        </div>
+      </div>
+
+      <div class="nav-controls">
+        <div class="pr-selector-group">
+          <label for="pr-select">Active PR:</label>
+          <select id="pr-select" class="dropdown">
+            <option value="PR-104">PR #104: Concurrency & Mutex (Lock-free)</option>
+            <option value="PR-242">PR #242: Security & IDOR Mitigation</option>
+            <option value="PR-318">PR #318: Webhook Idempotency & Backoff</option>
+          </select>
+          <button id="btn-import-github" class="btn btn-secondary btn-sm" title="Import from GitHub">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Fetch PR
+          </button>
+          <a href="slides.html" class="btn btn-secondary btn-sm" style="text-decoration: none;" title="Open Presentation Deck">
+            📊 Slides
+          </a>
+        </div>
+
+        <div class="system-status">
+          <span class="status-indicator online"></span>
+          <span id="gateway-status">Gateway Online</span>
+          <span id="simulation-badge" class="badge mode-pill">Universal-2 + LeMUR</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Workspace Split Grid -->
+    <main class="main-layout">
+      <!-- Left: Diff Visualizer & Code Context -->
+      <section class="code-panel">
+        <div class="panel-header">
+          <div class="pr-meta-card">
+            <div class="pr-title-row">
+              <span id="pr-badge" class="badge pr-id-badge">PR-104</span>
+              <h2 id="pr-title">perf(auth): replace mutex with lock-free atomic token refresh</h2>
+            </div>
+            <p id="pr-description">Resolves high lock contention during peak morning traffic by switching to atomic flags.</p>
+            <div class="pr-tags">
+              <span class="tag">Author: <strong id="pr-author">alex-dev</strong></span>
+              <span class="tag">Branch: <strong id="pr-branch">perf/atomic-token</strong></span>
+              <span class="tag diff-stat add">+<span id="pr-additions">19</span></span>
+              <span class="tag diff-stat del">-<span id="pr-deletions">15</span></span>
+              <span class="tag">Files: <strong id="pr-files-count">1</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diff Viewer -->
+        <div class="diff-viewer-wrapper">
+          <div class="diff-file-header">
+            <span class="file-icon">📄</span>
+            <span id="diff-file-path" class="file-path">src/auth/token_manager.ts</span>
+            <span class="file-lang badge">TypeScript</span>
+          </div>
+          <div id="diff-container" class="diff-container">
+            <!-- Rendered unified diff hunks with voice sync highlight -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Voice Interaction Hub & Audio Intelligence -->
+      <section class="voice-panel">
+        <!-- Tab Navigation: Live Voice vs Async Memo (Universal-2) -->
+        <div class="tab-header">
+          <button id="tab-live-voice" class="tab-btn active">
+            🎙️ Live Voice Review (Streaming STT)
+          </button>
+          <button id="tab-async-memo" class="tab-btn">
+            📼 Ingest Voice Walkthrough (Universal-2)
+          </button>
+        </div>
+
+        <!-- TAB 1: Live Interactive Voice Agent -->
+        <div id="view-live-voice" class="tab-content active">
+          <!-- Voice Agent Console -->
+          <div class="voice-console-card">
+            <div class="console-top">
+              <div class="agent-avatar">
+                <div class="avatar-ring"></div>
+                <div class="avatar-core">🎙️</div>
+              </div>
+              <div class="agent-status-text">
+                <h3 id="agent-state-label">AudioDiff Ready</h3>
+                <p id="agent-sub-state">Listening for developer inquiries or choose a LeMUR action below</p>
+              </div>
+            </div>
+
+            <!-- Audio Waveform Visualizer -->
+            <div class="waveform-container">
+              <canvas id="waveform-canvas" width="480" height="60"></canvas>
+            </div>
+
+            <!-- Voice Controls & Barge-In -->
+            <div class="voice-action-bar">
+              <button id="btn-mic-toggle" class="btn btn-primary btn-mic">
+                <span class="mic-icon">●</span> <span id="mic-text">Talk to AudioDiff</span>
+              </button>
+              <button id="btn-barge-in" class="btn btn-danger" title="Instantly interrupt AudioDiff speaking">
+                🛑 Barge-In Interruption
+              </button>
+              <button id="btn-sample-question" class="btn btn-outline" title="Try a voice question">
+                ❓ Ask: "Why was the mutex removed?"
+              </button>
+            </div>
+
+            <!-- Real-time STT Stream Display -->
+            <div class="transcript-stream-box">
+              <div class="stream-header">
+                <span class="stream-label">Real-Time Transcription Stream</span>
+                <span class="stream-tech">AssemblyAI Streaming STT (Domain Boosted)</span>
+              </div>
+              <div id="transcript-live-text" class="stream-text">
+                <em>Press 'Talk to AudioDiff' or click a question to start hands-free code review...</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick LeMUR Actions -->
+          <div class="lemur-actions-group">
+            <h4 class="section-heading">⚡ AssemblyAI LeMUR Cognitive Actions</h4>
+            <div class="lemur-buttons">
+              <button class="lemur-btn" data-task="review_summary">
+                <span class="icon">📋</span>
+                <div class="btn-info">
+                  <strong>Executive Walkthrough</strong>
+                  <small>High-level architecture intent</small>
+                </div>
+              </button>
+              <button class="lemur-btn" data-task="security_audit">
+                <span class="icon">🛡️</span>
+                <div class="btn-info">
+                  <strong>Security & Concurrency Audit</strong>
+                  <small>Scan for OWASP & race conditions</small>
+                </div>
+              </button>
+              <button class="lemur-btn" data-task="explain_hunk">
+                <span class="icon">💡</span>
+                <div class="btn-info">
+                  <strong>Explain Selected Hunk</strong>
+                  <small>Deep dive into code logic</small>
+                </div>
+              </button>
+              <button class="lemur-btn" data-task="draft_comment">
+                <span class="icon">✍️</span>
+                <div class="btn-info">
+                  <strong>Draft PR Review Comment</strong>
+                  <small>Generates markdown suggestions</small>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Spoken Response & Output Feed -->
+          <div class="response-card">
+            <div class="response-header">
+              <span class="response-label">🎧 AudioDiff Spoken Response</span>
+              <span id="response-latency" class="badge">Latency: -- ms</span>
+            </div>
+            <div id="spoken-response-text" class="spoken-text">
+              "Select a PR and ask a question or click an action button to receive verbal code review feedback."
+            </div>
+
+            <!-- Suggested Comment Section -->
+            <div id="suggested-comment-container" class="suggested-comment-box" style="display: none;">
+              <div class="comment-bar">
+                <span class="comment-title">📝 Suggested GitHub PR Comment</span>
+                <div class="comment-actions">
+                  <span id="action-type-badge" class="badge comment-badge">Comment</span>
+                  <button id="btn-copy-comment" class="btn btn-xs">Copy Markdown</button>
+                </div>
+              </div>
+              <pre id="suggested-comment-content" class="comment-content"></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: Async Voice Walkthrough Ingestion (Universal-2) -->
+        <div id="view-async-memo" class="tab-content" style="display: none;">
+          <div class="universal2-card">
+            <div class="u2-header">
+              <span class="badge u2-badge">AssemblyAI Universal-2 Flagship STT</span>
+              <h3>Async Voice PR Walkthrough Ingestion</h3>
+              <p>Transcribe recorded Loom audio, voice memos, or code review meetings with state-of-the-art accuracy, speaker diarization, and automated LeMUR review extraction.</p>
+            </div>
+
+            <div class="u2-upload-zone">
+              <div class="upload-icon">📼</div>
+              <p>Drag and drop a voice walkthrough file (WAV, MP3, M4A) or</p>
+              <div class="u2-actions">
+                <button id="btn-load-sample-memo" class="btn btn-primary">
+                  🎙️ Load Author & Tech Lead Voice Walkthrough (PR #104)
+                </button>
+                <input type="file" id="file-memo-input" accept="audio/*" style="display: none;">
+                <button id="btn-upload-file" class="btn btn-outline">Choose File...</button>
+              </div>
+            </div>
+
+            <!-- Universal-2 Result Card -->
+            <div id="u2-results" class="u2-results-box" style="display: none;">
+              <div class="u2-meta-bar">
+                <span>Model: <strong>Universal-2</strong></span>
+                <span>Accuracy: <strong id="u2-confidence">98.4%</strong></span>
+                <span>Audio Length: <strong id="u2-duration">84.5s</strong></span>
+                <span>Speakers: <strong id="u2-speakers">2 (Diarized)</strong></span>
+              </div>
+
+              <div class="u2-transcript-section">
+                <h4>🎙️ Diarized Transcript</h4>
+                <div id="u2-utterances" class="utterance-list">
+                  <!-- Rendered speaker turns -->
+                </div>
+              </div>
+
+              <div class="u2-action-items-section">
+                <h4>🧠 LeMUR Extracted PR Action Items</h4>
+                <ul id="u2-action-list" class="action-items-list">
+                  <!-- Action items -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for GitHub Import -->
+    <div id="github-modal" class="modal-backdrop" style="display: none;">
+      <div class="modal-card">
+        <h3>Fetch PR from GitHub</h3>
+        <p>Enter any public repository PR URL or owner/repo/number to inspect live diffs.</p>
+        <div class="input-group">
+          <label>GitHub PR URL:</label>
+          <input type="text" id="input-gh-url" placeholder="https://github.com/owner/repo/pull/123" class="text-input">
+        </div>
+        <div class="modal-actions">
+          <button id="btn-cancel-modal" class="btn btn-outline">Cancel</button>
+          <button id="btn-fetch-gh-confirm" class="btn btn-primary">Fetch & Index Diff</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

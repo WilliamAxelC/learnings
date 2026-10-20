@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 0001: Reactivating HSK 3 for Huawei AIOps Incident Briefings</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="lesson-header">
+      <span class="lesson-badge">Lesson 0001 &bull; Zone of Proximal Development</span>
+      <h1>From Rusty HSK 3 to a 30-Second Huawei AIOps Briefing</h1>
+      <p class="subtitle">How to reactivate the Mandarin sentence skeletons you learned 7 years ago and upgrade them into crisp spoken root-cause &amp; status updates (故障汇报) for your Chinese superior.</p>
+      <div class="lesson-meta">
+        <span>⏱ 10 min read &amp; spoken drill</span>
+        <span>🎯 Skill: Spoken Incident &amp; RCA Briefing</span>
+        <span>📄 <a href="../reference/aiops-mandarin-core-glossary.html">Open AIOps Glossary Reference</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Why Your Mandarin Isn't Gone—It's Just Dormant</h2>
+      <p>
+        Passing HSK 3 seven years ago means your brain already built <strong>storage strength</strong> for core Mandarin word order: Subject–Time–Location–Verb–Object, aspect markers (<span class="zh-inline">了<span class="py">le</span></span>, <span class="zh-inline">已经<span class="py">yǐjīng</span></span>), and cause-and-effect connectors (<span class="zh-inline">因为…所以…<span class="py">yīnwèi…suǒyǐ…</span></span>).
+      </p>
+      <p>
+        What decayed over seven years of disuse is <strong>retrieval fluency</strong>—plus the gap between textbook HSK 3 nouns (<em>weather, catching a cold, homework</em>) and your daily reality at Huawei (<em>alert storms, root cause analysis, API latency, rollbacks</em>).
+      </p>
+
+      <div class="callout zpd">
+        <strong class="title">The HSK 3 &rarr; AIOps Shortcut</strong>
+        Never translate from English word-for-word when speaking to your Chinese manager. Instead, take an HSK 3 sentence frame you already own and perform a <strong>2-character technical slot swap</strong>.
+      </div>
+    </section>
+
+    <section>
+      <h2>Step 1: Upgrade Your Cause-and-Effect Skeleton</h2>
+      <p>
+        In HSK 2/3, you learned to explain reasons using <span class="zh-inline">因为 [Cause]，所以 [Effect]<span class="py">yīnwèi… suǒyǐ…</span></span>. While grammatically correct, saying <em>"因为…所以…"</em> in a Huawei incident review sounds colloquial.
+      </p>
+      <p>
+        According to the <a href="https://resources.allsetlearning.com/chinese/grammar/Expressing_%22due_to%22_with_%22youyu%22" target="_blank" rel="noopener">AllSet Chinese Grammar Wiki</a> and <a href="https://support.huaweicloud.com/aom/index.html" target="_blank" rel="noopener">Huawei Cloud AOM postmortem standards</a>, Chinese engineers upgrade those two slots whenever explaining a technical fault or anomaly:
+      </p>
+
+      <div class="bridge-grid">
+        <div class="bridge-card hsk3">
+          <span class="bridge-label">Dormant HSK 3 Skeleton (Colloquial)</span>
+          <div class="hanzi-lg">因为 流量 太大，所以 网站 很慢。</div>
+          <div class="pinyin-lg">Yīnwèi liúliàng tài dà, suǒyǐ wǎngzhàn hěn màn.</div>
+          <div class="en-gloss">"Because traffic was too big, the website is very slow."</div>
+          <button class="speak-btn" data-zh="因为流量太大，所以网站很慢。">🔊 Hear HSK 3 Version</button>
+        </div>
+
+        <div class="bridge-card huawei">
+          <span class="bridge-label">Huawei AIOps Upgrade (Professional)</span>
+          <div class="hanzi-lg">由于 流量 突增，导致 延迟 升高。</div>
+          <div class="pinyin-lg">Yóuyú liúliàng tūzēng, dǎozhì yánchí shēnggāo.</div>
+          <div class="en-gloss">"Due to a traffic spike, it caused latency to rise."</div>
+          <button class="speak-btn" data-zh="由于流量突增，导致延迟升高。">🔊 Hear Huawei Version</button>
+        </div>
+      </div>
+
+      <div class="callout trap">
+        <strong class="title">Grammar Nuance: When to Use 导致 (dǎozhì)</strong>
+        In technical Mandarin, <span class="zh-inline">导致<span class="py">dǎozhì</span></span> ("to lead to / result in") is a verb that almost exclusively introduces <strong>undesirable or anomalous outcomes</strong>—such as <span class="zh-inline">延迟升高<span class="py">yánchí shēnggāo</span></span> (latency rising), <span class="zh-inline">告警风暴<span class="py">gàojǐng fēngbào</span></span> (alert storm), or <span class="zh-inline">服务超时<span class="py">fúwù chāoshí</span></span> (service timeout).
+      </div>
+    </section>
+
+    <section>
+      <h2>Step 2: Six Core AIOps Compounds Built from HSK 3 Roots</h2>
+      <p>
+        Notice how Huawei's core AIOps terms (<a href="https://support.huaweicloud.com/aom/index.html" target="_blank" rel="noopener">华为云智能运维 AOM</a>) are built directly out of characters you met during HSK 3:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>AIOps Term</th>
+            <th>Pinyin &amp; Audio</th>
+            <th>Meaning</th>
+            <th>Your HSK 3 Memory Hook</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>根因分析</strong></td>
+            <td><code>gēnyīn fēnxī</code><br><button class="speak-btn" data-zh="根因分析">🔊 Speak</button></td>
+            <td>Root Cause Analysis (RCA)</td>
+            <td><strong>根</strong> (root) + <strong>因</strong> (from HSK 2 <em>因为 yīnwèi</em>) + <strong>分析</strong> (analyze). In spoken standups, engineers often shorten "root cause" to just <span class="zh-inline">根因<span class="py">gēnyīn</span></span>.</td>
+          </tr>
+          <tr>
+            <td><strong>故障定位</strong></td>
+            <td><code>gùzhàng dìngwèi</code><br><button class="speak-btn" data-zh="故障定位">🔊 Speak</button></td>
+            <td>Fault Localization</td>
+            <td><strong>故障</strong> (fault/outage) + <strong>定位</strong> (pinpoint position; <em>定</em> from HSK 3 <em>决定</em> decide, <em>位</em> from HSK 2 <em>位</em>).</td>
+          </tr>
+          <tr>
+            <td><strong>告警降噪</strong></td>
+            <td><code>gàojǐng jiàngzào</code><br><button class="speak-btn" data-zh="告警降噪">🔊 Speak</button></td>
+            <td>Alert Noise Reduction</td>
+            <td><strong>告警</strong> (alert; <em>告</em> from HSK 2 <em>告诉</em> tell) + <strong>降</strong> (drop/lower, from HSK 3 <em>降低</em>) + <strong>噪</strong> (noise).</td>
+          </tr>
+          <tr>
+            <td><strong>误报 / 漏报</strong></td>
+            <td><code>wùbào / lòubào</code><br><button class="speak-btn" data-zh="误报和漏报">🔊 Speak</button></td>
+            <td>False Positive / False Negative</td>
+            <td><strong>误</strong> (mistaken) + <strong>报</strong> (report, from HSK 2 <em>报纸</em>) = false alarm. <strong>漏</strong> (leak/miss) + <strong>报</strong> = missed alert.</td>
+          </tr>
+          <tr>
+            <td><strong>阈值</strong></td>
+            <td><code>yùzhí</code><br><button class="speak-btn" data-zh="阈值">🔊 Speak</button></td>
+            <td>Threshold</td>
+            <td>Crucial pronunciation note: <strong>阈</strong> is pronounced <code>yù</code> (4th tone, like 遇到 <em>yùdào</em>), NOT <em>fá</em>! Pair it with <span class="zh-inline">调整阈值<span class="py">tiáozhěng yùzhí</span></span> (tune the threshold).</td>
+          </tr>
+          <tr>
+            <td><strong>回滚</strong></td>
+            <td><code>huígǔn</code><br><button class="speak-btn" data-zh="回滚">🔊 Speak</button></td>
+            <td>Rollback</td>
+            <td><strong>回</strong> (HSK 1 return) + <strong>滚</strong> (roll). Literal loan translation of "roll back".</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Step 3: The 3-Sentence Spoken Briefing Formula</h2>
+      <p>
+        When your Chinese superior asks for a quick technical update—e.g., <span class="zh-inline">这个问题排查得怎么样了？<span class="py">Zhège wèntí páichá de zěnmeyàng le?</span></span> (<em>"How is the investigation into this issue going?"</em>)—use this 3-part template:
+      </p>
+
+      <div class="pattern-box">
+        <div class="pattern-formula">
+          [1. 由于 + Cause，导致 + Symptom] &rarr; [2. 通过 + AIOps Method，定位到 + Root Cause] &rarr; [3. 目前已经 + Action，指标已恢复正常]
+        </div>
+        <p><strong>Full Spoken Example (Click to listen and shadow out loud):</strong></p>
+        <p class="hanzi-lg">
+          “由于 阈值 设置 过低，导致 了 告警 风暴。我们 通过 告警 降噪 和 根因 分析，定位 到了 异常 节点。目前 已经 完成 回滚，指标 已 恢复 正常。”
+        </p>
+        <p class="pinyin-lg">
+          "Yóuyú yùzhí shèzhì guò dī, dǎozhì le gàojǐng fēngbào. Wǒmen tōngguò gàojǐng jiàngzào hé gēnyīn fēnxī, dìngwèi dào le yìcháng jiédiǎn. Mùqián yǐjīng wánchéng huígǔn, zhǐbiāo yǐ huīfù zhèngcháng."
+        </p>
+        <p class="en-gloss">
+          "Due to the threshold being set too low, it caused an alert storm. Through alert noise reduction and root cause analysis, we localized the anomalous node. Currently we have completed the rollback, and metrics have returned to normal."
+        </p>
+        <button class="speak-btn" data-zh="由于阈值设置过低，导致了告警风暴。我们通过告警降噪和根因分析，定位到了异常节点。目前已经完成回滚，指标已恢复正常。" data-rate="0.85">🔊 Listen at 0.85x (Practice Shadowing)</button>
+        <button class="speak-btn" data-zh="由于阈值设置过低，导致了告警风暴。我们通过告警降噪和根因分析，定位到了异常节点。目前已经完成回滚，指标已恢复正常。" data-rate="1.0">🔊 Listen at 1.0x (Natural Standup Speed)</button>
+      </div>
+    </section>
+
+    <section class="drill-section">
+      <h2>Step 4: Active Spoken Recall Drills (Say Out Loud Before Revealing)</h2>
+      <p>
+        To build <strong>storage strength</strong> rather than passive reading fluency, read each English engineering scenario below, <strong>speak the Mandarin sentence aloud</strong> using the formula above, and then click reveal to check your tones and phrasing:
+      </p>
+
+      <div class="drill-card">
+        <div class="drill-prompt">
+          🎙️ Scenario A: Tell your manager: <em>"Due to a traffic spike (流量突增), it caused API latency to rise (接口延迟升高)."</em>
+        </div>
+        <div class="mic-controls">
+          <button class="mic-btn" data-expected="由于流量突增导致接口延迟升高" data-feedback="fb-drill-1">🎙️ Test My Pronunciation</button>
+          <button class="reveal-btn" data-target="drill-1">Reveal Mandarin &amp; Check Tones</button>
+        </div>
+        <div id="fb-drill-1" class="speech-feedback"></div>
+        <div id="drill-1" class="drill-answer">
+          <div class="hanzi-lg">由于 流量 突增，导致 接口 延迟 升高。</div>
+          <div class="pinyin-lg">Yóuyú liúliàng tūzēng, dǎozhì jiēkǒu yánchí shēnggāo.</div>
+          <button class="speak-btn" data-zh="由于流量突增，导致接口延迟升高。">🔊 Verify Pronunciation</button>
+        </div>
+      </div>
+
+      <div class="drill-card">
+        <div class="drill-prompt">
+          🎙️ Scenario B: Tell your manager: <em>"Currently (目前) we have already tuned the threshold (调整了阈值) to reduce false positives (减少误报)."</em>
+        </div>
+        <div class="mic-controls">
+          <button class="mic-btn" data-expected="目前我们已经调整了阈值减少误报" data-feedback="fb-drill-2">🎙️ Test My Pronunciation</button>
+          <button class="reveal-btn" data-target="drill-2">Reveal Mandarin &amp; Check Tones</button>
+        </div>
+        <div id="fb-drill-2" class="speech-feedback"></div>
+        <div id="drill-2" class="drill-answer">
+          <div class="hanzi-lg">目前 我们 已经 调整 了 阈值，减少 误报。</div>
+          <div class="pinyin-lg">Mùqián wǒmen yǐjīng tiáozhěng le yùzhí, jiǎnshǎo wùbào.</div>
+          <button class="speak-btn" data-zh="目前我们已经调整了阈值，减少误报。">🔊 Verify Pronunciation</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gemini-live-box">
+      <div class="gemini-live-header">
+        <h3>📱 Step 5: Gemini Live Voice Call Prompt (Lesson 0001)</h3>
+        <button class="copy-prompt-btn" data-target="gemini-live-prompt-0001">📋 Copy Prompt for Gemini Live</button>
+      </div>
+      <p>
+        Paste this prompt into the Gemini app on your phone (or web), then tap the <strong>Gemini Live (Voice)</strong> waveform icon for a real-time, low-latency standup call with pronunciation &amp; tone coaching:
+      </p>
+      <pre id="gemini-live-prompt-0001" class="gemini-prompt-pre">You are my Chinese engineering manager (张主管, Zhāng Zhǔguǎn) on the AIOps (智能运维) team at Huawei, and also my real-time spoken Mandarin &amp; pronunciation coach.
+
+My background: I passed HSK 3 about 7 years ago, so my basic sentence structure is there, but my retrieval and tones are rusty. Today I am practicing Lesson 0001: delivering a 30-second incident &amp; root-cause briefing (故障汇报).
+
+Target structures &amp; vocabulary to drill me on in this voice call:
+1. 由于 [Cause]，导致 [Negative Effect] (yóuyú... dǎozhì... - Due to X, it led to Y)
+2. 通过 [Method]，定位到了 [Target] (tōngguò... dìngwèi dào le... - Through X, localized Y)
+3. 目前已经完成 [Action]，指标已恢复正常 (mùqián yǐjīng wánchéng..., zhǐbiāo yǐ huīfù zhèngcháng)
+4. Core terms: 根因分析 (gēnyīn fēnxī - RCA), 故障定位 (gùzhàng dìngwèi - fault localization), 告警降噪 (gàojǐng jiàngzào - alert noise reduction), 告警风暴 (gàojǐng fēngbào - alert storm), 误报 (wùbào - false positive), 漏报 (lòubào - false negative), 阈值 (yùzhí - threshold), 延迟飙升 (yánchí biāoshēng - latency spike), 回滚 (huígǔn - rollback).
+
+How to run our voice session:
+- Keep your turns short (1–2 sentences) like a real standup voice call.
+- Speak Mandarin at a clear, slightly measured pace (~0.9x speed) using HSK 3 base grammar + the AIOps terms above.
+- Start by asking me in Mandarin: "早！刚才线上那个告警风暴是怎么回事？你排查得怎么样了？"
+- Listen carefully to my spoken Mandarin reply:
+  1) First, give me quick, encouraging feedback in English (1 sentence) on my pronunciation/tones (especially watch out if I mispronounce 阈值 yùzhí as fázhí, or mix up 2nd/3rd/4th tones on 由于 yóuyú, 导致 dǎozhì, 误报 wùbào, 回滚 huígǔn) and have me repeat any mispronounced word once.
+  2) Then stay in character as 张主管 and ask a natural follow-up question in Mandarin (e.g., asking what the root cause was, whether it was a false positive 误报, or if we adjusted the threshold 调整阈值 or rolled back 回滚).</pre>
+    </section>
+
+    <section>
+      <div class="callout primary-source">
+        <strong class="title">Recommended Primary Source</strong>
+        <p>
+          Browse the <a href="https://support.huaweicloud.com/aom/index.html" target="_blank" rel="noopener">Huawei Cloud Application Operations Management (华为云应用运维管理 AOM) Official Documentation</a>—specifically the <strong>告警降噪 (Alert Noise Reduction)</strong> overview—and pair it with the <a href="https://resources.allsetlearning.com/chinese/grammar/Expressing_%22due_to%22_with_%22youyu%22" target="_blank" rel="noopener">AllSet Learning Grammar Entry on 由于 (yóuyú)</a>. Seeing these exact 2-character compounds inside Huawei's own UI documentation cements visual recognition immediately.
+        </p>
+      </div>
+    </section>
+
+    <section class="quiz-section">
+      <div class="quiz-header">
+        <h3>Interactive Retrieval Practice</h3>
+        <p>Test your retrieval without hints. Every option has the exact same length—rely on meaning and grammar structure.</p>
+      </div>
+
+      <!-- Question 1 -->
+      <div class="quiz-question-box">
+        <div class="question-text">
+          1. Your superior asks why API latency rose today. Which sentence uses standard Huawei engineering cause-and-effect framing ("Due to a traffic spike, it caused API latency to rise")?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="true" data-explanation="Correct! '由于 (yóuyú) [Cause] 导致 (dǎozhì) [Negative Effect]' is the gold-standard technical Mandarin structure for incident root causes.">
+            由于 流量 突增 导致 接口 延迟 升高
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'虽然…但是…' (suīrán… dànshì…) is the HSK 3 pattern for 'Although… but…', which contradicts cause-and-effect.">
+            虽然 流量 突增 但是 接口 延迟 升高
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'不管…还是…' (bùguǎn… háishì…) means 'No matter whether… or…', not 'Due to… leading to…'.">
+            不管 流量 突增 还是 接口 延迟 升高
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'除了…以外…' (chúle… yǐwài…) is the HSK 3 pattern for 'Besides / Apart from…', not cause-and-effect.">
+            除了 流量 突增 以外 接口 延迟 升高
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="quiz-question-box">
+        <div class="question-text">
+          2. You want to report that the system is experiencing false positives ("false alarms") and needs alert noise reduction. Which statement is accurate?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="false" data-explanation="'漏报 (lòubào)' means false negative (missed alert), and '告警风暴 (gàojǐng fēngbào)' means alert storm.">
+            系统 出现 漏报 需要 告警 风暴
+          </button>
+          <button class="option-btn" data-correct="true" data-explanation="Spot on! '误报 (wùbào)' = false positive (mistaken report), and '告警降噪 (gàojǐng jiàngzào)' = alert noise reduction.">
+            系统 出现 误报 需要 告警 降噪
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'误报 (wùbào)' is false positive, but '故障定位 (gùzhàng dìngwèi)' means fault localization rather than alert noise reduction.">
+            系统 出现 误报 需要 故障 定位
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="'告警风暴 (gàojǐng fēngbào)' is the problem (alert storm), not the noise-reduction solution ('告警降噪').">
+            系统 出现 异常 需要 告警 风暴
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="quiz-question-box">
+        <div class="question-text">
+          3. How do you tell your superior: "Currently we have already completed the rollback, and metrics have returned to normal"?
+        </div>
+        <div class="options-list">
+          <button class="option-btn" data-correct="false" data-explanation="This states: 'Currently investigating the fault, metrics remain abnormal' (正在排查故障，指标持续异常).">
+            目前 正在 排查 故障 指标 持续 异常
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="This states: 'Previously a fault occurred, causing an alert storm' (以前已经发生故障，导致告警风暴).">
+            以前 已经 发生 故障 导致 告警 风暴
+          </button>
+          <button class="option-btn" data-correct="true" data-explanation="Exact match! '目前已经完成回滚 (Mùqián yǐjīng wánchéng huígǔn)，指标恢复正常 (zhǐbiāo huīfù zhèngcháng).'">
+            目前 已经 完成 回滚 指标 恢复 正常
+          </button>
+          <button class="option-btn" data-correct="false" data-explanation="This states: 'Initial judgment is a memory leak, needing threshold tuning' (初步判断内存泄漏，需要调整阈值).">
+            初步 判断 内存 泄漏 需要 调整 阈值
+          </button>
+        </div>
+        <div class="feedback-msg"></div>
+      </div>
+
+      <div class="quiz-score-bar">
+        <span>Score: <span class="current-score">0</span> / <span class="total-questions">3</span></span>
+        <span>Desirable Difficulty &bull; Storage Strength Practice</span>
+      </div>
+    </section>
+
+    <div class="ask-agent-box">
+      <h4>💬 Continue Pair Learning With Your AI Teacher</h4>
+      <p>
+        Remember: I am your interactive Mandarin coach! Come back to the chat and ask me anything, or try one of these right now:
+      </p>
+      <ul>
+        <li><em>"Let's roleplay! Pretend you are my Chinese team lead at Huawei asking me about an alert storm, and I'll reply in Mandarin (Pinyin or Hanzi)."</em></li>
+        <li><em>"Can you break down how to explain my specific AIOps project (e.g. time-series anomaly detection or LLM log analysis) in Mandarin?"</em></li>
+        <li><em>"Let's move to Lesson 0002: Explaining AIOps Model Metrics (Precision, Recall, False Positives &amp; Threshold Trade-offs) to Your Manager."</em></li>
+      </ul>
+    </div>
+
+    <footer class="lesson-nav">
+      <span>← Previous: Workspace Inception</span>
+      <span><a href="../reference/aiops-mandarin-core-glossary.html">Open AIOps Glossary Reference ↗</a></span>
+      <span>Next: Lesson 0002 (On Request) →</span>
+    </footer>
+  </div>
+
+  <script src="../assets/quiz.js"></script>
+</body>
+</html>

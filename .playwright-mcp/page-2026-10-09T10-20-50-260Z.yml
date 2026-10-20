@@ -1,0 +1,544 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "IDXClaw BEI QUANT CORE" [ref=e4] [cursor=pointer]:
+        - /url: /IDXClaw/
+        - generic [ref=e10]:
+          - text: IDXClaw
+          - generic [ref=e11]: BEI QUANT CORE
+      - navigation [ref=e12]:
+        - link "Live Signals" [ref=e13] [cursor=pointer]:
+          - /url: "#signals"
+        - link "ARA/ARB Limits" [ref=e14] [cursor=pointer]:
+          - /url: "#microstructure"
+        - link "Architecture" [ref=e15] [cursor=pointer]:
+          - /url: "#architecture"
+        - link "Calculator" [ref=e16] [cursor=pointer]:
+          - /url: "#calculator"
+        - link "CLI & SDK" [ref=e17] [cursor=pointer]:
+          - /url: "#cli"
+        - link "Live Terminal ↗" [ref=e18] [cursor=pointer]:
+          - /url: https://idxclaw.cuang.dev
+        - link "GitHub Repo" [ref=e20] [cursor=pointer]:
+          - /url: https://github.com/Cuang-dev/IDXClaw
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]: BURSA EFEK INDONESIA (IDX) MARKET RESEARCH & INTELLIGENCE
+      - heading "High-Precision Microstructure & Autonomous Market Research" [level=1] [ref=e27]
+      - paragraph [ref=e28]: Purpose-built market intelligence and quantitative research engine for the Indonesia Stock Exchange. Delivers low-latency tape research ingestion, deterministic liquidity analytics, asymmetric ARA/ARB regulatory limit modeling, and automated MSCI/FTSE quarterly rebalancing research — providing objective data intelligence without financial advice.
+      - generic [ref=e29]:
+        - link "Launch Live Terminal (idxclaw.cuang.dev) ↗" [ref=e30] [cursor=pointer]:
+          - /url: https://idxclaw.cuang.dev
+        - link "Explore Research Telemetry" [ref=e33] [cursor=pointer]:
+          - /url: "#signals"
+        - link "View GitHub (Cuang-dev/IDXClaw)" [ref=e37] [cursor=pointer]:
+          - /url: https://github.com/Cuang-dev/IDXClaw
+        - link "ARA Limit Calculator" [ref=e40] [cursor=pointer]:
+          - /url: "#calculator"
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]: IHSG
+          - text: 7,612.45
+          - generic [ref=e47]: +0.54%
+        - generic [ref=e48]:
+          - generic [ref=e49]: BBCA
+          - text: 10,450
+          - generic [ref=e50]: +2.45%
+          - generic [ref=e51]: "[Net Foreign: +Rp 312B]"
+        - generic [ref=e52]:
+          - generic [ref=e53]: BREN
+          - text: 8,950
+          - generic [ref=e54]: +9.82%
+          - generic [ref=e55]: "[Dist ARA: 8.6%]"
+        - generic [ref=e56]:
+          - generic [ref=e57]: AMMN
+          - text: 9,925
+          - generic [ref=e58]: +3.38%
+          - generic [ref=e59]: "[RVOL: 3.1x]"
+        - generic [ref=e60]:
+          - generic [ref=e61]: BMRI
+          - text: 7,150
+          - generic [ref=e62]: +1.42%
+          - generic [ref=e63]: "[MSCI Inflow Target]"
+        - generic [ref=e64]:
+          - generic [ref=e65]: GOTO
+          - text: "54"
+          - generic [ref=e66]: "-1.82%"
+          - generic [ref=e67]: "[Tier 1 ARB Floor: 50]"
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]: 🟢 LIVE TELEMETRY STREAMING
+          - heading "Institutional Multi-Agent Deliberation Terminal" [level=3] [ref=e71]
+          - paragraph [ref=e72]:
+            - text: Watch 7 autonomous LangGraph agents powered by
+            - strong [ref=e73]: Anthropic Claude 5.5 Sonnet
+            - text: conduct real-time dialectic debates, broker Bandarmology flow analysis, and risk sizing guardrails on live Bursa Efek Indonesia candidates.
+        - link "Open idxclaw.cuang.dev ↗" [ref=e74] [cursor=pointer]:
+          - /url: https://idxclaw.cuang.dev
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - button "All Market Research (8)" [ref=e80] [cursor=pointer]
+          - button "Volume Expansion (RVOL ≥ 2x)" [ref=e81] [cursor=pointer]
+          - button "MSCI Rebalance Dossiers" [ref=e82] [cursor=pointer]
+          - button "ARA Proximity Watch" [ref=e83] [cursor=pointer]
+          - button "Institutional Inflow Tracking" [ref=e84] [cursor=pointer]
+        - textbox "Search ticker (e.g. BBCA)..." [ref=e89]
+      - generic [ref=e90]:
+        - generic [ref=e91] [cursor=pointer]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - text: BBCA
+                - generic [ref=e95]: .JK
+              - generic [ref=e96]: Bank Central Asia Tbk
+            - generic [ref=e97]:
+              - generic [ref=e98]: Rp 10,450
+              - generic [ref=e99]: ▲ +2.45%
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]: "RVOL (10D):"
+              - generic [ref=e103]: 2.85x
+            - generic [ref=e104]:
+              - generic [ref=e105]: "Dist to ARA:"
+              - generic [ref=e106]: 17.2%
+            - generic [ref=e107]:
+              - generic [ref=e108]: "VWAP:"
+              - generic [ref=e109]: Rp 10,320
+            - generic [ref=e110]:
+              - generic [ref=e111]: "Net Foreign:"
+              - generic [ref=e112]: +312.4B
+          - generic [ref=e113]:
+            - generic [ref=e114]: EXPANSION DETECTED
+            - generic [ref=e117]:
+              - text: "Brokers:"
+              - strong [ref=e118]: BK, AK, ZP
+        - generic [ref=e119] [cursor=pointer]:
+          - generic [ref=e120]:
+            - generic [ref=e121]:
+              - generic [ref=e122]:
+                - text: BREN
+                - generic [ref=e123]: .JK
+              - generic [ref=e124]: Barito Renewables Energy Tbk
+            - generic [ref=e125]:
+              - generic [ref=e126]: Rp 8,950
+              - generic [ref=e127]: ▲ +9.82%
+          - generic [ref=e128]:
+            - generic [ref=e129]:
+              - generic [ref=e130]: "RVOL (10D):"
+              - generic [ref=e131]: 3.4x
+            - generic [ref=e132]:
+              - generic [ref=e133]: "Dist to ARA:"
+              - generic [ref=e134]: 8.6%
+            - generic [ref=e135]:
+              - generic [ref=e136]: "VWAP:"
+              - generic [ref=e137]: Rp 8,520
+            - generic [ref=e138]:
+              - generic [ref=e139]: "Net Foreign:"
+              - generic [ref=e140]: +184.2B
+          - generic [ref=e141]:
+            - generic [ref=e142]: ARA BUFFER WATCH
+            - generic [ref=e145]:
+              - text: "Brokers:"
+              - strong [ref=e146]: CC, BK, KZ
+        - generic [ref=e147] [cursor=pointer]:
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - text: BMRI
+                - generic [ref=e151]: .JK
+              - generic [ref=e152]: Bank Mandiri (Persero) Tbk
+            - generic [ref=e153]:
+              - generic [ref=e154]: Rp 7,150
+              - generic [ref=e155]: ▲ +1.42%
+          - generic [ref=e156]:
+            - generic [ref=e157]:
+              - generic [ref=e158]: "RVOL (10D):"
+              - generic [ref=e159]: 1.65x
+            - generic [ref=e160]:
+              - generic [ref=e161]: "Dist to ARA:"
+              - generic [ref=e162]: 19.9%
+            - generic [ref=e163]:
+              - generic [ref=e164]: "VWAP:"
+              - generic [ref=e165]: Rp 7,100
+            - generic [ref=e166]:
+              - generic [ref=e167]: "Net Foreign:"
+              - generic [ref=e168]: +95.8B
+          - generic [ref=e169]:
+            - generic [ref=e170]: MSCI REBALANCE DOSSIER
+            - generic [ref=e173]:
+              - text: "Brokers:"
+              - strong [ref=e174]: AK, ZP, CS
+        - generic [ref=e175] [cursor=pointer]:
+          - generic [ref=e176]:
+            - generic [ref=e177]:
+              - generic [ref=e178]:
+                - text: AMMN
+                - generic [ref=e179]: .JK
+              - generic [ref=e180]: Amman Mineral Internasional Tbk
+            - generic [ref=e181]:
+              - generic [ref=e182]: Rp 9,925
+              - generic [ref=e183]: ▲ +3.38%
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - generic [ref=e186]: "RVOL (10D):"
+              - generic [ref=e187]: 3.1x
+            - generic [ref=e188]:
+              - generic [ref=e189]: "Dist to ARA:"
+              - generic [ref=e190]: 19.8%
+            - generic [ref=e191]:
+              - generic [ref=e192]: "VWAP:"
+              - generic [ref=e193]: Rp 9,810
+            - generic [ref=e194]:
+              - generic [ref=e195]: "Net Foreign:"
+              - generic [ref=e196]: +142.0B
+          - generic [ref=e197]:
+            - generic [ref=e198]: EXPANSION DETECTED
+            - generic [ref=e201]:
+              - text: "Brokers:"
+              - strong [ref=e202]: BK, CC, AK
+        - generic [ref=e203] [cursor=pointer]:
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e206]:
+                - text: CUAN
+                - generic [ref=e207]: .JK
+              - generic [ref=e208]: Petrindo Jaya Kreasi Tbk
+            - generic [ref=e209]:
+              - generic [ref=e210]: Rp 7,850
+              - generic [ref=e211]: ▲ +4.67%
+          - generic [ref=e212]:
+            - generic [ref=e213]:
+              - generic [ref=e214]: "RVOL (10D):"
+              - generic [ref=e215]: 2.25x
+            - generic [ref=e216]:
+              - generic [ref=e217]: "Dist to ARA:"
+              - generic [ref=e218]: 20%
+            - generic [ref=e219]:
+              - generic [ref=e220]: "VWAP:"
+              - generic [ref=e221]: Rp 7,650
+            - generic [ref=e222]:
+              - generic [ref=e223]: "Net Foreign:"
+              - generic [ref=e224]: +45.2B
+          - generic [ref=e225]:
+            - generic [ref=e226]: EXPANSION DETECTED
+            - generic [ref=e229]:
+              - text: "Brokers:"
+              - strong [ref=e230]: KZ, CC, BK
+        - generic [ref=e231] [cursor=pointer]:
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - generic [ref=e234]:
+                - text: ADRO
+                - generic [ref=e235]: .JK
+              - generic [ref=e236]: Adaro Energy Indonesia Tbk
+            - generic [ref=e237]:
+              - generic [ref=e238]: Rp 3,680
+              - generic [ref=e239]: ▲ +2.22%
+          - generic [ref=e240]:
+            - generic [ref=e241]:
+              - generic [ref=e242]: "RVOL (10D):"
+              - generic [ref=e243]: 2.15x
+            - generic [ref=e244]:
+              - generic [ref=e245]: "Dist to ARA:"
+              - generic [ref=e246]: 25%
+            - generic [ref=e247]:
+              - generic [ref=e248]: "VWAP:"
+              - generic [ref=e249]: Rp 3,640
+            - generic [ref=e250]:
+              - generic [ref=e251]: "Net Foreign:"
+              - generic [ref=e252]: +62.3B
+          - generic [ref=e253]:
+            - generic [ref=e254]: INSTITUTIONAL ACCUMULATION
+            - generic [ref=e257]:
+              - text: "Brokers:"
+              - strong [ref=e258]: AK, BK, ZP
+        - generic [ref=e259] [cursor=pointer]:
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - text: BRPT
+                - generic [ref=e263]: .JK
+              - generic [ref=e264]: Barito Pacific Tbk
+            - generic [ref=e265]:
+              - generic [ref=e266]: Rp 1,140
+              - generic [ref=e267]: ▲ +3.64%
+          - generic [ref=e268]:
+            - generic [ref=e269]:
+              - generic [ref=e270]: "RVOL (10D):"
+              - generic [ref=e271]: 2.45x
+            - generic [ref=e272]:
+              - generic [ref=e273]: "Dist to ARA:"
+              - generic [ref=e274]: 25%
+            - generic [ref=e275]:
+              - generic [ref=e276]: "VWAP:"
+              - generic [ref=e277]: Rp 1,120
+            - generic [ref=e278]:
+              - generic [ref=e279]: "Net Foreign:"
+              - generic [ref=e280]: +38.6B
+          - generic [ref=e281]:
+            - generic [ref=e282]: EXPANSION DETECTED
+            - generic [ref=e285]:
+              - text: "Brokers:"
+              - strong [ref=e286]: CC, AK, BK
+        - generic [ref=e287] [cursor=pointer]:
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - text: TLKM
+                - generic [ref=e291]: .JK
+              - generic [ref=e292]: Telkom Indonesia (Persero) Tbk
+            - generic [ref=e293]:
+              - generic [ref=e294]: Rp 2,980
+              - generic [ref=e295]: ▲ +0.68%
+          - generic [ref=e296]:
+            - generic [ref=e297]:
+              - generic [ref=e298]: "RVOL (10D):"
+              - generic [ref=e299]: 1.1x
+            - generic [ref=e300]:
+              - generic [ref=e301]: "Dist to ARA:"
+              - generic [ref=e302]: 24.8%
+            - generic [ref=e303]:
+              - generic [ref=e304]: "VWAP:"
+              - generic [ref=e305]: Rp 2,970
+            - generic [ref=e306]:
+              - generic [ref=e307]: "Net Foreign:"
+              - generic [ref=e308]: +51.0B
+          - generic [ref=e309]:
+            - generic [ref=e310]: INSTITUTIONAL ACCUMULATION
+            - generic [ref=e313]:
+              - text: "Brokers:"
+              - strong [ref=e314]: ZP, BK, AK
+    - generic [ref=e315]:
+      - generic [ref=e317]:
+        - heading "System Microstructure & Quant Pillars" [level=2] [ref=e318]
+        - paragraph [ref=e321]: Engineered for the unique mechanics and regulatory structure of Bursa Efek Indonesia.
+      - generic [ref=e322]:
+        - generic [ref=e323]:
+          - heading "IPOT Web 2.0 SocketCluster Gateway" [level=3] [ref=e328]
+          - paragraph [ref=e329]:
+            - text: Real-time tape ingestion via Indo Premier's SocketCluster gateway (
+            - code [ref=e330]: wss://ipotapp.ipot.id/socketcluster/
+            - text: ). Ingests live trades across all ~888 tickers with bounded LRU Level-2 order book caching.
+          - generic [ref=e331]:
+            - generic [ref=e332]: WebSocket
+            - generic [ref=e333]: Asyncio
+            - generic [ref=e334]: LRU Cache
+            - generic [ref=e335]: LiveTape Stream
+        - generic [ref=e336]:
+          - heading "Asymmetric ARA / ARB Circuit Breakers" [level=3] [ref=e339]
+          - paragraph [ref=e340]: "Deterministic modeling of BEI regulatory limits: Tier 1 (Rp 50–200: +35%), Tier 2 (Rp 200–5,000: +25%), and Tier 3 (>Rp 5,000: +20%) with ARB floor safety buffers to prevent liquidity traps."
+          - generic [ref=e341]:
+            - generic [ref=e342]: ARA Ceiling
+            - generic [ref=e343]: ARB Floor
+            - generic [ref=e344]: Tick Fractions
+            - generic [ref=e345]: Headroom Safety
+        - generic [ref=e346]:
+          - heading "Foreign Flow & Broker Bandarmology" [level=3] [ref=e350]
+          - paragraph [ref=e351]:
+            - text: Real-time broker summary deconstruction tracking institutional foreign desks (
+            - code [ref=e352]: BK, AK, ZP, KZ, CC
+            - text: ) vs retail distribution (
+            - code [ref=e353]: YP, PD, XC
+            - text: ) to confirm genuine institutional demand.
+          - generic [ref=e354]:
+            - generic [ref=e355]: Net Foreign Flow
+            - generic [ref=e356]: Top 3 Broker Delta
+            - generic [ref=e357]: Institutional Volume
+        - generic [ref=e358]:
+          - heading "Automated MSCI & FTSE Rebalancing" [level=3] [ref=e363]
+          - paragraph [ref=e364]: Autonomous scraper for MSCI Global Standard & Small Cap quarterly reviews. Parses announcements, resolves corporate entities to IDX 4-letter tickers, and calculates passive fund flow arbitrage.
+          - generic [ref=e365]:
+            - generic [ref=e366]: MSCI Quarterly
+            - generic [ref=e367]: PDF Parsing
+            - generic [ref=e368]: Ticker Resolver
+            - generic [ref=e369]: Passive Index Flow
+        - generic [ref=e370]:
+          - heading "Deterministic Breakout Engine" [level=3] [ref=e376]
+          - paragraph [ref=e377]: "Rigorous 6-stage quantitative strategy filter: Minimum 1B IDR turnover, RVOL ≥ 2.0x, buyer VWAP dominance, intraday upper range ratio ≥ 0.60, and >1% headroom from the ARA ceiling."
+          - generic [ref=e378]:
+            - generic [ref=e379]: RVOL 10-Day
+            - generic [ref=e380]: VWAP Bias
+            - generic [ref=e381]: Range Ratio
+            - generic [ref=e382]: Liquidity Guard
+        - generic [ref=e383]:
+          - heading "Telegram Topic 1724 Alert Dispatcher" [level=3] [ref=e388]
+          - paragraph [ref=e389]:
+            - text: Automated notification pipeline dispatching structured markdown alerts to Telegram Supergroup Topic
+            - code [ref=e390]: 1724 (NEWS / SIGNALS)
+            - text: with immediate breakout conviction scores.
+          - generic [ref=e391]:
+            - generic [ref=e392]: Telegram Bot API
+            - generic [ref=e393]: Forum Topics
+            - generic [ref=e394]: Markdown Alerts
+            - generic [ref=e395]: Zero-Latency
+        - generic [ref=e396]:
+          - generic [ref=e401]:
+            - heading "Multi-Agent Boardroom Deliberation" [level=3] [ref=e402]
+            - generic [ref=e403]: LIVE TERMINAL
+          - paragraph [ref=e404]:
+            - text: 7-Agent LangGraph dialectic state machine powered by
+            - strong [ref=e405]: Anthropic Claude 5.5 Sonnet
+            - text: . Specialist agents (Bandarmology, Foreign Flow, Technical, News) debate alongside Bull and Bear adversarial analysts before CRO risk synthesis.
+          - generic [ref=e406]:
+            - generic [ref=e407]: Claude 5.5 Sonnet
+            - generic [ref=e408]: LangGraph State Machine
+            - generic [ref=e409]: Adversarial Bull/Bear
+            - generic [ref=e410]: EOD Bandarmology
+          - link "Open Terminal (idxclaw.cuang.dev) ↗" [ref=e412] [cursor=pointer]:
+            - /url: https://idxclaw.cuang.dev
+    - generic [ref=e413]:
+      - generic [ref=e414]:
+        - heading "Interactive IDX Limit Calculator" [level=3] [ref=e415]
+        - paragraph [ref=e419]: Calculate exact BEI price fractions, Auto Rejection Atas (+35%/+25%/+20%), and Auto Rejection Bawah limits.
+        - generic [ref=e420]:
+          - generic [ref=e421]:
+            - generic [ref=e422]: Previous Close Price (Rp)
+            - generic [ref=e423]:
+              - generic [ref=e424]: Rp
+              - spinbutton "Previous Close Price (Rp)" [ref=e425]: "10200"
+          - generic [ref=e426]:
+            - generic [ref=e427] [cursor=pointer]: Rp 120 (Tier 1)
+            - generic [ref=e428] [cursor=pointer]: Rp 1,850 (Tier 2)
+            - generic [ref=e429] [cursor=pointer]: Rp 4,950 (Tier 2 Peak)
+            - generic [ref=e430] [cursor=pointer]: Rp 10,200 (BBCA)
+            - generic [ref=e431] [cursor=pointer]: Rp 8,950 (BREN)
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - generic [ref=e434]: ARA Ceiling Price (+20%)
+              - generic [ref=e435]: Rp 12,225
+            - generic [ref=e436]:
+              - generic [ref=e437]: ARB Floor Price (-20%)
+              - generic [ref=e438]: Rp 8,175
+            - generic [ref=e439]:
+              - generic [ref=e440]: Market Tier & Rule
+              - generic [ref=e441]: Tier 3 (>Rp 5,000)
+            - generic [ref=e442]:
+              - generic [ref=e443]: Tick Size (Fraksi Harga)
+              - generic [ref=e444]: Rp 25 / tick
+      - generic [ref=e445]:
+        - 'heading "Telegram Topic #1724 Research Digest" [level=3] [ref=e446]'
+        - paragraph [ref=e450]: Sample market research synthesis dispatched to internal analyst topics.
+        - generic [ref=e451]:
+          - generic [ref=e452]:
+            - generic [ref=e453]: ⚡ IDXClaw RESEARCH DIGEST [TOPIC 1724]
+            - generic [ref=e454]: ANALYTICS
+          - generic [ref=e455]: "📊 VOLUME EXPANSION OBSERVED: BBCA.JK • Last Price: Rp 10,450 (+2.45%) • VWAP: Rp 10,320 (Buyer Bias: +1.26%) • RVOL (10-Day): 2.85x (Expansion Surge) • ARA Ceiling: Rp 12,250 (Buffer Headroom: 17.2%) • Institutional Delta: +Rp 312.4B • Top Accumulators: BK (+Rp 142B), AK (+Rp 98B), ZP (+Rp 72B) • Top Distributers: YP (-Rp 84B), PD (-Rp 41B) • Telemetry Alignment Score: 88.4 / 100 #MarketResearch #BEI #BBCA #LQ45 #Microstructure"
+    - generic [ref=e456]:
+      - generic [ref=e462]:
+        - button "msci_tracker.py" [ref=e463] [cursor=pointer]
+        - button "breakout_engine.py" [ref=e464] [cursor=pointer]
+        - button "ipot_client.py" [ref=e465] [cursor=pointer]
+      - generic [ref=e466]: "# 1. Print upcoming 8 MSCI review announcement & effective rebalancing dates $ python -m idxclaw.intelligence.msci_tracker --schedule [INFO] Next MSCI Index Review: Announcement: 2026-11-06 (23:00 CET) Effective Date: 2026-12-01 (Market Close) Coverage: MSCI Global Standard & Small Cap Index # 2. Check official MSCI review portal and notify Topic 1724 only if review detected $ python -m idxclaw.intelligence.msci_tracker --check [INFO] Fetching https://app2.msci.com/eqb/gimi/stdindex/index_review.html... [SUCCESS] Document parsed: MSCI Standard Index Additions: + Barito Renewables Energy -> BREN.JK [Standard Addition, Est Inflow: +$140M] + Amman Mineral Internasional -> AMMN.JK [Standard Weight Increase] [NOTIFY] Alert dispatched to Telegram Topic 1724."
+    - generic [ref=e468]:
+      - generic [ref=e470]:
+        - heading "LQ45 Liquidity Coverage Universe" [level=2] [ref=e471]
+        - paragraph [ref=e474]: Continuous monitoring across Indonesia's 45 most liquid and institutionally capitalized bluechip equities.
+      - generic [ref=e475]:
+        - generic [ref=e476]:
+          - strong [ref=e477]: BBCA
+          - text: Bank Central Asia
+          - generic [ref=e478]: LQ45
+        - generic [ref=e479]:
+          - strong [ref=e480]: BMRI
+          - text: Bank Mandiri
+          - generic [ref=e481]: LQ45
+        - generic [ref=e482]:
+          - strong [ref=e483]: BBRI
+          - text: Bank Rakyat Indonesia
+          - generic [ref=e484]: LQ45
+        - generic [ref=e485]:
+          - strong [ref=e486]: BBNI
+          - text: Bank Negara Indonesia
+          - generic [ref=e487]: LQ45
+        - generic [ref=e488]:
+          - strong [ref=e489]: BREN
+          - text: Barito Renewables
+          - generic [ref=e490]: LQ45
+        - generic [ref=e491]:
+          - strong [ref=e492]: AMMN
+          - text: Amman Mineral
+          - generic [ref=e493]: LQ45
+        - generic [ref=e494]:
+          - strong [ref=e495]: ASII
+          - text: Astra International
+          - generic [ref=e496]: LQ45
+        - generic [ref=e497]:
+          - strong [ref=e498]: TLKM
+          - text: Telkom Indonesia
+          - generic [ref=e499]: LQ45
+        - generic [ref=e500]:
+          - strong [ref=e501]: ADRO
+          - text: Adaro Energy
+          - generic [ref=e502]: LQ45
+        - generic [ref=e503]:
+          - strong [ref=e504]: CUAN
+          - text: Petrindo Jaya Kreasi
+          - generic [ref=e505]: LQ45
+        - generic [ref=e506]:
+          - strong [ref=e507]: BRPT
+          - text: Barito Pacific
+          - generic [ref=e508]: LQ45
+        - generic [ref=e509]:
+          - strong [ref=e510]: ANTM
+          - text: Aneka Tambang
+          - generic [ref=e511]: LQ45
+        - generic [ref=e512]:
+          - strong [ref=e513]: MDKA
+          - text: Merdeka Copper Gold
+          - generic [ref=e514]: LQ45
+        - generic [ref=e515]:
+          - strong [ref=e516]: GOTO
+          - text: GoTo Gojek Tokopedia
+          - generic [ref=e517]: LQ45
+        - generic [ref=e518]:
+          - strong [ref=e519]: UNVR
+          - text: Unilever Indonesia
+          - generic [ref=e520]: LQ45
+        - generic [ref=e521]:
+          - strong [ref=e522]: ICBP
+          - text: Indofood CBP
+          - generic [ref=e523]: LQ45
+        - generic [ref=e524]:
+          - strong [ref=e525]: INDF
+          - text: Indofood Sukses Makmur
+          - generic [ref=e526]: LQ45
+        - generic [ref=e527]:
+          - strong [ref=e528]: KLBF
+          - text: Kalbe Farma
+          - generic [ref=e529]: LQ45
+        - generic [ref=e530]:
+          - strong [ref=e531]: CPIN
+          - text: Charoen Pokphand
+          - generic [ref=e532]: LQ45
+        - generic [ref=e533]:
+          - strong [ref=e534]: PGAS
+          - text: Perusahaan Gas Negara
+          - generic [ref=e535]: LQ45
+        - generic [ref=e536]:
+          - strong [ref=e537]: MEDC
+          - text: Medco Energi
+          - generic [ref=e538]: LQ45
+    - generic [ref=e542]:
+      - heading "Market Research & Educational Analytics Notice" [level=4] [ref=e543]
+      - paragraph [ref=e544]:
+        - text: IDXClaw is an automated market research and equities data intelligence platform engineered for the Indonesia Stock Exchange (IDX / BEI). All indicators, formulas, rebalancing trackers, and order-flow telemetry are synthesized strictly for objective research, historical analysis, and educational demonstration.
+        - strong [ref=e545]: IDXClaw does not provide financial advice, investment recommendations, portfolio management, or trade execution services.
+  - contentinfo [ref=e546]:
+    - generic [ref=e547]:
+      - link "Live Boardroom Terminal (idxclaw.cuang.dev) ↗" [ref=e548] [cursor=pointer]:
+        - /url: https://idxclaw.cuang.dev
+      - link "GitHub (Cuang-dev/IDXClaw)" [ref=e549] [cursor=pointer]:
+        - /url: https://github.com/Cuang-dev/IDXClaw
+      - link "Projects Portal" [ref=e550] [cursor=pointer]:
+        - /url: /
+      - link "AudioDiff Simulator" [ref=e551] [cursor=pointer]:
+        - /url: /AudioDiff/
+      - link "cuang.dev" [ref=e552] [cursor=pointer]:
+        - /url: https://cuang.dev
+    - paragraph [ref=e553]: © 2026 IDXClaw • Quantitative Market Research & Intelligence for Bursa Efek Indonesia.
+    - paragraph [ref=e554]:
+      - text: Developed by Axel Cuangdinata (
+      - link "Cuang-dev" [ref=e555] [cursor=pointer]:
+        - /url: https://github.com/Cuang-dev
+      - text: ). Strictly for automated research, quantitative analytics, and market microstructure education.

@@ -1,0 +1,252 @@
+- main [ref=f10e2]:
+  - generic [ref=f10e3]:
+    - navigation "Main Navigation" [ref=f10e4]:
+      - link "win.ai.id Emblem win .ai.id" [ref=f10e5] [cursor=pointer]:
+        - /url: /
+        - img "win.ai.id Emblem" [ref=f10e6]
+        - text: win
+        - generic [ref=f10e7]: .ai.id
+      - generic [ref=f10e8]:
+        - link "Dev Log" [ref=f10e9] [cursor=pointer]:
+          - /url: /log
+        - link "Sign In" [ref=f10e10] [cursor=pointer]:
+          - /url: /login
+        - button "Switch to dark theme" [ref=f10e11] [cursor=pointer]
+    - generic [ref=f10e14]:
+      - generic [ref=f10e17]:
+        - generic [ref=f10e21]: Strategic Cognitive Architecture · Spring Release
+        - generic [aria-hidden] [ref=f10e22]: 🌱
+      - heading "win.ai.id" [level=1] [ref=f10e23]
+      - paragraph [ref=f10e24]: Architect monumental breakthroughs. Compounded daily.
+      - paragraph [ref=f10e25]:
+        - text: Audacious visions don't stall from lack of ambition—they disintegrate in daily cognitive friction. Traditional to-do apps drown builders in backlogs and artificial urgency.
+        - strong [ref=f10e26]: win.ai.id
+        - text: pairs ambitious founders and builders with
+        - strong [ref=f10e27]: Haiku 5.5
+        - text: ": the breakthrough fast reasoning model engineered for sub-second goal deconstruction, prompt-cached habit context, and flow-state preservation under strict human-in-the-loop guardrails."
+      - generic [ref=f10e28]:
+        - generic [ref=f10e29]: Powered by Haiku 5.5
+        - generic [ref=f10e32]: Sub-150ms Real-Time Inference
+        - generic [ref=f10e36]: Ephemeral Prompt Caching (90% Savings)
+        - generic [ref=f10e39]: Zero-Data Training Privacy
+      - generic [ref=f10e42]:
+        - link "Explore Live Demo" [ref=f10e43] [cursor=pointer]:
+          - /url: "#interactive-demo"
+        - link "Read Dev Log" [ref=f10e44] [cursor=pointer]:
+          - /url: /log
+    - region [ref=f10e45]:
+      - generic [ref=f10e46]:
+        - generic [ref=f10e50]: Spring Execution Sandbox
+        - 'heading "Interactive Live Demo: Experience Strategic Execution" [level=2] [ref=f10e53]'
+        - paragraph [ref=f10e54]: Test the core execution loop right now. Toggle any win to simulate progress, or engage the Haiku 5.5 co-architect below.
+      - generic [ref=f10e56]:
+        - generic [ref=f10e57]:
+          - generic [ref=f10e58]: Interactive Sandbox
+          - generic "Reset demo state" [ref=f10e59] [cursor=pointer]: Reset Demo
+        - generic [ref=f10e60]:
+          - generic [ref=f10e61]: Today · Tuesday, 14 April
+          - generic [ref=f10e62]: 6-day streak · 1 skip available
+        - generic [ref=f10e69]:
+          - generic [ref=f10e70]: 4 of 4 won today
+          - generic [ref=f10e71]: 100%
+        - generic [ref=f10e382]:
+          - strong [ref=f10e385]: Day Won!
+          - text: Strategic velocity preserved. Compounded streak to 6 days.
+        - list [ref=f10e72]:
+          - listitem [ref=f10e386] [cursor=pointer]:
+            - button "Toggle Ship v1 Public Preview & Developer Changelog"
+            - generic [ref=f10e387]:
+              - generic [ref=f10e388]: Ship v1 Public Preview & Developer Changelog
+              - generic [ref=f10e389]: core milestone
+          - listitem [ref=f10e390] [cursor=pointer]:
+            - button "Toggle 3-hour uninterrupted deep architecture block"
+            - generic [ref=f10e391]:
+              - generic [ref=f10e392]: 3-hour uninterrupted deep architecture block
+              - generic [ref=f10e393]: flow state
+          - listitem [ref=f10e394] [cursor=pointer]:
+            - button "Toggle Synthesize customer telemetry into Q4 roadmap"
+            - generic [ref=f10e395]:
+              - generic [ref=f10e396]: Synthesize customer telemetry into Q4 roadmap
+              - generic [ref=f10e397]: strategic direction
+          - listitem [ref=f10e398] [cursor=pointer]:
+            - button "Toggle Extract top 3 customer friction themes from telemetry (20 mins, stop after)"
+            - generic [ref=f10e399]:
+              - generic [ref=f10e400]: Extract top 3 customer friction themes from telemetry (20 mins, stop after)
+              - generic [ref=f10e401]: strategic strike
+        - generic [ref=f10e85]:
+          - generic [ref=f10e90]:
+            - strong [ref=f10e91]: Haiku 5.5 Co-Architect
+            - generic [ref=f10e92]: Sub-150ms real-time inference · Structured JSON proposal engine · Privacy-first
+          - generic [ref=f10e93]: "\"Proposal accepted and integrated into today's plan! Execute with single-minded focus.\""
+          - generic [ref=f10e94]:
+            - button "Deconstruct milestone" [ref=f10e95] [cursor=pointer]
+            - button "Guard cognitive stamina" [ref=f10e100] [cursor=pointer]
+            - button "Trajectory review" [ref=f10e103] [cursor=pointer]
+        - paragraph [ref=f10e106]: "Proposals from Haiku 5.5 are strictly human-in-the-loop: you review, adapt, or dismiss every proposed action before it enters your schedule."
+    - region [ref=f10e107]:
+      - generic [ref=f10e108]:
+        - generic [ref=f10e112]: Compounding Mastery
+        - 'heading "The Behavioral Architecture: From Seeds to Forest" [level=2] [ref=f10e115]'
+        - paragraph [ref=f10e116]: How frontier reasoning bridges visionary ambitions with relentless daily velocity.
+      - generic [ref=f10e117]:
+        - article [ref=f10e118]:
+          - heading "1. Macro-to-Micro Goal Deconstruction" [level=3] [ref=f10e122]
+          - paragraph [ref=f10e123]: Audacious goals are intimidating by design. Our Haiku 5.5 engine deconstructs monumental milestones—shipping complex software, writing manuscripts, or mastering technical disciplines—into crisp, friction-free daily vectors that make breakthrough progress inevitable.
+        - article [ref=f10e124]:
+          - heading "2. Longitudinal Trajectory Synthesis" [level=3] [ref=f10e128]
+          - paragraph [ref=f10e129]: Daily execution without macro alignment is just treadmill exhaustion. Haiku 5.5 continuously synthesizes weeks of historical completion velocity, identifying cognitive fatigue patterns and ensuring today's wins actively compound toward your long-term breakthrough.
+        - article [ref=f10e130]:
+          - heading "3. Sovereign Human-in-the-Loop Agency" [level=3] [ref=f10e134]
+          - paragraph [ref=f10e135]: Built strictly on privacy-preserving principles. The co-architect never imposes unsolicited tasks or creates psychological debt. As an empathetic strategic partner, Haiku 5.5 only proposes high-leverage actions that you explicitly accept, adapt, or dismiss.
+    - region [ref=f10e136]:
+      - generic [ref=f10e137]:
+        - generic [ref=f10e141]: High-Efficiency Intelligence
+        - heading "Engineered on Haiku 5.5 Frontier Architecture" [level=2] [ref=f10e144]
+        - paragraph [ref=f10e145]: High-efficiency reasoning engine tuned for sub-second cognitive calibration and flow-state preservation.
+      - generic [ref=f10e146]:
+        - article [ref=f10e147]:
+          - generic [ref=f10e148]:
+            - heading "Haiku 5.5 Core" [level=3] [ref=f10e149]
+            - generic [ref=f10e150]: Real-Time Inference · <150ms
+          - paragraph [ref=f10e151]: Powers the continuous cognitive execution engine. Evaluates micro-friction in user task execution, flags cognitive fatigue indicators, and delivers instant, schema-validated task deconstructions without interrupting flow state.
+          - list [ref=f10e152]:
+            - listitem [ref=f10e153]:
+              - generic [ref=f10e156]:
+                - strong [ref=f10e157]: "Sub-150ms Tactical Strikes:"
+                - text: Instantaneous proposal delivery preserves deep focus
+            - listitem [ref=f10e158]:
+              - generic [ref=f10e161]:
+                - strong [ref=f10e162]: "Structured JSON Enforcement:"
+                - text: Strict schema validation ensures actionable, zero-hallucination wins
+            - listitem [ref=f10e163]:
+              - generic [ref=f10e166]:
+                - strong [ref=f10e167]: "Human-in-the-Loop Sovereignty:"
+                - text: Uncompromised agency; zero autonomous database writes
+        - article [ref=f10e168]:
+          - generic [ref=f10e169]:
+            - heading "Prompt Caching & Economics" [level=3] [ref=f10e170]
+            - generic [ref=f10e171]: 90% Ephemeral Cache Savings
+          - paragraph [ref=f10e172]: Harnesses native prompt caching across persistent system instructions and user habit vectors. Delivers 90% cost reduction and 80% latency improvement, sustaining proactive nudges well within budget.
+          - list [ref=f10e173]:
+            - listitem [ref=f10e174]:
+              - generic [ref=f10e177]:
+                - strong [ref=f10e178]: "Persistent Context Caching:"
+                - text: Reuses streak histories, habit cadences, and memory vectors
+            - listitem [ref=f10e179]:
+              - generic [ref=f10e182]:
+                - strong [ref=f10e183]: "Deterministic Rule Fallback:"
+                - text: Zero-downtime offline rule engine if network drops
+            - listitem [ref=f10e184]:
+              - generic [ref=f10e187]:
+                - strong [ref=f10e188]: "Zero-Data Retention:"
+                - text: Commercial API terms guarantee zero model training on user telemetry
+    - region [ref=f10e189]:
+      - generic [ref=f10e190]:
+        - generic [ref=f10e194]: Execution Cycle
+        - heading "The Blueprint for Compounding Mastery" [level=2] [ref=f10e197]
+        - paragraph [ref=f10e198]: Three disciplined phases to turn visionary goals into undeniable realities.
+      - generic [ref=f10e199]:
+        - article [ref=f10e200]:
+          - generic [aria-hidden] [ref=f10e201]: "1"
+          - heading "Frame your high-leverage vectors" [level=3] [ref=f10e202]
+          - paragraph [ref=f10e203]: Define pivotal milestones that move the needle. Foundational habits and recurring priorities surface automatically on your daily dashboard.
+        - article [ref=f10e204]:
+          - generic [aria-hidden] [ref=f10e205]: "2"
+          - heading "Execute with relentless focus" [level=3] [ref=f10e206]
+          - paragraph [ref=f10e207]: Single-tap completion provides instant tactile feedback as you execute. The 4:00 AM rollover ensures your deep evening breakthroughs count.
+        - article [ref=f10e208]:
+          - generic [aria-hidden] [ref=f10e209]: "3"
+          - heading "Calibrate with your AI co-architect" [level=3] [ref=f10e210]
+          - paragraph [ref=f10e211]: When friction appears or cognitive load peaks, Haiku 5.5 proposes precision micro-strikes to preserve momentum and unlock forward velocity.
+    - region [ref=f10e212]:
+      - generic [ref=f10e213]:
+        - 'heading "Platform Scope: From Solo Builders to High-Velocity Teams" [level=2] [ref=f10e214]'
+        - paragraph [ref=f10e215]: Architected to scale from individual flow-state governance to multi-disciplinary technical teams.
+      - generic [ref=f10e216]:
+        - article [ref=f10e217]:
+          - generic [ref=f10e218]: Personal OS
+          - heading "Individual Pro" [level=3] [ref=f10e219]
+          - paragraph [ref=f10e220]: For solo founders, researchers, and creators compounding daily execution into life-defining breakthroughs.
+          - list [ref=f10e221]:
+            - listitem [ref=f10e222]: Autonomous cognitive load calibration
+            - listitem [ref=f10e225]: Dynamic streak preservation & skips
+            - listitem [ref=f10e228]: Encrypted private SQLite database
+        - article [ref=f10e231]:
+          - generic [ref=f10e232]: Collaborative Sprints
+          - heading "Team & Founder Sprints" [level=3] [ref=f10e233]
+          - paragraph [ref=f10e234]: For high-velocity early-stage technical teams aligning daily strikes with company-level OKRs.
+          - list [ref=f10e235]:
+            - listitem [ref=f10e236]: Synchronized milestone vectors
+            - listitem [ref=f10e239]: AI-detected team cognitive bottlenecks
+            - listitem [ref=f10e242]: Asynchronous standup synthesis
+        - article [ref=f10e245]:
+          - generic [ref=f10e246]: Cognitive Mastery
+          - heading "Multi-Domain Expansion" [level=3] [ref=f10e247]
+          - paragraph [ref=f10e248]: Domain-specific deep learning modules starting with accelerated Mandarin fluency at zh.win.ai.id.
+          - list [ref=f10e249]:
+            - listitem [ref=f10e250]: FSRS spaced repetition algorithms
+            - listitem [ref=f10e253]: Dynamic micro-story generation
+            - listitem [ref=f10e256]: Unified single sign-on authentication
+    - region [ref=f10e259]:
+      - generic [ref=f10e260]:
+        - generic [ref=f10e264]: Built for High Leverage
+        - heading "Built for High-Leverage Builders, Zero Gimmicks" [level=2] [ref=f10e267]
+        - paragraph [ref=f10e268]: Disciplined, battle-tested capabilities engineered for serious daily momentum.
+      - generic [ref=f10e269]:
+        - article [ref=f10e270]:
+          - heading "Streak with a Free Weekly Skip" [level=3] [ref=f10e274]
+          - paragraph [ref=f10e275]: Monumental pursuits require resilience, not brittle perfectionism. One free skip per ISO week protects your compounding momentum when strategic recovery is needed.
+        - article [ref=f10e276]:
+          - heading "4:00 AM Natural Day Rollover" [level=3] [ref=f10e281]
+          - paragraph [ref=f10e282]: Breakthrough ideas don't conform to arbitrary midnight curfews. All work counts until 4:00 AM local time, accommodating night owls and evening flow states.
+        - article [ref=f10e283]:
+          - heading "Flexible Habit Cadences" [level=3] [ref=f10e287]
+          - paragraph [ref=f10e288]: Schedule daily disciplines, weekday focus sprints, or flexible weekly quotas. Habit streaks track the consistency behind your biggest wins.
+        - article [ref=f10e289]:
+          - heading "Guardrailed AI Co-Architect" [level=3] [ref=f10e293]
+          - paragraph [ref=f10e294]: Haiku 5.5 only proposes high-leverage actions for you to inspect and accept—it never writes to your database directly. Enforces hard monthly budget caps with deterministic fallback.
+        - article [ref=f10e295]:
+          - heading "Ephemeral Prompt Caching" [level=3] [ref=f10e299]
+          - paragraph [ref=f10e300]: Cache breakpoints on system prompts and historical vectors slash API token expenditure by 90% while reducing latency to sub-150ms.
+        - article [ref=f10e301]:
+          - heading "Biometric Passkey Authentication" [level=3] [ref=f10e308]
+          - paragraph [ref=f10e309]: "Frictionless, enterprise-grade authentication: Touch ID, Face ID, hardware security keys, or bcrypt-hashed credentials stored in private local SQLite."
+        - article [ref=f10e310]:
+          - heading "Local SQLite Privacy Sovereignty" [level=3] [ref=f10e314]
+          - paragraph [ref=f10e315]: Single-binary Go and CGO-free modern SQLite replicated via Litestream. Zero training retention and complete user data sovereignty.
+        - article [ref=f10e316]:
+          - heading "Building in Public Dev Log" [level=3] [ref=f10e320]
+          - paragraph [ref=f10e321]: Full transparent engineering ledger covering architecture decisions (ADRs), database schemas, and product iterations published openly.
+    - region [ref=f10e322]:
+      - generic [ref=f10e323]:
+        - generic [ref=f10e324]:
+          - generic [ref=f10e325]: Coming Soon
+          - generic [ref=f10e326]: zh.win.ai.id
+        - 'heading "Multi-Domain Cognitive Mastery: Accelerated Mandarin Acquisition" [level=3] [ref=f10e327]'
+        - generic [ref=f10e328]:
+          - text: Měitiān yī diǎndiǎn ·
+          - emphasis [ref=f10e329]: “A little every day”
+        - paragraph [ref=f10e330]:
+          - text: Coming soon to
+          - strong [ref=f10e331]: zh.win.ai.id
+          - text: ": an adaptive cognitive drill system for intermediate learners (HSK 3–5) mastering advanced fluency. Combines modern FSRS spaced repetition algorithms, high-fidelity neural audio synthesis, sentence cloze drills, and AI-generated micro-narratives woven dynamically from your target vocabulary."
+        - paragraph [ref=f10e332]: Seamless single sign-in across both core and Mandarin learning vectors.
+    - generic [ref=f10e333]:
+      - heading "Ready to compound your next breakthrough?" [level=2] [ref=f10e334]
+      - paragraph [ref=f10e335]: Sign in with a biometric passkey or secure password to begin compounding your daily momentum with Haiku 5.5.
+      - generic [ref=f10e336]:
+        - link "Get Started" [ref=f10e337] [cursor=pointer]:
+          - /url: /login
+        - link "Read the Dev Log" [ref=f10e338] [cursor=pointer]:
+          - /url: /log
+    - generic [ref=f10e339]:
+      - link "win .ai.id" [ref=f10e340] [cursor=pointer]:
+        - /url: /
+        - text: win
+        - generic [ref=f10e341]: .ai.id
+      - navigation "Footer Navigation" [ref=f10e342]:
+        - link "Dev Log" [ref=f10e343] [cursor=pointer]:
+          - /url: /log
+        - link "Sign In" [ref=f10e344] [cursor=pointer]:
+          - /url: /login
+      - paragraph [ref=f10e345]: Built with Go, SQLite, and Haiku 5.5.

@@ -1,0 +1,26 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - button "Switch to dark theme" [ref=e3] [cursor=pointer]:
+    - generic [aria-hidden] [ref=e4]: 🌙
+  - main [ref=e5]:
+    - generic [ref=e6]:
+      - heading [level=1] [ref=e7]:
+        - text: 🌱
+        - link "win.ai.id" [ref=e8] [cursor=pointer]:
+          - /url: /
+      - navigation [ref=e9]:
+        - link "Home" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - text: ·
+        - link "Dev Log" [ref=e11] [cursor=pointer]:
+          - /url: /log
+    - generic [ref=e12]:
+      - heading "Sign in" [level=2] [ref=e13]
+      - generic [ref=e14]:
+        - button "🔑 Sign in with Passkey" [ref=e15] [cursor=pointer]
+        - generic [ref=e16]: or with magic link
+      - paragraph [ref=e18]: Enter your email for a one-time sign in link.
+      - generic [ref=e19]:
+        - textbox "you@example.com" [ref=e20]
+        - button "Send link" [ref=e21] [cursor=pointer]

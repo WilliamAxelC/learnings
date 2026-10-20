@@ -1,0 +1,88 @@
+- generic [active] [ref=f8e1]:
+  - link "Skip to content" [ref=f8e2] [cursor=pointer]:
+    - /url: "#content"
+  - button "Switch to dark theme" [ref=f8e3] [cursor=pointer]
+  - main [ref=f8e6]:
+    - generic [ref=f8e7]:
+      - heading [level=1] [ref=f8e8]:
+        - link "win.ai.id" [ref=f8e9] [cursor=pointer]:
+          - /url: /
+      - navigation [ref=f8e10]:
+        - link "Today" [ref=f8e11] [cursor=pointer]:
+          - /url: /
+        - text: ·
+        - link "Dev Log" [ref=f8e12] [cursor=pointer]:
+          - /url: /log
+    - generic [ref=f8e13]:
+      - heading "Habits" [level=2] [ref=f8e14]
+      - list [ref=f8e15]:
+        - listitem [ref=f8e16]:
+          - generic [aria-hidden] [ref=f8e17]: 🌿
+          - generic [ref=f8e18]:
+            - paragraph [ref=f8e19]: No habits yet — start with one tiny routine 🌱
+            - paragraph [ref=f8e20]: Habits automatically turn into daily wins on scheduled days.
+    - generic [ref=f8e21]:
+      - heading "New habit" [level=2] [ref=f8e22]
+      - generic [ref=f8e23]:
+        - textbox "e.g. Walk 10 minutes, drink a glass of water" [ref=f8e24]
+        - generic [ref=f8e25] [cursor=pointer]:
+          - radio "Every day" [checked] [ref=f8e26]
+          - text: Every day
+        - generic [ref=f8e27] [cursor=pointer]:
+          - radio "On these days:" [ref=f8e28]
+          - text: "On these days:"
+        - generic [ref=f8e29]:
+          - generic [ref=f8e30] [cursor=pointer]:
+            - checkbox "Mon" [ref=f8e31]
+            - text: Mon
+          - generic [ref=f8e32] [cursor=pointer]:
+            - checkbox "Tue" [ref=f8e33]
+            - text: Tue
+          - generic [ref=f8e34] [cursor=pointer]:
+            - checkbox "Wed" [ref=f8e35]
+            - text: Wed
+          - generic [ref=f8e36] [cursor=pointer]:
+            - checkbox "Thu" [ref=f8e37]
+            - text: Thu
+          - generic [ref=f8e38] [cursor=pointer]:
+            - checkbox "Fri" [ref=f8e39]
+            - text: Fri
+          - generic [ref=f8e40] [cursor=pointer]:
+            - checkbox "Sat" [ref=f8e41]
+            - text: Sat
+          - generic [ref=f8e42] [cursor=pointer]:
+            - checkbox "Sun" [ref=f8e43]
+            - text: Sun
+        - generic [ref=f8e44] [cursor=pointer]:
+          - radio "3 times per week" [ref=f8e45]
+          - spinbutton [ref=f8e46]: "3"
+          - text: times per week
+        - button "Add habit" [ref=f8e47] [cursor=pointer]
+    - generic [ref=f8e48]:
+      - heading "About me (for the coach)" [level=2] [ref=f8e49]
+      - generic [ref=f8e50]:
+        - textbox "Work schedule, goals, quiet hours, what helps you recharge…" [ref=f8e51]
+        - button "Save" [ref=f8e52] [cursor=pointer]
+    - generic [ref=f8e53]:
+      - heading "Memory notes (what the coach remembers)" [level=2] [ref=f8e54]
+      - paragraph [ref=f8e55]: Plain-text facts derived from your habits and patterns. You can view, add, or delete any note.
+      - list [ref=f8e56]:
+        - listitem [ref=f8e57]:
+          - generic [aria-hidden] [ref=f8e58]: 💡
+          - generic [ref=f8e59]:
+            - paragraph [ref=f8e60]: No memory notes yet
+            - paragraph [ref=f8e61]: Add one below or let your coach summarize your patterns.
+      - generic [ref=f8e62]:
+        - textbox "e.g. Best creative energy is in the early morning" [ref=f8e63]
+        - button "Add note" [ref=f8e64] [cursor=pointer]
+    - generic [ref=f8e65]:
+      - heading "Settings & Devices" [level=2] [ref=f8e66]
+      - generic [ref=f8e67]:
+        - generic [ref=f8e68]:
+          - strong [ref=f8e69]: Passkeys
+          - paragraph [ref=f8e70]: Sign in with Face ID, Touch ID, or your security key without email links.
+          - button "Register this device as Passkey" [ref=f8e71] [cursor=pointer]
+        - generic [ref=f8e72]:
+          - strong [ref=f8e73]: Web Push Reminders
+          - paragraph [ref=f8e74]: Morning plan reminder and optional evening nudge if nothing was won yet.
+          - button "Enable Push Notifications" [ref=f8e75] [cursor=pointer]

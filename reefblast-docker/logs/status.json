@@ -1,0 +1,212 @@
+{
+  "updatedAt": "2026-10-04T15:41:00.525Z",
+  "me": {
+    "name": "cuang-bot",
+    "level": 34,
+    "coins": 12410,
+    "xp": 26922.27614849643,
+    "boat": "boat-sail-a",
+    "helper": "dex",
+    "points": 0,
+    "skills": {
+      "aspd": 3,
+      "atk": 30
+    },
+    "equipped": "a5f656a8dc42aff0",
+    "items": [
+      {
+        "uid": "f936f725f9c717e2",
+        "w": "popper",
+        "atk": 0,
+        "aspd": 0,
+        "crit": 0,
+        "at": 1791104264,
+        "bound": true
+      },
+      {
+        "uid": "a5f656a8dc42aff0",
+        "w": "trispread",
+        "atk": 0.1221,
+        "aspd": 0.1037,
+        "crit": 0.0747,
+        "at": 1791124443,
+        "by": "cuang-bot"
+      }
+    ]
+  },
+  "zone": 7,
+  "combo": 5,
+  "botRunning": true,
+  "stats": {
+    "startedAt": 1791128249433,
+    "startCoins": 12353,
+    "startLevel": 34,
+    "startXp": 26435.90224712924,
+    "killsThisSession": 0,
+    "bestCombo": 5,
+    "bossesDefeated": 0,
+    "upgradesPurchased": 34,
+    "shotsIntercepted": 0,
+    "marketDealsSniped": 34
+  },
+  "bestDeal": {
+    "listing": {
+      "id": 15,
+      "seller": "Kent",
+      "item": {
+        "uid": "93c331a184266fdc",
+        "w": "riftseeker",
+        "atk": 0.1354,
+        "aspd": 0.1389,
+        "crit": 0.028,
+        "at": 1790934422,
+        "by": "Kent"
+      },
+      "price": 28000,
+      "at": 1791077548
+    },
+    "wDef": {
+      "id": "riftseeker",
+      "name": "Rift Seeker",
+      "desc": "Homing rounds that rarely miss.",
+      "tier": 15,
+      "zone": 12,
+      "cost": 280000,
+      "damage": 38.2,
+      "fireRate": 160,
+      "speed": 22,
+      "kind": "homing",
+      "model": "blaster-n",
+      "color": "#c38bff",
+      "dps": 260,
+      "fair": 280000
+    },
+    "quality": 45,
+    "fairVal": 270000,
+    "discountPct": 90
+  },
+  "recentLogs": [
+    {
+      "timestamp": "2026-10-04T15:41:00.489Z",
+      "timeStr": "15:41:00",
+      "type": "SYSTEM",
+      "message": "Signed in elsewhere. Waiting before reconnecting...",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": 7
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:56.239Z",
+      "timeStr": "15:40:56",
+      "type": "UPGRADE",
+      "message": "SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": "Harbor",
+        "item": "seeker",
+        "price": 5000
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:56.238Z",
+      "timeStr": "15:40:56",
+      "type": "UPGRADE",
+      "message": "SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": "Harbor",
+        "item": "seeker",
+        "price": 5000
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:51.928Z",
+      "timeStr": "15:40:51",
+      "type": "ZONE_CHANGE",
+      "message": "Setting sail into Zone 7: Glacier Rift (Lv 32+)",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": 7
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:47.928Z",
+      "timeStr": "15:40:47",
+      "type": "UPGRADE",
+      "message": "SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": "Harbor",
+        "item": "seeker",
+        "price": 5000
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:47.927Z",
+      "timeStr": "15:40:47",
+      "type": "ZONE_CHANGE",
+      "message": "Setting sail into Zone 7: Glacier Rift (Lv 32+)",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": 7
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:43.836Z",
+      "timeStr": "15:40:43",
+      "type": "UPGRADE",
+      "message": "SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": "Harbor",
+        "item": "seeker",
+        "price": 5000
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:43.835Z",
+      "timeStr": "15:40:43",
+      "type": "SYSTEM",
+      "message": "Signed in elsewhere. Waiting before reconnecting...",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": "Harbor"
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:41.825Z",
+      "timeStr": "15:40:41",
+      "type": "UPGRADE",
+      "message": "SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": "Harbor",
+        "item": "seeker",
+        "price": 5000
+      }
+    },
+    {
+      "timestamp": "2026-10-04T15:40:39.440Z",
+      "timeStr": "15:40:39",
+      "type": "UPGRADE",
+      "message": "SNIPING MARKET UPGRADE: Buying Seeker (Tier 3, 64 DPS) for 5,000 coins (67% off)!",
+      "details": {
+        "level": 34,
+        "coins": 12410,
+        "zone": "Harbor",
+        "item": "seeker",
+        "price": 5000
+      }
+    }
+  ]
+}

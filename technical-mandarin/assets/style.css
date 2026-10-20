@@ -1,0 +1,720 @@
+/* Technical Mandarin for AIOps Engineering - Shared Course Stylesheet (Tufte / Editorial Inspired) */
+:root {
+  --bg-color: #faf9f5;
+  --surface-color: #ffffff;
+  --text-main: #1c1d1f;
+  --text-muted: #5a5b60;
+  --border-color: #e4e3dc;
+  --accent-color: #b91c1c;
+  --accent-light: #fef2f2;
+  --accent-dark: #7f1d1d;
+  --secondary-color: #0369a1;
+  --secondary-light: #f0f9ff;
+  --success-color: #15803d;
+  --success-bg: #f0fdf4;
+  --danger-color: #b91c1c;
+  --danger-bg: #fef2f2;
+  --warning-color: #b45309;
+  --warning-bg: #fffbeb;
+  --code-bg: #f3f2ec;
+  --font-serif: "Charter", "Source Serif Pro", Georgia, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121316;
+    --surface-color: #1b1d22;
+    --text-main: #ededf0;
+    --text-muted: #9e9ea8;
+    --border-color: #2c2f37;
+    --accent-color: #f87171;
+    --accent-light: #2c1618;
+    --accent-dark: #fca5a5;
+    --secondary-color: #38bdf8;
+    --secondary-light: #132736;
+    --success-color: #4ade80;
+    --success-bg: #12291c;
+    --danger-color: #f87171;
+    --danger-bg: #2f1616;
+    --warning-color: #fbbf24;
+    --warning-bg: #2c2210;
+    --code-bg: #22252b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.68;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+/* Header & Meta */
+.lesson-header {
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 28px;
+  margin-bottom: 40px;
+}
+
+.lesson-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-color);
+  background-color: var(--accent-light);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(185, 28, 28, 0.2);
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.24;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 1.12rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.lesson-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 18px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  align-items: center;
+}
+
+.lesson-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Headings & Typography */
+h2 {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-top: 44px;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 18px;
+}
+
+ul, ol {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+/* Mandarin Typography & Ruby Blocks */
+.zh-inline {
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--code-bg);
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.zh-inline .py {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-left: 4px;
+}
+
+/* Bridge Cards: HSK 3 -> Huawei AIOps Upgrade */
+.bridge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+@media (max-width: 700px) {
+  .bridge-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bridge-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.bridge-card.hsk3 {
+  border-top: 3px solid var(--text-muted);
+}
+
+.bridge-card.huawei {
+  border-top: 3px solid var(--accent-color);
+}
+
+.bridge-label {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.bridge-card.huawei .bridge-label {
+  color: var(--accent-color);
+}
+
+.hanzi-lg {
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+}
+
+.pinyin-lg {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+}
+
+.en-gloss {
+  font-size: 0.93rem;
+  color: var(--text-muted);
+}
+
+/* Audio Speak Button */
+.speak-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--secondary-light);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-top: 8px;
+}
+
+.speak-btn:hover {
+  background: var(--secondary-color);
+  color: #ffffff;
+}
+
+.speak-btn.speaking {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #ffffff;
+}
+
+/* Sentence Pattern Blueprint Box */
+.pattern-box {
+  background: var(--surface-color);
+  border: 2px solid var(--border-color);
+  border-left: 5px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 22px 24px;
+  margin: 28px 0;
+}
+
+.pattern-formula {
+  font-family: var(--font-mono);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  background: var(--accent-light);
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+/* Active Recall Speaking Drills */
+.drill-section {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 32px 0;
+}
+
+.drill-card {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+
+.drill-card:last-child {
+  margin-bottom: 0;
+}
+
+.drill-prompt {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.drill-answer {
+  display: none;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.drill-answer.revealed {
+  display: block;
+}
+
+.reveal-btn {
+  background: var(--surface-color);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.reveal-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Callouts */
+.callout {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 18px 22px;
+  margin: 28px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.callout strong.title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.callout.trap {
+  border-left-color: var(--danger-color);
+  background: var(--danger-bg);
+}
+
+.callout.trap strong.title {
+  color: var(--danger-color);
+}
+
+.callout.zpd {
+  border-left-color: var(--secondary-color);
+  background: var(--secondary-light);
+}
+
+.callout.zpd strong.title {
+  color: var(--secondary-color);
+}
+
+.callout.primary-source {
+  border-left-color: var(--warning-color);
+  background: var(--warning-bg);
+}
+
+.callout.primary-source strong.title {
+  color: var(--warning-color);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 0.95rem;
+  background: var(--surface-color);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--code-bg);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-family: var(--font-mono);
+}
+
+/* Interactive Quiz Component */
+.quiz-section {
+  background: var(--surface-color);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 32px 28px;
+  margin: 48px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.quiz-header {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.quiz-header h3 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
+}
+
+.quiz-question-box {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.quiz-question-box:last-of-type {
+  border-bottom: none;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.question-text {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.94rem;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1.45;
+}
+
+.option-btn:hover:not([disabled]) {
+  background: var(--secondary-light);
+  border-color: var(--secondary-color);
+}
+
+.option-btn.selected-correct {
+  background: var(--success-bg);
+  border-color: var(--success-color);
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.option-btn.selected-incorrect {
+  background: var(--danger-bg);
+  border-color: var(--danger-color);
+  color: var(--danger-color);
+  font-weight: 600;
+}
+
+.option-btn.reveal-correct {
+  background: var(--success-bg);
+  border-color: var(--success-color);
+  font-weight: 600;
+}
+
+.feedback-msg {
+  display: none;
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.feedback-msg.show-correct {
+  display: block;
+  background: var(--success-bg);
+  border: 1px solid var(--success-color);
+  color: var(--text-main);
+}
+
+.feedback-msg.show-incorrect {
+  display: block;
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-color);
+  color: var(--text-main);
+}
+
+.quiz-score-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Footer & Nav */
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid var(--border-color);
+  padding-top: 28px;
+  margin-top: 56px;
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+}
+
+.ask-agent-box {
+  background: var(--secondary-light);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.ask-agent-box h4 {
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+/* In-Browser Mic Pronunciation Checker */
+.mic-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.mic-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent-light);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mic-btn:hover {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+
+.mic-btn.recording {
+  background: var(--danger-color);
+  color: #ffffff;
+  animation: pulse-rec 1.2s infinite;
+}
+
+@keyframes pulse-rec {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
+
+.speech-feedback {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.92rem;
+}
+
+.speech-feedback.visible {
+  display: block;
+}
+
+.char-ok {
+  color: var(--success-color);
+  font-weight: 700;
+}
+
+.char-miss {
+  color: var(--danger-color);
+  text-decoration: underline wavy var(--danger-color);
+  font-weight: 700;
+}
+
+/* Gemini Live Prompt Box */
+.gemini-live-box {
+  background: var(--surface-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 36px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.gemini-live-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.gemini-live-header h3 {
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.copy-prompt-btn {
+  background: var(--secondary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.copy-prompt-btn:hover {
+  opacity: 0.9;
+}
+
+.gemini-prompt-pre {
+  background: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  color: var(--text-main);
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 10.5pt;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .quiz-section, .ask-agent-box, .lesson-nav, .speak-btn, .reveal-btn {
+    display: none !important;
+  }
+  .drill-answer {
+    display: block !important;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}

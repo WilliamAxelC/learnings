@@ -1,0 +1,30 @@
+- main [ref=e2]:
+  - generic [ref=e3]:
+    - heading [level=1] [ref=e4]:
+      - link "win.ai.id" [ref=e5] [cursor=pointer]:
+        - /url: /
+    - navigation [ref=e6]:
+      - link "Home" [ref=e7] [cursor=pointer]:
+        - /url: /
+      - text: ·
+      - link "Dev Log" [ref=e8] [cursor=pointer]:
+        - /url: /log
+      - button "Switch to dark theme" [ref=e9] [cursor=pointer]
+  - generic [ref=e12]:
+    - tablist [ref=e13]:
+      - button "Sign In" [ref=e14] [cursor=pointer]
+      - button "Create Account" [ref=e15] [cursor=pointer]
+    - heading "Welcome back" [level=2] [ref=e16]
+    - paragraph [ref=e17]: Sign in with your email and password.
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - text: Email
+        - textbox "Email" [active] [ref=e20]:
+          - /placeholder: you@example.com
+      - generic [ref=e21]:
+        - text: Password
+        - textbox "Password" [ref=e22]:
+          - /placeholder: At least 8 characters
+      - button "Sign in" [ref=e23] [cursor=pointer]
+    - generic [ref=e24]: or with biometric passkey
+    - button "Sign in with Passkey" [ref=e26] [cursor=pointer]

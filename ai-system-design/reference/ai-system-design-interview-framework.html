@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reference: The 4-Phase AI System Design Interview Framework</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 24px 0;
+    }
+    @media (max-width: 700px) {
+      .ref-grid { grid-template-columns: 1fr; }
+    }
+    .ref-card {
+      background: var(--surface-color);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 18px;
+    }
+    .ref-card h4 {
+      font-size: 1.05rem;
+      color: var(--accent-color);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .formula-box {
+      font-family: var(--font-mono);
+      background: var(--code-bg);
+      border-left: 3px solid var(--accent-color);
+      padding: 12px 16px;
+      margin: 12px 0;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="lesson-header">
+      <span class="lesson-badge">Quick Reference Sheet</span>
+      <h1>AI System Design: 4-Phase Interview Framework</h1>
+      <p class="subtitle">A battle-tested blueprint for Senior and Staff AI & ML System Design interviews (45–60 min loops).</p>
+      <div class="lesson-meta">
+        <span>⏱ Allocation: 45 min total</span>
+        <span>🎯 Target: Senior / Staff Level</span>
+        <span>🔗 <a href="../lessons/0001-the-senior-ai-system-design-framework.html">Go to Lesson 0001</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>The 45-Minute Interview Blueprint</h2>
+      <div class="timeline-grid">
+        <div class="time-slot">00–08m<br>Phase 1</div>
+        <div class="time-content">
+          <strong>Clarification, Scope &amp; Non-Functional SLAs</strong>
+          <p>Define functional user story. Nail down QPS, peak RPS, latency budgets (TTFT &amp; TPOT), context window limits, freshness, availability, and hardware budget.</p>
+        </div>
+
+        <div class="time-slot">08–22m<br>Phase 2</div>
+        <div class="time-content">
+          <strong>End-to-End High-Level Architecture</strong>
+          <p>Draw the complete block diagram: ingestion pipeline (offline) vs. inference &amp; serving pipeline (online). Establish clean component seams, data contracts, and storage choices.</p>
+        </div>
+
+        <div class="time-slot">22–37m<br>Phase 3</div>
+        <div class="time-content">
+          <strong>Deep Dive: AI Bottlenecks &amp; Distributed Scale</strong>
+          <p>Analyze memory bandwidth vs. compute bottlenecks. Detail serving infra (vLLM, continuous batching, PagedAttention, KV cache sizing, model parallelism, vector indexing).</p>
+        </div>
+
+        <div class="time-slot">37–45m<br>Phase 4</div>
+        <div class="time-content">
+          <strong>Operational Resilience, Evals &amp; Guardrails</strong>
+          <p>Define the offline/online evaluation flywheel (RAG triad, LLM-as-judge). Detail guardrails, fallback paths, graceful degradation, and system telemetry.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Phase 1: Essential Scoping Checklist &amp; Metrics</h2>
+      <div class="ref-grid">
+        <div class="ref-card">
+          <h4>1. Functional Requirements</h4>
+          <ul>
+            <li>What is the core user experience? (Chat, autocomplete, agent task, batch report)</li>
+            <li>Input modality &amp; typical length (e.g., 2k tokens text, PDF, audio).</li>
+            <li>Output modality &amp; expectation (Streaming tokens vs atomic JSON response).</li>
+          </ul>
+        </div>
+        <div class="ref-card">
+          <h4>2. Non-Functional SLAs</h4>
+          <ul>
+            <li><strong>Throughput:</strong> Average QPS and peak burst factor (e.g., 50 QPS avg, 200 peak).</li>
+            <li><strong>TTFT (Time to First Token):</strong> &lt; 300–500ms for conversational UI.</li>
+            <li><strong>TPOT (Time Per Output Token):</strong> &lt; 30–40ms (~25–33 tokens/sec).</li>
+            <li><strong>Freshness:</strong> Static weights, daily updates, or real-time streaming data?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Critical Back-of-the-Envelope Formulas</h2>
+      <p>Demonstrating rapid, accurate memory and throughput sizing separates Staff candidates from junior applicants.</p>
+
+      <div class="formula-box">
+        <strong>1. Model Weights Memory Footprint:</strong><br>
+        Memory (Bytes) ≈ Parameters &times; Bytes Per Parameter<br>
+        • FP16 / BF16 = 2 bytes/param &nbsp;→&nbsp; 70B model = 140 GB VRAM (bare minimum weights only)<br>
+        • INT8 = 1 byte/param &nbsp;→&nbsp; 70B model = 70 GB VRAM<br>
+        • INT4 / AWQ = 0.5 bytes/param &nbsp;→&nbsp; 70B model = 35 GB VRAM
+      </div>
+
+      <div class="formula-box">
+        <strong>2. KV Cache Memory per Active Request:</strong><br>
+        KV Memory (Bytes) = 2 &times; n_layers &times; n_heads_kv &times; d_head &times; seq_len &times; bytes_per_elem<br>
+        <em>Note:</em> For GQA (Grouped Query Attention), n_heads_kv is significantly smaller than query heads (e.g., 8 KV heads vs 64 query heads in Llama 3 70B), slashing KV cache overhead by 8x.
+      </div>
+
+      <div class="formula-box">
+        <strong>3. Cluster Sizing for Peak Load:</strong><br>
+        Total Peak Output Tokens/sec = Peak QPS &times; Avg Output Tokens Per Query<br>
+        GPUs Needed = Total Peak Output Tokens/sec &divide; Max Sustainable Output Tokens/sec per GPU
+      </div>
+    </section>
+
+    <section>
+      <h2>Phase 2 &amp; 3: Core Architecture Seams</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subsystem</th>
+            <th>Standard Production Choice</th>
+            <th>Staff Architectural Justification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Serving Engine</strong></td>
+            <td>vLLM / TensorRT-LLM / TGI</td>
+            <td>PagedAttention eliminates 60–80% internal memory fragmentation; continuous (iteration-level) batching keeps GPU SM utilization high during mixed prefill/decode phases.</td>
+          </tr>
+          <tr>
+            <td><strong>Retrieval Index</strong></td>
+            <td>HNSW (Hierarchical Navigable Small World)</td>
+            <td>Offers superior recall vs. latency trade-off compared to IVF; can be paired with scalar quantization (SQ8) to cut memory overhead in half.</td>
+          </tr>
+          <tr>
+            <td><strong>Hybrid Search</strong></td>
+            <td>BM25 + Dense Embeddings + RRF</td>
+            <td>Dense retrieval fails on exact entity codes, serial numbers, and acronyms; BM25 catches keywords; Reciprocal Rank Fusion normalizes disparate scoring scales cleanly.</td>
+          </tr>
+          <tr>
+            <td><strong>Semantic Cache</strong></td>
+            <td>Redis Vector Search / GPTCache</td>
+            <td>Saves costly generation for high-repetition prompts, but requires a strict cosine distance threshold (&gt; 0.95) and strict cache invalidation on underlying context change.</td>
+          </tr>
+          <tr>
+            <td><strong>Inference Parallelism</strong></td>
+            <td>Tensor Parallelism (TP) across NVLink</td>
+            <td>70B FP16 requires 140GB+; splitting across 2x or 4x A100/H100 with TP is optimal due to 900 GB/s NVLink interconnects. Do not split TP over standard PCIe or Ethernet.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Phase 4: Evaluation &amp; Observability Matrix</h2>
+      <div class="ref-grid">
+        <div class="ref-card">
+          <h4>Offline Evaluation Flywheel</h4>
+          <ul>
+            <li><strong>Context Relevance:</strong> Is the retrieved text relevant to the prompt? (RAG Triad 1)</li>
+            <li><strong>Groundedness / Faithfulness:</strong> Is the answer derived strictly from context? (RAG Triad 2)</li>
+            <li><strong>Answer Relevance:</strong> Does the output directly satisfy the user query? (RAG Triad 3)</li>
+            <li>Curated Golden Eval Benchmark (200–500 hand-verified queries run on every prompt/code commit).</li>
+          </ul>
+        </div>
+        <div class="ref-card">
+          <h4>Online Monitoring &amp; Guardrails</h4>
+          <ul>
+            <li><strong>Telemetry:</strong> Track p50, p95, p99 TTFT and TPOT; token count distributions; cache hit rates.</li>
+            <li><strong>Guardrails:</strong> Input sanitization (prompt injection classifier) and output validation (PII scrubbing, format schemas via outlines/json-mode).</li>
+            <li><strong>Fallback Circuits:</strong> Degradation to smaller cached models or degraded retrieval mode if primary model servers breach timeout.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Senior vs. Staff Interview Trap Matrix</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>The Junior / Pure ML Trap</th>
+            <th>The Staff AI Systems Approach</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Design a real-time AI code completion tool"</td>
+            <td>Spends 20 minutes discussing which transformer model or loss function to train.</td>
+            <td>Anchors latency constraint first: TTFT must be &lt; 50ms. Concludes that local edge model or speculative decoding with a small draft model is strictly required.</td>
+          </tr>
+          <tr>
+            <td>"Design an enterprise documentation RAG system"</td>
+            <td>Says: "We chunk docs into 500 tokens, embed with OpenAI, put in Pinecone, and send top-5 to Claude."</td>
+            <td>Analyzes chunk overlap, metadata filtering by tenant, hybrid BM25 + dense search with reranker, prefix-prompt caching, and an automated eval harness.</td>
+          </tr>
+          <tr>
+            <td>"How do you handle sudden 10x traffic spikes?"</td>
+            <td>"Just auto-scale the GPU instances in Kubernetes."</td>
+            <td>Notes GPU cold-start times (5–10 mins to pull 40GB weights); introduces queue-based rate limiting, prefix caching, model quantization fallbacks, and pre-warmed replica pools.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="ask-agent-box">
+      <h4>💡 Need practice on an interview question?</h4>
+      <p>Ask the agent: <em>"Run a mock interview scenario with me for Phase 1 of an AI Code Assistant"</em> or <em>"Walk me through calculating KV cache for Llama 3 70B under 50 concurrent requests."</em></p>
+    </div>
+  </div>
+</body>
+</html>

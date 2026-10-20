@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Axel Cuang (projects.cuang.dev)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --card-hover: #1a233a;
+      --border: #1f2937;
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+      --primary: #3b82f6;
+      --cyan: #06b6d4;
+      --purple: #8b5cf6;
+      --green: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: #fff;
+    }
+    .brand-logo {
+      font-size: 1.5rem;
+    }
+    .brand h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .brand span {
+      color: var(--cyan);
+      font-size: 0.8rem;
+      font-family: 'Fira Code', monospace;
+      margin-left: 0.25rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      width: 100%;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .hero-badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: var(--cyan);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff, #9ca3af);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .featured-card {
+      background: linear-gradient(145deg, #131b2e, #1a233a);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 3.5rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+    .featured-glow {
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .featured-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .featured-title-group h3 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: #fff;
+    }
+    .featured-title-group p {
+      font-size: 1.05rem;
+      color: var(--cyan);
+      margin-top: 0.25rem;
+    }
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--green);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 9999px;
+    }
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--green);
+    }
+    .featured-desc {
+      font-size: 1rem;
+      color: #d1d5db;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      max-width: 850px;
+    }
+    .tags-row {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #e5e7eb;
+      font-family: 'Fira Code', monospace;
+    }
+    .btn-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), #2563eb);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+    }
+    .btn-secondary {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: #fff;
+    }
+    .btn-secondary:hover {
+      background: var(--card-hover);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s;
+    }
+    .card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      background: var(--card-hover);
+    }
+    .card h4 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background: var(--card-bg);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="brand">
+      <span class="brand-logo">⚡</span>
+      <h1>projects<span>.cuang.dev</span></h1>
+    </a>
+    <nav class="nav-links">
+      <a href="/IDXClaw/">爪 IDXClaw Quant</a>
+      <a href="/AudioDiff/">AudioDiff Simulator</a>
+      <a href="/AudioDiff/slides.html">Slides</a>
+      <a href="https://github.com/Cuang-dev/IDXClaw" target="_blank" rel="noopener">IDXClaw GitHub</a>
+      <a href="https://github.com/WilliamAxelC/AudioDiff" target="_blank" rel="noopener">AudioDiff GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="hero-badge">Engineering Showcase & AI Lab</span>
+      <h2>William Axel Cuangdinata</h2>
+      <p>Autonomous AI systems, quantitative market microstructure, developer tooling, and distributed infrastructure.</p>
+    </section>
+
+    <!-- Featured: IDXClaw Quant Flagship -->
+    <section class="featured-card" style="border-color: rgba(6, 182, 212, 0.4); margin-bottom: 2.5rem;">
+      <div class="featured-glow" style="background: radial-gradient(circle, rgba(6, 182, 212, 0.3) 0%, transparent 70%);"></div>
+      <div class="featured-header">
+        <div class="featured-title-group">
+          <h3>爪 IDXClaw</h3>
+          <p>Systematic Market Microstructure & Quantitative Research Platform for BEI (IDX)</p>
+        </div>
+        <span class="status-badge" style="background: rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.4); color: var(--cyan);">
+          <span class="status-dot" style="background: var(--cyan); box-shadow: 0 0 8px var(--cyan);"></span>
+          Market Research Engine
+        </span>
+      </div>
+
+      <p class="featured-desc">
+        A quantitative market research and equities data intelligence platform purpose-built for the <strong>Indonesia Stock Exchange (IDX / Bursa Efek Indonesia)</strong>. Combines real-time <strong>IPOT SocketCluster</strong> tape research ingestion, deterministic liquidity analytics (RVOL ≥ 2.0x, VWAP dominance), asymmetric regulatory <strong>ARA/ARB limit modeling</strong> (+35%/+25%/+20%), foreign institutional flow tracking, and automated <strong>MSCI quarterly rebalancing dossiers</strong> with instant Telegram Topic 1724 research updates.
+      </p>
+
+      <div class="tags-row">
+        <span class="tag">Bursa Efek Indonesia</span>
+        <span class="tag">IPOT SocketCluster Tape</span>
+        <span class="tag">Asymmetric ARA/ARB Engine</span>
+        <span class="tag">MSCI Quarterly Rebalancing</span>
+        <span class="tag">Bandarmology Flow</span>
+        <span class="tag">Telegram Topic 1724</span>
+        <span class="tag">Python 3.12 / Asyncio</span>
+      </div>
+
+      <div class="btn-row">
+        <a href="/IDXClaw/" class="btn btn-primary" style="background: linear-gradient(135deg, #0284c7, #2563eb);">
+          爪 Launch IDXClaw Research Portal
+        </a>
+        <a href="https://github.com/Cuang-dev/IDXClaw" target="_blank" rel="noopener" class="btn btn-secondary">
+          💻 GitHub (Cuang-dev/IDXClaw)
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured: AudioDiff Flagship -->
+    <section class="featured-card">
+      <div class="featured-glow"></div>
+      <div class="featured-header">
+        <div class="featured-title-group">
+          <h3>🎙️ AudioDiff</h3>
+          <p>Hands-Free Voice Code Review & Pull Request Explainer</p>
+        </div>
+        <span class="status-badge">
+          <span class="status-dot"></span>
+          AssemblyAI Hackathon Submission
+        </span>
+      </div>
+
+      <p class="featured-desc">
+        A voice-first conversational AI partner for GitHub pull requests that transforms static code diffs into natural, hands-free spoken dialogues. Powered by <strong>AssemblyAI Universal-2</strong> for multi-speaker voice walkthrough diarization, <strong>AssemblyAI Streaming STT</strong> with 33-term developer word boosting, and <strong>AssemblyAI LeMUR v3</strong> for grounded AST reasoning, security audits, and automated comment generation.
+      </p>
+
+      <div class="tags-row">
+        <span class="tag">AssemblyAI Universal-2</span>
+        <span class="tag">AssemblyAI Streaming STT</span>
+        <span class="tag">AssemblyAI LeMUR v3</span>
+        <span class="tag">Barge-In Interruption</span>
+        <span class="tag">AST Diff Grounding</span>
+        <span class="tag">TypeScript 5.7</span>
+        <span class="tag">WebSocket Hub</span>
+      </div>
+
+      <div class="btn-row">
+        <a href="/AudioDiff/" class="btn btn-primary">
+          🚀 Launch AudioDiff Simulator
+        </a>
+        <a href="/AudioDiff/slides.html" class="btn btn-secondary">
+          📊 View Presentation Slides
+        </a>
+        <a href="https://github.com/WilliamAxelC/AudioDiff" target="_blank" rel="noopener" class="btn btn-secondary">
+          💻 GitHub Repository
+        </a>
+      </div>
+    </section>
+
+    <!-- Additional Projects Showcase -->
+    <section>
+      <h3 class="section-title">📂 Other Projects & Research</h3>
+      <div class="grid">
+        <div class="card">
+          <div>
+            <h4>🎨 AI-nimate</h4>
+            <p>Automated 2D vector animation pipeline with moving conic glows, idle float physics, and Edge-TTS voiceover synchronization.</p>
+          </div>
+          <div class="tags-row" style="margin-bottom: 0;">
+            <span class="tag">Motion Canvas</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h4>🛡️ S1Gate Remote MCP</h4>
+            <p>Remote Model Context Protocol server providing automated diff triage, security inspection, and verified remediation.</p>
+          </div>
+          <div class="tags-row" style="margin-bottom: 0;">
+            <span class="tag">FastAPI</span>
+            <span class="tag">MCP</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h4>📈 TradingAgents Validator</h4>
+            <p>Quantitative multi-agent financial validation framework running autonomous backtesting and risk assessment.</p>
+          </div>
+          <div class="tags-row" style="margin-bottom: 0;">
+            <span class="tag">Python</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 William Axel Cuangdinata (cuang.dev). Built for the Lablab.ai AssemblyAI Voice Agent Hackathon.</p>
+  </footer>
+</body>
+</html>

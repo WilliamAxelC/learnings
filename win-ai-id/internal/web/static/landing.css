@@ -1,0 +1,1282 @@
+/* landing.css - Light Blue, White & Spring Visual Identity for win.ai.id */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap');
+
+:root {
+  --spring-bg: var(--bg, #f4f9fd);
+  --spring-card: var(--card, #ffffff);
+  --spring-card-subtle: #f0f7fc;
+  --spring-ink: var(--ink, #0f172a);
+  --spring-muted: var(--muted, #475569);
+  --spring-line: var(--line, #e2e8f0);
+  --spring-line-strong: #cbd5e1;
+  --spring-accent: var(--accent, #0284c7);
+  --spring-accent-hover: #0369a1;
+  --spring-accent-soft: #e0f2fe;
+  --spring-accent-border: #bae6fd;
+  --spring-sand: #f0f7fc;
+  --spring-tree: #166534;
+  --spring-leaf: #16a34a;
+  --spring-sprout: #22c55e;
+  --spring-soft: #f0fdf4;
+  --spring-border: #bbf7d0;
+  --spring-radius: 16px;
+}
+
+:root[data-theme="dark"] {
+  --spring-bg: var(--bg, #090e17);
+  --spring-card: var(--card, #111c2e);
+  --spring-card-subtle: #16253c;
+  --spring-ink: var(--ink, #f8fafc);
+  --spring-muted: var(--muted, #94a3b8);
+  --spring-line: var(--line, #1e293b);
+  --spring-line-strong: #334155;
+  --spring-accent: var(--accent, #38bdf8);
+  --spring-accent-hover: #7dd3fc;
+  --spring-accent-soft: rgba(56, 189, 248, 0.14);
+  --spring-accent-border: rgba(56, 189, 248, 0.32);
+  --spring-sand: #16253c;
+  --spring-tree: #4ade80;
+  --spring-leaf: #22c55e;
+  --spring-sprout: #22c55e;
+  --spring-soft: rgba(34, 197, 94, 0.15);
+  --spring-border: rgba(34, 197, 94, 0.35);
+}
+
+/* Landing breakout container: up to 1020px */
+.landing {
+  width: min(100vw - 32px, 1020px);
+  margin-inline: calc(50% - min(50vw - 16px, 510px));
+  box-sizing: border-box;
+  padding: 12px 0 60px;
+  color: var(--spring-ink);
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+.landing-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 32px;
+}
+
+.landing-nav .brand {
+  font-family: "Charter", "Georgia", "Cambria", "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  color: var(--spring-ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.landing-nav .brand span {
+  color: var(--spring-accent);
+}
+
+.brand-mascot {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: block;
+}
+
+.landing-nav-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.landing-nav-links a {
+  text-decoration: none;
+  color: var(--spring-muted);
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.landing-nav-links a:hover {
+  color: var(--spring-ink);
+}
+
+.landing-nav-links .nav-cta {
+  padding: 7px 16px;
+  border-radius: 99px;
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  font-weight: 600;
+  border: 1px solid var(--spring-accent-border);
+  transition: all 0.15s ease;
+}
+
+.landing-nav-links .nav-cta:hover {
+  background: var(--spring-accent);
+  color: #ffffff;
+  border-color: var(--spring-accent);
+}
+
+:root[data-theme="dark"] .landing-nav-links .nav-cta:hover {
+  color: #090e17;
+}
+
+/* Hero Section */
+.landing-hero {
+  text-align: center;
+  padding: 48px 24px 54px;
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 22px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 24px -2px rgba(2, 132, 199, 0.06), 0 2px 8px -1px rgba(15, 23, 42, 0.03);
+}
+
+:root[data-theme="dark"] .landing-hero {
+  box-shadow: 0 4px 28px -2px rgba(0, 0, 0, 0.5);
+}
+
+.landing-hero::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 640px;
+  height: 240px;
+  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.18) 0%, rgba(34, 197, 94, 0.08) 50%, transparent 75%);
+  pointer-events: none;
+}
+
+.hero-mascot-badge {
+  display: block;
+  margin: 0 auto 18px;
+  width: fit-content;
+  filter: drop-shadow(0 4px 14px rgba(2, 132, 199, 0.2));
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hero-mascot-badge:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.hero-mascot-img {
+  width: 76px;
+  height: 76px;
+  border-radius: 18px;
+  display: block;
+}
+
+/* Spring Hero Pill */
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  border-radius: 99px;
+  background: var(--spring-accent-soft);
+  border: 1px solid var(--spring-accent-border);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--spring-accent);
+  margin-bottom: 22px;
+  letter-spacing: 0.01em;
+}
+
+.hero-pill-tree {
+  color: var(--spring-leaf);
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero-pill-sprout {
+  font-size: 0.9rem;
+}
+
+.landing-title {
+  font-family: "Charter", "Georgia", "Cambria", "Times New Roman", serif;
+  font-size: clamp(2.8rem, 7vw, 4.2rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 0 0 16px;
+  color: var(--spring-ink);
+}
+
+.landing-title .dot-accent {
+  color: var(--spring-accent);
+}
+
+.hero-tagline {
+  font-family: "Charter", "Georgia", "Cambria", "Times New Roman", serif;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 600;
+  color: var(--spring-ink);
+  margin: 0 auto 16px;
+  max-width: 680px;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  color: var(--spring-muted);
+  max-width: 640px;
+  margin: 0 auto 30px;
+  line-height: 1.65;
+}
+
+.hero-trust-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 0 32px;
+}
+
+.trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 99px;
+  background: var(--spring-card-subtle);
+  border: 1px solid var(--spring-line);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--spring-muted);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.trust-chip svg {
+  color: var(--spring-accent);
+  flex-shrink: 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 11px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
+}
+
+.btn-cta:active {
+  transform: scale(0.98);
+}
+
+.btn-cta-primary {
+  background: var(--spring-accent);
+  color: #ffffff;
+  border: 1px solid var(--spring-accent);
+  box-shadow: 0 2px 10px rgba(2, 132, 199, 0.25);
+}
+
+.btn-cta-primary:hover {
+  background: var(--spring-accent-hover);
+  border-color: var(--spring-accent-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+}
+
+:root[data-theme="dark"] .btn-cta-primary {
+  background: var(--spring-accent);
+  color: #090e17;
+  font-weight: 700;
+}
+
+:root[data-theme="dark"] .btn-cta-primary:hover {
+  background: var(--spring-accent-hover);
+}
+
+.btn-cta-secondary {
+  background: var(--spring-card);
+  color: var(--spring-ink);
+  border: 1px solid var(--spring-line-strong);
+}
+
+.btn-cta-secondary:hover {
+  background: var(--spring-card-subtle);
+  border-color: var(--spring-muted);
+}
+
+/* Sections shared styling */
+.landing-section {
+  margin-top: 60px;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.section-head h2 {
+  font-family: "Charter", "Georgia", "Cambria", "Times New Roman", serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--spring-ink);
+  margin: 0 0 10px;
+  line-height: 1.2;
+}
+
+.section-head p {
+  font-size: 1.02rem;
+  color: var(--spring-muted);
+  margin: 0 auto;
+  max-width: 580px;
+  line-height: 1.55;
+}
+
+/* Micro-Tree Botanical Section Decorator */
+.section-tree-accent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: var(--spring-leaf);
+}
+
+.section-tree-accent svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Sample Day Preview Card (Sandbox) */
+.sample-preview-container {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.sample-day-card {
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(2, 132, 199, 0.05);
+  position: relative;
+}
+
+:root[data-theme="dark"] .sample-day-card {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
+.demo-card-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.sample-tag-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--spring-card-subtle);
+  color: var(--spring-ink);
+  border: 1px solid var(--spring-line);
+}
+
+.live-pulse {
+  background: var(--spring-accent-soft) !important;
+  color: var(--spring-accent) !important;
+  border-color: var(--spring-accent-border) !important;
+}
+
+.demo-reset-btn {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--spring-muted);
+  cursor: pointer;
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1px solid var(--spring-line);
+  background: var(--spring-card);
+  transition: all 0.15s ease;
+}
+
+.demo-reset-btn:hover {
+  color: var(--spring-accent);
+  border-color: var(--spring-accent);
+  background: var(--spring-accent-soft);
+}
+
+.sample-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: 1px solid var(--spring-line);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+.sample-date {
+  font-family: "Charter", "Georgia", serif;
+  font-weight: 700;
+  font-size: 1.12rem;
+  color: var(--spring-ink);
+}
+
+.sample-streak-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--spring-leaf);
+  background: var(--spring-soft);
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1px solid var(--spring-border);
+  display: inline-flex;
+  align-items: center;
+}
+
+.demo-progress-wrap {
+  margin-bottom: 18px;
+}
+
+.demo-progress-bar {
+  height: 8px;
+  width: 100%;
+  background: var(--spring-card-subtle);
+  border-radius: 99px;
+  overflow: hidden;
+  border: 1px solid var(--spring-line);
+}
+
+.demo-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0284c7 0%, #0ea5e9 60%, #16a34a 100%);
+  border-radius: 99px;
+  transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.demo-progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--spring-muted);
+  margin-top: 5px;
+}
+
+.demo-celebrate-banner {
+  background: var(--spring-soft);
+  border: 1px solid var(--spring-border);
+  color: var(--spring-tree);
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.sample-wins-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sample-win-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--spring-line);
+  background: var(--spring-card);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  user-select: none;
+}
+
+.sample-win-item:hover {
+  background: var(--spring-card-subtle);
+  border-color: var(--spring-line-strong);
+}
+
+.sample-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border: 1.5px solid var(--spring-line-strong);
+  background: var(--spring-card);
+  color: transparent;
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+.sample-checkbox.checked {
+  background: var(--spring-accent);
+  border-color: var(--spring-accent);
+  color: #ffffff;
+}
+
+.sample-win-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sample-win-item.done .sample-win-label {
+  color: var(--spring-muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--spring-line-strong);
+}
+
+.sample-win-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--spring-ink);
+}
+
+.sample-pill {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 99px;
+  background: var(--spring-card-subtle);
+  color: var(--spring-muted);
+  border: 1px solid var(--spring-line);
+}
+
+.sample-pill.coach {
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  border-color: var(--spring-accent-border);
+}
+
+/* Haiku 5.5 AI Coach Playground within demo */
+.demo-coach-playground {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 14px;
+  background: var(--spring-card-subtle);
+  border: 1px solid var(--spring-line);
+}
+
+.demo-coach-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.demo-coach-avatar {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  border-radius: 9px;
+  border: 1px solid var(--spring-accent-border);
+}
+
+.demo-coach-title-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.demo-coach-title-wrap strong {
+  font-size: 0.92rem;
+  color: var(--spring-ink);
+  font-weight: 700;
+}
+
+.demo-coach-sub {
+  font-size: 0.74rem;
+  color: var(--spring-muted);
+}
+
+.demo-coach-message {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--spring-ink);
+  font-style: italic;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  background: var(--spring-card);
+  border-radius: 8px;
+  border: 1px solid var(--spring-line);
+  border-left: 3px solid var(--spring-accent);
+}
+
+.demo-coach-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.demo-chip {
+  padding: 6px 12px;
+  border-radius: 99px;
+  border: 1px solid var(--spring-line-strong);
+  background: var(--spring-card);
+  color: var(--spring-ink);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.demo-chip svg {
+  color: var(--spring-accent);
+}
+
+.demo-chip:hover {
+  background: var(--spring-accent-soft);
+  border-color: var(--spring-accent);
+  color: var(--spring-accent);
+  transform: translateY(-1px);
+}
+
+.demo-proposal-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  background: var(--spring-card);
+  border: 1.5px solid var(--spring-accent);
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
+  margin-top: 12px;
+}
+
+.proposal-content {
+  flex: 1;
+}
+
+.proposal-badge {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--spring-accent);
+  letter-spacing: 0.05em;
+}
+
+.proposal-content p {
+  margin: 3px 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--spring-ink);
+}
+
+.proposal-accept-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--spring-accent);
+  color: #ffffff;
+  font-size: 0.84rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.12s ease, background 0.15s ease;
+}
+
+.proposal-accept-btn:hover {
+  background: var(--spring-accent-hover);
+  transform: scale(1.02);
+}
+
+.sample-footer-hint {
+  font-size: 0.82rem;
+  color: var(--spring-muted);
+  border-top: 1px dashed var(--spring-line);
+  padding-top: 14px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+/* Architecture Grid (3 cards) */
+.arch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .arch-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.arch-card {
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 2px 10px rgba(2, 132, 199, 0.03);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.arch-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--spring-accent-border);
+}
+
+.arch-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  border: 1px solid var(--spring-accent-border);
+}
+
+.arch-icon-wrap.tree-accent {
+  background: var(--spring-soft);
+  color: var(--spring-tree);
+  border-color: var(--spring-border);
+}
+
+.arch-icon-wrap svg {
+  width: 22px;
+  height: 22px;
+}
+
+.arch-card h3 {
+  font-family: "Charter", "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--spring-ink);
+  line-height: 1.3;
+}
+
+.arch-card p {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--spring-muted);
+  margin: 0;
+}
+
+/* Haiku 5.5 Model Architecture Grid (2 cards) */
+.model-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .model-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.model-card {
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.model-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.model-name {
+  font-family: "Charter", "Georgia", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--spring-ink);
+  margin: 0;
+}
+
+.model-badge {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  border: 1px solid var(--spring-accent-border);
+}
+
+.model-badge.spring {
+  background: var(--spring-soft);
+  color: var(--spring-tree);
+  border-color: var(--spring-border);
+}
+
+.model-card p {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--spring-muted);
+  margin: 0;
+}
+
+.model-spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.model-spec-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--spring-ink);
+  line-height: 1.45;
+}
+
+.model-spec-list li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--spring-accent);
+}
+
+/* How It Works (3 Steps) */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.step-card {
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.step-number {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  font-weight: 800;
+  font-size: 0.95rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--spring-accent-border);
+}
+
+.step-card h3 {
+  font-family: "Charter", "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--spring-ink);
+  line-height: 1.3;
+}
+
+.step-card p {
+  font-size: 0.92rem;
+  color: var(--spring-muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Platform Scope Section (3 cards) */
+.scope-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .scope-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.scope-card {
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 16px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scope-card.highlight {
+  border-color: var(--spring-accent);
+  background: var(--spring-card-subtle);
+  position: relative;
+}
+
+.scope-tag {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: var(--spring-card-subtle);
+  color: var(--spring-muted);
+  border: 1px solid var(--spring-line);
+}
+
+.scope-card.highlight .scope-tag {
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  border-color: var(--spring-accent-border);
+}
+
+.scope-card h3 {
+  font-family: "Charter", "Georgia", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--spring-ink);
+}
+
+.scope-card p {
+  font-size: 0.92rem;
+  color: var(--spring-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.scope-features {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.scope-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: var(--spring-ink);
+}
+
+.scope-features li svg {
+  color: var(--spring-accent);
+}
+
+/* Features Grid: Balanced 8-Card Grid (4x2 on desktop, 2x4 on tablet, 1x8 on mobile) */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 600px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-card {
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--spring-accent-border);
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--spring-accent-soft);
+  color: var(--spring-accent);
+  border: 1px solid var(--spring-accent-border);
+  margin-bottom: 4px;
+}
+
+.feature-icon.tree-foliage {
+  background: var(--spring-soft);
+  color: var(--spring-tree);
+  border-color: var(--spring-border);
+}
+
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.feature-card h3 {
+  font-family: "Charter", "Georgia", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--spring-ink);
+  line-height: 1.3;
+}
+
+.feature-card p {
+  font-size: 0.88rem;
+  color: var(--spring-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Mandarin / Multi-Domain Teaser Card */
+.zh-teaser-card {
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 18px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.zh-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-coming-soon {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: var(--spring-card-subtle);
+  color: var(--spring-ink);
+  border: 1px solid var(--spring-line);
+}
+
+.zh-badge-sub {
+  font-size: 0.85rem;
+  color: var(--spring-muted);
+  font-weight: 500;
+}
+
+.zh-teaser-card h3 {
+  font-family: "Charter", "Georgia", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--spring-ink);
+}
+
+.zh-callout {
+  font-family: "Noto Serif SC", "PingFang SC", "Hiragino Sans GB", "Songti SC", "SimSun", "STSong", "Charter", "Georgia", serif;
+  font-size: 0.98rem;
+  color: var(--spring-accent);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.zh-teaser-card p {
+  font-size: 0.95rem;
+  color: var(--spring-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.zh-subtext {
+  font-size: 0.88rem !important;
+  color: var(--spring-muted);
+}
+
+/* Call to Action Banner */
+.landing-cta-banner {
+  text-align: center;
+  background: var(--spring-card);
+  border: 1px solid var(--spring-line);
+  border-radius: 20px;
+  padding: 44px 24px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 20px -2px rgba(2, 132, 199, 0.06);
+}
+
+.landing-cta-banner h2 {
+  font-family: "Charter", "Georgia", serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--spring-ink);
+  margin: 0;
+}
+
+.landing-cta-banner p {
+  color: var(--spring-muted);
+  max-width: 540px;
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+/* Footer */
+.landing-footer {
+  margin-top: 60px;
+  padding-top: 28px;
+  border-top: 1px solid var(--spring-line);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--spring-muted);
+}
+
+.landing-footer .footer-brand {
+  font-family: "Charter", "Georgia", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--spring-ink);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.landing-footer .footer-brand span {
+  color: var(--spring-accent);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-nav a {
+  color: var(--spring-muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--spring-ink);
+}
+
+.built-with-note {
+  font-size: 0.85rem;
+  color: var(--spring-muted);
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .landing-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-hero {
+    padding: 32px 14px 38px;
+  }
+  .landing-title {
+    font-size: 2.6rem;
+  }
+  .hero-trust-chips {
+    gap: 6px;
+  }
+  .trust-chip {
+    font-size: 0.76rem;
+    padding: 5px 10px;
+  }
+  .sample-day-card {
+    padding: 20px 16px;
+  }
+  .sample-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .sample-date {
+    font-size: 1.05rem;
+  }
+  .demo-proposal-box {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .proposal-accept-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 14px;
+  }
+}

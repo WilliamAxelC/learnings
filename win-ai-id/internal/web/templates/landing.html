@@ -1,0 +1,612 @@
+{{define "content"}}
+<link rel="stylesheet" href="/static/landing.css?v=haiku55">
+<div class="landing">
+  <nav class="landing-nav" aria-label="Main Navigation">
+    <a href="/" class="brand">
+      <img src="/static/icon.svg?v=haiku55" alt="win.ai.id Emblem" class="brand-mascot" width="30" height="30">
+      win<span>.ai.id</span>
+    </a>
+    <div class="landing-nav-links">
+      <a href="/log">Dev Log</a>
+      <a href="/login" class="nav-cta">Sign In</a>
+      <button type="button" class="theme-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="theme-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="1" y2="3"/><line x1="12" y1="21" x2="1" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="landing-hero">
+    <div class="hero-mascot-badge" aria-hidden="true">
+      <img src="/static/icon.svg?v=haiku55" alt="win.ai.id Emblem" class="hero-mascot-img" width="76" height="76">
+    </div>
+    <div class="hero-pill">
+      <span class="hero-pill-tree" aria-hidden="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+      </span>
+      <span>Strategic Cognitive Architecture &middot; Spring Release</span>
+      <span class="hero-pill-sprout" aria-hidden="true">🌱</span>
+    </div>
+    <h1 class="landing-title">win<span class="dot-accent">.ai.id</span></h1>
+    <p class="hero-tagline">Architect monumental breakthroughs. Compounded daily.</p>
+    <p class="hero-description">
+      Audacious visions don't stall from lack of ambition—they disintegrate in daily cognitive friction. Traditional to-do apps drown builders in backlogs and artificial urgency. <strong>win.ai.id</strong> pairs ambitious founders and builders with <strong>Haiku 5.5</strong>: the breakthrough fast reasoning model engineered for sub-second goal deconstruction, prompt-cached habit context, and flow-state preservation under strict human-in-the-loop guardrails.
+    </p>
+
+    <!-- Trust & Architecture Badges -->
+    <div class="hero-trust-chips">
+      <span class="trust-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg> Powered by Haiku 5.5</span>
+      <span class="trust-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg> Sub-150ms Real-Time Inference</span>
+      <span class="trust-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Ephemeral Prompt Caching (90% Savings)</span>
+      <span class="trust-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Zero-Data Training Privacy</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#interactive-demo" class="btn-cta btn-cta-primary">Explore Live Demo</a>
+      <a href="/log" class="btn-cta btn-cta-secondary">Read Dev Log</a>
+    </div>
+  </header>
+
+  <!-- Interactive Live Demo Section -->
+  <section class="landing-section sample-section" id="interactive-demo" aria-labelledby="sample-preview-heading">
+    <div class="section-head">
+      <div class="section-tree-accent" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+        <span>Spring Execution Sandbox</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+      </div>
+      <h2 id="sample-preview-heading">Interactive Live Demo: Experience Strategic Execution</h2>
+      <p>Test the core execution loop right now. Toggle any win to simulate progress, or engage the Haiku 5.5 co-architect below.</p>
+    </div>
+    <div class="sample-preview-container">
+      <div class="sample-day-card" id="interactive-demo-card">
+        <div class="demo-card-topbar">
+          <span class="sample-tag-badge live-pulse">Interactive Sandbox</span>
+          <span class="demo-reset-btn" onclick="resetDemo()" title="Reset demo state">Reset Demo</span>
+        </div>
+
+        <div class="sample-header">
+          <span class="sample-date">Today · Tuesday, 14 April</span>
+          <span class="sample-streak-pill" id="demo-streak-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="none" style="vertical-align: -1px; margin-right: 3px;"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+            <span id="demo-streak-text">5-day streak · 1 skip available</span>
+          </span>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="demo-progress-wrap">
+          <div class="demo-progress-bar">
+            <div class="demo-progress-fill" id="demo-progress-fill" style="width: 66%;"></div>
+          </div>
+          <div class="demo-progress-label">
+            <span id="demo-status-text">2 of 3 won today</span>
+            <span id="demo-percent-text">66%</span>
+          </div>
+        </div>
+
+        <div id="demo-celebrate-banner" class="demo-celebrate-banner" style="display: none;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none" style="vertical-align: -3px; margin-right: 4px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <strong>Day Won!</strong> Strategic velocity preserved. Compounded streak to 6 days.
+        </div>
+
+        <!-- Interactive Wins Checklist -->
+        <ul class="sample-wins-list" id="demo-wins-list">
+          <li class="sample-win-item done" onclick="toggleDemoWin(this, 1)" data-id="1">
+            <button type="button" class="sample-checkbox checked" aria-label="Toggle task"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <div class="sample-win-text">
+              <span class="sample-win-label">Ship v1 Public Preview & Developer Changelog</span>
+              <span class="sample-pill">core milestone</span>
+            </div>
+          </li>
+          <li class="sample-win-item done" onclick="toggleDemoWin(this, 2)" data-id="2">
+            <button type="button" class="sample-checkbox checked" aria-label="Toggle task"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <div class="sample-win-text">
+              <span class="sample-win-label">3-hour uninterrupted deep architecture block</span>
+              <span class="sample-pill">flow state</span>
+            </div>
+          </li>
+          <li class="sample-win-item" onclick="toggleDemoWin(this, 3)" data-id="3">
+            <button type="button" class="sample-checkbox" aria-label="Toggle task"></button>
+            <div class="sample-win-text">
+              <span class="sample-win-label">Synthesize customer telemetry into Q4 roadmap</span>
+              <span class="sample-pill coach">strategic direction</span>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Interactive Haiku 5.5 AI Coach Playground -->
+        <div class="demo-coach-playground">
+          <div class="demo-coach-header">
+            <span class="demo-coach-avatar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+            </span>
+            <div class="demo-coach-title-wrap">
+              <strong>Haiku 5.5 Co-Architect</strong>
+              <span class="demo-coach-sub">Sub-150ms real-time inference · Structured JSON proposal engine · Privacy-first</span>
+            </div>
+          </div>
+
+          <div class="demo-coach-message" id="demo-coach-message">
+            "Haiku 5.5 active: Deep architecture block locked in. Detecting cognitive friction on the Q4 roadmap synthesis. Select a strategic strike below to deconstruct it into an immediate, friction-free win."
+          </div>
+
+          <!-- Prompt chips -->
+          <div class="demo-coach-chips">
+            <button type="button" class="demo-chip" onclick="simulateCoachPrompt('breakdown')">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Deconstruct milestone
+            </button>
+            <button type="button" class="demo-chip" onclick="simulateCoachPrompt('energy')">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Guard cognitive stamina
+            </button>
+            <button type="button" class="demo-chip" onclick="simulateCoachPrompt('shutdown')">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 4px;"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Trajectory review
+            </button>
+          </div>
+
+          <!-- Dynamic Proposal Box -->
+          <div id="demo-proposal-box" class="demo-proposal-box" style="display: none;">
+            <div class="proposal-content">
+              <span class="proposal-badge">Proposed Strategic Win</span>
+              <p id="demo-proposal-text">Extract top 3 customer friction themes from telemetry (20 mins, stop after).</p>
+            </div>
+            <button type="button" class="proposal-accept-btn" onclick="acceptCoachProposal()">
+              + Accept Proposal
+            </button>
+          </div>
+        </div>
+
+        <p class="sample-footer-hint">
+          Proposals from Haiku 5.5 are strictly human-in-the-loop: you review, adapt, or dismiss every proposed action before it enters your schedule.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Behavioral Architecture Section -->
+  <section class="landing-section arch-section" aria-labelledby="arch-heading">
+    <div class="section-head">
+      <div class="section-tree-accent" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+        <span>Compounding Mastery</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+      </div>
+      <h2 id="arch-heading">The Behavioral Architecture: From Seeds to Forest</h2>
+      <p>How frontier reasoning bridges visionary ambitions with relentless daily velocity.</p>
+    </div>
+    <div class="arch-grid">
+      <article class="arch-card">
+        <div class="arch-icon-wrap tree-accent" aria-hidden="true">
+          <!-- Sprouting Seedling SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10M12 20v-8M12 12c-3 0-5-2-5-5a5 5 0 0 1 5 5zM12 10c3 0 5-2 5-5a5 5 0 0 0-5 5z"/></svg>
+        </div>
+        <h3>1. Macro-to-Micro Goal Deconstruction</h3>
+        <p>Audacious goals are intimidating by design. Our Haiku 5.5 engine deconstructs monumental milestones—shipping complex software, writing manuscripts, or mastering technical disciplines—into crisp, friction-free daily vectors that make breakthrough progress inevitable.</p>
+      </article>
+
+      <article class="arch-card">
+        <div class="arch-icon-wrap" aria-hidden="true">
+          <!-- Growing Tree / Foliage SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.3 4.7 3.3 5.9V19a2 2 0 0 0 2 2h3.4a2 2 0 0 0 2-2v-4.1A7 7 0 0 0 12 2z"/></svg>
+        </div>
+        <h3>2. Longitudinal Trajectory Synthesis</h3>
+        <p>Daily execution without macro alignment is just treadmill exhaustion. Haiku 5.5 continuously synthesizes weeks of historical completion velocity, identifying cognitive fatigue patterns and ensuring today's wins actively compound toward your long-term breakthrough.</p>
+      </article>
+
+      <article class="arch-card">
+        <div class="arch-icon-wrap tree-accent" aria-hidden="true">
+          <!-- Enduring Pine Tree SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+        </div>
+        <h3>3. Sovereign Human-in-the-Loop Agency</h3>
+        <p>Built strictly on privacy-preserving principles. The co-architect never imposes unsolicited tasks or creates psychological debt. As an empathetic strategic partner, Haiku 5.5 only proposes high-leverage actions that you explicitly accept, adapt, or dismiss.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Haiku 5.5 Architecture Section -->
+  <section class="landing-section model-section" aria-labelledby="model-heading">
+    <div class="section-head">
+      <div class="section-tree-accent" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+        <span>High-Efficiency Intelligence</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+      </div>
+      <h2 id="model-heading">Engineered on Haiku 5.5 Frontier Architecture</h2>
+      <p>High-efficiency reasoning engine tuned for sub-second cognitive calibration and flow-state preservation.</p>
+    </div>
+    <div class="model-grid">
+      <article class="model-card">
+        <div class="model-header">
+          <h3 class="model-name">Haiku 5.5 Core</h3>
+          <span class="model-badge">Real-Time Inference · &lt;150ms</span>
+        </div>
+        <p>Powers the continuous cognitive execution engine. Evaluates micro-friction in user task execution, flags cognitive fatigue indicators, and delivers instant, schema-validated task deconstructions without interrupting flow state.</p>
+        <ul class="model-spec-list">
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Sub-150ms Tactical Strikes:</strong> Instantaneous proposal delivery preserves deep focus</span>
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Structured JSON Enforcement:</strong> Strict schema validation ensures actionable, zero-hallucination wins</span>
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Human-in-the-Loop Sovereignty:</strong> Uncompromised agency; zero autonomous database writes</span>
+          </li>
+        </ul>
+      </article>
+
+      <article class="model-card">
+        <div class="model-header">
+          <h3 class="model-name">Prompt Caching & Economics</h3>
+          <span class="model-badge spring">90% Ephemeral Cache Savings</span>
+        </div>
+        <p>Harnesses native prompt caching across persistent system instructions and user habit vectors. Delivers 90% cost reduction and 80% latency improvement, sustaining proactive nudges well within budget.</p>
+        <ul class="model-spec-list">
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Persistent Context Caching:</strong> Reuses streak histories, habit cadences, and memory vectors</span>
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Deterministic Rule Fallback:</strong> Zero-downtime offline rule engine if network drops</span>
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span><strong>Zero-Data Retention:</strong> Commercial API terms guarantee zero model training on user telemetry</span>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="landing-section how-section" aria-labelledby="how-it-works-heading">
+    <div class="section-head">
+      <div class="section-tree-accent" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+        <span>Execution Cycle</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+      </div>
+      <h2 id="how-it-works-heading">The Blueprint for Compounding Mastery</h2>
+      <p>Three disciplined phases to turn visionary goals into undeniable realities.</p>
+    </div>
+    <div class="steps-grid">
+      <article class="step-card">
+        <div class="step-number" aria-hidden="true">1</div>
+        <h3>Frame your high-leverage vectors</h3>
+        <p>Define pivotal milestones that move the needle. Foundational habits and recurring priorities surface automatically on your daily dashboard.</p>
+      </article>
+      <article class="step-card">
+        <div class="step-number" aria-hidden="true">2</div>
+        <h3>Execute with relentless focus</h3>
+        <p>Single-tap completion provides instant tactile feedback as you execute. The 4:00 AM rollover ensures your deep evening breakthroughs count.</p>
+      </article>
+      <article class="step-card">
+        <div class="step-number" aria-hidden="true">3</div>
+        <h3>Calibrate with your AI co-architect</h3>
+        <p>When friction appears or cognitive load peaks, Haiku 5.5 proposes precision micro-strikes to preserve momentum and unlock forward velocity.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Platform Scope Section -->
+  <section class="landing-section scope-section" aria-labelledby="scope-heading">
+    <div class="section-head">
+      <h2 id="scope-heading">Platform Scope: From Solo Builders to High-Velocity Teams</h2>
+      <p>Architected to scale from individual flow-state governance to multi-disciplinary technical teams.</p>
+    </div>
+    <div class="scope-grid">
+      <article class="scope-card">
+        <span class="scope-tag">Personal OS</span>
+        <h3>Individual Pro</h3>
+        <p>For solo founders, researchers, and creators compounding daily execution into life-defining breakthroughs.</p>
+        <ul class="scope-features">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Autonomous cognitive load calibration</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dynamic streak preservation & skips</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Encrypted private SQLite database</li>
+        </ul>
+      </article>
+
+      <article class="scope-card highlight">
+        <span class="scope-tag">Collaborative Sprints</span>
+        <h3>Team & Founder Sprints</h3>
+        <p>For high-velocity early-stage technical teams aligning daily strikes with company-level OKRs.</p>
+        <ul class="scope-features">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Synchronized milestone vectors</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> AI-detected team cognitive bottlenecks</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Asynchronous standup synthesis</li>
+        </ul>
+      </article>
+
+      <article class="scope-card">
+        <span class="scope-tag">Cognitive Mastery</span>
+        <h3>Multi-Domain Expansion</h3>
+        <p>Domain-specific deep learning modules starting with accelerated Mandarin fluency at zh.win.ai.id.</p>
+        <ul class="scope-features">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> FSRS spaced repetition algorithms</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dynamic micro-story generation</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Unified single sign-on authentication</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Features Grid: Balanced 8-Card Grid -->
+  <section class="landing-section features-section" aria-labelledby="features-heading">
+    <div class="section-head">
+      <div class="section-tree-accent" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+        <span>Built for High Leverage</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+      </div>
+      <h2 id="features-heading">Built for High-Leverage Builders, Zero Gimmicks</h2>
+      <p>Disciplined, battle-tested capabilities engineered for serious daily momentum.</p>
+    </div>
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-icon tree-foliage" aria-hidden="true">
+          <!-- Tiny Tree Icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L5 10h4L3 17h7v5h4v-5h7l-6-7h4z"/></svg>
+        </div>
+        <h3>Streak with a Free Weekly Skip</h3>
+        <p>Monumental pursuits require resilience, not brittle perfectionism. One free skip per ISO week protects your compounding momentum when strategic recovery is needed.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>4:00 AM Natural Day Rollover</h3>
+        <p>Breakthrough ideas don't conform to arbitrary midnight curfews. All work counts until 4:00 AM local time, accommodating night owls and evening flow states.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon tree-foliage" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3>Flexible Habit Cadences</h3>
+        <p>Schedule daily disciplines, weekday focus sprints, or flexible weekly quotas. Habit streaks track the consistency behind your biggest wins.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Guardrailed AI Co-Architect</h3>
+        <p>Haiku 5.5 only proposes high-leverage actions for you to inspect and accept—it never writes to your database directly. Enforces hard monthly budget caps with deterministic fallback.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Ephemeral Prompt Caching</h3>
+        <p>Cache breakpoints on system prompts and historical vectors slash API token expenditure by 90% while reducing latency to sub-150ms.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 4.5-9 9"/><path d="m15.5 7.5 2.5 2.5"/><path d="m18 5 2 2"/></svg>
+        </div>
+        <h3>Biometric Passkey Authentication</h3>
+        <p>Frictionless, enterprise-grade authentication: Touch ID, Face ID, hardware security keys, or bcrypt-hashed credentials stored in private local SQLite.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+        </div>
+        <h3>Local SQLite Privacy Sovereignty</h3>
+        <p>Single-binary Go and CGO-free modern SQLite replicated via Litestream. Zero training retention and complete user data sovereignty.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon tree-foliage" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+        </div>
+        <h3>Building in Public Dev Log</h3>
+        <p>Full transparent engineering ledger covering architecture decisions (ADRs), database schemas, and product iterations published openly.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Mandarin / Multi-Domain Neural Expansion -->
+  <section class="landing-section zh-teaser-section" aria-labelledby="zh-teaser-heading">
+    <div class="zh-teaser-card">
+      <div class="zh-badge-row">
+        <span class="badge-coming-soon">Coming Soon</span>
+        <span class="zh-badge-sub">zh.win.ai.id</span>
+      </div>
+      <h3 id="zh-teaser-heading">Multi-Domain Cognitive Mastery: Accelerated Mandarin Acquisition</h3>
+      <div class="zh-callout">Měitiān yī diǎndiǎn &middot; <em>&ldquo;A little every day&rdquo;</em></div>
+      <p>
+        Coming soon to <strong>zh.win.ai.id</strong>: an adaptive cognitive drill system for intermediate learners (HSK 3–5) mastering advanced fluency.
+        Combines modern FSRS spaced repetition algorithms, high-fidelity neural audio synthesis, sentence cloze drills, and AI-generated micro-narratives woven dynamically from your target vocabulary.
+      </p>
+      <p class="zh-subtext">
+        Seamless single sign-in across both core and Mandarin learning vectors.
+      </p>
+    </div>
+  </section>
+
+  <section class="landing-cta-banner">
+    <h2>Ready to compound your next breakthrough?</h2>
+    <p>Sign in with a biometric passkey or secure password to begin compounding your daily momentum with Haiku 5.5.</p>
+    <div class="hero-actions">
+      <a href="/login" class="btn-cta btn-cta-primary">Get Started</a>
+      <a href="/log" class="btn-cta btn-cta-secondary">Read the Dev Log</a>
+    </div>
+  </section>
+
+  <footer class="landing-footer">
+    <a href="/" class="footer-brand">
+      <img src="/static/icon.svg?v=haiku55" alt="" class="brand-mascot" width="22" height="22">
+      win<span>.ai.id</span>
+    </a>
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <a href="/log">Dev Log</a>
+      <a href="/login">Sign In</a>
+    </nav>
+    <p class="built-with-note">Built with Go, SQLite, and Haiku 5.5.</p>
+  </footer>
+</div>
+
+<!-- Interactive Sandbox Script -->
+<script>
+(function() {
+  var activeWins = [
+    { id: 1, title: "Ship v1 Public Preview & Developer Changelog", pill: "core milestone", done: true },
+    { id: 2, title: "3-hour uninterrupted deep architecture block", pill: "flow state", done: true },
+    { id: 3, title: "Synthesize customer telemetry into Q4 roadmap", pill: "strategic direction", done: false }
+  ];
+
+  var pendingProposal = null;
+
+  var proposals = {
+    breakdown: {
+      msg: "Detecting high cognitive resistance on roadmap synthesis. Don't tackle the entire quarter at once. Let's isolate the highest-leverage first domino.",
+      task: "Extract top 3 customer friction themes from telemetry (20 mins, stop after)",
+      pill: "strategic strike"
+    },
+    energy: {
+      msg: "Deep architecture block consumed intense mental compute. Protect your cognitive stamina before evening fatigue sets in.",
+      task: "20-minute screen-free walk & cognitive reset",
+      pill: "stamina recovery"
+    },
+    shutdown: {
+      msg: "Closing out today's velocity loop. Synthesizing today's wins against your quarterly milestone preserves compounding clarity.",
+      task: "Log daily execution reflection & lock tomorrow's primary domino",
+      pill: "velocity synthesis"
+    }
+  };
+
+  window.toggleDemoWin = function(el, id) {
+    for (var i = 0; i < activeWins.length; i++) {
+      if (activeWins[i].id === id) {
+        activeWins[i].done = !activeWins[i].done;
+        break;
+      }
+    }
+    renderWins();
+  };
+
+  window.simulateCoachPrompt = function(type) {
+    var p = proposals[type];
+    if (!p) return;
+    pendingProposal = p;
+
+    var msgEl = document.getElementById("demo-coach-message");
+    var boxEl = document.getElementById("demo-proposal-box");
+    var txtEl = document.getElementById("demo-proposal-text");
+
+    if (msgEl) msgEl.textContent = '"' + p.msg + '"';
+    if (txtEl) txtEl.textContent = p.task;
+    if (boxEl) {
+      boxEl.style.display = "flex";
+      boxEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  };
+
+  window.acceptCoachProposal = function() {
+    if (!pendingProposal) return;
+    var newId = activeWins.length + 1;
+    activeWins.push({
+      id: newId,
+      title: pendingProposal.task,
+      pill: pendingProposal.pill,
+      done: false
+    });
+    pendingProposal = null;
+
+    var boxEl = document.getElementById("demo-proposal-box");
+    if (boxEl) boxEl.style.display = "none";
+
+    var msgEl = document.getElementById("demo-coach-message");
+    if (msgEl) msgEl.textContent = '"Proposal accepted and integrated into today\'s plan! Execute with single-minded focus."';
+
+    renderWins();
+  };
+
+  window.resetDemo = function() {
+    activeWins = [
+      { id: 1, title: "Ship v1 Public Preview & Developer Changelog", pill: "core milestone", done: true },
+      { id: 2, title: "3-hour uninterrupted deep architecture block", pill: "flow state", done: true },
+      { id: 3, title: "Synthesize customer telemetry into Q4 roadmap", pill: "strategic direction", done: false }
+    ];
+    pendingProposal = null;
+
+    var boxEl = document.getElementById("demo-proposal-box");
+    if (boxEl) boxEl.style.display = "none";
+
+    var msgEl = document.getElementById("demo-coach-message");
+    if (msgEl) msgEl.textContent = '"Haiku 5.5 active: Deep architecture block locked in. Detecting cognitive friction on the Q4 roadmap synthesis. Select a strategic strike below to deconstruct it into an immediate, friction-free win."';
+
+    renderWins();
+  };
+
+  function renderWins() {
+    var listEl = document.getElementById("demo-wins-list");
+    if (!listEl) return;
+
+    var doneCount = 0;
+    listEl.innerHTML = "";
+
+    activeWins.forEach(function(w) {
+      if (w.done) doneCount++;
+
+      var li = document.createElement("li");
+      li.className = "sample-win-item" + (w.done ? " done" : "");
+      li.setAttribute("data-id", w.id);
+      li.onclick = function() { window.toggleDemoWin(li, w.id); };
+
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "sample-checkbox" + (w.done ? " checked" : "");
+      btn.setAttribute("aria-label", "Toggle " + w.title);
+      btn.innerHTML = w.done ? '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' : '';
+
+      var textWrap = document.createElement("div");
+      textWrap.className = "sample-win-text";
+
+      var label = document.createElement("span");
+      label.className = "sample-win-label";
+      label.textContent = w.title;
+
+      var pill = document.createElement("span");
+      pill.className = "sample-pill" + (w.pill.indexOf("strategic") >= 0 || w.pill.indexOf("velocity") >= 0 ? " coach" : "");
+      pill.textContent = w.pill;
+
+      textWrap.appendChild(label);
+      textWrap.appendChild(pill);
+
+      li.appendChild(btn);
+      li.appendChild(textWrap);
+      listEl.appendChild(li);
+    });
+
+    var total = activeWins.length;
+    var pct = Math.round((doneCount / total) * 100);
+
+    var fillEl = document.getElementById("demo-progress-fill");
+    var statusEl = document.getElementById("demo-status-text");
+    var pctEl = document.getElementById("demo-percent-text");
+    var bannerEl = document.getElementById("demo-celebrate-banner");
+    var streakText = document.getElementById("demo-streak-text");
+
+    if (fillEl) fillEl.style.width = pct + "%";
+    if (statusEl) statusEl.textContent = doneCount + " of " + total + " won today";
+    if (pctEl) pctEl.textContent = pct + "%";
+
+    if (doneCount === total && total > 0) {
+      if (bannerEl) bannerEl.style.display = "block";
+      if (streakText) streakText.textContent = "6-day streak · 1 skip available";
+    } else {
+      if (bannerEl) bannerEl.style.display = "none";
+      if (streakText) streakText.textContent = "5-day streak · 1 skip available";
+    }
+  }
+})();
+</script>
+{{end}}

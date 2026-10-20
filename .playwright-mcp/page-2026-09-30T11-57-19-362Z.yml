@@ -1,0 +1,165 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e10]:
+      - heading "AudioDiff AssemblyAI Inside" [level=1] [ref=e11]:
+        - text: AudioDiff
+        - generic [ref=e12]: AssemblyAI Inside
+      - paragraph [ref=e13]: Hands-Free Voice Code Review & PR Explainer
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: "Active PR:"
+        - combobox "Active PR:" [ref=e17] [cursor=pointer]:
+          - 'option "PR #104: Concurrency & Mutex (Lock-free)" [selected]'
+          - 'option "PR #242: Security & IDOR Mitigation"'
+          - 'option "PR #318: Webhook Idempotency & Backoff"'
+        - button "Fetch PR" [ref=e18] [cursor=pointer]
+        - link "📊 Slides" [ref=e21] [cursor=pointer]:
+          - /url: slides.html
+      - generic [ref=e22]:
+        - generic [ref=e24]: Gateway Online
+        - generic [ref=e25]: Universal-2 + LeMUR
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]: PR-104
+          - 'heading "perf(auth): replace mutex with lock-free atomic token refresh" [level=2] [ref=e32]'
+        - paragraph [ref=e33]: Eliminates heavy mutex contention during morning traffic peaks. Implements compare-and-swap token refresh with fallback to cached credentials.
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - text: "Author:"
+            - strong [ref=e36]: alex-dev
+          - generic [ref=e37]:
+            - text: "Branch:"
+            - strong [ref=e38]: perf/atomic-token
+          - generic [ref=e39]: "+12"
+          - generic [ref=e40]: "-7"
+          - generic [ref=e41]:
+            - text: "Files:"
+            - strong [ref=e42]: "1"
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: 📄
+          - generic [ref=e46]: src/auth/token_manager.ts
+          - generic [ref=e47]: TypeScript
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: "export class TokenManager {"
+            - generic [ref=e52]: src/auth/token_manager.ts (Lines 40-58)
+          - generic [ref=e53]:
+            - generic [ref=e54]: "- 40"
+            - generic [ref=e55]: "- private mutex = new Mutex();"
+          - generic [ref=e56]:
+            - generic [ref=e57]: + 40
+            - generic [ref=e58]: + private isRefreshing = new AtomicBoolean(false);
+          - generic [ref=e59]:
+            - generic [ref=e60]: + 41
+            - generic [ref=e61]: "+ private cachedToken: string | null = null;"
+          - generic [ref=e62]: "42"
+          - generic [ref=e65]:
+            - generic [ref=e66]: "43"
+            - generic [ref=e67]: "async refreshToken(userId: string): Promise<string> {"
+          - generic [ref=e68]:
+            - generic [ref=e69]: "- 43"
+            - generic [ref=e70]: "- const release = await this.mutex.acquire();"
+          - generic [ref=e71]:
+            - generic [ref=e72]: "- 44"
+            - generic [ref=e73]: "- try {"
+          - generic [ref=e74]:
+            - generic [ref=e75]: "- 45"
+            - generic [ref=e76]: "- return await this.fetchNewToken(userId);"
+          - generic [ref=e77]:
+            - generic [ref=e78]: "- 46"
+            - generic [ref=e79]: "- } finally {"
+          - generic [ref=e80]:
+            - generic [ref=e81]: "- 47"
+            - generic [ref=e82]: "- release();"
+          - generic [ref=e83]:
+            - generic [ref=e84]: "- 48"
+            - generic [ref=e85]: "- }"
+          - generic [ref=e86]:
+            - generic [ref=e87]: + 44
+            - generic [ref=e88]: "+ if (this.isRefreshing.compareAndSet(false, true)) {"
+          - generic [ref=e89]:
+            - generic [ref=e90]: + 45
+            - generic [ref=e91]: "+ try {"
+          - generic [ref=e92]:
+            - generic [ref=e93]: + 46
+            - generic [ref=e94]: + const token = await this.fetchNewToken(userId);
+          - generic [ref=e95]:
+            - generic [ref=e96]: + 47
+            - generic [ref=e97]: + this.cachedToken = token;
+          - generic [ref=e98]:
+            - generic [ref=e99]: + 48
+            - generic [ref=e100]: + return token;
+          - generic [ref=e101]:
+            - generic [ref=e102]: + 49
+            - generic [ref=e103]: "+ } finally {"
+          - generic [ref=e104]:
+            - generic [ref=e105]: + 50
+            - generic [ref=e106]: + this.isRefreshing.set(false);
+          - generic [ref=e107]:
+            - generic [ref=e108]: + 51
+            - generic [ref=e109]: "+ }"
+          - generic [ref=e110]:
+            - generic [ref=e111]: + 52
+            - generic [ref=e112]: "+ }"
+          - generic [ref=e113]:
+            - generic [ref=e114]: + 53
+            - generic [ref=e115]: + return this.getCachedToken(userId);
+          - generic [ref=e116]:
+            - generic [ref=e117]: "54"
+            - generic [ref=e118]: "}"
+          - generic [ref=e119]:
+            - generic [ref=e120]: "55"
+            - generic [ref=e121]: "}"
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - button "🎙️ Live Voice Review (Streaming STT)" [ref=e124] [cursor=pointer]
+        - button "📼 Ingest Voice Walkthrough (Universal-2)" [ref=e125] [cursor=pointer]
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - generic [ref=e129]: 🎙️
+            - generic [ref=e132]:
+              - heading "🔊 AudioDiff Speaking" [level=3] [ref=e133]
+              - paragraph [ref=e134]: Hands-free audio playback with barge-in interruption enabled
+          - generic [ref=e137]:
+            - button "● Talk to AudioDiff" [ref=e138] [cursor=pointer]:
+              - generic [ref=e139]: ●
+              - generic [ref=e140]: Talk to AudioDiff
+            - button "🛑 Barge-In Interruption" [ref=e141] [cursor=pointer]
+            - 'button "❓ Ask: \"Why was the mutex removed?\"" [ref=e142] [cursor=pointer]'
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e145]: Real-Time Transcription Stream
+              - generic [ref=e146]: AssemblyAI Streaming STT (Domain Boosted)
+            - emphasis [ref=e148]: Press 'Talk to AudioDiff' or click a question to start hands-free code review...
+        - generic [ref=e149]:
+          - heading "⚡ AssemblyAI LeMUR Cognitive Actions" [level=4] [ref=e150]
+          - generic [ref=e151]:
+            - button "📋 Executive Walkthrough High-level architecture intent" [ref=e152] [cursor=pointer]:
+              - generic [ref=e153]: 📋
+              - generic [ref=e154]:
+                - strong [ref=e155]: Executive Walkthrough
+                - text: High-level architecture intent
+            - button "🛡️ Security & Concurrency Audit Scan for OWASP & race conditions" [ref=e156] [cursor=pointer]:
+              - generic [ref=e157]: 🛡️
+              - generic [ref=e158]:
+                - strong [ref=e159]: Security & Concurrency Audit
+                - text: Scan for OWASP & race conditions
+            - button "💡 Explain Selected Hunk Deep dive into code logic" [ref=e160] [cursor=pointer]:
+              - generic [ref=e161]: 💡
+              - generic [ref=e162]:
+                - strong [ref=e163]: Explain Selected Hunk
+                - text: Deep dive into code logic
+            - button "✍️ Draft PR Review Comment Generates markdown suggestions" [ref=e164] [cursor=pointer]:
+              - generic [ref=e165]: ✍️
+              - generic [ref=e166]:
+                - strong [ref=e167]: Draft PR Review Comment
+                - text: Generates markdown suggestions
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - generic [ref=e170]: 🎧 AudioDiff Spoken Response
+            - generic [ref=e171]: "Latency: -- ms"
+          - generic [ref=e172]: "\"Select a PR and ask a question or click an action button to receive verbal code review feedback.\""

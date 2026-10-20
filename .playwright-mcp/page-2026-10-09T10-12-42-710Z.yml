@@ -1,0 +1,167 @@
+- generic [ref=f6e3]:
+  - banner [ref=f6e4]:
+    - generic [ref=f6e5]:
+      - generic [ref=f6e6]: 🏛️
+      - generic [ref=f6e7]:
+        - generic [ref=f6e8]:
+          - heading "IDXClaw" [level=1] [ref=f6e9]
+          - generic [ref=f6e10]: 🟢 QUANT RESEARCH TELEMETRY LIVE
+        - paragraph [ref=f6e11]: Institutional Multi-Agent Quantitative Research Terminal
+    - generic [ref=f6e12]:
+      - generic [ref=f6e13]:
+        - generic [ref=f6e18]: "DB:"
+        - generic [ref=f6e19]: PG ONLINE
+      - generic [ref=f6e98]:
+        - generic [ref=f6e99]: EQUITY:Rp 105.60M
+        - generic [ref=f6e101]:
+          - text: "WIN:"
+          - generic [ref=f6e102]: 80%
+      - generic [ref=f6e20]: 17:12:42 WIB
+      - button "Run Debate" [ref=f6e25] [cursor=pointer]
+      - link "📖 Research Docs" [ref=f6e29] [cursor=pointer]:
+        - /url: https://cuang.dev/idxclaw/
+      - button "Refresh Telemetry & Data" [ref=f6e31] [cursor=pointer]
+  - navigation [ref=f6e37]:
+    - button "Boardroom Deliberations 17" [ref=f6e103] [cursor=pointer]:
+      - generic [ref=f6e42]: Boardroom Deliberations
+      - generic [ref=f6e104]: "17"
+    - button "Candlestick & Bandar Flow" [active] [ref=f6e43] [cursor=pointer]
+    - button "Bandarmology Broker Matrix" [ref=f6e50] [cursor=pointer]
+    - button "Open Orders & Queue 7" [ref=f6e105] [cursor=pointer]:
+      - generic [ref=f6e62]: Open Orders & Queue
+      - generic [ref=f6e106]: "7"
+    - button "Portfolio Holdings & Ledger 5" [ref=f6e107] [cursor=pointer]:
+      - generic [ref=f6e68]: Portfolio Holdings & Ledger
+      - generic [ref=f6e108]: "5"
+    - button "System Telemetry & Queue" [ref=f6e69] [cursor=pointer]
+  - main [ref=f6e75]:
+    - generic [ref=f6e1844]:
+      - generic [ref=f6e1845]:
+        - generic [ref=f6e1846]:
+          - generic [ref=f6e1847]: "TICKER:"
+          - combobox [ref=f6e1848] [cursor=pointer]:
+            - option "AADI — Adaro Andalan Indonesia PT" [selected]
+            - option "AALI — Astra Agro Lestari Tbk."
+            - option "ABBA — Mahaka Media Tbk."
+            - option "ABDA — Asuransi Bina Dana Arta Tbk."
+            - option "ABMM — Abm Investama Tbk PT"
+            - option "ACES — Aspirasi Hidup Indonesia Tbk"
+            - option "ACRO — Samcro Hyosung Adilestari PT"
+            - option "ACST — Acset Indonusa Tbk."
+            - option "ADCP — Adhi Commuter Properti Tbk"
+            - option "ADES — Akasha Wira International Tbk"
+            - option "ADHI — Adhi Karya (Persero) Tbk."
+            - option "ADMF — PT Adira Dinamika Multi Finance Tbk"
+            - option "ADMG — Polychem Indonesia Tbk."
+            - option "ADMR — Adaro Minerals Indonesia Tbk"
+            - option "ADRO — Alamtri Resources Indonesia"
+            - option "AEGS — Anugerah Spareparts Sejahtera"
+            - option "AGAR — Asia Sejahtera Mina Tbk."
+            - option "AGII — Samator Indo Gas Tbk."
+            - option "AGRO — Bank Raya Indonesia Tbk."
+            - option "AGRS — Bank IBK Indonesia Tbk."
+            - option "AHAP — Asuransi Harta Aman Pratama Tbk"
+            - option "AIMS — Artha Mahiya Investama Tbk"
+            - option "AISA — FKS Food Sejahtera Tbk"
+            - option "AKKU — Anugerah Kagum Karya Utama"
+            - option "AKPI — Argha Karya Prima Industry Tbk."
+            - option "AKRA — Akr Corporindo Tbk"
+            - option "AKSI — Mineral Sumberdaya Mandiri Tbk"
+            - option "ALDO — Alkindo Naratama Tbk PT"
+            - option "ALII — Ancara Logistics Indonesia Tbk."
+            - option "ALKA — Alakasa Industrindo Tbk"
+            - option "ALMI — Alumindo Light Metal Industry Tbk"
+            - option "ALTO — Tri Banyan Tirta Tbk PT"
+            - option "AMAG — Asuransi Multi Artha Guna Tbk."
+            - option "AMAN — Makmur Berk"
+            - option "AMAR — Bank Amar Indonesia Tbk."
+            - option "AMFG — Asahimas Flat Glass Tbk."
+            - option "AMIN — Ateliers Mécaniques d'Indonesie"
+            - option "AMMN — Amman Mineral Internasional Tbk"
+            - option "AMMS — Agung Menjangan Mas Tbk."
+            - option "AMOR — Ashmore Asset Management Inc."
+            - option "AMRT — Sumber Alfaria Trijaya Tbk"
+            - option "ANDI — Andira Agro Tbk."
+            - option "ANJT — Austindo Nusantara Jaya Tbk"
+            - option "ANTM — Aneka Tambang Tbk"
+            - option "APEX — Apexindo Pratama Duta Tbk."
+            - option "APIC — Pacific Strategic Financial Inc."
+            - option "APII — Arita Prima Indonesia Tbk PT"
+            - option "APLI — Asiaplast Industries Tbk."
+            - option "APLN — Agung Podomoro Land Tbk."
+            - option "ARCI — Archi Indonesia Tbk"
+            - option "AREA — Dunia Virtual Online PT"
+            - option "ARGO — Argo Pantes PT"
+            - option "ARII — Atlas Resources Tbk PT"
+            - option "ARKA — Arkha Jayanti Persada Tbk."
+            - option "ARKO — Arkora Hydro Tbk PT"
+            - option "ARNA — Arwana Citramulia Tbk."
+            - option "ARTA — Artha Graha Investama Tbk"
+            - option "ARTI — Ratu Prabu Energi Tbk PT"
+            - option "ARTO — Bank Jago Tbk."
+            - option "ASBI — Asuransi Bintang Tbk"
+            - option "ASDM — Asuransi Dayin Mitra Tbk PT"
+            - option "ASGR — Astra Graphia Tbk"
+            - option "ASHA — Cilacap Samudera Fishing Ind."
+            - option "ASII — Astra International Tbk"
+            - option "ASJT — Asuransi Jasa Tania Tbk PT"
+            - option "ASLC — Autopedia Sukses Lestari Tbk"
+            - option "ASLI — Asri Karya Lestari Tbk."
+            - option "ASMI — Asuransi Maximus Graha Persada"
+            - option "ASPI — Andalan Sakti Primaindo Tbk"
+            - option "ASPR — PT Asia Pramulia Tbk"
+            - option "ASRI — Alam Sutera Realty Tbk."
+            - option "ASRM — Asuransi Ramayana Tbk PT"
+            - option "ASSA — Adi Sarana Armada Tbk."
+            - option "ATAP — Trimitra Prawara Goldland Tbk."
+            - option "ATIC — Anabatic Technologies Tbk PT"
+            - option "ATLA — Atlantis Subsea Indonesia PT"
+            - option "AUTO — Astra Otoparts Tbk."
+            - option "AVIA — Avia Avian Tbk."
+            - option "AWAN — Era Digital Media Tbk."
+            - option "AXIO — Tera Data Indonusa Tbk."
+            - option "AYAM — Janu Putra Sejahtera Tbk PT"
+            - option "AYLS — Agro Yasa Lestari Tbk PT"
+            - option "BABP — Bank MNC Internasional Tbk"
+            - option "BABY — Multitrend Indo Tbk PT"
+            - option "BACA — Bank Capital Indonesia Tbk"
+            - option "BACH — PT Bach Multi Global Tbk."
+            - option "BAIK — Bersama Mencapai Puncak Tbk"
+            - option "BAJA — Saranacentral Bajatama Tbk"
+            - option "BALI — Bali Towerindo Sentra Tbk."
+            - option "BANK — Bank Aladin Syariah Tbk."
+            - option "BAPA — Bekasi Asri Pemula Tbk PT"
+            - option "BAPI — Bhakti Agung Propertindo Tbk"
+            - option "BATA — Sepatu Bata Tbk."
+            - option "BATR — Benteng Api Technic PT"
+            - option "BAUT — Mitra Angkasa Sejahtera Tbk"
+            - option "BAYU — Bayu Buana Tbk PT"
+            - option "BBCA — Bank Central Asia Tbk"
+            - option "BBHI — Allo Bank Indonesia Tbk."
+            - option "BBKP — Bank KB Bukopin Tbk."
+            - option "BBLD — Buana Finance Tbk."
+        - generic [ref=f6e1849]:
+          - button "VWAP (Bandar Cost)" [ref=f6e1850] [cursor=pointer]
+          - button "MA20 Trend" [ref=f6e1851] [cursor=pointer]
+          - button "MA50 Baseline" [ref=f6e1852] [cursor=pointer]
+          - button "Bollinger Bands" [ref=f6e1853] [cursor=pointer]
+        - generic [ref=f6e1854]:
+          - button "1D" [ref=f6e1855] [cursor=pointer]
+          - button "1W" [ref=f6e1856] [cursor=pointer]
+          - button "1M" [ref=f6e1857] [cursor=pointer]
+          - button "3M" [ref=f6e1858] [cursor=pointer]
+          - button "1Y" [ref=f6e1859] [cursor=pointer]
+          - button "ALL" [ref=f6e1860] [cursor=pointer]
+      - generic [ref=f6e1862]:
+        - generic [ref=f6e1863]:
+          - generic [ref=f6e1864]: BREN
+          - generic [ref=f6e1865]: 2026-08-14
+        - generic [ref=f6e1866]:
+          - generic [ref=f6e1867]: "O: 3650"
+          - generic [ref=f6e1868]: "H: 3690"
+          - generic [ref=f6e1869]: "L: 3540"
+          - generic [ref=f6e1870]:
+            - text: "C:"
+            - generic [ref=f6e1871]: 3570 (-2.46%)
+          - generic [ref=f6e1872]: "VWAP: 3600"
+          - generic [ref=f6e1873]: "SMART FLOW: Rp -14.38M"

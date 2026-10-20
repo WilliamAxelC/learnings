@@ -1,0 +1,39 @@
+- generic [ref=f6e3]:
+  - banner [ref=f6e4]:
+    - generic [ref=f6e5]:
+      - generic [ref=f6e6]: 🏛️
+      - generic [ref=f6e7]:
+        - generic [ref=f6e8]:
+          - heading "IDXClaw" [level=1] [ref=f6e9]
+          - generic [ref=f6e10]: 🟢 QUANT RESEARCH TELEMETRY LIVE
+        - paragraph [ref=f6e11]: Institutional Multi-Agent Quantitative Research Terminal
+    - generic [ref=f6e12]:
+      - generic [ref=f6e13]:
+        - generic [ref=f6e18]: "DB:"
+        - generic [ref=f6e19]: PG ONLINE
+      - generic [ref=f6e20]: 17:10:43 WIB
+      - button "Run Debate" [ref=f6e25] [cursor=pointer]
+      - link "📖 Research Docs" [ref=f6e29] [cursor=pointer]:
+        - /url: https://cuang.dev/idxclaw/
+      - button "Refresh Telemetry & Data" [ref=f6e31] [cursor=pointer]
+  - navigation [ref=f6e37]:
+    - button "Boardroom Deliberations" [ref=f6e38] [cursor=pointer]
+    - button "Candlestick & Bandar Flow" [ref=f6e43] [cursor=pointer]
+    - button "Bandarmology Broker Matrix" [ref=f6e50] [cursor=pointer]
+    - button "Open Orders & Queue" [ref=f6e57] [cursor=pointer]
+    - button "Portfolio Holdings & Ledger" [ref=f6e63] [cursor=pointer]
+    - button "System Telemetry & Queue" [ref=f6e69] [cursor=pointer]
+  - main [ref=f6e75]:
+    - generic [ref=f6e76]:
+      - generic [ref=f6e77]: "Boardroom Deliberation Session:"
+      - generic [ref=f6e83]:
+        - generic [ref=f6e84]:
+          - generic [ref=f6e85]: "Candidates for 2026-10-09:"
+          - generic [ref=f6e86]:
+            - button "By Conviction" [ref=f6e87] [cursor=pointer]
+            - button "By Screener Rank" [ref=f6e88] [cursor=pointer]
+        - button "+ Live Debate" [ref=f6e89] [cursor=pointer]
+      - generic [ref=f6e92]:
+        - heading "No Deliberation Records Found for 2026-10-09" [level=3] [ref=f6e95]
+        - paragraph [ref=f6e96]: Run the autonomous multi-agent boardroom debate pipeline to evaluate candidates for this trading session.
+        - button "Trigger Boardroom Debate" [ref=f6e97] [cursor=pointer]

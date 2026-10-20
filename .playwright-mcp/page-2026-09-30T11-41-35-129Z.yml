@@ -1,0 +1,166 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e10]:
+      - heading "AudioDiff AssemblyAI Inside" [level=1] [ref=e11]:
+        - text: AudioDiff
+        - generic [ref=e12]: AssemblyAI Inside
+      - paragraph [ref=e13]: Hands-Free Voice Code Review & PR Explainer
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: "Active PR:"
+        - combobox "Active PR:" [ref=e17] [cursor=pointer]:
+          - 'option "PR #104: Concurrency & Mutex (Lock-free)" [selected]'
+          - 'option "PR #242: Security & IDOR Mitigation"'
+          - 'option "PR #318: Webhook Idempotency & Backoff"'
+        - button "Fetch PR" [ref=e18] [cursor=pointer]
+      - generic [ref=e21]:
+        - generic [ref=e23]: Gateway Online
+        - generic [ref=e24]: Universal-2 + LeMUR
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: PR-104
+          - 'heading "perf(auth): replace mutex with lock-free atomic token refresh" [level=2] [ref=e31]'
+        - paragraph [ref=e32]: Eliminates heavy mutex contention during morning traffic peaks. Implements compare-and-swap token refresh with fallback to cached credentials.
+        - generic [ref=e33]:
+          - generic [ref=e34]:
+            - text: "Author:"
+            - strong [ref=e35]: alex-dev
+          - generic [ref=e36]:
+            - text: "Branch:"
+            - strong [ref=e37]: perf/atomic-token
+          - generic [ref=e38]: "+12"
+          - generic [ref=e39]: "-7"
+          - generic [ref=e40]:
+            - text: "Files:"
+            - strong [ref=e41]: "1"
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: 📄
+          - generic [ref=e45]: src/auth/token_manager.ts
+          - generic [ref=e46]: TypeScript
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]: "export class TokenManager {"
+            - generic [ref=e51]: src/auth/token_manager.ts (Lines 40-58)
+          - generic [ref=e52]:
+            - generic [ref=e53]: "- 40"
+            - generic [ref=e54]: "- private mutex = new Mutex();"
+          - generic [ref=e55]:
+            - generic [ref=e56]: + 40
+            - generic [ref=e57]: + private isRefreshing = new AtomicBoolean(false);
+          - generic [ref=e58]:
+            - generic [ref=e59]: + 41
+            - generic [ref=e60]: "+ private cachedToken: string | null = null;"
+          - generic [ref=e61]: "42"
+          - generic [ref=e64]:
+            - generic [ref=e65]: "43"
+            - generic [ref=e66]: "async refreshToken(userId: string): Promise<string> {"
+          - generic [ref=e67]:
+            - generic [ref=e68]: "- 43"
+            - generic [ref=e69]: "- const release = await this.mutex.acquire();"
+          - generic [ref=e70]:
+            - generic [ref=e71]: "- 44"
+            - generic [ref=e72]: "- try {"
+          - generic [ref=e73]:
+            - generic [ref=e74]: "- 45"
+            - generic [ref=e75]: "- return await this.fetchNewToken(userId);"
+          - generic [ref=e76]:
+            - generic [ref=e77]: "- 46"
+            - generic [ref=e78]: "- } finally {"
+          - generic [ref=e79]:
+            - generic [ref=e80]: "- 47"
+            - generic [ref=e81]: "- release();"
+          - generic [ref=e82]:
+            - generic [ref=e83]: "- 48"
+            - generic [ref=e84]: "- }"
+          - generic [ref=e85]:
+            - generic [ref=e86]: + 44
+            - generic [ref=e87]: "+ if (this.isRefreshing.compareAndSet(false, true)) {"
+          - generic [ref=e88]:
+            - generic [ref=e89]: + 45
+            - generic [ref=e90]: "+ try {"
+          - generic [ref=e91]:
+            - generic [ref=e92]: + 46
+            - generic [ref=e93]: + const token = await this.fetchNewToken(userId);
+          - generic [ref=e94]:
+            - generic [ref=e95]: + 47
+            - generic [ref=e96]: + this.cachedToken = token;
+          - generic [ref=e97]:
+            - generic [ref=e98]: + 48
+            - generic [ref=e99]: + return token;
+          - generic [ref=e100]:
+            - generic [ref=e101]: + 49
+            - generic [ref=e102]: "+ } finally {"
+          - generic [ref=e103]:
+            - generic [ref=e104]: + 50
+            - generic [ref=e105]: + this.isRefreshing.set(false);
+          - generic [ref=e106]:
+            - generic [ref=e107]: + 51
+            - generic [ref=e108]: "+ }"
+          - generic [ref=e109]:
+            - generic [ref=e110]: + 52
+            - generic [ref=e111]: "+ }"
+          - generic [ref=e112]:
+            - generic [ref=e113]: + 53
+            - generic [ref=e114]: + return this.getCachedToken(userId);
+          - generic [ref=e115]:
+            - generic [ref=e116]: "54"
+            - generic [ref=e117]: "}"
+          - generic [ref=e118]:
+            - generic [ref=e119]: "55"
+            - generic [ref=e120]: "}"
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - button "🎙️ Live Voice Review (Streaming STT)" [ref=e123] [cursor=pointer]
+        - button "📼 Ingest Voice Walkthrough (Universal-2)" [ref=e124] [cursor=pointer]
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - text: AssemblyAI Universal-2 Flagship STT
+          - heading "Async Voice PR Walkthrough Ingestion" [level=3] [ref=e183]
+          - paragraph [ref=e184]: Transcribe recorded Loom audio, voice memos, or code review meetings with state-of-the-art accuracy, speaker diarization, and automated LeMUR review extraction.
+        - generic [ref=e185]:
+          - generic [ref=e186]: 📼
+          - paragraph [ref=e187]: Drag and drop a voice walkthrough file (WAV, MP3, M4A) or
+          - generic [ref=e188]:
+            - 'button "🎙️ Load Author & Tech Lead Voice Walkthrough (PR #104)" [ref=e189] [cursor=pointer]'
+            - button "Choose File..." [ref=e190] [cursor=pointer]
+        - generic [ref=e191]:
+          - generic [ref=e192]:
+            - generic [ref=e193]:
+              - text: "Model:"
+              - strong [ref=e194]: Universal-2
+            - generic [ref=e195]:
+              - text: "Accuracy:"
+              - strong [ref=e196]: 98%
+            - generic [ref=e197]:
+              - text: "Audio Length:"
+              - strong [ref=e198]: 84.5s
+            - generic [ref=e199]:
+              - text: "Speakers:"
+              - strong [ref=e200]: 2 (Diarized)
+          - generic [ref=e201]:
+            - heading "🎙️ Diarized Transcript" [level=4] [ref=e202]
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]:
+                  - generic [ref=e206]: Speaker A (Alex - Author)
+                  - generic [ref=e207]: 0s - 42s
+                - paragraph [ref=e208]: Hey Elena, here's a quick voice memo walking through PR 104. We've been seeing p99 latency spikes during morning token refresh bursts because of lock contention on the mutex. I decided to swap out the lock with an AtomicBoolean and compare-and-swap pattern so requests don't queue up. If a refresh is already in progress, other callers immediately drop through to getCachedToken.
+              - generic [ref=e209]:
+                - generic [ref=e210]:
+                  - generic [ref=e211]: Speaker B (Elena - Tech Lead)
+                  - generic [ref=e212]: 43s - 67s
+                - paragraph [ref=e213]: "Got it Alex, that makes total sense for throughput. One question though: what happens on line 54 if the cached token is already expired when the secondary caller falls through? Does it return a stale token, or should we add an exponential backoff retry loop?"
+              - generic [ref=e214]:
+                - generic [ref=e215]:
+                  - generic [ref=e216]: Speaker A (Alex - Author)
+                  - generic [ref=e217]: 68s - 85s
+                - paragraph [ref=e218]: Good catch Elena. Right now it could return an expired token for a split second until the leader finishes. I'll add a CAS spin-check or grace window before returning the cached value.
+          - generic [ref=e219]:
+            - heading "🧠 LeMUR Extracted PR Action Items" [level=4] [ref=e220]
+            - list [ref=e221]:
+              - listitem [ref=e222]: ⚡ Verify cached token validity before returning in getCachedToken fallback on line 54.
+              - listitem [ref=e223]: ⚡ Add unit test simulating concurrent refresh where cached token is expired.
+              - listitem [ref=e224]: ⚡ Benchmark p99 latency under 5,000 concurrent token refresh requests.

@@ -1,0 +1,232 @@
+- main [ref=f3e2]:
+  - generic [ref=f3e3]:
+    - navigation "Main Navigation" [ref=f3e4]:
+      - link "win.ai.id Ascent Emblem win .ai.id" [ref=f3e5] [cursor=pointer]:
+        - /url: /
+        - img "win.ai.id Ascent Emblem" [ref=f3e6]
+        - text: win
+        - generic [ref=f3e7]: .ai.id
+      - generic [ref=f3e8]:
+        - link "Dev Log" [ref=f3e9] [cursor=pointer]:
+          - /url: /log
+        - link "Sign In" [ref=f3e10] [cursor=pointer]:
+          - /url: /login
+        - button "Switch to light theme" [active] [ref=f3e321] [cursor=pointer]
+    - generic [ref=f3e14]:
+      - generic [ref=f3e17]: Strategic Cognitive Architecture for Big Ambitions
+      - heading "win.ai.id" [level=1] [ref=f3e30]
+      - paragraph [ref=f3e31]: Architect monumental breakthroughs. Compounded daily.
+      - paragraph [ref=f3e32]:
+        - text: Audacious visions don't stall from a lack of ambition—they disintegrate in the fog of daily friction. Traditional to-do apps drown you in petty backlogs and psychological guilt. Raw chat bots hallucinate generic advice without context.
+        - strong [ref=f3e33]: win.ai.id
+        - text: pairs ambitious builders with
+        - strong [ref=f3e34]: Claude 5.5 Haiku
+        - text: ": Anthropic's breakthrough real-time reasoning model calibrated for sub-second cognitive load deconstruction, flow-state preservation, and compounding execution into life-defining breakthroughs."
+      - generic [ref=f3e35]:
+        - generic [ref=f3e36]: Powered by Claude 5.5 Haiku
+        - generic [ref=f3e40]: Sub-150ms Real-Time Inference
+        - generic [ref=f3e44]: Zero-Data Training Privacy
+        - generic [ref=f3e47]: Sub-50ms Go + SQLite Performance
+      - generic [ref=f3e50]:
+        - link "Try it" [ref=f3e51] [cursor=pointer]:
+          - /url: /login
+        - link "Read the dev log" [ref=f3e52] [cursor=pointer]:
+          - /url: /log
+    - region [ref=f3e53]:
+      - generic [ref=f3e54]:
+        - 'heading "Interactive Live Demo: Experience Strategic Execution" [level=2] [ref=f3e55]'
+        - paragraph [ref=f3e56]: Test the core execution loop right now. Click any task to toggle progress, or engage the Claude co-architect below.
+      - generic [ref=f3e58]:
+        - generic [ref=f3e59]:
+          - generic [ref=f3e60]: Interactive Sandbox
+          - generic "Reset demo state" [ref=f3e61] [cursor=pointer]: Reset Demo
+        - generic [ref=f3e62]:
+          - generic [ref=f3e63]: Today · Tuesday, 14 April
+          - generic [ref=f3e64]: 5-day streak · 1 skip available
+        - generic [ref=f3e70]:
+          - generic [ref=f3e71]: 2 of 3 won today
+          - generic [ref=f3e72]: 66%
+        - list [ref=f3e73]:
+          - listitem [ref=f3e74] [cursor=pointer]:
+            - button "Toggle task"
+            - generic [ref=f3e75]:
+              - generic [ref=f3e76]: Ship v1 Public Preview & Developer Changelog
+              - generic [ref=f3e77]: core milestone
+          - listitem [ref=f3e78] [cursor=pointer]:
+            - button "Toggle task"
+            - generic [ref=f3e79]:
+              - generic [ref=f3e80]: 3-hour uninterrupted deep architecture block
+              - generic [ref=f3e81]: flow state
+          - listitem [ref=f3e82] [cursor=pointer]:
+            - button "Toggle task"
+            - generic [ref=f3e83]:
+              - generic [ref=f3e84]: Synthesize customer feedback into Q4 product roadmap
+              - generic [ref=f3e85]: strategic direction
+        - generic [ref=f3e86]:
+          - generic [ref=f3e92]:
+            - strong [ref=f3e93]: Claude 5.5 Haiku Co-Architect
+            - generic [ref=f3e94]: Sub-150ms real-time inference · Structured JSON proposal engine · Constitutional AI
+          - generic [ref=f3e95]: "\"Claude 5.5 Haiku active: Your deep architecture block is locked in! Detecting cognitive friction on the Q4 roadmap synthesis. Click below to let me deconstruct it into the immediate next strategic strike.\""
+          - generic [ref=f3e96]:
+            - button "Deconstruct ambitious milestone" [ref=f3e97] [cursor=pointer]
+            - button "Guard peak cognitive stamina" [ref=f3e102] [cursor=pointer]
+            - button "Trajectory alignment review" [ref=f3e105] [cursor=pointer]
+        - paragraph [ref=f3e108]: "Proposals from Claude are strictly human-in-the-loop: you review, adapt, or dismiss every proposed action before it enters your schedule."
+    - region [ref=f3e109]:
+      - generic [ref=f3e110]:
+        - heading "The Claude Behavioral Architecture" [level=2] [ref=f3e111]
+        - paragraph [ref=f3e112]: How frontier reasoning bridges visionary ambitions with relentless daily velocity.
+      - generic [ref=f3e113]:
+        - article [ref=f3e114]:
+          - heading "1. Macro-to-Micro Goal Deconstruction" [level=3] [ref=f3e121]
+          - paragraph [ref=f3e122]: Audacious goals are intimidating by design. Our Claude engine deconstructs monumental milestones—shipping complex software, writing manuscripts, or mastering technical disciplines—into crisp, friction-free daily vectors that make breakthrough progress inevitable.
+        - article [ref=f3e123]:
+          - heading "2. Longitudinal Trajectory Synthesis" [level=3] [ref=f3e128]
+          - paragraph [ref=f3e129]: Daily execution without macro alignment is just treadmill exhaustion. Claude continuously synthesizes weeks of historical completion velocity, identifying cognitive fatigue patterns and ensuring today's wins actively compound toward your long-term breakthrough.
+        - article [ref=f3e130]:
+          - heading "3. Sovereign Human-in-the-Loop Agency" [level=3] [ref=f3e135]
+          - paragraph [ref=f3e136]: Built strictly on Constitutional AI principles. The co-architect never imposes unsolicited tasks or creates psychological debt. As an empathetic strategic partner, Claude only proposes high-leverage actions that you explicitly accept, adapt, or dismiss.
+    - region [ref=f3e137]:
+      - generic [ref=f3e138]:
+        - heading "Engineered on Claude 5.5 Haiku Frontier Architecture" [level=2] [ref=f3e139]
+        - paragraph [ref=f3e140]: Anthropic's high-efficiency reasoning engine tuned for sub-second cognitive calibration and flow-state preservation.
+      - generic [ref=f3e141]:
+        - article [ref=f3e142]:
+          - generic [ref=f3e143]:
+            - heading "Claude 5.5 Haiku Core" [level=3] [ref=f3e144]
+            - generic [ref=f3e145]: Real-Time Inference · <150ms
+          - paragraph [ref=f3e146]: Powers the continuous cognitive execution engine. Evaluates micro-friction in user task execution, flags cognitive fatigue indicators, and delivers instant, schema-validated task deconstructions without interrupting flow state.
+          - list [ref=f3e147]:
+            - listitem [ref=f3e148]:
+              - generic [ref=f3e151]:
+                - strong [ref=f3e152]: "Sub-150ms Tactical Strikes:"
+                - text: Instantaneous proposal delivery preserves deep focus
+            - listitem [ref=f3e153]:
+              - generic [ref=f3e156]:
+                - strong [ref=f3e157]: "Structured JSON Enforcement:"
+                - text: Strict schema validation ensures actionable, zero-hallucination wins
+            - listitem [ref=f3e158]:
+              - generic [ref=f3e161]:
+                - strong [ref=f3e162]: "Constitutional AI Alignment:"
+                - text: Human-in-the-loop sovereignty; zero autonomous mutations
+        - article [ref=f3e163]:
+          - generic [ref=f3e164]:
+            - heading "Prompt Caching & Economics" [level=3] [ref=f3e165]
+            - generic [ref=f3e166]: 90% Ephemeral Cache Savings
+          - paragraph [ref=f3e167]: Harnesses Anthropic's native prompt caching across persistent system instructions and user habit vectors. Delivers 90% cost reduction and 80% latency improvement, sustaining proactive nudges well within budget.
+          - list [ref=f3e168]:
+            - listitem [ref=f3e169]:
+              - generic [ref=f3e172]:
+                - strong [ref=f3e173]: "Persistent Context Caching:"
+                - text: Reuses streak histories, habit cadences, and memory vectors
+            - listitem [ref=f3e174]:
+              - generic [ref=f3e177]:
+                - strong [ref=f3e178]: "Deterministic Rule Fallback:"
+                - text: Zero-downtime offline rule engine if network drops
+            - listitem [ref=f3e179]:
+              - generic [ref=f3e182]:
+                - strong [ref=f3e183]: "Zero-Data Retention:"
+                - text: Commercial API terms guarantee zero model training on user telemetry
+    - region [ref=f3e184]:
+      - generic [ref=f3e185]:
+        - heading "The Blueprint for Compounding Mastery" [level=2] [ref=f3e186]
+        - paragraph [ref=f3e187]: Three disciplined phases to turn visionary goals into undeniable realities.
+      - generic [ref=f3e188]:
+        - article [ref=f3e189]:
+          - generic [aria-hidden] [ref=f3e190]: "1"
+          - heading "Frame your high-leverage vectors" [level=3] [ref=f3e191]
+          - paragraph [ref=f3e192]: Define the pivotal milestones that move the needle. Your foundational habits and recurring priorities surface automatically on your daily dashboard.
+        - article [ref=f3e193]:
+          - generic [aria-hidden] [ref=f3e194]: "2"
+          - heading "Execute with relentless focus" [level=3] [ref=f3e195]
+          - paragraph [ref=f3e196]: Single-tap completion provides instant tactile feedback as you execute. Working late into the night? The 4:00 AM rollover ensures your deep evening breakthroughs count.
+        - article [ref=f3e197]:
+          - generic [aria-hidden] [ref=f3e198]: "3"
+          - heading "Calibrate with your AI co-architect" [level=3] [ref=f3e199]
+          - paragraph [ref=f3e200]: When friction appears or cognitive load peaks, Claude proposes precision micro-strikes to preserve momentum and unlock forward velocity.
+    - region [ref=f3e201]:
+      - generic [ref=f3e202]:
+        - 'heading "Platform Scope: From Solo Builders to High-Velocity Teams" [level=2] [ref=f3e203]'
+        - paragraph [ref=f3e204]: Architected to scale from individual flow-state governance to multi-disciplinary technical teams.
+      - generic [ref=f3e205]:
+        - article [ref=f3e206]:
+          - generic [ref=f3e207]: Personal OS
+          - heading "Individual Pro" [level=3] [ref=f3e208]
+          - paragraph [ref=f3e209]: For solo founders, researchers, and creators compounding daily execution into life-defining breakthroughs.
+          - list [ref=f3e210]:
+            - listitem [ref=f3e211]: Autonomous cognitive load calibration
+            - listitem [ref=f3e214]: Dynamic streak preservation & skips
+            - listitem [ref=f3e217]: Encrypted private SQLite database
+        - article [ref=f3e220]:
+          - generic [ref=f3e221]: Collaborative Sprints
+          - heading "Team & Founder Sprints" [level=3] [ref=f3e222]
+          - paragraph [ref=f3e223]: For high-velocity early-stage technical teams aligning daily strikes with company-level OKRs.
+          - list [ref=f3e224]:
+            - listitem [ref=f3e225]: Synchronized milestone vectors
+            - listitem [ref=f3e228]: AI-detected team cognitive bottlenecks
+            - listitem [ref=f3e231]: Asynchronous Claude standup synthesis
+        - article [ref=f3e234]:
+          - generic [ref=f3e235]: Cognitive Mastery
+          - heading "Multi-Domain Expansion" [level=3] [ref=f3e236]
+          - paragraph [ref=f3e237]: Domain-specific deep learning modules starting with accelerated Mandarin fluency at zh.win.ai.id.
+          - list [ref=f3e238]:
+            - listitem [ref=f3e239]: FSRS spaced repetition algorithms
+            - listitem [ref=f3e242]: Dynamic Claude micro-story generation
+            - listitem [ref=f3e245]: Unified single sign-on authentication
+    - region [ref=f3e248]:
+      - generic [ref=f3e249]:
+        - heading "Built for High-Leverage Builders, Zero Gimmicks" [level=2] [ref=f3e250]
+        - paragraph [ref=f3e251]: Only authentic, battle-tested capabilities engineered for serious daily momentum.
+      - generic [ref=f3e252]:
+        - article [ref=f3e253]:
+          - heading "Streak with a Free Weekly Skip" [level=3] [ref=f3e258]
+          - paragraph [ref=f3e259]: Monumental pursuits require resilience, not brittle perfectionism. One free skip per ISO week protects your compounding momentum when strategic recovery is needed.
+        - article [ref=f3e260]:
+          - heading "4:00 AM Day Rollover" [level=3] [ref=f3e265]
+          - paragraph [ref=f3e266]: Breakthrough ideas don't conform to arbitrary midnight curfews. All work counts until 4:00 AM local time, accommodating night owls and evening flow states.
+        - article [ref=f3e267]:
+          - heading "Flexible Habit Cadences" [level=3] [ref=f3e272]
+          - paragraph [ref=f3e273]: Schedule daily disciplines, weekday focus sprints, or flexible weekly quotas. Habit streaks track the consistency behind your biggest wins.
+        - article [ref=f3e274]:
+          - heading "Guardrailed AI Co-Architect" [level=3] [ref=f3e278]
+          - paragraph [ref=f3e279]: The engine only proposes high-leverage actions for you to inspect and accept—it never writes to your database directly. Enforces hard monthly budget caps with deterministic fallback.
+        - article [ref=f3e280]:
+          - heading "Biometric Passkey & Secure Auth" [level=3] [ref=f3e284]
+          - paragraph [ref=f3e285]: "Frictionless, enterprise-grade authentication: Touch ID, Face ID, hardware security keys, or bcrypt-hashed passwords stored in private local SQLite."
+        - article [ref=f3e286]:
+          - heading "Progressive Web App Architecture" [level=3] [ref=f3e290]
+          - paragraph [ref=f3e291]: Instant offline execution on mobile and desktop via service workers. Sub-50ms server response times with zero bundle bloat.
+        - article [ref=f3e292]:
+          - heading "Building in Public Dev Log" [level=3] [ref=f3e296]
+          - paragraph [ref=f3e297]: Full transparent engineering ledger covering architecture decisions, database migrations, and product iterations published openly.
+    - region [ref=f3e298]:
+      - generic [ref=f3e299]:
+        - generic [ref=f3e300]:
+          - generic [ref=f3e301]: Coming Soon
+          - generic [ref=f3e302]: zh.win.ai.id
+        - 'heading "Multi-Domain Cognitive Mastery: Accelerated Mandarin Acquisition" [level=3] [ref=f3e303]'
+        - generic [ref=f3e304]:
+          - text: Měitiān yī diǎndiǎn ·
+          - emphasis [ref=f3e305]: "\"A little every day\""
+        - paragraph [ref=f3e306]:
+          - text: Coming soon to
+          - strong [ref=f3e307]: zh.win.ai.id
+          - text: ": an adaptive cognitive drill system for intermediate learners (HSK 3–5) mastering advanced fluency. Combines modern FSRS spaced repetition algorithms, high-fidelity neural audio synthesis, sentence cloze drills, and Claude-generated micro-narratives woven dynamically from your target vocabulary."
+        - paragraph [ref=f3e308]: Seamless single sign-in across both core and Mandarin learning vectors.
+    - generic [ref=f3e309]:
+      - heading "Ready to architect your next breakthrough?" [level=2] [ref=f3e310]
+      - paragraph [ref=f3e311]: Sign in with a biometric passkey or secure password to begin compounding your daily momentum into life-defining wins.
+      - generic [ref=f3e312]:
+        - link "Try it" [ref=f3e313] [cursor=pointer]:
+          - /url: /login
+        - link "Read the dev log" [ref=f3e314] [cursor=pointer]:
+          - /url: /log
+    - generic [ref=f3e315]:
+      - link "win.ai.id" [ref=f3e316] [cursor=pointer]:
+        - /url: /
+      - navigation "Footer Navigation" [ref=f3e317]:
+        - link "Dev Log" [ref=f3e318] [cursor=pointer]:
+          - /url: /log
+        - link "Sign In" [ref=f3e319] [cursor=pointer]:
+          - /url: /login
+      - paragraph [ref=f3e320]: Built with Go, SQLite, and Claude 5.5 Haiku.
