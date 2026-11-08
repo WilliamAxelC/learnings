@@ -1,0 +1,444 @@
+[
+  {
+    "brand": "Maotea",
+    "outlet_name": "Maotea-Gading Serpong",
+    "area": "Gading Serpong",
+    "address": "Ruko Pisa Grande, Blk. C No.11, Curug Sangereng, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten 15810",
+    "is_sold_out": false,
+    "daily_stock_left": 191,
+    "stock_left": 191,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:30:00",
+    "buy_menu": [
+      "Da Hong Pao milk tea  ( Large)"
+    ],
+    "free_menu": [
+      "Osmanthus milk tea  (Large)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "TeaAmo",
+    "outlet_name": "TeaAmo-BSD City",
+    "area": "BSD City",
+    "address": "Ruko Enchante E6, Lengkong Kulon, Kec. Pagedangan, BSD, Banten 15331",
+    "is_sold_out": false,
+    "daily_stock_left": 192,
+    "stock_left": 192,
+    "redeem_start": "10:00:00",
+    "redeem_end": "23:00:00",
+    "buy_menu": [
+      "Green Grape Milk Tea ( Medium)"
+    ],
+    "free_menu": [
+      "Pink Guava Jasmine Milk Tea  ( Medium)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Hijo",
+    "outlet_name": "Pisa Grand Gading Serpong",
+    "area": "Gading Serpong",
+    "address": "Ruko Pisa Grande, Blk. L1 Tahap 2 Level 2, Gading, Curug Sangereng, Gading Serpong, Kabupaten Tangerang, Banten 15329",
+    "is_sold_out": true,
+    "daily_stock_left": 50,
+    "stock_left": 50,
+    "redeem_start": "11:00:00",
+    "redeem_end": "21:45:00",
+    "buy_menu": [
+      "Charcoal Roasted Oolong Hokkaido Milk Tea",
+      "Maojian Jasmine Greentea Pure Tea",
+      "Rose Pu\u2019er Oat Milk Tea",
+      "Spring Gold Oolong Pure Tea"
+    ],
+    "free_menu": [
+      "Charcoal Roasted Oolong Hokkaido Milk Tea",
+      "Maojian Jasmine Greentea Pure Tea",
+      "Rose Pu\u2019er Oat Milk Tea",
+      "Spring Gold Oolong Pure Tea"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chuchat",
+    "outlet_name": "Chuchat PIK 2",
+    "area": "Nearby Tangerang",
+    "address": "Rukan Osaka - Euroasia, ROTG 028, Salembaran, Kec. Kosambi, Kabupaten Tangerang, Banten 15214",
+    "is_sold_out": false,
+    "daily_stock_left": 97,
+    "stock_left": 97,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Light Milk Tea ( 1 size)"
+    ],
+    "free_menu": [
+      "Sea Salt Iced Tea  (1 size )"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Xing Fu Tang",
+    "outlet_name": "XFT SUMMARECON MALL SERPONG",
+    "area": "Gading Serpong",
+    "address": "Summarecon, Mall Serpong, Jl. Boulevard Raya Gading Serpong Lantai GF Unit 250, Pakulonan Barat, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten 15810",
+    "is_sold_out": false,
+    "daily_stock_left": 25,
+    "stock_left": 25,
+    "redeem_start": "13:00:00",
+    "redeem_end": "17:00:00",
+    "buy_menu": [
+      "Brown Sugar Boba Milk Tea (Small)"
+    ],
+    "free_menu": [
+      "Brown Sugar Boba Milk Tea (Small)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Gaga",
+    "outlet_name": "GAGA Indonesia \u2013 Benton Junction Karawaci",
+    "area": "Nearby Tangerang",
+    "address": "",
+    "is_sold_out": false,
+    "daily_stock_left": 83,
+    "stock_left": 83,
+    "redeem_start": "10:00:00",
+    "redeem_end": "22:00:00",
+    "buy_menu": [
+      "Full Flavored Thai Milk Tea (Large)"
+    ],
+    "free_menu": [
+      "GAGA overload (Ukuran Small)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Gaga",
+    "outlet_name": "GAGA Indonesia \u2013 Living World Kota Wisata",
+    "area": "Alam Sutera",
+    "address": "Jl. Boulevard Kota Wisata, Ciangsana, Kec. Gn. Putri Bogor Timur, JXJ5+8Q5, Ciangsana, Gunung Putri, Bogor Regency, West Java 16968",
+    "is_sold_out": false,
+    "daily_stock_left": 82,
+    "stock_left": 82,
+    "redeem_start": "10:00:00",
+    "redeem_end": "22:00:00",
+    "buy_menu": [
+      "Full Flavored Thai Milk Tea (Large)"
+    ],
+    "free_menu": [
+      "GAGA overload (Ukuran Small)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Gaga",
+    "outlet_name": "GAGA Indonesia - Benton Karawaci",
+    "area": "Nearby Tangerang",
+    "address": "Jl. Boulevard Palem Raya No. 38, Lippo Karawaci 1200, Curug, Neglasari, Kelapa Dua, Klp. Dua, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten 15810",
+    "is_sold_out": true,
+    "daily_stock_left": 83,
+    "stock_left": 83,
+    "redeem_start": "10:00:00",
+    "redeem_end": "22:00:00",
+    "buy_menu": [
+      "Full Flavored Thai Milk Tea (Large)"
+    ],
+    "free_menu": [
+      "GAGA overload (Ukuran Small)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Gaga",
+    "outlet_name": "GAGA Indonesia - Jakarta Premium Outlets",
+    "area": "Nearby Tangerang",
+    "address": "Jl. Nean Saba No.37, RT.002/RW.003, Kunciran, Kec. Pinang, Kota Tangerang, Banten 15143",
+    "is_sold_out": true,
+    "daily_stock_left": 83,
+    "stock_left": 83,
+    "redeem_start": "10:00:00",
+    "redeem_end": "22:00:00",
+    "buy_menu": [
+      "Full Flavored Thai Milk Tea (Large)"
+    ],
+    "free_menu": [
+      "GAGA overload (Ukuran Small)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Teazzi",
+    "outlet_name": "Teazzi Aloha PIK 2",
+    "area": "Nearby Tangerang",
+    "address": "Aloha PIK 2, Jl. Laksamana Yos Sudarso Unit B.05, Dadap, Kabupaten Tangerang, Banten 15213",
+    "is_sold_out": false,
+    "daily_stock_left": 6,
+    "stock_left": 6,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:30:00",
+    "buy_menu": [
+      "Jasmine Green Oat Milk Tea",
+      "Deep Roast Oolong Oat Milk Tea",
+      "Four Seasons Oolong Oat Milk Tea"
+    ],
+    "free_menu": [
+      "Jasmine Green Oat Milk Tea",
+      "Deep Roast Oolong Oat Milk Tea",
+      "Four Seasons Oolong Oat Milk Tea"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Teazzi",
+    "outlet_name": "Teazzi Mall Ciputra Citra Raya",
+    "area": "Nearby Tangerang",
+    "address": "Mall Ciputra, unit C9, Jl. Citra Raya Boulevard Lt 3F, Ciakar, Kec. Panongan, Kabupaten Tangerang, Banten 15710",
+    "is_sold_out": false,
+    "daily_stock_left": 15,
+    "stock_left": 15,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:30:00",
+    "buy_menu": [
+      "Jasmine Green Oat Milk Tea",
+      "Deep Roast Oolong Oat Milk Tea",
+      "Four Seasons Oolong Oat Milk Tea"
+    ],
+    "free_menu": [
+      "Jasmine Green Oat Milk Tea",
+      "Deep Roast Oolong Oat Milk Tea",
+      "Four Seasons Oolong Oat Milk Tea"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Acaii",
+    "outlet_name": "Living World Plaza",
+    "area": "Alam Sutera",
+    "address": "Living World Alam Sutera, Jl. Alam Sutera Boulevard No.Kav. 21 Ground Floor, Pakulonan, Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15325",
+    "is_sold_out": false,
+    "daily_stock_left": 27,
+    "stock_left": 27,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Osmanthus Oolong Milk Tea ( 1 size)"
+    ],
+    "free_menu": [
+      "Taro Oolong Milk Tea ( 1 Size )"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Banban",
+    "outlet_name": "Banban AEON Mall BSD",
+    "area": "BSD City",
+    "address": "Ban Ban Cheese Tea, Mall AEON, Lt. LG, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15339",
+    "is_sold_out": false,
+    "daily_stock_left": 44,
+    "stock_left": 44,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:30:00",
+    "buy_menu": [
+      "Banban Oolong Milk Tea Chizu With Cookies Crumble"
+    ],
+    "free_menu": [
+      "Banban Oolong Milk Tea Mochi/ Oolong Jelly"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Molly Tea",
+    "outlet_name": "Molly Tea Supermal Karawaci",
+    "area": "Nearby Tangerang",
+    "address": "Supermal Karawaci, Jl. Boulevard Diponegoro No.105, Bencongan, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten 15810",
+    "is_sold_out": false,
+    "daily_stock_left": 85,
+    "stock_left": 85,
+    "redeem_start": "10:00:00",
+    "redeem_end": "22:00:00",
+    "buy_menu": [
+      "Buy All Menu,  kecuali Seasonal Menu/ Premium Iced Tea/ Gardenia Iced Tea/ Jasmine Coconut/ White Champaca Coconut"
+    ],
+    "free_menu": [
+      "Premium Jasmine Milk Tea"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Molly Tea",
+    "outlet_name": "Summarecon Mall Serpong",
+    "area": "Gading Serpong",
+    "address": "9853 Justen Ford\nDorianchester, NM 20450",
+    "is_sold_out": false,
+    "daily_stock_left": 37,
+    "stock_left": 37,
+    "redeem_start": "10:00:00",
+    "redeem_end": "22:00:00",
+    "buy_menu": [
+      "Buy All Menu,  kecuali Seasonal Menu/ Premium Iced Tea/ Gardenia Iced Tea/ Jasmine Coconut/ White Champaca Coconut"
+    ],
+    "free_menu": [
+      "Premium Jasmine Milk Tea"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chatime",
+    "outlet_name": "Chatime Aeon Bsd",
+    "area": "BSD City",
+    "address": "AEON Mall, Jl. BSD Raya Utama No.63 Ground Floor, Situ Gadung, Pagedangan, Tangerang Regency, Banten 15338",
+    "is_sold_out": false,
+    "daily_stock_left": 130,
+    "stock_left": 130,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Hazelnut Chocolate Milk Tea / Pure Cocoa (Large) + Topping",
+      "Jasmine / Oolong Silken Milk Tea (Reg) + Topping"
+    ],
+    "free_menu": [
+      "Chatime Milk Tea (Reg)",
+      "Jasmine / Oolong Silken Milk Tea atau Jasmine / Oolong Pure Tea (Reg)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chatime",
+    "outlet_name": "Chatime Summarecon Mall Serpong",
+    "area": "Gading Serpong",
+    "address": "Sentra Gading Serpong, Jl. Gading Serpong Boulevard No.15C 2nd Floor Unit 2F, Pakulonan Barat, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten 15810",
+    "is_sold_out": false,
+    "daily_stock_left": 128,
+    "stock_left": 128,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Hazelnut Chocolate Milk Tea / Pure Cocoa (Large) + Topping",
+      "Jasmine / Oolong Silken Milk Tea (Reg) + Topping"
+    ],
+    "free_menu": [
+      "Chatime Milk Tea (Reg)",
+      "Jasmine / Oolong Silken Milk Tea atau Jasmine / Oolong Pure Tea (Reg)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chatime",
+    "outlet_name": "Chatime Foodcourt Living World Alsut",
+    "area": "Alam Sutera",
+    "address": "Living World, Jl. Alam Sutera Boulevard No.Kav 21 2nd floor, Alam Sutera, Kec. Serpong, Kota Tangerang Selatan, Banten 15325",
+    "is_sold_out": false,
+    "daily_stock_left": 125,
+    "stock_left": 125,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Hazelnut Chocolate Milk Tea / Pure Cocoa (Large) + Topping",
+      "Jasmine / Oolong Silken Milk Tea (Reg) + Topping"
+    ],
+    "free_menu": [
+      "Chatime Milk Tea (Reg)",
+      "Jasmine / Oolong Silken Milk Tea atau Jasmine / Oolong Pure Tea (Reg)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chatime",
+    "outlet_name": "Chatime Tangerang Qbig 2",
+    "area": "BSD City",
+    "address": "Jl. BSD Raya Utama, Lengkong Kulon, Kec. Pagedangan, Kabupaten Tangerang, Banten 15331",
+    "is_sold_out": false,
+    "daily_stock_left": 130,
+    "stock_left": 130,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Hazelnut Chocolate Milk Tea / Pure Cocoa (Large) + Topping",
+      "Jasmine / Oolong Silken Milk Tea (Reg) + Topping"
+    ],
+    "free_menu": [
+      "Chatime Milk Tea (Reg)",
+      "Jasmine / Oolong Silken Milk Tea atau Jasmine / Oolong Pure Tea (Reg)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chatime",
+    "outlet_name": "Chatime Supermall Karawaci",
+    "area": "Nearby Tangerang",
+    "address": "Supermall Karawaci, Lippo Karawaci, Jl. Boulevard Diponegoro No.105 Ug Floor #55, Bencongan, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten 15141",
+    "is_sold_out": false,
+    "daily_stock_left": 128,
+    "stock_left": 128,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Hazelnut Chocolate Milk Tea / Pure Cocoa (Large) + Topping",
+      "Jasmine / Oolong Silken Milk Tea (Reg) + Topping"
+    ],
+    "free_menu": [
+      "Chatime Milk Tea (Reg)",
+      "Jasmine / Oolong Silken Milk Tea atau Jasmine / Oolong Pure Tea (Reg)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chatime",
+    "outlet_name": "Chatime Bintaro Exchange",
+    "area": "Nearby Tangerang",
+    "address": "Bintaro Plaza Lt. 1 Blok D. 01A, Jl. Bintaro Utama 3A No.Sektor 3A, Pd. Karya, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15225",
+    "is_sold_out": false,
+    "daily_stock_left": 130,
+    "stock_left": 130,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Hazelnut Chocolate Milk Tea / Pure Cocoa (Large) + Topping",
+      "Jasmine / Oolong Silken Milk Tea (Reg) + Topping"
+    ],
+    "free_menu": [
+      "Chatime Milk Tea (Reg)",
+      "Jasmine / Oolong Silken Milk Tea atau Jasmine / Oolong Pure Tea (Reg)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "Chatime",
+    "outlet_name": "Chatime Living World Kota Wisata",
+    "area": "Alam Sutera",
+    "address": "Living World Kota Wisata Cibubur, Jl. Boulevard Kota Wisata Lt LG, Ciangsana, Kec. Gn. Putri, Kabupaten Bogor, Jawa Barat 16968",
+    "is_sold_out": false,
+    "daily_stock_left": 129,
+    "stock_left": 129,
+    "redeem_start": "10:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Hazelnut Chocolate Milk Tea / Pure Cocoa (Large) + Topping",
+      "Jasmine / Oolong Silken Milk Tea (Reg) + Topping"
+    ],
+    "free_menu": [
+      "Chatime Milk Tea (Reg)",
+      "Jasmine / Oolong Silken Milk Tea atau Jasmine / Oolong Pure Tea (Reg)"
+    ],
+    "variant_menus": []
+  },
+  {
+    "brand": "RODA RODA",
+    "outlet_name": "BSD City",
+    "area": "BSD City",
+    "address": "Ruko Enchante C9, Enchante Business Park, Lengkong Kulong, Pagedangan, Lengkong Kulon, BSD City, Kabupaten Tangerang, Banten 15331",
+    "is_sold_out": false,
+    "daily_stock_left": 196,
+    "stock_left": 196,
+    "redeem_start": "07:00:00",
+    "redeem_end": "21:00:00",
+    "buy_menu": [
+      "Jasmine Milk Brew Espresso  ( 12 oz)"
+    ],
+    "free_menu": [
+      "Jasmine Milk Brew Espresso  ( 12 oz)"
+    ],
+    "variant_menus": []
+  }
+]

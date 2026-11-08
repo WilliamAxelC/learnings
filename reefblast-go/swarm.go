@@ -112,10 +112,13 @@ func (sm *SwarmManager) SaveConfigLocked() error {
 	}
 
 	tmp := sm.configPath + ".tmp"
-	if err := os.WriteFile(tmp, data, 0644); err != nil {
-		return err
+	if err := os.WriteFile(tmp, data, 0644); err == nil {
+		if err := os.Rename(tmp, sm.configPath); err == nil {
+			return nil
+		}
+		_ = os.Remove(tmp)
 	}
-	return os.Rename(tmp, sm.configPath)
+	return os.WriteFile(sm.configPath, data, 0644)
 }
 
 func deriveBotKey(email string) string {
@@ -140,6 +143,15 @@ func (sm *SwarmManager) Start() error {
 		}
 	}
 	sm.mu.Unlock()
+
+	go func() {
+		ticker := time.NewTicker(15 * time.Second)
+		defer ticker.Stop()
+		statusFile := filepath.Join(sm.logsDir, "status.json")
+		for range ticker.C {
+			_ = os.WriteFile(statusFile, []byte(fmt.Sprintf(`{"updatedAt":"%s","swarm":true}`, time.Now().UTC().Format(time.RFC3339))), 0644)
+		}
+	}()
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/health", sm.handleHealth)
